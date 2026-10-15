@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <!-- Lớp ngoài cùng: viền #4C97BC dày @dimen/dp_1 -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/dp_2" android:color="#861629"/>
+            <corners android:radius="@dimen/dp_16"/>
+        </shape>
+    </item>
+
+    <!-- Lớp giữa: viền #64BFED dày @dimen/dp_2 (inset vào @dimen/dp_1) -->
+    <item
+        android:left="@dimen/dp_2"
+        android:top="@dimen/dp_2"
+        android:right="@dimen/dp_2"
+        android:bottom="@dimen/dp_2">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/dp_1" android:color="#EA456C"/>
+            <corners android:radius="@dimen/dp_14"/>
+        </shape>
+    </item>
+
+    <item
+        android:left="@dimen/dp_2"
+        android:top="@dimen/dp_2"
+        android:right="@dimen/dp_2"
+        android:bottom="@dimen/dp_2">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/dp_1" android:color="#EB2994"/>
+            <corners android:radius="@dimen/dp_14"/>
+        </shape>
+    </item>
+
+
+
+
+
+</layer-list>

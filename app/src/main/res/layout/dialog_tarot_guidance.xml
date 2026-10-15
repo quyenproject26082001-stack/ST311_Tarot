@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/tarot_bg_sheet"
+    android:orientation="vertical">
+    <com.aaa.bbb.ccc.tarot.TarotIcon
+        android:id="@+id/close"
+        style="@style/TarotIconButton"
+        android:padding="12dp"
+        android:layout_gravity="end"
+        app:tarotIconName="close"
+        app:tarotIconColor="?attr/tarotInk"
+        android:contentDescription="@string/tarot_close" />
+    <ImageView
+        android:id="@+id/shuffleArt"
+        android:layout_width="184dp"
+        android:layout_height="148dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/tarot_guidance_art"
+        android:scaleType="fitCenter"
+        android:contentDescription="Shuffle cards" />
+    <TextView
+        style="@style/TarotTextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tarot_guidance_design" />
+    <TextView
+        android:id="@+id/continueReading"
+        style="@style/TarotButton"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tarot_bg_step_active"
+        android:text="@string/tarot_continue" />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/showGuidance"
+        style="@style/TarotText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tarot_show_guidance"
+        app:thumbTint="#FFFFFF"
+        app:trackTint="@color/tarot_switch_track" />
+</LinearLayout>

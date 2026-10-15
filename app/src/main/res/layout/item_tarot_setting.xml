@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:paddingHorizontal="12dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+    <com.aaa.bbb.ccc.tarot.TarotIcon
+        android:id="@+id/settingIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/tarot_bg_white_circle"
+        app:tarotIconColor="?attr/tarotInk" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/settingTitle"
+            style="@style/TarotTextBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/settingValue"
+            style="@style/TarotText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/settingTrailing"
+        style="@style/TarotTextBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp" />
+    <com.aaa.bbb.ccc.tarot.TarotIcon
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:tarotIconName="chevron"
+        app:tarotIconColor="?attr/tarotMuted" />
+</LinearLayout>

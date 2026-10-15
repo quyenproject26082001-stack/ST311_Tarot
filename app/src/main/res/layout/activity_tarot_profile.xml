@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/tarotPaper">
+    <ImageView
+        android:id="@+id/pageBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_app"
+        android:scaleType="fitXY"
+        android:importantForAccessibility="no" />
+    <LinearLayout
+        android:id="@+id/profilePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar"
+            android:theme="@style/TarotActionBarOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tarot_header_height" />
+        <ScrollView
+            android:id="@+id/profileScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/profileContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="40dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/profileDescription"
+                    style="@style/TarotTextBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp" />
+                <FrameLayout
+                    android:id="@+id/zodiacGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="-4dp" />
+                <LinearLayout
+                    android:id="@+id/profileFields"
+                    android:layout_width="match_parent"
+                    android:layout_height="352dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        style="@style/TarotTextHeading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/tarot_name" />
+                    <include
+                        android:id="@+id/nameField"
+                        layout="@layout/tarot_field_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp" />
+                    <TextView
+                        style="@style/TarotTextHeading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="12dp"
+                        android:textSize="16sp"
+                        android:text="@string/tarot_birthday" />
+                    <FrameLayout
+                        android:id="@+id/birthdayHost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="6dp"
+                        android:background="@drawable/tarot_bg_step_active" />
+                    <View
+                        android:id="@+id/secondStep"
+                        android:layout_width="40dp"
+                        android:layout_height="6dp"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/tarot_bg_step_inactive" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="28dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/previous"
+                        style="@style/TarotButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/tarot_bg_outline"
+                        android:textColor="@color/tarot_gold"
+                        android:text="@string/tarot_previous"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/next"
+                        style="@style/TarotButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/tarot_next" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

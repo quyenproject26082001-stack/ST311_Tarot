@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDAFF"
+    android:clipChildren="false"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:rotationY="0"
+    tools:context=".ui.add_character.AddCharacterActivity">
+
+    <!--    flGetText-->
+    <FrameLayout
+        android:id="@+id/flGetText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_48"
+        android:paddingHorizontal="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_5"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--        tvGetText-->
+        <TextView
+            android:id="@+id/tvGetText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:maxLength="30"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_40" />
+    </FrameLayout>
+
+
+    <!--    flActionBar-->
+    <FrameLayout
+        android:id="@+id/flActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/cardSave"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_0"
+        app:layout_constraintBottom_toBottomOf="@id/gl"
+        app:cardBackgroundColor="@color/transparent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flActionBar">
+
+        <!--    flSave-->
+        <FrameLayout
+            android:id="@+id/flSave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_0">
+
+            <!--        imvBackground-->
+            <ImageView
+                android:id="@+id/imvBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <!--        drawView-->
+            <com.aaa.bbb.ccc.core.custom.drawview.DrawView
+                android:id="@+id/drawView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <!--    flFunction-->
+    <FrameLayout
+        android:id="@+id/flFunction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_20"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl">
+
+        <ImageView
+            android:id="@+id/bg_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_0"
+            android:layout_marginBottom="@dimen/dp_0"
+          />
+
+        <ImageView
+            android:id="@+id/bg_other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_0"
+            android:layout_marginBottom="@dimen/dp_0"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/backgroundTab"
+            layout="@layout/layout_add_character_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/stickerTab"
+            layout="@layout/layout_add_character_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/speechTab"
+            layout="@layout/layout_add_character_speech"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/textTab"
+            tools:visibility="visible"
+            android:layout_marginTop="@dimen/dp_22"
+            layout="@layout/layout_add_character_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+    </FrameLayout>
+
+
+    <!--    lnlBottom-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lnlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginHorizontal="@dimen/dp_0"
+        android:layout_marginBottom="@dimen/dp_0"
+        android:background="#667FAA"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--        btnBackground-->
+        <ImageView
+            android:id="@+id/btnBackground"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginHorizontal="@dimen/dp_12"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:src="@drawable/ic_bg_slt"
+            app:layout_constraintEnd_toStartOf="@id/btnSticker"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        btnSticker-->
+        <ImageView
+            android:id="@+id/btnSticker"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginHorizontal="@dimen/dp_12"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_sticker"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnSpeech"
+            app:layout_constraintStart_toEndOf="@id/btnBackground"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        btnSpeech-->
+        <ImageView
+            android:id="@+id/btnSpeech"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginHorizontal="@dimen/dp_12"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_speech"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnText"
+            app:layout_constraintStart_toEndOf="@id/btnSticker"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        btnText-->
+        <ImageView
+            android:id="@+id/btnText"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginHorizontal="@dimen/dp_12"
+            app:layout_constraintStart_toEndOf="@id/btnSpeech"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:rotationY="-83"
+        app:layout_constraintGuide_percent="@dimen/customize_horizontal_guide_percent"
+        />
+
+    <!--    &lt;!&ndash;    flNativeCollab&ndash;&gt;-->
+        <FrameLayout
+            android:id="@+id/flNativeCollab"
+        android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </FrameLayout>
+
+    <!--    &lt;!&ndash; Custom Input View (1/4 screen height) &ndash;&gt;-->
+    <!--    <include-->
+    <!--        android:id="@+id/customInputLayout"-->
+    <!--        layout="@layout/layout_custom_input"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/dp_0"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHeight_percent="0.25" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

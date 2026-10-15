@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_22"
+        android:background="@drawable/bg_bg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sectionTab"
+        android:layout_width="@dimen/dp_264"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="@dimen/dp_13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/tab_bg_slt"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <!--                btnBackgroundImage-->
+        <FrameLayout
+            android:id="@+id/btnBackgroundImage"
+            android:layout_width="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnBackgroundColor"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <!--                tvBackgroundImage-->
+            <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+                android:id="@+id/tvBackgroundImage"
+                style="@style/single_marquee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/baloo_2_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/image"
+
+                android:textColor="@color/figma_primary"
+                android:textSize="@dimen/sp_18" />
+
+        </FrameLayout>
+
+        <!--                btnBackgroundColor-->
+        <FrameLayout
+            android:id="@+id/btnBackgroundColor"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_0"
+            android:layout_marginStart="@dimen/dp_8"
+            app:layout_constraintStart_toEndOf="@id/btnBackgroundImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_weight="1">
+
+
+            <!--                tvBackgroundColor-->
+            <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+                android:id="@+id/tvBackgroundColor"
+                style="@style/single_marquee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/baloo_2_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:text="@string/color"
+                android:textColor="@color/figma_primary"
+                android:textSize="@dimen/sp_18" />
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--        lnlBackground-->
+    <LinearLayout
+        android:id="@+id/lnlBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvBackgroundCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_category"
+            tools:visibility="visible" />
+
+
+        <!--            rcvBackgroundImage-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvBackgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp_4_5"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/dp_18"            android:paddingBottom="@dimen/dp_60"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="5"
+
+            tools:itemCount="10"
+            tools:listitem="@layout/item_background_image"
+            tools:visibility="gone" />
+
+        <!--            rcvBackgroundColor-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvBackgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp_4_5"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/dp_18"
+            android:paddingBottom="@dimen/dp_60"
+            android:visibility="gone"
+
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="5"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_background_color"
+            tools:visibility="visible" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

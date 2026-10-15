@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".ui.success.SuccessActivity">
+
+
+    <!-- layoutActionBar -->
+    <FrameLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar" />
+    </FrameLayout>
+
+    <!--    cvImage-->
+    <FrameLayout
+        android:id="@+id/cvImage"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginHorizontal="@dimen/dp_0"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp_30"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeWidth="@dimen/dp_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvSuccess"
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+        app:strokeColor="#861629"
+        app:cardCornerRadius="@dimen/dp_4"
+        >
+
+        <!--        imvImage-->
+        <ImageView
+            android:id="@+id/imvImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_2"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/figma_primary"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_36"
+        app:layout_constraintTop_toBottomOf="@id/cvImage"
+        android:id="@+id/tvSuccess"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:fontFamily="@font/baloo_2_bold"
+        android:text="@string/image_has_been_saved_successful"/>
+
+
+
+    <!--    lnlBottom-->
+    <FrameLayout
+        android:id="@+id/lnlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginBottom="@dimen/dp_minus_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSuccess"
+        >
+
+        <include
+            android:id="@+id/includeLayoutBottom"
+            layout="@layout/layout_bottom_ss" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/native_ads"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include layout="@layout/ads_native_big_btn_bottom_shimmer" />
+
+    </FrameLayout>
+
+
+
+
+    <!--    &lt;!&ndash;    flNativeCollab&ndash;&gt;-->
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/flNativeCollab"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+    <!--        <include layout="@layout/ads_shimmer_collap_native" />-->
+    <!--    </FrameLayout>-->
+
+
+<!--    &lt;!&ndash;    flNativeCollab&ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/flNativeCollab"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+<!--    </FrameLayout>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

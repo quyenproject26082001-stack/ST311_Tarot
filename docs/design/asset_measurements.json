@@ -1,0 +1,486 @@
+{
+  "tarot_brand": {
+    "board": "home.png",
+    "frame": 0,
+    "box_px": [
+      35,
+      118,
+      455,
+      170
+    ],
+    "size_px": [
+      420,
+      52
+    ]
+  },
+  "tarot_action_daily": {
+    "board": "home.png",
+    "frame": 0,
+    "box_px": [
+      42,
+      796,
+      232,
+      980
+    ],
+    "size_px": [
+      190,
+      184
+    ]
+  },
+  "tarot_action_weekly": {
+    "board": "home.png",
+    "frame": 0,
+    "box_px": [
+      265,
+      796,
+      455,
+      980
+    ],
+    "size_px": [
+      190,
+      184
+    ]
+  },
+  "tarot_action_celtic": {
+    "board": "home.png",
+    "frame": 0,
+    "box_px": [
+      488,
+      796,
+      678,
+      980
+    ],
+    "size_px": [
+      190,
+      184
+    ]
+  },
+  "tarot_empty_reading": {
+    "board": "home.png",
+    "frame": 0,
+    "box_px": [
+      242,
+      1134,
+      490,
+      1350
+    ],
+    "size_px": [
+      248,
+      216
+    ]
+  },
+  "tarot_empty_history": {
+    "board": "History.png",
+    "frame": 0,
+    "box_px": [
+      160,
+      350,
+      560,
+      720
+    ],
+    "size_px": [
+      400,
+      370
+    ]
+  },
+  "tarot_guidance_art": {
+    "board": "Spreads.png",
+    "frame": 3,
+    "box_px": [
+      174,
+      200,
+      540,
+      492
+    ],
+    "size_px": [
+      366,
+      292
+    ]
+  },
+  "tarot_deck_back": {
+    "board": "Spreads.png",
+    "frame": 4,
+    "box_px": [
+      38,
+      446,
+      138,
+      620
+    ],
+    "size_px": [
+      100,
+      174
+    ]
+  },
+  "tarot_horoscope_sun": {
+    "board": "home.png",
+    "frame": 0,
+    "box_px": [
+      40,
+      590,
+      244,
+      714
+    ],
+    "size_px": [
+      204,
+      124
+    ]
+  },
+  "tarot_horoscope_moon": {
+    "board": "home.png",
+    "frame": 0,
+    "box_px": [
+      600,
+      322,
+      678,
+      397
+    ],
+    "size_px": [
+      78,
+      75
+    ]
+  },
+  "tarot_spread_icon_0": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      64,
+      324,
+      144,
+      404
+    ],
+    "size_px": [
+      80,
+      80
+    ]
+  },
+  "tarot_spread_icon_1": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      64,
+      476,
+      144,
+      556
+    ],
+    "size_px": [
+      80,
+      80
+    ]
+  },
+  "tarot_spread_icon_2": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      64,
+      628,
+      144,
+      708
+    ],
+    "size_px": [
+      80,
+      80
+    ]
+  },
+  "tarot_spread_icon_3": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      64,
+      780,
+      144,
+      860
+    ],
+    "size_px": [
+      80,
+      80
+    ]
+  },
+  "tarot_spread_icon_4": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      64,
+      932,
+      144,
+      1012
+    ],
+    "size_px": [
+      80,
+      80
+    ]
+  },
+  "tarot_spread_icon_5": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      64,
+      1084,
+      144,
+      1164
+    ],
+    "size_px": [
+      80,
+      80
+    ]
+  },
+  "tarot_spread_icon_6": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      64,
+      1236,
+      144,
+      1316
+    ],
+    "size_px": [
+      80,
+      80
+    ]
+  },
+  "tarot_spread_icon_7": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      64,
+      1388,
+      144,
+      1468
+    ],
+    "size_px": [
+      80,
+      80
+    ]
+  },
+  "tarot_spread_decor_0": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      500,
+      302,
+      678,
+      426
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_decor_1": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      500,
+      454,
+      678,
+      578
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_decor_2": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      620,
+      606,
+      678,
+      730
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_decor_3": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      548,
+      822,
+      678,
+      880
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_decor_4": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      540,
+      910,
+      678,
+      1034
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_decor_5": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      560,
+      1062,
+      678,
+      1186
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_decor_6": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      604,
+      1214,
+      678,
+      1338
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_decor_7": {
+    "board": "Spreads.png",
+    "frame": 2,
+    "box_px": [
+      580,
+      1428,
+      678,
+      1480
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_zodiac_aries": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      110,
+      308,
+      162,
+      360
+    ]
+  },
+  "tarot_zodiac_taurus": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      334,
+      308,
+      386,
+      360
+    ]
+  },
+  "tarot_zodiac_gemini": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      558,
+      308,
+      610,
+      360
+    ]
+  },
+  "tarot_zodiac_cancer": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      110,
+      484,
+      162,
+      536
+    ]
+  },
+  "tarot_zodiac_leo": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      334,
+      484,
+      386,
+      536
+    ]
+  },
+  "tarot_zodiac_virgo": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      558,
+      484,
+      610,
+      536
+    ]
+  },
+  "tarot_zodiac_libra": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      110,
+      660,
+      162,
+      712
+    ]
+  },
+  "tarot_zodiac_scorpio": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      334,
+      660,
+      386,
+      712
+    ]
+  },
+  "tarot_zodiac_sagittarius": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      558,
+      660,
+      610,
+      712
+    ]
+  },
+  "tarot_zodiac_capricorn": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      110,
+      836,
+      162,
+      888
+    ]
+  },
+  "tarot_zodiac_aquarius": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      334,
+      836,
+      386,
+      888
+    ]
+  },
+  "tarot_zodiac_pisces": {
+    "board": "login.png",
+    "frame": 0,
+    "box_px": [
+      558,
+      836,
+      610,
+      888
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/diagram"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="H,0.74:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/columnPast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.12" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/columnCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.37" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/columnFuture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/columnStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.88" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rowTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rowAspiration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.125" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rowExternal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rowCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.375" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rowHopes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rowFoundation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.625" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rowOutcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+        <ImageView
+            android:id="@+id/situation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnCenter"
+            app:layout_constraintEnd_toEndOf="@id/columnCenter"
+            app:layout_constraintTop_toTopOf="@id/rowCenter" />
+        <ImageView
+            android:id="@+id/challenge"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="90"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnCenter"
+            app:layout_constraintEnd_toEndOf="@id/columnCenter"
+            app:layout_constraintTop_toTopOf="@id/rowCenter" />
+        <ImageView
+            android:id="@+id/aspiration"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnCenter"
+            app:layout_constraintEnd_toEndOf="@id/columnCenter"
+            app:layout_constraintTop_toTopOf="@id/rowAspiration" />
+        <ImageView
+            android:id="@+id/foundation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnCenter"
+            app:layout_constraintEnd_toEndOf="@id/columnCenter"
+            app:layout_constraintTop_toTopOf="@id/rowFoundation" />
+        <ImageView
+            android:id="@+id/past"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnPast"
+            app:layout_constraintEnd_toEndOf="@id/columnPast"
+            app:layout_constraintTop_toTopOf="@id/rowCenter" />
+        <ImageView
+            android:id="@+id/future"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnFuture"
+            app:layout_constraintEnd_toEndOf="@id/columnFuture"
+            app:layout_constraintTop_toTopOf="@id/rowCenter" />
+        <ImageView
+            android:id="@+id/internal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnStaff"
+            app:layout_constraintEnd_toEndOf="@id/columnStaff"
+            app:layout_constraintTop_toTopOf="@id/rowTop" />
+        <ImageView
+            android:id="@+id/external"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnStaff"
+            app:layout_constraintEnd_toEndOf="@id/columnStaff"
+            app:layout_constraintTop_toTopOf="@id/rowExternal" />
+        <ImageView
+            android:id="@+id/hopes"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnStaff"
+            app:layout_constraintEnd_toEndOf="@id/columnStaff"
+            app:layout_constraintTop_toTopOf="@id/rowHopes" />
+        <ImageView
+            android:id="@+id/outcome"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:rotation="0"
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintDimensionRatio="H,0.56:1"
+            app:layout_constraintStart_toStartOf="@id/columnStaff"
+            app:layout_constraintEnd_toEndOf="@id/columnStaff"
+            app:layout_constraintTop_toTopOf="@id/rowOutcome" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

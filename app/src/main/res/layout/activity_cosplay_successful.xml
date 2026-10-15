@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".ui.cosplay.CosplaySuccessfulActivity">
+
+
+    <!-- layoutActionBar -->
+    <FrameLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/starSS"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+
+        android:layout_marginHorizontal="@dimen/dp_18"
+        android:src="@drawable/four_star_ss"
+        app:layout_constraintDimensionRatio="284:60"
+        app:layout_constraintEnd_toEndOf="@id/containerVS"
+        app:layout_constraintStart_toStartOf="@id/containerVS"
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerVS"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_20"
+
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/starSS">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHalf1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHalfV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHalfV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <!--    cvImage-->
+        <FrameLayout
+            android:id="@+id/cvImage"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_0"
+            android:layout_marginTop="@dimen/dp_0"
+            android:layout_marginBottom="@dimen/dp_0"
+            android:visibility="visible"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="@dimen/dp_12"
+                app:strokeWidth="@dimen/dp_2"
+                app:layout_constraintDimensionRatio="156:152"
+                app:strokeColor="@color/figma_primary">
+
+
+                <ImageView
+                    android:id="@+id/imvImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_0"
+                    android:scaleType="fitCenter"
+                    tools:src="@color/black" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:fontFamily="@font/baloo_2_bold"
+        android:gravity="center"
+        android:text="10/100"
+        android:textColor="@color/figma_primary"
+        android:textSize="@dimen/sp_24"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerVS" />
+
+    <!--    lnlBottom-->
+    <FrameLayout
+        android:id="@+id/lnlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_46"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:paddingHorizontal="@dimen/dp_15"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tvProgress">
+
+        <include
+            android:id="@+id/includeLayoutBottom"
+            layout="@layout/layout_bottom_cosplay" />
+
+    </FrameLayout>
+
+
+    <!--    &lt;!&ndash;    flNativeCollab&ndash;&gt;-->
+    <FrameLayout
+        android:id="@+id/flNativeCollab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/ads_shimmer_collap_native" />
+    </FrameLayout>
+
+
+    <!--    &lt;!&ndash;    flNativeCollab&ndash;&gt;-->
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/flNativeCollab"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+    <!--    </FrameLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

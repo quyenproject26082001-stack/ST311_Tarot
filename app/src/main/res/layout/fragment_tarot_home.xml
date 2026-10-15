@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/greeting"
+        style="@style/TarotTextHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tarot_nunito_medium" />
+    <TextView
+        style="@style/TarotTextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/tarot_discover" />
+    <FrameLayout
+        android:id="@+id/horoscope"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/tarot_bg_horoscope"
+        android:clipToOutline="true"
+        android:clickable="true"
+        android:focusable="true">
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="62dp"
+            android:layout_gravity="bottom|start"
+            android:src="@drawable/tarot_horoscope_sun"
+            android:scaleType="fitXY"
+            android:importantForAccessibility="no" />
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:src="@drawable/tarot_horoscope_moon"
+            android:scaleType="fitXY"
+            android:importantForAccessibility="no" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:paddingHorizontal="6dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/tarot_bg_outline"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/zodiacIcon"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:importantForAccessibility="no" />
+                <TextView
+                    android:id="@+id/zodiacName"
+                    style="@style/TarotText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/tarot_gold"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <TextView
+                style="@style/TarotTextHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/tarot_weekly_horoscope" />
+            <TextView
+                style="@style/TarotTextBody"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:textStyle="italic"
+                android:text="@string/tarot_horoscope_unavailable" />
+            <TextView
+                style="@style/TarotTextHeading"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="end|center_vertical"
+                android:textSize="14sp"
+                android:text="@string/tarot_view_horoscope" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView
+        style="@style/TarotTextHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunito_regular"
+        android:text="@string/tarot_quick_actions" />
+    <LinearLayout
+        android:id="@+id/quickActions"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" />
+    <TextView
+        style="@style/TarotTextHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_regular"
+        android:text="@string/tarot_recent" />
+    <LinearLayout
+        android:id="@+id/recentReadings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical" />
+    <LinearLayout
+        android:id="@+id/emptyRecent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="124dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/tarot_empty_reading"
+            android:scaleType="fitCenter"
+            android:importantForAccessibility="no" />
+        <TextView
+            style="@style/TarotText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="@string/tarot_no_recent" />
+    </LinearLayout>
+</LinearLayout>

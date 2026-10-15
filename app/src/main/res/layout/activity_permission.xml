@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.permission.PermissionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_app" />
+
+    <FrameLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <include android:id="@+id/actionBar" layout="@layout/layout_actionbar" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgPermission"
+        android:layout_width="@dimen/dp_216"
+        android:layout_height="@dimen/dp_216"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_permission_figma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/txtPermission"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPermission">
+
+        <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+            android:id="@+id/txtPer"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nunito_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textColor="#172A2A"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:outerStrokeColor="@color/transparent"
+            app:outerStrokeWidth="@dimen/dp_0"
+            tools:text="Allow Therian OC Maker to access photos, media and files on your device" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnStorage"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/bg_language_selected_v2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPermission">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:fontFamily="@font/baloo_2_bold"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="Media"
+            android:textColor="@color/figma_primary"
+            android:textSize="@dimen/sp_18" />
+
+        <ImageView
+            android:id="@+id/swPermission"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:contentDescription="@string/storage"
+            android:src="@drawable/bg_permission_switch_off" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnNotification"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/bg_language_normal_v2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPermission">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:fontFamily="@font/baloo_2_bold"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="Media"
+            android:textColor="#172A2A"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/swNotification"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:contentDescription="@string/notification"
+            android:src="@drawable/bg_permission_switch_off" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_200"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/continue_per"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/dp_35"
+        android:textColor="#172A2A"
+        android:drawablePadding="@dimen/dp_10"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableEnd="@drawable/arrow_next"
+        app:layout_constraintTop_toBottomOf="@id/permissionButtonsBottom" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/permissionButtonsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="btnStorage,btnNotification" />
+
+    <FrameLayout
+        android:id="@+id/native_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <include layout="@layout/ads_native_big_btn_bottom_shimmer" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ShapeAppearance.LeftRoundedCard" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_28</item>
+        <item name="cornerSizeBottomLeft">@dimen/dp_28</item>
+        <item name="cornerSizeTopRight">@dimen/dp_0</item>
+        <item name="cornerSizeBottomRight">@dimen/dp_0</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BaseProject" parent="Theme.Material3.Light.NoActionBar">
+        <item name="sharedActionBarLeftStyle">@style/SharedActionBarLeft</item>
+        <item name="sharedActionBarRightStyle">@style/SharedActionBarRight</item>
+        <item name="sharedActionBarTitleStyle">@style/SharedActionBarTitle</item>
+        <!-- Safe defaults for the hidden Tarot actions in the shared bar. -->
+        <item name="tarotInk">#172A2A</item>
+        <item name="tarotInput">#FBF9F2</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="CutCornerCardShape" parent="" tools:keep="@style/CutCornerCardShape">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">@dimen/dp_12</item>
+    </style>
+
+    <style name="border_image_5" parent="" tools:keep="@style/border_image_5">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp_5</item>
+    </style>
+
+    <style name="border_image_6" parent="" tools:keep="@style/border_image_6">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp_4</item>
+    </style>
+
+    <style name="border_image_99" parent="" tools:keep="@style/border_image_99">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp_99</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Pony.Rounded20" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp_40</item>
+    </style>
+
+    <style name="single_marquee">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="BaseDialog" parent="Theme.AppCompat.Light.Dialog.Alert" tools:keep="@style/BaseDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp_25</item>
+    </style>
+
+    <style name="Theme.BaseProject" parent="Base.Theme.BaseProject" />
+</resources>

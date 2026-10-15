@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.my_creation.MyCreationActivity">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/frmList"
+        android:src="@drawable/bg_up"/>
+
+    <!-- layoutActionBar -->
+    <FrameLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar" />
+    </FrameLayout>
+
+    <!--    &lt;!&ndash;    native_ads&ndash;&gt;-->
+        <FrameLayout
+            android:id="@+id/native_ads"
+        android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layoutActionBar">
+
+            <include layout="@layout/ads_native_collap_banner_shimmer" />
+        </FrameLayout>
+
+
+
+    <!--    frmList-->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frmList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginBottom="@dimen/dp_0"
+        app:layout_goneMarginTop="@dimen/dp_0"
+        tools:background="@drawable/bg_down"
+        android:layout_marginTop="@dimen/dp_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvType" />
+    <!--    cvType-->
+    <FrameLayout
+        android:id="@+id/cvType"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:elevation="@dimen/dp_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="260:40"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintWidth_percent="0.72222222222"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/native_ads"
+        app:strokeColor="@color/transparent"
+        app:strokeWidth="@dimen/dp_0"
+        app:cardElevation="@dimen/dp_0">
+
+        <!-- background tab full-width, đổi src theo tab được chọn -->
+        <ImageView
+            android:id="@+id/imvTabBackground"
+            android:layout_width="match_parent"
+            tools:background="@drawable/bg_avatar_slt"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--            btnMyPixel-->
+            <FrameLayout
+                android:id="@+id/btnMyPixel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/space"
+                android:layout_weight="1">
+
+                <com.aaa.bbb.ccc.core.custom.text.OuterStrokeTextView
+                    android:id="@+id/tvMyPride"
+                    style="@style/single_marquee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/baloo_2_bold"
+                    android:gravity="center"
+                    android:text="@string/character"
+                    android:textColor="@color/app"
+                    android:textSize="@dimen/sp_18" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/space"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnMyDesign"
+                app:layout_constraintStart_toEndOf="@id/btnMyPixel"
+                app:layout_constraintWidth_percent="0.04615384615"
+                />
+            <!--            btnMyDesign-->
+            <FrameLayout
+                android:id="@+id/btnMyDesign"
+                android:layout_width="@dimen/dp_0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/space"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.aaa.bbb.ccc.core.custom.text.OuterStrokeTextView
+                    android:id="@+id/tvMyDesign"
+                    style="@style/single_marquee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/baloo_2_bold"
+                    android:gravity="center"
+                    android:text="@string/my_design"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <!--    flBottomView (share/download - shown in select mode) -->
+    <FrameLayout
+        android:id="@+id/flBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_0"
+        android:elevation="@dimen/dp_2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/bottomView"
+            layout="@layout/layout_bottom_creation" />
+
+    </FrameLayout>
+
+    <!--    lnlBottom (whatsapp/telegram) -->
+    <FrameLayout
+        android:id="@+id/lnlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_0"
+        android:paddingHorizontal="@dimen/dp_0"
+        android:elevation="@dimen/dp_1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/flBottomView"
+        app:layout_goneMarginBottom="@dimen/dp_0">
+
+        <include layout="@layout/layout_bottom" />
+
+    </FrameLayout>
+
+
+    <!--    &lt;!&ndash;    flNativeCollab&ndash;&gt;-->
+        <FrameLayout
+            android:id="@+id/flNativeCollab"
+        android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

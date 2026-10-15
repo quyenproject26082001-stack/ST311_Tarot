@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tarot_select_cards">
+        <item quantity="one">Please choose %1$d card for your reading.</item>
+        <item quantity="other">Please choose %1$d cards for your reading.</item>
+    </plurals>
+</resources>
