@@ -1,57 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="108dp"
     android:layout_marginBottom="12dp"
-    android:padding="6dp"
-    android:gravity="center_vertical"
     android:background="@drawable/tarot_bg_panel"
-    android:orientation="horizontal"
     android:clickable="true"
     android:focusable="true">
+    <!-- Reference thumbnail envelope: (64,218)-(262,414) at 720px. -->
     <FrameLayout
         android:id="@+id/thumbnailHost"
-        android:layout_width="88dp"
-        android:layout_height="match_parent" />
+        android:layout_width="99dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp" />
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="12dp"
+        android:layout_gravity="center_vertical"
         android:orientation="vertical">
         <TextView
             android:id="@+id/readingTitle"
             style="@style/TarotText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp" />
+            android:layout_height="22dp"
+            android:paddingEnd="48dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/tarot_nunito_medium"
+            android:textSize="16sp"
+            android:lineHeight="20sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
         <TextView
             android:id="@+id/readingDate"
             style="@style/TarotTextBody"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:textSize="9sp" />
+            android:layout_height="14dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:textSize="10sp"
+            android:lineHeight="14sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
         <TextView
             android:id="@+id/readingSummary"
             style="@style/TarotText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="18dp"
             android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
             android:maxLines="1"
             android:ellipsize="end"
-            android:textSize="10sp" />
+            android:textSize="12sp"
+            android:lineHeight="16sp" />
     </LinearLayout>
     <com.aaa.bbb.ccc.tarot.TarotIcon
         android:id="@+id/favorite"
-        android:padding="10dp"
+        android:padding="11dp"
         android:background="@drawable/tarot_bg_favorite"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_gravity="top"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:layout_gravity="top|end"
         app:tarotIconName="heart"
         app:tarotIconColor="?attr/tarotMuted"
         android:contentDescription="@string/tarot_favorite" />
-</LinearLayout>
+</FrameLayout>

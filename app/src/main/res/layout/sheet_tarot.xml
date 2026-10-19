@@ -4,12 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="28dp"
     android:background="@drawable/tarot_bg_sheet"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="32dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
         <TextView
@@ -22,7 +24,10 @@
         <com.aaa.bbb.ccc.tarot.TarotIcon
             android:id="@+id/close"
             style="@style/TarotIconButton"
-            android:padding="12dp"
+            android:layout_marginEnd="-4dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="8dp"
             app:tarotIconName="close"
             app:tarotIconColor="?attr/tarotInk"
             android:contentDescription="@string/tarot_close" />
@@ -31,5 +36,6 @@
         android:id="@+id/sheetContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:orientation="vertical" />
 </LinearLayout>

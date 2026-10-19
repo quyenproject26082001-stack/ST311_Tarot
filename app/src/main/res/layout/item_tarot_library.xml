@@ -3,10 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="108dp"
-    android:layout_marginHorizontal="4dp"
+    android:layout_marginHorizontal="8dp"
     android:layout_marginBottom="8dp"
     android:background="@drawable/tarot_bg_panel"
-    android:paddingHorizontal="12dp"
+    android:paddingStart="18dp"
+    android:paddingEnd="12dp"
     android:paddingVertical="4dp"
     android:gravity="center_vertical"
     android:orientation="horizontal"
@@ -14,7 +15,7 @@
     android:focusable="true">
     <ImageView
         android:id="@+id/cardImage"
-        android:layout_width="60dp"
+        android:layout_width="56dp"
         android:layout_height="100dp"
         android:scaleType="fitCenter" />
     <LinearLayout
@@ -27,7 +28,11 @@
             android:id="@+id/cardTitle"
             style="@style/TarotTextHeading"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tarot_nunito_semibold"
+            android:lineHeight="22sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
         <TextView
             android:id="@+id/cardMeaning"
             style="@style/TarotText"
@@ -36,6 +41,7 @@
             android:layout_marginTop="8dp"
             android:maxLines="3"
             android:ellipsize="end"
+            android:lineHeight="20sp"
             android:textSize="12sp" />
     </LinearLayout>
 </LinearLayout>

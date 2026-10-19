@@ -7,12 +7,12 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
         android:scrollbars="none">
         <LinearLayout
             android:id="@+id/categories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="16dp"
             android:paddingTop="12dp"
             android:paddingBottom="16dp"
             android:orientation="horizontal" />
@@ -22,7 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:paddingHorizontal="16dp"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="4dp"
         android:paddingBottom="12dp"
         android:clipToPadding="false" />
 </LinearLayout>

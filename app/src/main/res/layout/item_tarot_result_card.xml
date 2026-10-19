@@ -10,14 +10,14 @@
         style="@style/TarotTextHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="12dp"
         android:gravity="center"
         android:visibility="gone" />
     <ImageView
         android:id="@+id/cardImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="12dp"
+        android:layout_marginHorizontal="16dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter" />
     <TextView
@@ -26,6 +26,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/answerLabel"
+        style="@style/TarotTextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="@string/tarot_answer_label"
+        android:visibility="gone" />
     <TextView
         android:id="@+id/meaningNotice"
         style="@style/TarotTextBody"
@@ -42,6 +51,8 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:textSize="14sp"
+        android:justificationMode="inter_word"
+        android:lineHeight="21sp"
         android:visibility="gone" />
     <TextView
         android:id="@+id/interpretation"
@@ -49,5 +60,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:gravity="start|top"
+        android:justificationMode="none"
+        android:lineHeight="21sp"
         android:textSize="14sp" />
 </LinearLayout>

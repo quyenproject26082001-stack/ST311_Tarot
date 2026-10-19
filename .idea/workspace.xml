@@ -80,6 +80,26 @@
           <theme>@style/Theme.BaseProject</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_button.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_dark_small.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_moon.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_wheel_heading.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_character.xml">
         <config>
           <theme>@style/Theme.BaseProject</theme>
@@ -151,6 +171,16 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tarot.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_profile.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_settings.xml">
         <config>
           <theme>@style/Theme.BaseProject</theme>
         </config>
@@ -245,6 +275,26 @@
           <theme>@style/Theme.BaseProject</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_home.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_selection.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_settings.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_spreads.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_background_color.xml">
         <config>
           <theme>@style/Theme.BaseProject</theme>
@@ -301,6 +351,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_speech.xml">
+        <config>
+          <theme>@style/Theme.BaseProject</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_tarot_setting.xml">
         <config>
           <theme>@style/Theme.BaseProject</theme>
         </config>
@@ -366,7 +421,75 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31619e55-3aba-4269-9734-fe301ba45adc" name="Changes" comment="make it for home" />
+    <list default="true" id="31619e55-3aba-4269-9734-fe301ba45adc" name="Changes" comment="make it for home">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_sw_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_sw_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/guide_spread1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lock_spread1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spread_guide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/SharedActionBarTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/SharedActionBarTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/base/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/base/BaseActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/ViewExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/ViewExtensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/BirthdayWheel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/BirthdayWheel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotIcon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotIcon.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotModels.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotModels.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotProfileActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotProfileActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotSettingsScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotSettingsScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotUi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotUi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/home/HomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/home/HomeActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/MyCreationActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/MyCreationActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/trending/TrendingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/trending/TrendingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_pair.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_pair.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_zodiac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_zodiac.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_moon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_moon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_tarot_guidance.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_tarot_guidance.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_selection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tarot_spreads.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_intro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_category.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_deck.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_deck.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_library.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_library_grid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_library_grid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_result_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_result_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_setting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_spread.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_spread.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_tab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_tab.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_zodiac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_zodiac.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_actionbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_actionbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sheet_tarot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sheet_tarot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_birthday_wheel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_birthday_wheel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_empty_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_empty_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_field_name.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_field_name.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_pair.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_pair.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/actionbar_styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/actionbar_styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/tarot_design.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/tarot_design.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/tarot_dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/tarot_dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/tarot_strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/tarot_strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/TarotRulesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/TarotRulesTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TAROT_IMPLEMENTATION.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TAROT_IMPLEMENTATION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/design/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -380,7 +503,7 @@
       <entry key="_C:/APPS/st243/ST225_CoupleMaker-KissCreator" value="3BqLBBF0BlxIOX6FeZEfr2n5Wy6" />
     </persistenceIdMap>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PhysicalDevice::serial=R9PT410K34E]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=/home/lequyen/.android/avd/Pixel_Tablet.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -438,7 +561,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:LVTapp/ST308_Therian-OC-Maker-2.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/quyenproject26082001-stack/ST311_Tarot.git&quot;,
     &quot;accountId&quot;: &quot;b6ac70a7-dde1-4148-aa08-a62a477796dd&quot;
   }
 }</component>
@@ -458,44 +581,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.androidTest.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.main.executor&quot;: &quot;Debug&quot;,
-    &quot;ApkExportedModule&quot;: &quot;ST300_Therian_OC_Maker.app&quot;,
-    &quot;ExportApk.ApkPathForST243_Avatar_Maker_Celebrities.app&quot;: &quot;C:\\APPS\\st243\\ST225_CoupleMaker-KissCreator\\app&quot;,
-    &quot;ExportApk.ApkPathForST300_Therian_OC_Maker.app&quot;: &quot;/home/lequyen/LVT/ST300_Therian_OC_Maker/app&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.developerphil.adbidea.selecteddevices&quot;: &quot;R9PT410K34E&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;release/v1.0.0&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lequyen/LVT/311/ST311_Daily_Tarot_Reading/app/src/main/res/drawable&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;memory.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.androidTest.executor": "Run",
+    "Android App.app.executor": "Run",
+    "Android App.main.executor": "Debug",
+    "ApkExportedModule": "ST300_Therian_OC_Maker.app",
+    "ExportApk.ApkPathForST243_Avatar_Maker_Celebrities.app": "C:\\APPS\\st243\\ST225_CoupleMaker-KissCreator\\app",
+    "ExportApk.ApkPathForST300_Therian_OC_Maker.app": "/home/lequyen/LVT/ST300_Therian_OC_Maker/app",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.developerphil.adbidea.selecteddevices": "R9PT410K34E",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/lequyen/LVT/311/ST311_Daily_Tarot_Reading/app/src/main/res/drawable-nodpi",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "memory.settings"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ExportApk.BuildVariants&quot;: [
-      &quot;release&quot;
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-nodpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/font" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="D:\st300\app\src\main\res\drawable" />
-      <recent name="C:\APPS\st243\ST225_CoupleMaker-KissCreator\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.androidTest">
@@ -864,12 +987,12 @@
       <map>
         <entry key="com.aaa.bbb.ccc">
           <value>
-            <CheckInfo lastCheckTimestamp="1791969270206" />
+            <CheckInfo lastCheckTimestamp="1792374445515" />
           </value>
         </entry>
         <entry key="com.aaa.bbb.ccc.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1791969270228" />
+            <CheckInfo lastCheckTimestamp="1792374445514" />
           </value>
         </entry>
         <entry key="com.avatar.maker.celebrity">

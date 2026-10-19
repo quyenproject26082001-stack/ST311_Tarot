@@ -340,11 +340,10 @@ class MyCreationActivity : WhatsappSharingActivity<ActivityAlbumBinding>() {
             btnActionBarRight.setImageResource(R.drawable.ic_delete_creation)
             btnActionBarRight.layoutParams = btnActionBarRight.layoutParams.apply {
                 width = resources.getDimensionPixelSize(R.dimen.dp_46)
-                height = resources.getDimensionPixelSize(R.dimen.dp_46)
+                height = 0 // Vertical bounds belong to the shared XML ActionBar.
             }
             btnActionBarRight.translationX = -resources.getDimension(R.dimen.dp_6)
             btnActionBarNextRight.translationX = resources.getDimension(R.dimen.dp_6)
-            btnActionBarRight.translationY = resources.getDimension(R.dimen.dp_4)
             btnActionBarRight.invisible()
         }
     }
@@ -558,7 +557,6 @@ class MyCreationActivity : WhatsappSharingActivity<ActivityAlbumBinding>() {
         binding.actionBar.apply {
             btnActionBarNextRight.visible()
             btnActionBarNextRight.setImageResource(R.drawable.ic_delete_creation)
-            btnActionBarNextRight.translationY = -resources.getDimension(R.dimen.dp_2)
             btnActionBarRight.visible()
             btnActionBarRight.setImageResource(R.drawable.ic_not_select_all)
             btnActionBarNextRight1.gone()

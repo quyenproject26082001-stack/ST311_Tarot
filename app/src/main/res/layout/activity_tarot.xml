@@ -22,7 +22,7 @@
             layout="@layout/layout_actionbar"
             android:theme="@style/TarotActionBarOverlay"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/tarot_header_height" />
+            android:layout_height="@dimen/shared_actionbar_height" />
         <FrameLayout
             android:id="@+id/screenHost"
             android:layout_width="match_parent"

@@ -1,0 +1,2874 @@
+{
+  "id": "spreads_page_2",
+  "state": {
+    "screen": "spreads",
+    "page": 2,
+    "scrollY": 1040,
+    "maxScrollY": 1280,
+    "pageLimit": 2,
+    "hasMoreContent": true,
+    "truncatedAtPageLimit": true
+  },
+  "activity": "com.aaa.bbb.ccc.ui.home.HomeActivity",
+  "sdk": 37,
+  "density": 2,
+  "densityDpi": 320,
+  "fontScale": 1,
+  "locale": "en-US",
+  "timezone": "Asia\/Bangkok",
+  "rootLocationOnScreen": [
+    0,
+    0
+  ],
+  "views": [
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStub",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "action_bar_root",
+      "class": "FitWindowsLinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStubCompat",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "ContentFrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "pageBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "page",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionBar",
+      "class": "ConstraintLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        720,
+        184
+      ],
+      "visibleBounds": [
+        0,
+        104,
+        720,
+        184
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeftText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvLeftText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "BACK",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "btnReset",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        32,
+        85,
+        112,
+        165
+      ],
+      "visibleBounds": [
+        32,
+        104,
+        112,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "cvLogo",
+      "class": "CardView",
+      "window": "capture",
+      "bounds": [
+        40,
+        85,
+        120,
+        165
+      ],
+      "visibleBounds": [
+        40,
+        104,
+        120,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "tvStart",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": " Language ",
+      "textSizePx": 56,
+      "gravity": 8388659,
+      "lineHeightPx": 88,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "tvCenter",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        64,
+        117,
+        656,
+        171
+      ],
+      "visibleBounds": [
+        64,
+        117,
+        656,
+        171
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Spreads",
+      "textSizePx": 40,
+      "gravity": 17,
+      "lineHeightPx": 54,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "imgCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        320,
+        104,
+        400,
+        184
+      ],
+      "visibleBounds": [
+        320,
+        104,
+        400,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        182,
+        104,
+        262,
+        184
+      ],
+      "visibleBounds": [
+        182,
+        104,
+        262,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight1",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        504,
+        77,
+        592,
+        165
+      ],
+      "visibleBounds": [
+        504,
+        104,
+        592,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        85,
+        696,
+        165
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        600,
+        110,
+        688,
+        198
+      ],
+      "visibleBounds": [
+        600,
+        110,
+        688,
+        184
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightLang",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        85,
+        696,
+        165
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnShare",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvRightText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Next",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "brand",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        128,
+        460,
+        180
+      ],
+      "visibleBounds": [
+        40,
+        128,
+        460,
+        180
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "libraryToggle",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "listMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "gridMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "guideline",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        360,
+        104,
+        360,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "screenHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        184,
+        720,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        184,
+        720,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        -856,
+        720,
+        1724
+      ],
+      "visibleBounds": [
+        0,
+        184,
+        720,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadItems",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        40,
+        -740,
+        680,
+        1692
+      ],
+      "visibleBounds": [
+        40,
+        184,
+        680,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        500,
+        -740,
+        680,
+        -612
+      ],
+      "visibleBounds": [
+        500,
+        -924,
+        680,
+        -796
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        -716,
+        144,
+        -636
+      ],
+      "visibleBounds": [
+        64,
+        -900,
+        144,
+        -820
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -715,
+        656,
+        -674
+      ],
+      "visibleBounds": [
+        168,
+        -899,
+        656,
+        -858
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Daily Reading",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -670,
+        656,
+        -638
+      ],
+      "visibleBounds": [
+        168,
+        -854,
+        656,
+        -822
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Your guidance for today",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        -740,
+        40,
+        -740
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        500,
+        -588,
+        680,
+        -460
+      ],
+      "visibleBounds": [
+        500,
+        -772,
+        680,
+        -644
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        -564,
+        144,
+        -484
+      ],
+      "visibleBounds": [
+        64,
+        -748,
+        144,
+        -668
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -563,
+        656,
+        -522
+      ],
+      "visibleBounds": [
+        168,
+        -747,
+        656,
+        -706
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Weekly Reading",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -518,
+        656,
+        -486
+      ],
+      "visibleBounds": [
+        168,
+        -702,
+        656,
+        -670
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Your challenges and opportunities",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        -588,
+        40,
+        -588
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        500,
+        -436,
+        680,
+        -308
+      ],
+      "visibleBounds": [
+        500,
+        -620,
+        680,
+        -492
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        -412,
+        144,
+        -332
+      ],
+      "visibleBounds": [
+        64,
+        -596,
+        144,
+        -516
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -411,
+        656,
+        -370
+      ],
+      "visibleBounds": [
+        168,
+        -595,
+        656,
+        -554
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Celtic Cross",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -366,
+        656,
+        -334
+      ],
+      "visibleBounds": [
+        168,
+        -550,
+        656,
+        -518
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Explore your situation in depth",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        -436,
+        40,
+        -436
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        500,
+        -284,
+        680,
+        -156
+      ],
+      "visibleBounds": [
+        500,
+        -468,
+        680,
+        -340
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        -260,
+        144,
+        -180
+      ],
+      "visibleBounds": [
+        64,
+        -444,
+        144,
+        -364
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -259,
+        656,
+        -218
+      ],
+      "visibleBounds": [
+        168,
+        -443,
+        656,
+        -402
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Message from the Universe",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -214,
+        656,
+        -182
+      ],
+      "visibleBounds": [
+        168,
+        -398,
+        656,
+        -366
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "A message from two cards",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        -284,
+        40,
+        -284
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        500,
+        -132,
+        680,
+        -4
+      ],
+      "visibleBounds": [
+        500,
+        -316,
+        680,
+        -188
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        -108,
+        144,
+        -28
+      ],
+      "visibleBounds": [
+        64,
+        -292,
+        144,
+        -212
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -107,
+        656,
+        -66
+      ],
+      "visibleBounds": [
+        168,
+        -291,
+        656,
+        -250
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Quick Reading",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        -62,
+        656,
+        -30
+      ],
+      "visibleBounds": [
+        168,
+        -246,
+        656,
+        -214
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "A quick message for you",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        -132,
+        40,
+        -132
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        500,
+        20,
+        680,
+        148
+      ],
+      "visibleBounds": [
+        500,
+        -164,
+        680,
+        -36
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        44,
+        144,
+        124
+      ],
+      "visibleBounds": [
+        64,
+        -140,
+        144,
+        -60
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        45,
+        656,
+        86
+      ],
+      "visibleBounds": [
+        168,
+        -139,
+        656,
+        -98
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Yes \/ No",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        90,
+        656,
+        122
+      ],
+      "visibleBounds": [
+        168,
+        -94,
+        656,
+        -62
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Find clarity on your question",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        20,
+        40,
+        20
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        500,
+        172,
+        680,
+        300
+      ],
+      "visibleBounds": [
+        500,
+        184,
+        680,
+        300
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        196,
+        144,
+        276
+      ],
+      "visibleBounds": [
+        64,
+        196,
+        144,
+        276
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        197,
+        656,
+        238
+      ],
+      "visibleBounds": [
+        168,
+        197,
+        656,
+        238
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Past, Present & Future",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        242,
+        656,
+        274
+      ],
+      "visibleBounds": [
+        168,
+        242,
+        656,
+        274
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "See your journey unfold",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        172,
+        40,
+        172
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        500,
+        324,
+        680,
+        452
+      ],
+      "visibleBounds": [
+        500,
+        324,
+        680,
+        452
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        348,
+        144,
+        428
+      ],
+      "visibleBounds": [
+        64,
+        348,
+        144,
+        428
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        349,
+        656,
+        390
+      ],
+      "visibleBounds": [
+        168,
+        349,
+        656,
+        390
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Situation, Obstacle & Advice",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        394,
+        656,
+        426
+      ],
+      "visibleBounds": [
+        168,
+        394,
+        656,
+        426
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Understand your situation",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        324,
+        40,
+        324
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        476,
+        40,
+        476
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        500,
+        144,
+        580
+      ],
+      "visibleBounds": [
+        64,
+        500,
+        144,
+        580
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        501,
+        656,
+        542
+      ],
+      "visibleBounds": [
+        168,
+        501,
+        656,
+        542
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Relationships",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        546,
+        656,
+        578
+      ],
+      "visibleBounds": [
+        168,
+        546,
+        656,
+        578
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Explore your connection",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        476,
+        40,
+        476
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        628,
+        40,
+        628
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        652,
+        144,
+        732
+      ],
+      "visibleBounds": [
+        64,
+        652,
+        144,
+        732
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        653,
+        656,
+        694
+      ],
+      "visibleBounds": [
+        168,
+        653,
+        656,
+        694
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Love",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        698,
+        656,
+        730
+      ],
+      "visibleBounds": [
+        168,
+        698,
+        656,
+        730
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Explore your love life",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        628,
+        40,
+        628
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        780,
+        40,
+        780
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        804,
+        144,
+        884
+      ],
+      "visibleBounds": [
+        64,
+        804,
+        144,
+        884
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        805,
+        656,
+        846
+      ],
+      "visibleBounds": [
+        168,
+        805,
+        656,
+        846
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Money & Career",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        850,
+        656,
+        882
+      ],
+      "visibleBounds": [
+        168,
+        850,
+        656,
+        882
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Reflect on work and finances",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        780,
+        40,
+        780
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        932,
+        40,
+        932
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        956,
+        144,
+        1036
+      ],
+      "visibleBounds": [
+        64,
+        956,
+        144,
+        1036
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        957,
+        656,
+        998
+      ],
+      "visibleBounds": [
+        168,
+        957,
+        656,
+        998
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Prosperity",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1002,
+        656,
+        1034
+      ],
+      "visibleBounds": [
+        168,
+        1002,
+        656,
+        1034
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Find your path to prosperity",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        932,
+        40,
+        932
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1084,
+        40,
+        1084
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        1108,
+        144,
+        1188
+      ],
+      "visibleBounds": [
+        64,
+        1108,
+        144,
+        1188
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1109,
+        656,
+        1150
+      ],
+      "visibleBounds": [
+        168,
+        1109,
+        656,
+        1150
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Important Decision",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1154,
+        656,
+        1186
+      ],
+      "visibleBounds": [
+        168,
+        1154,
+        656,
+        1186
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Consider your two options",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1084,
+        40,
+        1084
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1236,
+        40,
+        1236
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        1260,
+        144,
+        1340
+      ],
+      "visibleBounds": [
+        64,
+        1260,
+        144,
+        1340
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1261,
+        656,
+        1302
+      ],
+      "visibleBounds": [
+        168,
+        1261,
+        656,
+        1302
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Mind, Body & Spirit",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1306,
+        656,
+        1338
+      ],
+      "visibleBounds": [
+        168,
+        1306,
+        656,
+        1338
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Reflect on your balance",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1236,
+        40,
+        1236
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1388,
+        40,
+        1388
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        1412,
+        144,
+        1492
+      ],
+      "visibleBounds": [
+        64,
+        1412,
+        144,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1413,
+        656,
+        1454
+      ],
+      "visibleBounds": [
+        168,
+        1413,
+        656,
+        1454
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Hidden Potential",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1458,
+        656,
+        1490
+      ],
+      "visibleBounds": [
+        168,
+        1458,
+        656,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Discover your possibilities",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1388,
+        40,
+        1388
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1540,
+        40,
+        1540
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "spreadIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        64,
+        1564,
+        144,
+        1644
+      ],
+      "visibleBounds": [
+        64,
+        1380,
+        144,
+        1460
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "spreadTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1565,
+        656,
+        1606
+      ],
+      "visibleBounds": [
+        168,
+        1381,
+        656,
+        1422
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "What Is Your Calling?",
+      "textSizePx": 30,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "spreadDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        168,
+        1610,
+        656,
+        1642
+      ],
+      "visibleBounds": [
+        168,
+        1426,
+        656,
+        1458
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Reflect on each card's meaning",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "spreadLock",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1540,
+        40,
+        1540
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "0h 0m",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "bottomTabs",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        32,
+        1484,
+        32,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "visibleBounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        81,
+        1560,
+        146,
+        1592
+      ],
+      "visibleBounds": [
+        81,
+        1560,
+        146,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Home",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        207,
+        1484,
+        349,
+        1516
+      ],
+      "visibleBounds": [
+        207,
+        1484,
+        349,
+        1516
+      ],
+      "visibility": 0,
+      "selected": true
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "visibleBounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "visibility": 0,
+      "selected": true
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        233,
+        1560,
+        323,
+        1592
+      ],
+      "visibleBounds": [
+        233,
+        1560,
+        323,
+        1592
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Spreads",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        360,
+        1484,
+        360,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "visibleBounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        410,
+        1560,
+        474,
+        1592
+      ],
+      "visibleBounds": [
+        410,
+        1560,
+        474,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Cards",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        524,
+        1484,
+        524,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "visibleBounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        566,
+        1560,
+        645,
+        1592
+      ],
+      "visibleBounds": [
+        566,
+        1560,
+        645,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "History",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    }
+  ],
+  "images": [
+    {
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        500,
+        172,
+        680,
+        300
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        196,
+        144,
+        276
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        500,
+        324,
+        680,
+        452
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        348,
+        144,
+        428
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        500,
+        144,
+        580
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        652,
+        144,
+        732
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        804,
+        144,
+        884
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        956,
+        144,
+        1036
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        1108,
+        144,
+        1188
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        1260,
+        144,
+        1340
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        64,
+        1412,
+        144,
+        1492
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    }
+  ],
+  "comparisonBounds": [
+    0,
+    104,
+    720,
+    1600
+  ],
+  "artValidated": false,
+  "glideWaitLimitMs": 1000,
+  "widthPx": 720,
+  "heightPx": 1600,
+  "regression": {
+    "status": "capture_only"
+  }
+}

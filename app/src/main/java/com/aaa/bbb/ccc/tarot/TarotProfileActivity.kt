@@ -3,20 +3,18 @@ package com.aaa.bbb.ccc.tarot
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.core.widget.doAfterTextChanged
 import com.aaa.bbb.ccc.R
-import com.aaa.bbb.ccc.core.helper.LanguageHelper
+import com.aaa.bbb.ccc.core.base.BaseActivity
 import com.aaa.bbb.ccc.databinding.ActivityTarotProfileBinding
 import com.aaa.bbb.ccc.ui.home.HomeActivity
 
 /** Profile layout is entirely XML; state is restored when Android recreates it. */
-class TarotProfileActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityTarotProfileBinding
+class TarotProfileActivity : BaseActivity<ActivityTarotProfileBinding>() {
     private lateinit var ui: TarotUi
     private var step = 0
     private var sign = ""
@@ -26,14 +24,26 @@ class TarotProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(if (TarotPreferences(this).dark) R.style.TarotThemeDark else R.style.TarotThemeLight)
-        super.onCreate(savedInstanceState)
-        LanguageHelper.setLocale(this)
-        WindowCompat.setDecorFitsSystemWindows(window, false)
         step = savedInstanceState?.getInt("step") ?: 0
         sign = savedInstanceState?.getString("sign").orEmpty()
         enteredName = savedInstanceState?.getString("name").orEmpty()
         birthday = savedInstanceState?.getString("birthday") ?: birthday
+        super.onCreate(savedInstanceState)
+    }
+
+    override fun setViewBinding() = ActivityTarotProfileBinding.inflate(layoutInflater)
+
+    override fun useDarkStatusBarIcons(): Boolean = !TarotPreferences(this).dark
+
+    override fun initView() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         ui = TarotUi(this, TarotPreferences(this).dark)
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
+            val safe = insets.getInsets(WindowInsetsCompat.Type.statusBars() or
+                WindowInsetsCompat.Type.displayCutout() or WindowInsetsCompat.Type.ime())
+            binding.profilePage.setPadding(0, safe.top, 0, safe.bottom)
+            insets
+        }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 if (step == 1) { capture(); step = 0; render() } else finish()
@@ -41,6 +51,17 @@ class TarotProfileActivity : AppCompatActivity() {
         })
         render()
     }
+
+    override fun viewListener() {
+        binding.nameField.nameInput.doAfterTextChanged {
+            binding.nameField.nameCounter.text = "${it?.length ?: 0}/24"
+        }
+    }
+
+    override fun initActionBar() = Unit // Title/back depend on the current profile step.
+
+    @Suppress("DEPRECATION")
+    override fun onBackPressed() = onBackPressedDispatcher.onBackPressed()
 
     private fun capture() {
         if (step == 1) {
@@ -60,24 +81,21 @@ class TarotProfileActivity : AppCompatActivity() {
 
     private fun render() {
         if (step == 1 && !ProfileValidator.isValidZodiac(sign)) step = 0
-        binding = ActivityTarotProfileBinding.inflate(layoutInflater)
         birthdayWheel = null
-        if (ui.dark) binding.pageBackground.alpha = .06f
-        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
-            val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.ime())
-            binding.profilePage.setPadding(0, bars.top, 0, bars.bottom)
-            insets
-        }
+        binding.zodiacGrid.removeAllViews()
+        binding.birthdayHost.removeAllViews()
+        binding.pageBackground.alpha = if (ui.dark) .06f else 1f
         val chooseSign = step == 0
         binding.actionBar.tvCenter.apply {
             isVisible = true
             setText(if (chooseSign) R.string.tarot_star_sign else R.string.tarot_create_profile)
         }
-        binding.actionBar.btnActionBarLeft.isVisible = !chooseSign
+        // Previous below the form owns step navigation; the reference title is left aligned.
+        binding.actionBar.btnActionBarLeft.isVisible = false
         binding.actionBar.btnActionBarLeft.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
         binding.profileDescription.setText(if (chooseSign) R.string.tarot_star_description else R.string.tarot_profile_description)
-        if (!chooseSign) binding.profileDescription.append("\n" +
-            getString(R.string.tarot_birthday_for_sign, sign, ZodiacDates.range(sign).label))
+        binding.birthdayHost.contentDescription = if (!chooseSign)
+            getString(R.string.tarot_birthday_for_sign, sign, ZodiacDates.range(sign).label) else null
         binding.zodiacGrid.isVisible = chooseSign
         binding.profileFields.isVisible = !chooseSign
         if (chooseSign) {
@@ -85,7 +103,6 @@ class TarotProfileActivity : AppCompatActivity() {
         } else {
             binding.nameField.nameInput.setText(enteredName)
             binding.nameField.nameCounter.text = "${enteredName.length}/24"
-            binding.nameField.nameInput.doAfterTextChanged { binding.nameField.nameCounter.text = "${it?.length ?: 0}/24" }
             birthdayWheel = BirthdayWheel(ui, birthday, sign)
             binding.birthdayHost.addView(birthdayWheel)
         }
@@ -100,9 +117,7 @@ class TarotProfileActivity : AppCompatActivity() {
             }
             else saveProfile()
         }
-        setContentView(binding.root)
         ViewCompat.requestApplyInsets(binding.root)
-        WindowCompat.getInsetsController(window, binding.root).isAppearanceLightStatusBars = !ui.dark
     }
 
     private fun saveProfile() {

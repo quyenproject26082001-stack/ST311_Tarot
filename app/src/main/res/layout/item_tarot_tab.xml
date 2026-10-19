@@ -9,7 +9,7 @@
     android:focusable="true">
     <View
         android:id="@+id/selectionGlow"
-        android:layout_width="70dp"
+        android:layout_width="71dp"
         android:layout_height="16dp"
         android:layout_gravity="top|center_horizontal"
         android:background="@drawable/tarot_bg_nav_selected"
@@ -17,19 +17,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:paddingTop="9dp"
+        android:gravity="top|center_horizontal"
         android:orientation="vertical">
         <com.aaa.bbb.ccc.tarot.TarotIcon
             android:id="@+id/tabIcon"
-            android:padding="4dp"
-            android:layout_width="36dp"
-            android:layout_height="32dp"
+            android:padding="1dp"
+            android:layout_width="26dp"
+            android:layout_height="24dp"
             app:tarotIconColor="?attr/tarotMuted" />
         <TextView
             android:id="@+id/tabLabel"
             style="@style/TarotTextBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp" />
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:lineHeight="16sp" />
     </LinearLayout>
 </FrameLayout>

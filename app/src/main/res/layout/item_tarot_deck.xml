@@ -3,7 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="88dp"
-    android:padding="2dp"
+    android:paddingStart="0dp"
+    android:paddingTop="0dp"
+    android:paddingEnd="2dp"
+    android:paddingBottom="2dp"
     android:scaleType="fitXY"
     android:focusable="true"
     android:src="@drawable/tarot_deck_back" />

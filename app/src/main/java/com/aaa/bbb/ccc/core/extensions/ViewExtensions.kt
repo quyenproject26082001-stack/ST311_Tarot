@@ -1,6 +1,7 @@
 package com.aaa.bbb.ccc.core.extensions
 
 import android.app.Activity
+import android.app.Dialog
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -61,18 +62,21 @@ fun Activity.hideNavigation(isBlack: Boolean = true) {
     // Set status bar color — always transparent so app content shows through
     window.statusBarColor = android.graphics.Color.TRANSPARENT
 
-    window.decorView.systemUiVisibility = if (isBlack) {
-        // Light status bar: dark icons (for light-background screens)
-        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
-                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or
-                View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR or
-                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-    } else {
-        // Default: white icons, transparent background
-        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
-                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or
-                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+    window.decorView.systemUiVisibility = navigationUiFlags(isBlack)
+}
+
+/** Dialogs own a separate window; don't apply Activity's NO_LIMITS geometry to a sheet. */
+fun Dialog.hideNavigation(isBlack: Boolean = true) {
+    window?.apply {
+        statusBarColor = android.graphics.Color.TRANSPARENT
+        decorView.systemUiVisibility = navigationUiFlags(isBlack)
     }
+}
+
+private fun navigationUiFlags(darkStatusIcons: Boolean): Int {
+    val flags = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
+        View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+    return if (darkStatusIcons) flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR else flags
 }
 // ----------------------------
 // Click utils

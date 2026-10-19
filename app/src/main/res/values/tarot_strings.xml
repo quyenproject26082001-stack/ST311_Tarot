@@ -51,7 +51,7 @@
     <string name="tarot_view_reading">View Reading</string>
     <string name="tarot_finish">Finish Reading</string>
     <string name="tarot_guidance">Take a moment to relax. Breathe slowly and think about the question you want to explore. When you are ready, choose your cards.</string>
-    <string name="tarot_guidance_design">Mother Nature, my Spirit Guide, Guardian Angels, and Spirits of the Earth, I ask for your help and guidance.\n\nWith your feet planted comfortably and firmly on the ground, gently close your eyes. Feel the earth beneath your heels, toes, and pads of your feet. Clear your mind of all thoughts but one - joy.\n\nImagine tiny roots growing from the soles of your feet, reaching deep into the ground, connecting and intertwining with the roots of plants and trees around you. Feel your connection with the planet.\n\nThink of the question you want to answer, tap the cards above to shuffle, then continue.</string>
+    <string name="tarot_guidance_design">Mother Nature, my Spirit Guide, Guardian Angels, and Spirits of the Earth, I ask for your help and guidance.\n\nWith your feet planted comfortably and firmly on the ground, gently close your eyes. Feel the earth beneath your heels, toes, and pads of your feet. Clear your mind of all thoughts but one - joy.\n\nImagine tiny roots growing from the soles of your feet, reaching deep into the ground, connecting and intertwining with the roots of plants and trees around you. Feel your connection with the planet.\n\n<b>Think of the question you want to answer, tap the cards above to shuffle, then continue.</b></string>
     <string name="tarot_show_guidance">Show shuffle card screen</string>
     <string name="tarot_reading_locked">Reading Locked</string>
     <string name="tarot_locked_description">This reading is locked for %1$s. Wait or watch an ad to start a new reading.</string>
@@ -65,7 +65,10 @@
     <string name="tarot_light">Light</string>
     <string name="tarot_dark">Dark</string>
     <string name="tarot_reverse_chance">Chance for reversed cards</string>
-    <string name="tarot_reverse_description">This setting controls how often a card appears upside down. 0%% means no reversed cards and 100%% means every card is reversed. This dataset currently contains general meanings only; separate reversed interpretations are not available.</string>
+    <string name="tarot_reverse_description">This setting controls how often a card appears upside down. 0%% means no reversed cards and 100%% means every card is reversed. New readings use original app-authored upright and reversed reflections. Saved readings keep their original text.</string>
+    <string name="tarot_original_interpretation_notice">Original app-authored reflection • For entertainment, not a prediction or professional advice.</string>
+    <string name="tarot_upright_meaning">Upright reflection</string>
+    <string name="tarot_reversed_meaning">Reversed reflection</string>
     <string name="tarot_edit_name">Edit Name</string>
     <string name="tarot_edit_birthday">Edit Birthday</string>
     <string name="tarot_language">Language</string>
@@ -76,6 +79,9 @@
     <string name="tarot_reverse_missing">Reversed card — the supplied dataset has no separate reversed interpretation. The general meaning is shown below.</string>
     <string name="tarot_pair_missing">These are the individual card meanings. A combined interpretation for this pair is not included in the supplied dataset.</string>
     <string name="tarot_answer">The answer to your question is: %1$s</string>
+    <string name="tarot_answer_label">The answer to your question is:</string>
+    <string name="tarot_horoscope_period">Your Horoscope for the Week, from %1$s to %2$s</string>
+    <string name="tarot_pair_unavailable_title">Pair interpretation unavailable</string>
     <string name="tarot_loading">Loading your tarot deck…</string>
     <string name="tarot_retry">Try Again</string>
     <string name="tarot_discard_title">Leave this reading?</string>
@@ -84,6 +90,7 @@
     <string name="tarot_keep_selecting">Keep Selecting</string>
     <string name="tarot_favorite">Favorite</string>
     <string name="tarot_card_back">Face-down card %1$d</string>
+    <string name="tarot_card_reversed">%1$s, reversed</string>
     <string
         name="tarot_rewarded_id"
         translatable="false" />

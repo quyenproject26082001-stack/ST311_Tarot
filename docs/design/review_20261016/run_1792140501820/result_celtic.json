@@ -1,0 +1,2877 @@
+{
+  "id": "result_celtic",
+  "state": {
+    "spread": "CELTIC",
+    "cards": [
+      "the-fool",
+      "the-magician",
+      "the-high-priestess",
+      "the-empress",
+      "the-emperor",
+      "the-hierophant",
+      "the-lovers",
+      "the-chariot",
+      "strength",
+      "the-hermit"
+    ],
+    "page": 1,
+    "scrollY": 0,
+    "maxScrollY": 17099,
+    "pageLimit": 2,
+    "hasMoreContent": true,
+    "truncatedAtPageLimit": false
+  },
+  "activity": "com.aaa.bbb.ccc.ui.home.HomeActivity",
+  "sdk": 37,
+  "density": 2,
+  "densityDpi": 320,
+  "fontScale": 1,
+  "locale": "en-US",
+  "timezone": "Asia\/Bangkok",
+  "rootLocationOnScreen": [
+    0,
+    0
+  ],
+  "views": [
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStub",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "action_bar_root",
+      "class": "FitWindowsLinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStubCompat",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "ContentFrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "pageBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "page",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionBar",
+      "class": "ConstraintLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        720,
+        184
+      ],
+      "visibleBounds": [
+        0,
+        104,
+        720,
+        184
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        12,
+        101,
+        100,
+        189
+      ],
+      "visibleBounds": [
+        12,
+        104,
+        100,
+        184
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeftText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvLeftText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "BACK",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "btnReset",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        32,
+        85,
+        112,
+        165
+      ],
+      "visibleBounds": [
+        32,
+        104,
+        112,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "cvLogo",
+      "class": "CardView",
+      "window": "capture",
+      "bounds": [
+        40,
+        85,
+        120,
+        165
+      ],
+      "visibleBounds": [
+        40,
+        104,
+        120,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "tvStart",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": " Language ",
+      "textSizePx": 56,
+      "gravity": 8388659,
+      "lineHeightPx": 88,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "tvCenter",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        64,
+        117,
+        656,
+        171
+      ],
+      "visibleBounds": [
+        64,
+        117,
+        656,
+        171
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Celtic Cross",
+      "textSizePx": 40,
+      "gravity": 17,
+      "lineHeightPx": 54,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "imgCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        320,
+        104,
+        400,
+        184
+      ],
+      "visibleBounds": [
+        320,
+        104,
+        400,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        217,
+        104,
+        297,
+        184
+      ],
+      "visibleBounds": [
+        217,
+        104,
+        297,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight1",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        504,
+        77,
+        592,
+        165
+      ],
+      "visibleBounds": [
+        504,
+        104,
+        592,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        85,
+        696,
+        165
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        600,
+        110,
+        688,
+        198
+      ],
+      "visibleBounds": [
+        600,
+        110,
+        688,
+        184
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightLang",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        85,
+        696,
+        165
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnShare",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvRightText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Next",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "brand",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        128,
+        460,
+        180
+      ],
+      "visibleBounds": [
+        40,
+        128,
+        460,
+        180
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "libraryToggle",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        568,
+        112,
+        688,
+        176
+      ],
+      "visibleBounds": [
+        568,
+        112,
+        688,
+        176
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "listMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        574,
+        118,
+        628,
+        170
+      ],
+      "visibleBounds": [
+        574,
+        118,
+        628,
+        170
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "gridMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        628,
+        118,
+        682,
+        170
+      ],
+      "visibleBounds": [
+        628,
+        118,
+        682,
+        170
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "guideline",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        360,
+        104,
+        360,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "screenHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        184,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        184,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        184,
+        720,
+        18699
+      ],
+      "visibleBounds": [
+        0,
+        184,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "diagram",
+      "class": "ConstraintLayout",
+      "window": "capture",
+      "bounds": [
+        40,
+        192,
+        680,
+        1057
+      ],
+      "visibleBounds": [
+        40,
+        192,
+        680,
+        1057
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "columnPast",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        117,
+        192,
+        117,
+        192
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "columnCenter",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        277,
+        192,
+        277,
+        192
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "columnFuture",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        437,
+        192,
+        437,
+        192
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "columnStaff",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        603,
+        192,
+        603,
+        192
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowTop",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        40,
+        192,
+        40,
+        192
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowAspiration",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        40,
+        300,
+        40,
+        300
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowExternal",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        40,
+        408,
+        40,
+        408
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowCenter",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        40,
+        516,
+        40,
+        516
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowHopes",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        40,
+        625,
+        40,
+        625
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowFoundation",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        40,
+        733,
+        40,
+        733
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowOutcome",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        40,
+        841,
+        40,
+        841
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "situation",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        219,
+        516,
+        335,
+        722
+      ],
+      "visibleBounds": [
+        219,
+        516,
+        335,
+        722
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "challenge",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        380,
+        561,
+        496,
+        767
+      ],
+      "visibleBounds": [
+        174,
+        561,
+        380,
+        677
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "aspiration",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        219,
+        300,
+        335,
+        506
+      ],
+      "visibleBounds": [
+        219,
+        300,
+        335,
+        506
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "foundation",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        219,
+        733,
+        335,
+        939
+      ],
+      "visibleBounds": [
+        219,
+        733,
+        335,
+        939
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "past",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        59,
+        516,
+        175,
+        722
+      ],
+      "visibleBounds": [
+        59,
+        516,
+        175,
+        722
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "future",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        379,
+        516,
+        495,
+        722
+      ],
+      "visibleBounds": [
+        379,
+        516,
+        495,
+        722
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "internal",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        545,
+        192,
+        661,
+        398
+      ],
+      "visibleBounds": [
+        545,
+        192,
+        661,
+        398
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "external",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        545,
+        408,
+        661,
+        614
+      ],
+      "visibleBounds": [
+        545,
+        408,
+        661,
+        614
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "hopes",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        545,
+        625,
+        661,
+        831
+      ],
+      "visibleBounds": [
+        545,
+        625,
+        661,
+        831
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "outcome",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        545,
+        841,
+        661,
+        1047
+      ],
+      "visibleBounds": [
+        545,
+        841,
+        661,
+        1047
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1097,
+        680,
+        1146
+      ],
+      "visibleBounds": [
+        40,
+        1097,
+        680,
+        1146
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Current Situation",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        1170,
+        648,
+        2151
+      ],
+      "visibleBounds": [
+        72,
+        1170,
+        648,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        2171,
+        680,
+        2209
+      ],
+      "visibleBounds": [
+        40,
+        1987,
+        680,
+        2025
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Fool",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1097,
+        40,
+        1097
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        2225,
+        680,
+        2297
+      ],
+      "visibleBounds": [
+        40,
+        2041,
+        680,
+        2113
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        1097,
+        40,
+        1097
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        2317,
+        680,
+        2691
+      ],
+      "visibleBounds": [
+        40,
+        2133,
+        680,
+        2507
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Fool is a very powerful card in the Tarot deck, usually representing a new beginning -- and, consequently, an end to something in your old life. The Fool's position in your spread reveals which aspects of your life may be subject to change. The Fool portends important decisions ahead which may not be easy to make, and involve an element of risk for you. Approach the changes with optimism and care to gain the most positive outcome.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        2723,
+        680,
+        2772
+      ],
+      "visibleBounds": [
+        40,
+        2539,
+        680,
+        2588
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Immediate Challenge",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        2796,
+        648,
+        3777
+      ],
+      "visibleBounds": [
+        72,
+        2612,
+        648,
+        3593
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        3797,
+        680,
+        3835
+      ],
+      "visibleBounds": [
+        40,
+        3613,
+        680,
+        3651
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Magician",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        2723,
+        40,
+        2723
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        3851,
+        680,
+        3923
+      ],
+      "visibleBounds": [
+        40,
+        3667,
+        680,
+        3739
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        2723,
+        40,
+        2723
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        3943,
+        680,
+        4359
+      ],
+      "visibleBounds": [
+        40,
+        3759,
+        680,
+        4175
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Magician generally associates with intelligent and skillful communicators. His presence in your spread indicates a level of self-confidence and drive which allows you to translate ideas into action. A practical card, the revelations it brings are best applied to the pragmatic and physical aspects of your life, rather then the ephemeral or theoretical. Your success in upcoming ventures in politics or business will likely hinge upon your own strength of will and determination.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        4391,
+        680,
+        4440
+      ],
+      "visibleBounds": [
+        40,
+        4207,
+        680,
+        4256
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Aspiration & Goal",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        4464,
+        648,
+        5445
+      ],
+      "visibleBounds": [
+        72,
+        4280,
+        648,
+        5261
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        5465,
+        680,
+        5503
+      ],
+      "visibleBounds": [
+        40,
+        5281,
+        680,
+        5319
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The High Priestess",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        4391,
+        40,
+        4391
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        5519,
+        680,
+        5591
+      ],
+      "visibleBounds": [
+        40,
+        5335,
+        680,
+        5407
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        4391,
+        40,
+        4391
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        5611,
+        680,
+        6153
+      ],
+      "visibleBounds": [
+        40,
+        5427,
+        680,
+        5969
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Your identification with the High Priestess suggests you possess inherent good judgment, in the form of strong intuition. She may indicate that reason should take second place to instinct. Your head must trust in the wisdom of your heart for a change. Yet, she is also an aide by nature, and her presence in certain parts of your spread could be indicative of someone close to you coming to your rescue with their own intuition. Intuition is most effective at seeing what is hidden to the senses, so the High Priestess may also come as a warning of concealed facts or influences that are, or will be, important to you.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        6185,
+        680,
+        6234
+      ],
+      "visibleBounds": [
+        40,
+        6001,
+        680,
+        6050
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Root Cause & Foundation",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        6258,
+        648,
+        7239
+      ],
+      "visibleBounds": [
+        72,
+        6074,
+        648,
+        7055
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        7259,
+        680,
+        7297
+      ],
+      "visibleBounds": [
+        40,
+        7075,
+        680,
+        7113
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Empress",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        6185,
+        40,
+        6185
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        7313,
+        680,
+        7385
+      ],
+      "visibleBounds": [
+        40,
+        7129,
+        680,
+        7201
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        6185,
+        40,
+        6185
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        7405,
+        680,
+        8031
+      ],
+      "visibleBounds": [
+        40,
+        7221,
+        680,
+        7847
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Traditionally associated with strong maternal influence, the presence of the Empress is excellent news if you are looking for harmony in your marriage or hoping to start a family. Any artistic endeavours you are currently associated with are also likely to be more successful, as this card often finds those exposed to strong bursts of creative or artistic energy. That creative energy may not be in the form of a painting or art project, however: This card also suggests a very strong possibility of pregnancy -- not necessarily yours, but you might be seeing a new addition to your extended family or the family of a close friend in the near future! This card is a good portent for you and those around you.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        8063,
+        680,
+        8112
+      ],
+      "visibleBounds": [
+        40,
+        7879,
+        680,
+        7928
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Recent Past",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        8136,
+        648,
+        9117
+      ],
+      "visibleBounds": [
+        72,
+        7952,
+        648,
+        8933
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        9137,
+        680,
+        9175
+      ],
+      "visibleBounds": [
+        40,
+        8953,
+        680,
+        8991
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Emperor",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        8063,
+        40,
+        8063
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        9191,
+        680,
+        9263
+      ],
+      "visibleBounds": [
+        40,
+        9007,
+        680,
+        9079
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        8063,
+        40,
+        8063
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        9283,
+        680,
+        9867
+      ],
+      "visibleBounds": [
+        40,
+        9099,
+        680,
+        9683
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Counterpart to the Empress, the Emperor is signifies a powerful influence, generally male in nature. This can also include concepts in your life historically considered masculine, such as leadership and authority, self-discipline, and stability through the power of action. Its positive influences suggest you may be on a path to advancement or promotion, but it can also be neutral. Often a companion to those destined to take on greater responsibility, it may presage change or loss that necessitates you stepping forward to shoulder a greater burden than you have in the past. Whatever the impetus for the change, it indicates you may possess an uncommon inner strength that will compel you act and to lead.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        9899,
+        680,
+        9948
+      ],
+      "visibleBounds": [
+        40,
+        9715,
+        680,
+        9764
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Immediate Future",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        9972,
+        648,
+        10953
+      ],
+      "visibleBounds": [
+        72,
+        9788,
+        648,
+        10769
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        10973,
+        680,
+        11011
+      ],
+      "visibleBounds": [
+        40,
+        10789,
+        680,
+        10827
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Hierophant (Pope)",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        9899,
+        40,
+        9899
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        11027,
+        680,
+        11099
+      ],
+      "visibleBounds": [
+        40,
+        10843,
+        680,
+        10915
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        9899,
+        40,
+        9899
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        11119,
+        680,
+        11493
+      ],
+      "visibleBounds": [
+        40,
+        10935,
+        680,
+        11309
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Depending on your own nature, the Hierophant can mean very different things. At its root, it represents doctrine, but doctrine can come in the form of teaching and guidance or rigid authority. Where it appears in your spread is also important, as it is most often indicative of your own approach to the moral, religious, and social conventions of the world. Considered wisely, it helps show the path towards fulfillment.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        11525,
+        680,
+        11574
+      ],
+      "visibleBounds": [
+        40,
+        11341,
+        680,
+        11390
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Internal Influences",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        11598,
+        648,
+        12579
+      ],
+      "visibleBounds": [
+        72,
+        11414,
+        648,
+        12395
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        12599,
+        680,
+        12637
+      ],
+      "visibleBounds": [
+        40,
+        12415,
+        680,
+        12453
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Lovers",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        11525,
+        40,
+        11525
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        12653,
+        680,
+        12725
+      ],
+      "visibleBounds": [
+        40,
+        12469,
+        680,
+        12541
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        11525,
+        40,
+        11525
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        12745,
+        680,
+        13329
+      ],
+      "visibleBounds": [
+        40,
+        12561,
+        680,
+        13145
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Your first instinct will most likely be to associate this card as representing love, but, much like love, it does not possess a simple nature. Not only does love comes in many forms, but the Lovers may indicate important or difficult choices ahead in your life. This is bad, in that the choices it portends are generally mutually exclusive, paths to two very different futures, but also good, in that it also confirms that at least one of those paths will take you to a good place. As such, if you happen to find it in your spread, you should consider it carefully, but not fear it. It tells a story of difficult choices, likely painful, but that the correct decision and a positive outcome are within your grasp.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        13361,
+        680,
+        13410
+      ],
+      "visibleBounds": [
+        40,
+        13177,
+        680,
+        13226
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "External Influences",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        13434,
+        648,
+        14415
+      ],
+      "visibleBounds": [
+        72,
+        13250,
+        648,
+        14231
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        14435,
+        680,
+        14473
+      ],
+      "visibleBounds": [
+        40,
+        14251,
+        680,
+        14289
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Chariot",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        13361,
+        40,
+        13361
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        14489,
+        680,
+        14561
+      ],
+      "visibleBounds": [
+        40,
+        14305,
+        680,
+        14377
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        13361,
+        40,
+        13361
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        14581,
+        680,
+        15123
+      ],
+      "visibleBounds": [
+        40,
+        14397,
+        680,
+        14939
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "You have some hard work ahead of you. It may be resolved quickly, but the Chariot is a powerful card, and the labor you are undertaking will probably trend towards long and difficult. You will quite possibly experience rough roads, long uphill slopes, dead ends, and painful setbacks. A good outcome is only assured if the card is upright, but do not let yourself lose hope: This hard road will instil in you a strength of purpose, the ability to overcome through organization and endurance, and the confidence possessed only by those who have done what they thought they could not. Harnessed correctly, few forces can stand against an individual like that.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        15155,
+        680,
+        15204
+      ],
+      "visibleBounds": [
+        40,
+        14971,
+        680,
+        15020
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Hopes & Fears",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        15228,
+        648,
+        16209
+      ],
+      "visibleBounds": [
+        72,
+        15044,
+        648,
+        16025
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        16229,
+        680,
+        16267
+      ],
+      "visibleBounds": [
+        40,
+        16045,
+        680,
+        16083
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Strength",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        15155,
+        40,
+        15155
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        16283,
+        680,
+        16355
+      ],
+      "visibleBounds": [
+        40,
+        16099,
+        680,
+        16171
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        15155,
+        40,
+        15155
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        16375,
+        680,
+        16917
+      ],
+      "visibleBounds": [
+        40,
+        16191,
+        680,
+        16733
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Strength is the rawest form of power, and you possess it in some form. It is a very happy card if you are fighting illness or recovering from injury. As might be suspected, its influence over you, and the use you put it to, can trend towards light or dark. You likely trend towards facing your problems courageously, head-on, and conquering them through perseverance and will. With this ability to overcome life's obstacles, though, comes the responsibility to control yourself, and it this card may be a warning to take command of your own actions or emotions before they damage you or the people you care about.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "positionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        16949,
+        680,
+        16998
+      ],
+      "visibleBounds": [
+        40,
+        16765,
+        680,
+        16814
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Final Outcome",
+      "textSizePx": 36,
+      "gravity": 17,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        72,
+        17022,
+        648,
+        18003
+      ],
+      "visibleBounds": [
+        72,
+        16838,
+        648,
+        17819
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        18023,
+        680,
+        18061
+      ],
+      "visibleBounds": [
+        40,
+        17839,
+        680,
+        17877
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Hermit",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answerLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        16949,
+        40,
+        16949
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "The answer to your question is:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "meaningNotice",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        18077,
+        680,
+        18149
+      ],
+      "visibleBounds": [
+        40,
+        17893,
+        680,
+        17965
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "General card meaning — a separate interpretation for this position is not included in the supplied dataset.",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "answer",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        16949,
+        40,
+        16949
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 17,
+      "lineHeightPx": 42,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "interpretation",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        18169,
+        680,
+        18543
+      ],
+      "visibleBounds": [
+        40,
+        17985,
+        680,
+        18359
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "There are times in every life, when one must step back and make a careful examination of their situations and decisions. Finding the Hermit in your spread suggests this is just such a time for you. You are in need of a period of inner reflection, away from the current demands of your position. This retreat can be physical, or a search within. Only a deep and honest introspection will lead to a solution, however.",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "bottomTabs",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibility": 8,
+      "selected": false
+    }
+  ],
+  "images": [
+    {
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        12,
+        101,
+        100,
+        189
+      ],
+      "description": "BACK",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        219,
+        516,
+        335,
+        722
+      ],
+      "description": "1. Current Situation: The Fool",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        380,
+        561,
+        496,
+        767
+      ],
+      "description": "2. Immediate Challenge: The Magician",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        219,
+        300,
+        335,
+        506
+      ],
+      "description": "3. Aspiration & Goal: The High Priestess",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        219,
+        733,
+        335,
+        939
+      ],
+      "description": "4. Root Cause & Foundation: The Empress",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        59,
+        516,
+        175,
+        722
+      ],
+      "description": "5. Recent Past: The Emperor",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        379,
+        516,
+        495,
+        722
+      ],
+      "description": "6. Immediate Future: The Hierophant (Pope)",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        545,
+        192,
+        661,
+        398
+      ],
+      "description": "7. Internal Influences: The Lovers",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        545,
+        408,
+        661,
+        614
+      ],
+      "description": "8. External Influences: The Chariot",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        545,
+        625,
+        661,
+        831
+      ],
+      "description": "9. Hopes & Fears: Strength",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        545,
+        841,
+        661,
+        1047
+      ],
+      "description": "10. Final Outcome: The Hermit",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        72,
+        1170,
+        648,
+        2151
+      ],
+      "description": "",
+      "status": "complete"
+    }
+  ],
+  "comparisonBounds": [
+    0,
+    104,
+    720,
+    1600
+  ],
+  "artValidated": false,
+  "glideWaitLimitMs": 1000,
+  "widthPx": 720,
+  "heightPx": 1600,
+  "regression": {
+    "status": "capture_only"
+  }
+}

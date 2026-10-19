@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="328dp"
+    android:height="44dp"
+    android:viewportWidth="328"
+    android:viewportHeight="44">
+    <!-- A translucent theme ink keeps both selection modes readable in dark mode. -->
+    <path
+        android:fillColor="?attr/tarotInk"
+        android:fillAlpha="0.15"
+        android:pathData="M12,0 H316 A12,12 0,0 1,328,12 V32 A12,12 0,0 1,316,44 H12 A12,12 0,0 1,0,32 V12 A12,12 0,0 1,12,0 Z" />
+</vector>

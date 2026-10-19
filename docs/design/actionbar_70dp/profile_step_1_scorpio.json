@@ -1,0 +1,1831 @@
+{
+  "id": "profile_step_1_scorpio",
+  "state": {
+    "step": 1,
+    "selectedSign": "Scorpio"
+  },
+  "activity": "com.aaa.bbb.ccc.tarot.TarotProfileActivity",
+  "sdk": 37,
+  "density": 2,
+  "densityDpi": 320,
+  "fontScale": 1,
+  "locale": "en-US",
+  "timezone": "Asia\/Bangkok",
+  "rootLocationOnScreen": [
+    0,
+    0
+  ],
+  "views": [
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStub",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "action_bar_root",
+      "class": "FitWindowsLinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStubCompat",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "ContentFrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "pageBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "profilePage",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionBar",
+      "class": "ConstraintLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        720,
+        244
+      ],
+      "visibleBounds": [
+        0,
+        104,
+        720,
+        244
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionBarTitleBounds",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        0,
+        144,
+        720,
+        224
+      ],
+      "visibleBounds": [
+        0,
+        144,
+        720,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeftText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvLeftText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "BACK",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "btnReset",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        32,
+        144,
+        112,
+        224
+      ],
+      "visibleBounds": [
+        32,
+        144,
+        112,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "cvLogo",
+      "class": "CardView",
+      "window": "capture",
+      "bounds": [
+        40,
+        144,
+        120,
+        224
+      ],
+      "visibleBounds": [
+        40,
+        144,
+        120,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "tvStart",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": " Language ",
+      "textSizePx": 56,
+      "gravity": 8388659,
+      "lineHeightPx": 88,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "tvCenter",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        144,
+        688,
+        224
+      ],
+      "visibleBounds": [
+        40,
+        144,
+        688,
+        224
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Select Star Sign",
+      "textSizePx": 48,
+      "gravity": 8388627,
+      "lineHeightPx": 66,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "imgCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        320,
+        144,
+        400,
+        224
+      ],
+      "visibleBounds": [
+        320,
+        144,
+        400,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        182,
+        144,
+        262,
+        224
+      ],
+      "visibleBounds": [
+        182,
+        144,
+        262,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight1",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        384,
+        144,
+        472,
+        224
+      ],
+      "visibleBounds": [
+        384,
+        144,
+        472,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        496,
+        144,
+        576,
+        224
+      ],
+      "visibleBounds": [
+        496,
+        144,
+        576,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        600,
+        144,
+        680,
+        224
+      ],
+      "visibleBounds": [
+        600,
+        144,
+        680,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightLang",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        144,
+        696,
+        224
+      ],
+      "visibleBounds": [
+        616,
+        144,
+        696,
+        224
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnShare",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvRightText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Next",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "brand",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "libraryToggle",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "listMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "gridMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "guideline",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        360,
+        104,
+        360,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "profileScroll",
+      "class": "ScrollView",
+      "window": "capture",
+      "bounds": [
+        0,
+        244,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        244,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "profileContent",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        244,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        244,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "profileDescription",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        32,
+        242,
+        688,
+        318
+      ],
+      "visibleBounds": [
+        32,
+        244,
+        688,
+        318
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Select the zodiac sign aligned with your natal sun placement:",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 38,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacGrid",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        24,
+        340,
+        696,
+        1044
+      ],
+      "visibleBounds": [
+        32,
+        340,
+        688,
+        1044
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        110,
+        368,
+        162,
+        420
+      ],
+      "visibleBounds": [
+        110,
+        368,
+        162,
+        420
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        107,
+        425,
+        165,
+        457
+      ],
+      "visibleBounds": [
+        107,
+        425,
+        165,
+        457
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Aries",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        73,
+        459,
+        199,
+        486
+      ],
+      "visibleBounds": [
+        73,
+        459,
+        199,
+        486
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "21\/03 - 19\/04",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        334,
+        368,
+        386,
+        420
+      ],
+      "visibleBounds": [
+        334,
+        368,
+        386,
+        420
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        323,
+        425,
+        397,
+        457
+      ],
+      "visibleBounds": [
+        323,
+        425,
+        397,
+        457
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Taurus",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        297,
+        459,
+        423,
+        486
+      ],
+      "visibleBounds": [
+        297,
+        459,
+        423,
+        486
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "20\/04 - 20\/05",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        558,
+        368,
+        610,
+        420
+      ],
+      "visibleBounds": [
+        558,
+        368,
+        610,
+        420
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        545,
+        425,
+        622,
+        457
+      ],
+      "visibleBounds": [
+        545,
+        425,
+        622,
+        457
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Gemini",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        521,
+        459,
+        647,
+        486
+      ],
+      "visibleBounds": [
+        521,
+        459,
+        647,
+        486
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "21\/05 - 20\/06",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        110,
+        544,
+        162,
+        596
+      ],
+      "visibleBounds": [
+        110,
+        544,
+        162,
+        596
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        98,
+        601,
+        174,
+        633
+      ],
+      "visibleBounds": [
+        98,
+        601,
+        174,
+        633
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Cancer",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        73,
+        635,
+        199,
+        662
+      ],
+      "visibleBounds": [
+        73,
+        635,
+        199,
+        662
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "21\/06 - 22\/07",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        334,
+        544,
+        386,
+        596
+      ],
+      "visibleBounds": [
+        334,
+        544,
+        386,
+        596
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        340,
+        601,
+        379,
+        633
+      ],
+      "visibleBounds": [
+        340,
+        601,
+        379,
+        633
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Leo",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        297,
+        635,
+        423,
+        662
+      ],
+      "visibleBounds": [
+        297,
+        635,
+        423,
+        662
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "23\/07 - 22\/08",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        558,
+        544,
+        610,
+        596
+      ],
+      "visibleBounds": [
+        558,
+        544,
+        610,
+        596
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        554,
+        601,
+        614,
+        633
+      ],
+      "visibleBounds": [
+        554,
+        601,
+        614,
+        633
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Virgo",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        521,
+        635,
+        647,
+        662
+      ],
+      "visibleBounds": [
+        521,
+        635,
+        647,
+        662
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "23\/08 - 22\/09",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        110,
+        720,
+        162,
+        772
+      ],
+      "visibleBounds": [
+        110,
+        720,
+        162,
+        772
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        108,
+        777,
+        163,
+        809
+      ],
+      "visibleBounds": [
+        108,
+        777,
+        163,
+        809
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Libra",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        73,
+        811,
+        199,
+        838
+      ],
+      "visibleBounds": [
+        73,
+        811,
+        199,
+        838
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "23\/09 - 22\/10",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        334,
+        720,
+        386,
+        772
+      ],
+      "visibleBounds": [
+        334,
+        720,
+        386,
+        772
+      ],
+      "visibility": 0,
+      "selected": true
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        318,
+        777,
+        401,
+        809
+      ],
+      "visibleBounds": [
+        318,
+        777,
+        401,
+        809
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Scorpio",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        297,
+        811,
+        423,
+        838
+      ],
+      "visibleBounds": [
+        297,
+        811,
+        423,
+        838
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "23\/10 - 21\/11",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        558,
+        720,
+        610,
+        772
+      ],
+      "visibleBounds": [
+        558,
+        720,
+        610,
+        772
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        525,
+        777,
+        642,
+        809
+      ],
+      "visibleBounds": [
+        525,
+        777,
+        642,
+        809
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Sagittarius",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        521,
+        811,
+        647,
+        838
+      ],
+      "visibleBounds": [
+        521,
+        811,
+        647,
+        838
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "22\/11 - 21\/12",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        110,
+        896,
+        162,
+        948
+      ],
+      "visibleBounds": [
+        110,
+        896,
+        162,
+        948
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        83,
+        953,
+        188,
+        985
+      ],
+      "visibleBounds": [
+        83,
+        953,
+        188,
+        985
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Capricorn",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        73,
+        987,
+        199,
+        1014
+      ],
+      "visibleBounds": [
+        73,
+        987,
+        199,
+        1014
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "22\/12 - 19\/01",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        334,
+        896,
+        386,
+        948
+      ],
+      "visibleBounds": [
+        334,
+        896,
+        386,
+        948
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        311,
+        953,
+        409,
+        985
+      ],
+      "visibleBounds": [
+        311,
+        953,
+        409,
+        985
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Aquarius",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        297,
+        987,
+        423,
+        1014
+      ],
+      "visibleBounds": [
+        297,
+        987,
+        423,
+        1014
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "20\/01 - 18\/02",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        558,
+        896,
+        610,
+        948
+      ],
+      "visibleBounds": [
+        558,
+        896,
+        610,
+        948
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        549,
+        953,
+        618,
+        985
+      ],
+      "visibleBounds": [
+        549,
+        953,
+        618,
+        985
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Pisces",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "zodiacDates",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        521,
+        987,
+        647,
+        1014
+      ],
+      "visibleBounds": [
+        521,
+        987,
+        647,
+        1014
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "19\/02 - 20\/03",
+      "textSizePx": 20,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "profileFields",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        244,
+        0,
+        244
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "nameField",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        244,
+        0,
+        244
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "nameInput",
+      "class": "AppCompatEditText",
+      "window": "capture",
+      "bounds": [
+        0,
+        244,
+        0,
+        244
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388627,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "nameCounter",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        240,
+        0,
+        240
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 16,
+      "gravity": 8388661,
+      "lineHeightPx": 20,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "birthdayHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        244,
+        0,
+        244
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "secondStep",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        366,
+        1092,
+        446,
+        1104
+      ],
+      "visibleBounds": [
+        366,
+        1092,
+        446,
+        1104
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "previous",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        32,
+        1160,
+        32,
+        1160
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "Previous",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "next",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        32,
+        1160,
+        688,
+        1252
+      ],
+      "visibleBounds": [
+        32,
+        1160,
+        688,
+        1252
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Next",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    }
+  ],
+  "images": [
+    {
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        110,
+        368,
+        162,
+        420
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        334,
+        368,
+        386,
+        420
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        558,
+        368,
+        610,
+        420
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        110,
+        544,
+        162,
+        596
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        334,
+        544,
+        386,
+        596
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        558,
+        544,
+        610,
+        596
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        110,
+        720,
+        162,
+        772
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        334,
+        720,
+        386,
+        772
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        558,
+        720,
+        610,
+        772
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        110,
+        896,
+        162,
+        948
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        334,
+        896,
+        386,
+        948
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        558,
+        896,
+        610,
+        948
+      ],
+      "description": "",
+      "status": "local_drawable"
+    }
+  ],
+  "comparisonBounds": [
+    0,
+    104,
+    720,
+    1600
+  ],
+  "artValidated": false,
+  "glideWaitLimitMs": 1000,
+  "widthPx": 720,
+  "heightPx": 1600,
+  "regression": {
+    "status": "capture_only"
+  }
+}

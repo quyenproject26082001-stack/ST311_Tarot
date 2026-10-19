@@ -20,9 +20,9 @@
         <include
             android:id="@+id/actionBar"
             layout="@layout/layout_actionbar"
-            android:theme="@style/TarotActionBarOverlay"
+            android:theme="@style/TarotProfileActionBarOverlay"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/tarot_header_height" />
+            android:layout_height="@dimen/shared_actionbar_height" />
         <ScrollView
             android:id="@+id/profileScroll"
             android:layout_width="match_parent"
@@ -43,8 +43,9 @@
                     style="@style/TarotTextBody"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp" />
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginBottom="11dp"
+                    android:lineHeight="19sp" />
                 <FrameLayout
                     android:id="@+id/zodiacGrid"
                     android:layout_width="match_parent"
@@ -53,27 +54,30 @@
                 <LinearLayout
                     android:id="@+id/profileFields"
                     android:layout_width="match_parent"
-                    android:layout_height="352dp"
+                    android:layout_height="355.5dp"
+                    android:layout_marginTop="-3.5dp"
                     android:orientation="vertical"
                     android:visibility="gone">
                     <TextView
                         style="@style/TarotTextHeading"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/tarot_nunito_medium"
                         android:textSize="16sp"
                         android:text="@string/tarot_name" />
                     <include
                         android:id="@+id/nameField"
                         layout="@layout/tarot_field_name"
                         android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp" />
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8.5dp" />
                     <TextView
                         style="@style/TarotTextHeading"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
+                        android:layout_marginTop="9dp"
                         android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/tarot_nunito_medium"
                         android:textSize="16sp"
                         android:text="@string/tarot_birthday" />
                     <FrameLayout

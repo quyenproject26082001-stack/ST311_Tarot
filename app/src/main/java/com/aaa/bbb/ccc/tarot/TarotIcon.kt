@@ -30,7 +30,7 @@ class TarotIcon @JvmOverloads constructor(context: Context, attrs: AttributeSet?
     private fun updateIcon() {
         val resource = when (kind) {
             "back" -> R.drawable.tarot_ic_back
-            "chevron" -> R.drawable.tarot_ic_chevron
+            "chevron" -> R.drawable.ic_arrow_settings
             "close" -> R.drawable.tarot_ic_close
             "home" -> R.drawable.tarot_ic_home
             "spreads" -> R.drawable.tarot_ic_spreads

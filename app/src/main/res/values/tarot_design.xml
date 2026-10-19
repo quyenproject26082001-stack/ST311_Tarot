@@ -40,6 +40,7 @@
         <item name="android:fontFamily">@font/nunito_regular</item>
         <item name="colorControlActivated">@color/tarot_green</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">?attr/tarotPaper</item>
         <item name="android:navigationBarColor">#FFFFFF</item>
     </style>
     <style
@@ -52,6 +53,21 @@
         <item name="tarotInput">#223A3B</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:navigationBarColor">#172829</item>
+    </style>
+    <!-- Match the colored disc inside the screenshot crop, not the 52px PNG bounds. -->
+    <style name="TarotZodiacIcon" parent="">
+        <item name="android:background">@drawable/tarot_zodiac_icon_mask</item>
+        <item name="android:outlineProvider">background</item>
+        <item name="android:clipToOutline">true</item>
+        <!-- InsetDrawable must define only the mask, not shrink the image content. -->
+        <item name="android:padding">0dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="TarotZodiacBadgeIcon" parent="TarotZodiacIcon">
+        <item name="android:background">@drawable/tarot_zodiac_badge_mask</item>
+    </style>
+    <style name="TarotHoroscopeZodiacIcon" parent="TarotZodiacIcon">
+        <item name="android:background">@drawable/tarot_zodiac_horoscope_mask</item>
     </style>
     <style
         name="TarotText"
@@ -74,6 +90,7 @@
         name="TarotTextBody"
         parent="TarotText">
         <item name="android:textColor">?attr/tarotMuted</item>
+        <item name="android:lineHeight">21sp</item>
     </style>
     <style
         name="TarotButton"

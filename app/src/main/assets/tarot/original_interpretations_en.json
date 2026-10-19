@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "origin": "st311-original-en-v1",
+  "cards": [
+    {
+      "slug": "the-fool",
+      "upright": {"theme": "BEGINNING", "general": "A beginner's openness can make room for an experience you cannot fully plan in advance.", "connection": "Meet the person in front of you instead of making them fit an old relationship story.", "work": "A small trial can teach you more than waiting for a flawless career plan.", "advice": "Take a reversible first step and check the practical risks before committing further.", "answer": "Yes"},
+      "reversed": {"theme": "CAUTION", "general": "A fresh start loses its freedom when enthusiasm ignores consequences or fear prevents any movement.", "connection": "Notice the difference between enjoying spontaneity and avoiding responsibility to another person.", "work": "An appealing opportunity still needs a clear scope, costs and realistic expectations.", "advice": "Name one risk and one safeguard before deciding whether to proceed.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-magician",
+      "upright": {"theme": "ACTION", "general": "Your existing skills become useful when attention, intention and action point in the same direction.", "connection": "Let honest words be supported by behaviour rather than relying on charm alone.", "work": "Bring the tools you already know into a focused piece of work you can finish.", "advice": "Choose one available resource and use it toward a specific result.", "answer": "Yes"},
+      "reversed": {"theme": "CLARITY", "general": "Scattered effort or persuasive appearances can hide a gap between what is promised and what is possible.", "connection": "Look for consistency instead of being carried along by an impressive explanation.", "work": "Check whether a confident plan actually has the skills, time and resources it needs.", "advice": "Reduce the promises and demonstrate one thing that can genuinely be delivered.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-high-priestess",
+      "upright": {"theme": "PATIENCE", "general": "Quiet attention can help you recognise a feeling before you rush to explain or act on it.", "connection": "Listen closely while remembering that intuition cannot confirm someone else's private thoughts.", "work": "Observe the situation and gather the missing context before announcing a conclusion.", "advice": "Write down what you sense, then separate it from what you can verify.", "answer": "Maybe"},
+      "reversed": {"theme": "UNCERTAINTY", "general": "Too much outside noise, secrecy or second-guessing can make your own perspective difficult to hear.", "connection": "Silence may be inviting assumptions that a respectful question could clarify.", "work": "Unspoken information and unclear expectations deserve attention before you continue.", "advice": "Ask for one missing fact and give yourself space to consider the answer.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-empress",
+      "upright": {"theme": "CONNECTION", "general": "Growth is supported by patient care, useful resources and an environment where something can develop naturally.", "connection": "Offer warmth in ways that also leave room for each person's independence.", "work": "A project may benefit more from thoughtful support and steady development than from pressure.", "advice": "Nurture one promising thing without demanding immediate proof of its value.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "Care becomes draining when you give beyond your capacity or expect growth without replenishment.", "connection": "Being needed is not the same as being mutually cared for.", "work": "An under-supported project needs realistic resources, not more personal sacrifice by default.", "advice": "Identify a need of your own and make room to meet it.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-emperor",
+      "upright": {"theme": "STABILITY", "general": "Clear structure can turn good intentions into something dependable and easier to maintain.", "connection": "Reliability and agreed boundaries can create safety without controlling the other person.", "work": "Define responsibilities, limits and a workable plan before adding more commitments.", "advice": "Make one expectation explicit and follow through on your part of it.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "Structure becomes unhelpful when rigidity replaces judgement or no one takes clear responsibility.", "connection": "Check whether a rule protects both people or mainly preserves one person's control.", "work": "Unclear ownership and inflexible processes can both obstruct useful work.", "advice": "Keep the necessary boundary while reconsidering the rule that no longer serves it.", "answer": "No"}
+    },
+    {
+      "slug": "the-hierophant",
+      "upright": {"theme": "LEARNING", "general": "Shared knowledge and established practices can provide a starting point without removing the need for personal judgement.", "connection": "Discuss which values and expectations you genuinely share rather than assuming agreement.", "work": "Learn the reason behind a standard before deciding how to use it.", "advice": "Seek a trustworthy explanation and compare it with your own experience.", "answer": "Yes"},
+      "reversed": {"theme": "CLARITY", "general": "An inherited expectation may need examination before you continue to organise your life around it.", "connection": "Outside opinions do not have to define the form or pace of your connection.", "work": "A familiar method deserves review if it conflicts with the actual problem.", "advice": "Distinguish a meaningful principle from a habit followed only for approval.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-lovers",
+      "upright": {"theme": "CONNECTION", "general": "An important choice becomes clearer when your actions and values can agree with each other.", "connection": "Mutual interest needs honest communication, consent and choices that respect both people.", "work": "Consider whether an agreement fits your priorities as well as its immediate appeal.", "advice": "State what matters most before choosing what you are willing to commit to.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "A mismatch between priorities and behaviour can make even an attractive choice feel divided.", "connection": "Avoid replacing a difficult conversation with assumptions about compatibility.", "work": "Competing commitments may need an honest decision rather than another compromise you cannot sustain.", "advice": "Name the conflict and decide which value should guide the next step.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-chariot",
+      "upright": {"theme": "ACTION", "general": "Progress becomes more deliberate when you choose a direction and coordinate the forces pulling your attention apart.", "connection": "A shared direction works best when neither person has to be dragged toward it.", "work": "Set a clear target and manage distractions instead of measuring effort by speed alone.", "advice": "Choose the next milestone and make your effort serve that direction.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "Pushing harder may increase friction when your motives or commitments are moving in different directions.", "connection": "Trying to steer every outcome can leave little room for a genuine response.", "work": "Busy movement is not always progress; reconsider priorities before increasing the pace.", "advice": "Pause long enough to align the goal, the available energy and the plan.", "answer": "Maybe"}
+    },
+    {
+      "slug": "strength",
+      "upright": {"theme": "STABILITY", "general": "Steady courage can make space for a strong feeling without letting that feeling control your response.", "connection": "Kindness and a firm boundary can belong in the same conversation.", "work": "Patient practice and composure may accomplish more than proving your toughness.", "advice": "Respond firmly but gently to one situation that usually draws an automatic reaction.", "answer": "Yes"},
+      "reversed": {"theme": "RECOVERY", "general": "Exhaustion or self-doubt can make ordinary demands feel like tests of your worth.", "connection": "You do not have to tolerate hurtful behaviour to demonstrate patience or loyalty.", "work": "A difficult task is not evidence that you lack ability or deserve less support.", "advice": "Reduce the self-criticism and choose support or rest before forcing more effort.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-hermit",
+      "upright": {"theme": "PATIENCE", "general": "A period of deliberate solitude can help you identify what you think when outside expectations grow quieter.", "connection": "Time apart can be constructive when its purpose and limits are communicated kindly.", "work": "Focused independent study may reveal the question you need to answer next.", "advice": "Make quiet space for reflection without cutting off useful support.", "answer": "Maybe"},
+      "reversed": {"theme": "CONNECTION", "general": "Reflection can turn into avoidance when you keep searching alone but no longer test your thoughts against experience.", "connection": "Withdrawal may leave an important need unexplained and the other person guessing.", "work": "Working alone on a difficulty may be less useful now than asking a precise question.", "advice": "Reconnect with one trusted person or a small practical task.", "answer": "Maybe"}
+    },
+    {
+      "slug": "wheel-of-fortune",
+      "upright": {"theme": "CHANGE", "general": "Changing circumstances invite flexibility and a clearer distinction between influence and control.", "connection": "A shift in routine can reveal how well you adapt and communicate together.", "work": "Notice changing conditions without treating a lucky opening as a dependable plan.", "advice": "Prepare for more than one outcome and use the options you actually have.", "answer": "Maybe"},
+      "reversed": {"theme": "BALANCE", "general": "A repeating difficulty may call for an adjusted response rather than a judgement that everything is against you.", "connection": "Identify the pattern you repeat instead of expecting circumstances alone to change it.", "work": "Review contingencies when a setback exposes how much depends on one assumption.", "advice": "Change one part of the cycle that is within your influence.", "answer": "Maybe"}
+    },
+    {
+      "slug": "justice",
+      "upright": {"theme": "CLARITY", "general": "Fair judgement asks you to examine evidence, consequences and your own part in the situation.", "connection": "Listen to both perspectives without using fairness to dismiss genuine differences in need.", "work": "Review agreements and responsibilities carefully rather than relying on what seems implied.", "advice": "Make a decision you can explain honestly and accept responsibility for.", "answer": "Maybe"},
+      "reversed": {"theme": "BOUNDARY", "general": "Bias, missing information or avoided accountability may be making a decision less fair than it appears.", "connection": "A disagreement needs a clearer account of what happened, not a quick assignment of blame.", "work": "An uneven arrangement deserves specific questions about expectations and consequences.", "advice": "Check the facts and correct your part without accepting responsibility that is not yours.", "answer": "No"}
+    },
+    {
+      "slug": "the-hanged-man",
+      "upright": {"theme": "PATIENCE", "general": "A deliberate pause can reveal a choice that constant effort has kept out of view.", "connection": "Give each person time to see the situation without demanding an immediate answer.", "work": "Reframe a stalled task before adding more hours to the same approach.", "advice": "Ask what becomes visible when you stop trying to force progress.", "answer": "Maybe"},
+      "reversed": {"theme": "RELEASE", "general": "Waiting stops being useful when it becomes a reason to avoid a choice or ignore your own needs.", "connection": "Keeping a connection at any cost can turn patience into self-erasure.", "work": "An indefinite delay needs a reason, a review point and permission to change direction.", "advice": "Decide what the pause is for and what would tell you it is time to act.", "answer": "Maybe"}
+    },
+    {
+      "slug": "death",
+      "upright": {"theme": "RELEASE", "general": "An ending can make room for a different way of living without making the transition easy or immediate.", "connection": "A familiar relationship pattern may need to end even if the connection continues.", "work": "Consider which outdated commitment or method is preventing a useful next phase.", "advice": "Name what is finished and make space for a gradual transition. This card does not predict physical death.", "answer": "Maybe"},
+      "reversed": {"theme": "CHANGE", "general": "Holding on to a completed chapter may protect familiarity while prolonging the difficulty of moving forward.", "connection": "Notice whether hope for the old arrangement is blocking an honest conversation about the present.", "work": "A transition may need smaller stages, not an attempt to preserve every old condition.", "advice": "Release one manageable part of what no longer fits, without forcing the entire change at once.", "answer": "Maybe"}
+    },
+    {
+      "slug": "temperance",
+      "upright": {"theme": "BALANCE", "general": "A workable balance can emerge from patient adjustments rather than a perfect compromise reached all at once.", "connection": "Different needs can coexist when both people are willing to adjust their pace.", "work": "Combine useful approaches and choose a rhythm that can be maintained.", "advice": "Make one measured adjustment and give yourself time to observe its effect.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "Too much intensity in one direction can make the rest of your commitments harder to sustain.", "connection": "A recurring mismatch in pace or effort deserves discussion rather than more silent adjustment.", "work": "Overextension may be disguising an unrealistic workload or a missing priority.", "advice": "Reduce one excess before adding another solution to the situation.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-devil",
+      "upright": {"theme": "BOUNDARY", "general": "A strong attachment deserves examination when it limits your freedom or keeps a costly pattern in place.", "connection": "Intensity is not a substitute for respect, consent or the ability to say no.", "work": "Question a reward or obligation that keeps asking for more than you can reasonably give.", "advice": "Name the pattern without shaming yourself and identify a source of support.", "answer": "No"},
+      "reversed": {"theme": "RELEASE", "general": "Recognising a limiting attachment can open a path toward more deliberate and independent choices.", "connection": "A healthier connection leaves room for boundaries instead of relying on guilt or control.", "work": "Review which commitments you can renegotiate rather than assuming there is no alternative.", "advice": "Take one supported step that increases your real freedom to choose.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-tower",
+      "upright": {"theme": "CHANGE", "general": "A challenged assumption can reveal that a familiar structure needs attention, not that disaster is guaranteed.", "connection": "An uncomfortable truth may call for honest conversation and a clearer sense of safety.", "work": "When a plan proves fragile, protect what matters before rushing to rebuild it.", "advice": "Return to the facts, stabilise the immediate situation and ask for help where needed.", "answer": "No"},
+      "reversed": {"theme": "CAUTION", "general": "Avoiding an uncomfortable adjustment may allow a known weakness to become more difficult to address.", "connection": "A difficult conversation can be approached gradually without pretending the issue has disappeared.", "work": "Small repairs to a weak plan may be more useful than defending how much effort it already took.", "advice": "Address one visible weakness while you still have room to choose the response.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-star",
+      "upright": {"theme": "RECOVERY", "general": "Hope can become practical when you let renewal happen through small, repeatable acts of care.", "connection": "Openness may return gradually when trust is supported by consistent behaviour.", "work": "A meaningful direction can restore motivation even before visible results arrive.", "advice": "Choose a gentle action that makes the future feel more approachable today.", "answer": "Yes"},
+      "reversed": {"theme": "RECOVERY", "general": "Discouragement can narrow your view of what remains possible without proving that hope was misplaced.", "connection": "Allowing support does not require pretending that disappointment is already resolved.", "work": "Compare progress with a realistic baseline rather than a distant ideal.", "advice": "Lower the demand for certainty and notice one sign of effort or support.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-moon",
+      "upright": {"theme": "UNCERTAINTY", "general": "Strong impressions and incomplete information may be sharing the same space, making certainty difficult to find.", "connection": "Feelings deserve attention, but they cannot verify a suspicion about another person.", "work": "Clarify unclear instructions and assumptions before treating an impression as a reliable plan.", "advice": "Name what is unknown and check one relevant fact before drawing conclusions.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "A confusing impression may become easier to examine when you describe it plainly and allow new information in.", "connection": "A careful conversation can test a fear without turning it into an accusation.", "work": "Write down the uncertainty so it can become a question someone can answer.", "advice": "Welcome useful clarification without insisting that every ambiguity must disappear immediately.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-sun",
+      "upright": {"theme": "FULFILLMENT", "general": "Clarity and uncomplicated enjoyment can help you recognise what is working without needing to exaggerate it.", "connection": "Make room for mutual enjoyment, openness and affection that can be expressed simply.", "work": "Acknowledge a concrete success and make useful learning visible to others.", "advice": "Enjoy one real source of satisfaction while staying honest about the remaining work.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "Pressure to feel positive may be getting in the way of noticing quieter forms of satisfaction.", "connection": "You can appreciate a connection without expecting it to remove every difficult feeling.", "work": "Recognition may be delayed or less visible than you hoped without making the work worthless.", "advice": "Replace the demand for a perfect outcome with one specific thing you can appreciate.", "answer": "Maybe"}
+    },
+    {
+      "slug": "judgement",
+      "upright": {"theme": "CLARITY", "general": "Honest reflection can turn experience into a deliberate choice about how you want to continue.", "connection": "Accountability allows repair when it includes changed behaviour rather than only regret.", "work": "Review what you learned before deciding whether to renew or redirect a commitment.", "advice": "Acknowledge the lesson and choose one action that shows you have heard it.", "answer": "Yes"},
+      "reversed": {"theme": "RELEASE", "general": "Harsh self-judgement or an avoided review can keep an old mistake in charge of a new decision.", "connection": "Distinguish a request for accountability from a demand that someone remain permanently guilty.", "work": "Feedback becomes useful when you turn it into a specific adjustment instead of a verdict on ability.", "advice": "Review the evidence kindly and choose a correction rather than a punishment.", "answer": "Maybe"}
+    },
+    {
+      "slug": "the-world",
+      "upright": {"theme": "FULFILLMENT", "general": "Completion invites you to recognise what has come together and carry its lessons into the next chapter.", "connection": "A shared milestone can be appreciated without assuming that care and communication are now finished.", "work": "Close the loop on a piece of work and acknowledge the people and skills that made it possible.", "advice": "Mark the achievement, finish the handover and give the next beginning some space.", "answer": "Yes"},
+      "reversed": {"theme": "PATIENCE", "general": "Something may feel almost complete while an unfinished detail or unacknowledged lesson still asks for attention.", "connection": "Seek clarity about an unresolved issue rather than demanding a perfect sense of closure.", "work": "A final review may reveal the small task needed before you can honestly call the work finished.", "advice": "Define what completion actually requires and deal with that specific remainder.", "answer": "Maybe"}
+    },
+    {
+      "slug": "king-of-cups",
+      "upright": {"theme": "BALANCE", "general": "Emotional maturity means acknowledging a feeling while still choosing a measured response.", "connection": "Offer steady care without taking over the other person's emotional life.", "work": "Calm leadership can make a tense discussion more constructive without avoiding its substance.", "advice": "Name the feeling, then choose the response that best serves your values.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "Managing appearances may be replacing an honest understanding of what you feel and need.", "connection": "Watch for emotional pressure or withdrawal without assuming you know the motive behind it.", "work": "A calm exterior does not remove the need to address stress or an unfair expectation.", "advice": "Communicate one need directly rather than asking others to infer it.", "answer": "Maybe"}
+    },
+    {
+      "slug": "queen-of-cups",
+      "upright": {"theme": "CONNECTION", "general": "Sensitive attention can help you respond with empathy while keeping your own perspective intact.", "connection": "Listen with care and leave room for the other person to describe their own experience.", "work": "Understanding how a situation affects people can improve the way you approach the task.", "advice": "Make space for a feeling without accepting it as the whole account of the situation.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "Absorbing everyone's feelings can make it difficult to distinguish compassion from emotional overload.", "connection": "Caring does not require anticipating and solving every discomfort another person has.", "work": "Protect enough attention for your responsibilities instead of becoming everyone's unspoken support system.", "advice": "Check your own capacity before agreeing to provide more emotional care.", "answer": "Maybe"}
+    },
+    {
+      "slug": "knight-of-cups",
+      "upright": {"theme": "CONNECTION", "general": "An imaginative, heartfelt approach can give an idea or invitation a more human sense of purpose.", "connection": "Express interest sincerely while leaving the other person free to respond at their own pace.", "work": "Connect a creative proposal with the actual needs of the people it is meant to serve.", "advice": "Turn a meaningful intention into one considerate action you can follow through on.", "answer": "Yes"},
+      "reversed": {"theme": "CLARITY", "general": "An attractive feeling or story may be running ahead of consistent action and realistic expectations.", "connection": "Look beyond romantic language to the reliability and respect present in the connection.", "work": "A beautiful proposal still needs a workable scope and dependable follow-through.", "advice": "Check whether the action matches the intention before investing further effort.", "answer": "Maybe"}
+    },
+    {
+      "slug": "page-of-cups",
+      "upright": {"theme": "BEGINNING", "general": "A small emotional or creative discovery deserves curiosity before you decide whether it must become something larger.", "connection": "A gentle message or honest admission can open a conversation without demanding a particular response.", "work": "Explore an unfamiliar idea with a modest experiment rather than a large promise.", "advice": "Give one new feeling or idea a safe, concrete form of expression.", "answer": "Yes"},
+      "reversed": {"theme": "LEARNING", "general": "Embarrassment, sensitivity or imagined rejection may be preventing a feeling from being expressed clearly.", "connection": "An indirect hint can be misunderstood more easily than a kind, simple statement.", "work": "An early creative effort does not need to be impressive before it can teach you something.", "advice": "Allow an imperfect first expression and stay open to a real response.", "answer": "Maybe"}
+    },
+    {
+      "slug": "ten-of-cups",
+      "upright": {"theme": "FULFILLMENT", "general": "Shared wellbeing grows through ordinary acts of belonging rather than a permanently perfect atmosphere.", "connection": "Notice the routines and mutual consideration that help people feel at home with each other.", "work": "Consider whether success leaves enough room for the relationships and life you value.", "advice": "Support one shared practice that makes belonging tangible.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "An ideal picture of happiness may be concealing different needs or making ordinary difficulties feel like failure.", "connection": "A connection does not have to look harmonious all the time to deserve honest care.", "work": "Revisit a definition of success that asks your personal life to absorb every cost.", "advice": "Discuss a real need instead of defending how the situation is supposed to look.", "answer": "Maybe"}
+    },
+    {
+      "slug": "nine-of-cups",
+      "upright": {"theme": "FULFILLMENT", "general": "Satisfaction becomes easier to recognise when you let an achievement be enough for a moment.", "connection": "Enjoy what a connection offers without making another person responsible for your entire happiness.", "work": "Acknowledge a result you worked for before immediately moving the standard further away.", "advice": "Name something genuinely satisfying and let yourself appreciate it without comparison.", "answer": "Yes"},
+      "reversed": {"theme": "CLARITY", "general": "Getting what you wanted may reveal that the goal did not address the need underneath it.", "connection": "Attention and approval cannot replace a connection that fits your actual emotional needs.", "work": "An impressive result may still need to be weighed against the way it affects your everyday life.", "advice": "Ask what would feel meaningful rather than simply look desirable.", "answer": "Maybe"}
+    },
+    {
+      "slug": "eight-of-cups",
+      "upright": {"theme": "RELEASE", "general": "Leaving a familiar pattern can be an act of honesty when it no longer fits what matters to you.", "connection": "Consider whether the connection can change before assuming that endurance is the only form of loyalty.", "work": "A once-useful goal may deserve review if pursuing it no longer has a meaningful purpose.", "advice": "Clarify what you are moving toward, not only what you want to leave.", "answer": "Maybe"},
+      "reversed": {"theme": "PATIENCE", "general": "Uncertainty about staying or leaving may call for clearer criteria rather than another cycle of departure and return.", "connection": "Identify what would actually need to change for staying to be a willing choice.", "work": "Avoid abandoning a workable path solely to escape a difficulty that can be addressed.", "advice": "Set a review point and define what you need to learn before deciding.", "answer": "Maybe"}
+    },
+    {
+      "slug": "seven-of-cups",
+      "upright": {"theme": "UNCERTAINTY", "general": "Many appealing possibilities can make it harder to distinguish a worthwhile option from an attractive imagined outcome.", "connection": "Notice whether you are relating to the actual person or to a story about their potential.", "work": "Compare options using real requirements and resources, not only how exciting they sound.", "advice": "Choose one option to investigate and write down what evidence would support it.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "A clearer view of your priorities can narrow the possibilities, though clarity still needs a practical test.", "connection": "Replacing an idealised picture with a direct conversation can make the connection easier to understand.", "work": "A shortlist is useful when it leads to a specific next step rather than another round of comparing.", "advice": "Choose a realistic criterion and let it remove one distracting option.", "answer": "Maybe"}
+    },
+    {
+      "slug": "six-of-cups",
+      "upright": {"theme": "CONNECTION", "general": "A familiar memory or simple kindness can remind you of a value worth carrying into the present.", "connection": "Appreciate shared history without assuming that people must remain who they used to be.", "work": "An earlier skill or supportive connection may become useful in a new context.", "advice": "Bring forward a helpful lesson from the past while responding to today's circumstances.", "answer": "Yes"},
+      "reversed": {"theme": "RELEASE", "general": "An idealised past can make the present look unfairly disappointing or keep an outdated role in place.", "connection": "Allow a person to show you who they are now rather than expecting an old connection to repeat.", "work": "Past success is useful experience, not proof that the same method still fits.", "advice": "Keep the lesson and reconsider the expectation attached to it.", "answer": "Maybe"}
+    },
+    {
+      "slug": "five-of-cups",
+      "upright": {"theme": "RECOVERY", "general": "Disappointment deserves acknowledgement without becoming the only part of the situation you can see.", "connection": "Make room for hurt while noticing which forms of care and support are still present.", "work": "A setback may need a careful review, not a conclusion that every effort was wasted.", "advice": "Name what was lost and one resource that remains available.", "answer": "Maybe"},
+      "reversed": {"theme": "RECOVERY", "general": "Recovery may begin when regret makes a little room for attention to return to the present.", "connection": "You can allow a new conversation without pretending that a previous hurt did not matter.", "work": "Reusing a lesson from a setback can help you rebuild confidence in a smaller task.", "advice": "Take one step toward what remains possible instead of requiring yourself to feel fully ready.", "answer": "Yes"}
+    },
+    {
+      "slug": "four-of-cups",
+      "upright": {"theme": "PATIENCE", "general": "Emotional flatness or dissatisfaction can be a cue to examine what you need before accepting more of the same.", "connection": "Let the other person know if you need space rather than leaving silence to explain itself.", "work": "A lack of interest may point to overload, unclear purpose or a genuine mismatch worth examining.", "advice": "Pause to identify the need, then take a fresh look at the options already present.", "answer": "Maybe"},
+      "reversed": {"theme": "BEGINNING", "general": "Renewed interest can open a small route out of disengagement without requiring a dramatic new beginning.", "connection": "Notice an invitation to connect while keeping the freedom to respond honestly.", "work": "A manageable task or different perspective may help you test whether motivation can return.", "advice": "Try one available opening before deciding that nothing can change.", "answer": "Yes"}
+    },
+    {
+      "slug": "three-of-cups",
+      "upright": {"theme": "CONNECTION", "general": "Shared enjoyment and mutual encouragement can make an effort feel less solitary.", "connection": "Friendship and community can support a close relationship without competing with it.", "work": "Acknowledge collaborators and make room for an exchange of useful encouragement.", "advice": "Include someone whose company or contribution you genuinely appreciate.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "Group expectations can become tiring when belonging requires more participation or agreement than you can honestly give.", "connection": "Consider whether outside opinions are interfering with direct communication between the people involved.", "work": "A friendly atmosphere still needs clear responsibilities and room for constructive disagreement.", "advice": "Choose a social boundary that lets you participate without losing your own judgement.", "answer": "Maybe"}
+    },
+    {
+      "slug": "two-of-cups",
+      "upright": {"theme": "CONNECTION", "general": "A useful exchange begins when both sides are willing to see, hear and respond to each other.", "connection": "Look for reciprocity in attention, care and the freedom to express a different need.", "work": "A partnership can develop through a clear agreement about what each person contributes.", "advice": "Offer honest attention and notice whether it is returned respectfully.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "An uneven exchange may need an honest discussion before good intentions can become a workable agreement.", "connection": "Different expectations do not have to be guessed; make space to name them.", "work": "Check whether a collaboration shares both responsibility and recognition fairly.", "advice": "Clarify one mismatch and see whether both sides are willing to respond.", "answer": "Maybe"}
+    },
+    {
+      "slug": "ace-of-cups",
+      "upright": {"theme": "BEGINNING", "general": "An opening for feeling, creativity or care can be welcomed without needing to know its final shape.", "connection": "Allow affection to be expressed honestly while letting the connection develop at a mutual pace.", "work": "A project that feels personally meaningful may offer a useful source of creative energy.", "advice": "Give a new feeling a considerate, practical expression.", "answer": "Yes"},
+      "reversed": {"theme": "RECOVERY", "general": "An emotional beginning may need time and self-care when you feel closed off or stretched too thin.", "connection": "Protect your capacity without assuming that distance is the only way to avoid hurt.", "work": "Creative energy may return more easily after you address strain than after you demand more inspiration.", "advice": "Make room to notice what you feel before asking yourself to give more.", "answer": "Maybe"}
+    },
+    {
+      "slug": "king-of-swords",
+      "upright": {"theme": "CLARITY", "general": "Clear reasoning becomes more useful when it includes responsibility for how a decision affects people.", "connection": "Speak plainly while leaving room for feelings that cannot be resolved by argument alone.", "work": "Use evidence and explicit criteria to make a decision others can understand.", "advice": "Explain your reasoning and check whether the same standard is being applied fairly.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "Certainty can become controlling when an argument leaves no room for correction or a different experience.", "connection": "Being articulate does not give either person the right to define the other's feelings.", "work": "Question a conclusion that depends more on authority than on evidence.", "advice": "Ask what information could change the judgement and make room to hear it.", "answer": "No"}
+    },
+    {
+      "slug": "queen-of-swords",
+      "upright": {"theme": "BOUNDARY", "general": "Discernment can protect your time and attention without requiring you to become distant or unkind.", "connection": "A clear boundary is easier to respect when it is expressed directly rather than through a test.", "work": "State the requirement and remove an ambiguity that keeps creating unnecessary work.", "advice": "Say what is and is not workable while remaining open to a respectful response.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "A protective judgement may have become sharper or more absolute than the present situation requires.", "connection": "Acknowledge the hurt behind a harsh response without making that response the other person's responsibility.", "work": "Direct feedback is most useful when it identifies a change rather than attacking a person's worth.", "advice": "Keep the boundary but choose words that leave a constructive way forward.", "answer": "Maybe"}
+    },
+    {
+      "slug": "knight-of-swords",
+      "upright": {"theme": "ACTION", "general": "A clear objective can mobilise energy quickly, provided speed does not replace attention to consequences.", "connection": "A direct conversation can help if you leave enough room for an answer.", "work": "Use your momentum on a defined task instead of rushing several unfinished arguments forward.", "advice": "Check the aim, then act with enough attention to notice when the situation changes.", "answer": "Yes"},
+      "reversed": {"theme": "CAUTION", "general": "Urgency may be making a reaction feel necessary before its assumptions have been checked.", "connection": "A rapid reply can escalate a disagreement that needs a calmer question.", "work": "Rushed decisions and constant interruption may be costing more time than they save.", "advice": "Slow the next response enough to verify what problem you are actually solving.", "answer": "No"}
+    },
+    {
+      "slug": "page-of-swords",
+      "upright": {"theme": "LEARNING", "general": "Curiosity becomes a strength when you ask clear questions and remain willing to revise an early conclusion.", "connection": "Ask what you need to know without turning interest into surveillance or an interrogation.", "work": "Investigate a new idea and record which parts are established facts and which are guesses.", "advice": "Form one useful question and look for a reliable way to answer it.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "An abundance of information can still produce confusion when context and verification are missing.", "connection": "Avoid treating a fragment of conversation or online activity as proof of someone's intention.", "work": "Check a claim at its source before passing it into a plan or discussion.", "advice": "Pause the speculation and verify one relevant detail.", "answer": "Maybe"}
+    },
+    {
+      "slug": "ten-of-swords",
+      "upright": {"theme": "RELEASE", "general": "A painful limit can be acknowledged without making it a statement about the rest of your life.", "connection": "Recognise when a familiar argument has reached its limit and needs a different response.", "work": "A failed approach may need closure rather than more effort spent proving it should have worked.", "advice": "Protect your immediate needs and choose a manageable next step after the ending.", "answer": "No"},
+      "reversed": {"theme": "RECOVERY", "general": "Recovery can begin before you feel completely free of the story of what went wrong.", "connection": "Let a difficult experience inform your boundaries without deciding that all connections must repeat it.", "work": "Rebuild confidence through a limited task with a clear, achievable finish.", "advice": "Notice one sign of movement and allow the recovery to remain gradual.", "answer": "Maybe"}
+    },
+    {
+      "slug": "nine-of-swords",
+      "upright": {"theme": "RECOVERY", "general": "A worried mind may be repeating possibilities more vividly than the available evidence supports.", "connection": "A fear about the connection is a feeling to discuss carefully, not proof about the other person.", "work": "Write down the actual problem so it can be separated from the worst version you imagine.", "advice": "Seek grounded support and take persistent distress seriously rather than using a card to assess it.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "Speaking about a worry can make it more workable, even when the situation is not fully resolved.", "connection": "Let a trusted person hear the concern without asking them to guarantee the future.", "work": "A concrete conversation about expectations may reduce more strain than another private rehearsal of failure.", "advice": "Turn one recurring worry into a question or request that someone can respond to.", "answer": "Maybe"}
+    },
+    {
+      "slug": "eight-of-swords",
+      "upright": {"theme": "UNCERTAINTY", "general": "A restricted situation calls for distinguishing real barriers from assumptions about what you are allowed to try.", "connection": "Your ability to choose matters; seek appropriate support if a connection feels controlling or unsafe.", "work": "Identify which constraint is fixed and which might change through information, assistance or negotiation.", "advice": "Look for one safe option without blaming yourself for limits you did not create.", "answer": "Maybe"},
+      "reversed": {"theme": "BEGINNING", "general": "An additional option may become visible as you question a limiting assumption or receive practical help.", "connection": "A clearer boundary can restore some choice without requiring you to resolve everything alone.", "work": "Test a new approach on a small scale instead of assuming the old constraint applies everywhere.", "advice": "Take one supported step and use the result to reassess what is possible.", "answer": "Yes"}
+    },
+    {
+      "slug": "seven-of-swords",
+      "upright": {"theme": "CAUTION", "general": "Discretion and strategy can be useful, but avoiding a conversation may create a cost that grows later.", "connection": "Distinguish a reasonable need for privacy from an agreement that requires more honest communication.", "work": "A shortcut deserves review if it transfers hidden risks or work to someone else.", "advice": "Choose an approach you could explain responsibly if asked about it.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "A hidden concern or avoided responsibility may be easier to address through a direct and proportionate conversation.", "connection": "Focus on verified behaviour rather than treating this card as evidence of dishonesty.", "work": "Correct a misleading impression early instead of adding another workaround to maintain it.", "advice": "Clarify what happened and decide what information should be shared responsibly.", "answer": "Maybe"}
+    },
+    {
+      "slug": "six-of-swords",
+      "upright": {"theme": "CHANGE", "general": "A quieter transition can be worthwhile even when some uncertainty or sadness travels with you.", "connection": "A change in the way you communicate may matter more than winning the old argument.", "work": "Move toward a more workable arrangement in stages rather than requiring an instant fresh start.", "advice": "Identify a practical support that would make the transition gentler.", "answer": "Yes"},
+      "reversed": {"theme": "PATIENCE", "general": "A transition may be stalled by an unresolved issue, a missing resource or the understandable pull of familiarity.", "connection": "Changing the setting will not automatically change a pattern that has not been discussed.", "work": "Review the handover or support needed before deciding the move itself was a mistake.", "advice": "Name what still needs attention and address that part of the journey.", "answer": "Maybe"}
+    },
+    {
+      "slug": "five-of-swords",
+      "upright": {"theme": "BOUNDARY", "general": "A conflict deserves a wider view when being right risks becoming more important than the cost of the exchange.", "connection": "An argument can have a clear winner and still leave the connection less safe or understood.", "work": "Consider what a competitive response would do to trust and future cooperation.", "advice": "Choose the issue worth addressing and the point at which stepping back protects your values.", "answer": "No"},
+      "reversed": {"theme": "RECOVERY", "general": "The end of an argument can open room for repair, though agreement cannot be forced or assumed.", "connection": "An apology is more useful when it names a behaviour and leaves space for the other person's response.", "work": "Acknowledge the cost of the conflict and define how the next disagreement should be handled.", "advice": "Offer one responsible repair without demanding immediate reconciliation.", "answer": "Maybe"}
+    },
+    {
+      "slug": "four-of-swords",
+      "upright": {"theme": "RECOVERY", "general": "Rest can be an active part of responding well rather than a reward you must earn by becoming exhausted.", "connection": "Explain a need for quiet time so that a pause is not mistaken for punishment.", "work": "A deliberate break may help you return with a clearer view of an overloaded task.", "advice": "Give the pause a useful boundary and let yourself disengage from one demand.", "answer": "Maybe"},
+      "reversed": {"theme": "BALANCE", "general": "Restlessness or an overdue return can make it difficult to find the right balance between recovery and movement.", "connection": "Check whether time apart is restoring you or postponing a necessary conversation.", "work": "Return gradually if you are ready, or adjust the load if recovery has not been possible.", "advice": "Choose a sustainable pace instead of switching between total withdrawal and overwork.", "answer": "Maybe"}
+    },
+    {
+      "slug": "three-of-swords",
+      "upright": {"theme": "RECOVERY", "general": "A painful feeling becomes easier to approach when it can be acknowledged without being treated as a permanent identity.", "connection": "Speak about a hurt using what you experienced rather than assumptions about another person's motives.", "work": "Difficult feedback or disappointment may need time before it becomes a useful next action.", "advice": "Allow a truthful expression of the feeling and seek care rather than forcing an instant solution.", "answer": "Maybe"},
+      "reversed": {"theme": "RELEASE", "general": "Healing may involve revisiting a hurt differently, not proving that it no longer matters.", "connection": "Forgiveness, repair and renewed closeness are separate choices; none has to be rushed.", "work": "Separate an old disappointment from the facts of the opportunity in front of you.", "advice": "Notice what would help you carry the experience with less self-blame.", "answer": "Maybe"}
+    },
+    {
+      "slug": "two-of-swords",
+      "upright": {"theme": "PATIENCE", "general": "A difficult choice may need a missing fact or a clearer priority before further comparison becomes useful.", "connection": "Keeping the peace indefinitely can leave both people unsure of what you actually need.", "work": "Identify the decision criterion instead of giving every possible outcome equal weight.", "advice": "Ask what information or value would genuinely help you decide.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "Avoided choices can become more manageable once the conflict is named, even if the answer remains imperfect.", "connection": "A simple statement of uncertainty can be more honest than silent agreement.", "work": "Reduce the number of competing inputs and decide who owns the next decision.", "advice": "Choose a manageable decision point rather than waiting for every doubt to vanish.", "answer": "Maybe"}
+    },
+    {
+      "slug": "ace-of-swords",
+      "upright": {"theme": "CLARITY", "general": "A precise question or honest insight can cut through confusion and make the next action easier to define.", "connection": "Clarity grows through direct words that are both truthful and considerate.", "work": "Define the problem in a sentence that another person could test or respond to.", "advice": "Check the insight against evidence and use it to clarify one next step.", "answer": "Yes"},
+      "reversed": {"theme": "UNCERTAINTY", "general": "A promising idea may still be clouded by imprecise language, incomplete evidence or a conclusion reached too quickly.", "connection": "Check what was meant before reacting to the strongest interpretation of a statement.", "work": "An unclear requirement needs clarification before it becomes a confident estimate or commitment.", "advice": "Rewrite the question plainly and verify the assumption underneath it.", "answer": "Maybe"}
+    },
+    {
+      "slug": "king-of-wands",
+      "upright": {"theme": "ACTION", "general": "A clear sense of purpose can help you lead an effort without needing to control every detail of it.", "connection": "Share what you hope to build while making room for the other person's independent aims.", "work": "Set a direction others can understand and support the people who turn it into real work.", "advice": "Turn a broad ambition into a clear invitation and a realistic next milestone.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "A strong vision can become demanding when impatience or pride leaves no room for feedback.", "connection": "Check whether your enthusiasm has become an expectation that others must follow your pace.", "work": "Leadership needs realistic resources and listening, not just the ability to announce a bold target.", "advice": "Ask for one honest objection and use it to improve the plan.", "answer": "Maybe"}
+    },
+    {
+      "slug": "queen-of-wands",
+      "upright": {"theme": "ACTION", "general": "Warm confidence can make it easier to participate fully without needing to be the most impressive person present.", "connection": "Let your interests and personality be visible while welcoming the other person's distinctiveness.", "work": "Bring your initiative to a task where your enthusiasm can encourage rather than overshadow others.", "advice": "Show up as yourself and make one confident contribution.", "answer": "Yes"},
+      "reversed": {"theme": "RECOVERY", "general": "Comparison or pressure to appear confident may be drawing attention away from your actual interests and energy.", "connection": "A need for reassurance can be expressed directly without competing for attention.", "work": "Your contribution does not have to resemble someone else's style to be valuable.", "advice": "Return to one activity you enjoy without measuring how it looks to others.", "answer": "Maybe"}
+    },
+    {
+      "slug": "knight-of-wands",
+      "upright": {"theme": "ACTION", "general": "Energy and a willingness to explore can help an idea move beyond an exciting conversation.", "connection": "Welcome shared adventure while being clear about what you can realistically commit to.", "work": "Use your momentum to test a promising direction with a defined beginning and end.", "advice": "Give your enthusiasm a useful task and a point at which to review the result.", "answer": "Yes"},
+      "reversed": {"theme": "CAUTION", "general": "Restless movement can turn a series of exciting starts into unfinished obligations.", "connection": "Intensity needs dependable follow-through if another person is being asked to rely on it.", "work": "Check which existing commitment would carry the cost of starting something new.", "advice": "Finish or consciously close one task before chasing the next burst of energy.", "answer": "Maybe"}
+    },
+    {
+      "slug": "page-of-wands",
+      "upright": {"theme": "LEARNING", "general": "A new interest deserves an experiment that lets curiosity become experience rather than only a future possibility.", "connection": "A shared activity can reveal more than trying to plan the whole connection in advance.", "work": "Explore a skill or idea through a small piece of work you can actually attempt.", "advice": "Make the first experiment small enough that learning matters more than looking accomplished.", "answer": "Yes"},
+      "reversed": {"theme": "PATIENCE", "general": "Uncertainty about where to begin can scatter a good idea across too many imagined directions.", "connection": "An exciting possibility still needs a clear and considerate invitation.", "work": "A first attempt that feels awkward is useful information, not proof that the idea is worthless.", "advice": "Choose one simple starting point and let the result guide the next adjustment.", "answer": "Maybe"}
+    },
+    {
+      "slug": "ten-of-wands",
+      "upright": {"theme": "BOUNDARY", "general": "Responsibility becomes harder to carry when every task is treated as equally urgent or yours alone.", "connection": "Discuss the actual division of effort rather than measuring love by how much you can endure.", "work": "A heavy workload needs priorities, realistic scope and visible ownership of each obligation.", "advice": "Identify one task to delegate, defer or renegotiate.", "answer": "Maybe"},
+      "reversed": {"theme": "RELEASE", "general": "Putting down a burden can restore capacity, provided you make a deliberate choice about what still needs care.", "connection": "You can ask for a fairer arrangement without proving that you are unable to manage anything.", "work": "Clarify which responsibilities must be completed and which were accumulated without a real agreement.", "advice": "Reduce the load openly instead of quietly dropping work that others still depend on.", "answer": "Yes"}
+    },
+    {
+      "slug": "nine-of-wands",
+      "upright": {"theme": "BOUNDARY", "general": "Experience can support persistence when you protect enough energy to continue thoughtfully.", "connection": "A boundary can honour past experience without assuming that every new interaction is the same threat.", "work": "Use what previous difficulties taught you to make the next attempt more sustainable.", "advice": "Protect one essential limit and ask what support would make continued effort reasonable.", "answer": "Maybe"},
+      "reversed": {"theme": "RECOVERY", "general": "Constant vigilance may be costing more energy than the situation currently requires.", "connection": "Check whether a protective habit is still helping or is preventing a respectful connection from developing.", "work": "Persistence is not always the best response when fatigue is reducing judgement and available capacity.", "advice": "Reassess the demand before deciding that you simply need to push harder.", "answer": "Maybe"}
+    },
+    {
+      "slug": "eight-of-wands",
+      "upright": {"theme": "ACTION", "general": "Momentum can carry several things forward quickly when communication and direction are already clear.", "connection": "Respond to an active conversation with attention rather than assuming speed means deeper understanding.", "work": "Coordinate the next steps so that fast progress does not create avoidable confusion.", "advice": "Confirm the message, the recipient and the next action before moving quickly.", "answer": "Yes"},
+      "reversed": {"theme": "PATIENCE", "general": "Delay or crossed messages may be asking for coordination rather than another attempt to increase urgency.", "connection": "A late reply can have many explanations; clarify expectations instead of inventing a motive.", "work": "Check a dependency or unclear handover before adding pressure to the timeline.", "advice": "Slow down long enough to identify where the message or task is getting stuck.", "answer": "Maybe"}
+    },
+    {
+      "slug": "seven-of-wands",
+      "upright": {"theme": "BOUNDARY", "general": "Standing by a considered position can be useful without requiring you to defend every preference as a battle.", "connection": "Express a limit in terms of your needs rather than an attempt to control the response.", "work": "Protect a justified priority while remaining open to evidence that could improve your position.", "advice": "Decide which principle matters enough to defend and explain it plainly.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "Defending too many positions at once can make it difficult to recognise which disagreements actually matter.", "connection": "A conversation may become easier when you stop treating every difference as a challenge to your worth.", "work": "Review whether a protected approach still serves the goal or mainly preserves past effort.", "advice": "Conserve energy by choosing a necessary boundary and releasing a less important contest.", "answer": "Maybe"}
+    },
+    {
+      "slug": "six-of-wands",
+      "upright": {"theme": "FULFILLMENT", "general": "Recognition can affirm useful effort when it also leaves room to appreciate the support behind the result.", "connection": "Celebrate each other's progress without making affection depend on achievement or public approval.", "work": "Share a concrete success and acknowledge the collaborators who helped it happen.", "advice": "Accept appreciation and identify the practice you want to continue.", "answer": "Yes"},
+      "reversed": {"theme": "CLARITY", "general": "A need for visible approval can hide progress that is meaningful but not widely noticed.", "connection": "The quality of a connection is not established by how convincingly it is displayed to others.", "work": "Clarify the difference between useful feedback and the recognition you hoped would settle self-doubt.", "advice": "Use an honest measure of progress that does not depend entirely on applause.", "answer": "Maybe"}
+    },
+    {
+      "slug": "five-of-wands",
+      "upright": {"theme": "BALANCE", "general": "Different aims can create friction that becomes useful only when people agree how to work through it.", "connection": "A disagreement can reveal needs without becoming a contest over who is more entitled to have them.", "work": "Clarify roles and decision criteria so that competing ideas can be compared constructively.", "advice": "Find the shared problem underneath the competing positions.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "Avoided disagreement can keep tension in place even when everyone appears to be cooperating.", "connection": "Polite silence may need a safe opportunity for each person to describe what is not working.", "work": "Surface a practical conflict before unclear priorities turn it into personal resentment.", "advice": "Address one specific difference without asking everyone to settle every disagreement at once.", "answer": "Maybe"}
+    },
+    {
+      "slug": "four-of-wands",
+      "upright": {"theme": "STABILITY", "general": "A reliable base and a shared milestone can make room for celebration without requiring the whole journey to be complete.", "connection": "Shared routines and welcoming spaces can make commitment visible in everyday life.", "work": "Mark a completed stage and make sure the support around it is ready for the next one.", "advice": "Celebrate a real milestone and acknowledge the foundation that supports it.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "An unsettled foundation can make a celebration feel premature or leave someone outside the sense of belonging.", "connection": "Discuss what helps each person feel welcome instead of assuming a shared idea of home or commitment.", "work": "Check whether a completed milestone has the practical support needed to remain reliable.", "advice": "Repair one part of the foundation before putting more expectations on it.", "answer": "Maybe"}
+    },
+    {
+      "slug": "three-of-wands",
+      "upright": {"theme": "CHANGE", "general": "A wider view can help you prepare for growth after the first step has already been taken.", "connection": "Talk about the direction you each imagine rather than assuming that present closeness implies the same plans.", "work": "Consider the resources, partners and time that would make a next stage realistic.", "advice": "Look beyond the immediate task and prepare one useful connection or dependency.", "answer": "Yes"},
+      "reversed": {"theme": "PATIENCE", "general": "An expansion may need adjustment when expectations have moved further ahead than the current foundation can support.", "connection": "A future plan may need smaller agreements that both people can genuinely commit to now.", "work": "Review the assumption behind a delay before treating it as a reason to abandon the whole direction.", "advice": "Strengthen the next stage you can reach instead of extending the plan indefinitely.", "answer": "Maybe"}
+    },
+    {
+      "slug": "two-of-wands",
+      "upright": {"theme": "BEGINNING", "general": "Choosing a direction can turn a broad wish into a plan while still leaving room to learn along the way.", "connection": "Share your own aims clearly enough that a joint plan can be a choice rather than an assumption.", "work": "Compare a familiar option with a new direction using your actual priorities and available resources.", "advice": "Choose a small planning step that would make one option easier to evaluate.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "Fear of an imperfect choice can keep planning active long after it stops producing useful information.", "connection": "Ask whether uncertainty is being communicated or left for the other person to interpret.", "work": "An additional plan will not resolve a decision that needs a clear priority or a modest experiment.", "advice": "Set a realistic decision point and identify what you can test safely before it.", "answer": "Maybe"}
+    },
+    {
+      "slug": "ace-of-wands",
+      "upright": {"theme": "BEGINNING", "general": "A spark of interest can become a worthwhile beginning when you give it attention and a practical outlet.", "connection": "Enjoy attraction or shared enthusiasm without treating a strong beginning as a promise of lasting compatibility.", "work": "A fresh idea deserves a small prototype that tests whether the energy can become useful work.", "advice": "Act on the spark in one limited way before it becomes another untested possibility.", "answer": "Yes"},
+      "reversed": {"theme": "PATIENCE", "general": "A delayed start may reflect depleted energy, an unclear aim or a beginning that is not ready to be forced.", "connection": "A connection can develop at different speeds; clarity and consent matter more than manufactured intensity.", "work": "Check whether the missing ingredient is time, purpose or a more manageable first task.", "advice": "Make room for the idea without demanding that inspiration immediately become commitment.", "answer": "Maybe"}
+    },
+    {
+      "slug": "king-of-pentacles",
+      "upright": {"theme": "STABILITY", "general": "Dependability grows through careful stewardship of the resources and responsibilities already in your hands.", "connection": "Practical support matters most when it respects the other person's independence and priorities.", "work": "Sustainable success asks for clear commitments, realistic maintenance and a responsible view of available resources.", "advice": "Strengthen one dependable practice instead of relying on an impressive one-time gesture.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "Security can become restrictive when status, possessions or control are treated as the only measures of worth.", "connection": "Providing something useful does not entitle either person to direct the other's choices.", "work": "Review whether protecting an established position is preventing a necessary practical adjustment.", "advice": "Separate genuine stability from the need to appear successful or remain in control.", "answer": "Maybe"}
+    },
+    {
+      "slug": "queen-of-pentacles",
+      "upright": {"theme": "STABILITY", "general": "Practical care can make daily life more supportive through small arrangements that are useful and sustainable.", "connection": "Consider the ordinary acts that help both people feel supported without assigning care to one person alone.", "work": "Organise your time and resources in a way that supports both the task and the person doing it.", "advice": "Make one everyday need easier to meet with a realistic routine.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "Looking after everything else can leave too little capacity for the ordinary care you also need.", "connection": "A dependable role should not prevent you from asking to receive support in return.", "work": "Check whether practical responsibilities have grown without a corresponding change in time or help.", "advice": "Include your own needs in the plan instead of treating them as what happens after everything else.", "answer": "Maybe"}
+    },
+    {
+      "slug": "knight-of-pentacles",
+      "upright": {"theme": "PATIENCE", "general": "Consistent, unglamorous effort can produce a reliable foundation when each step serves a clear purpose.", "connection": "Dependable behaviour can express commitment more clearly than occasional dramatic reassurance.", "work": "A repeatable process and careful follow-through may be more useful than seeking a faster-looking route.", "advice": "Complete the next practical step and make it easy to repeat responsibly.", "answer": "Yes"},
+      "reversed": {"theme": "CHANGE", "general": "A dependable routine can become an obstacle when repetition replaces a review of whether it still works.", "connection": "Reliability does not have to exclude curiosity, shared enjoyment or a needed change in habit.", "work": "Look for a process maintained by familiarity rather than a clear benefit to the task.", "advice": "Keep the useful discipline and test one small improvement to the routine.", "answer": "Maybe"}
+    },
+    {
+      "slug": "page-of-pentacles",
+      "upright": {"theme": "LEARNING", "general": "A practical skill develops when curiosity is supported by focused study and a chance to apply what you learn.", "connection": "Show interest through attention to a real need rather than a promise you have not thought through.", "work": "Choose a useful skill and practise it on a limited task with clear feedback.", "advice": "Turn the intention to improve into one concrete learning exercise.", "answer": "Yes"},
+      "reversed": {"theme": "CLARITY", "general": "An intention may remain theoretical when preparation, distraction or fear of being a beginner replaces practice.", "connection": "A helpful intention needs a specific action that the other person actually welcomes.", "work": "More materials or plans may not solve a problem that needs a small attempt and feedback.", "advice": "Reduce the task until you can practise it today and review what you learned.", "answer": "Maybe"}
+    },
+    {
+      "slug": "ten-of-pentacles",
+      "upright": {"theme": "STABILITY", "general": "Long-term support is built from the structures, shared knowledge and dependable resources that outlast a single achievement.", "connection": "Discuss the practical values you hope to share rather than assuming a common view of security or family.", "work": "Consider how today's work can remain useful, understandable and maintainable for the people who inherit it.", "advice": "Care for a shared foundation and make its responsibilities explicit.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "An inherited definition of success may carry obligations that no longer fit the life you want to build.", "connection": "Family expectations and material comfort do not automatically determine what makes a connection right for you.", "work": "Review the actual sustainability of an arrangement instead of relying on its established appearance.", "advice": "Identify what you value in the tradition and which expectation needs to be reconsidered.", "answer": "Maybe"}
+    },
+    {
+      "slug": "nine-of-pentacles",
+      "upright": {"theme": "FULFILLMENT", "general": "Personal independence can be appreciated as the result of skills, boundaries and support developed over time.", "connection": "A close connection can add to a life you value without requiring either person to give up their individuality.", "work": "Recognise a capability that now gives you more choice in how you use your time and effort.", "advice": "Enjoy a concrete benefit of your work while protecting the habits that sustain it.", "answer": "Yes"},
+      "reversed": {"theme": "CLARITY", "general": "Appearing independent or accomplished can become costly when it prevents an honest view of your needs and resources.", "connection": "Receiving help does not make your own contribution or independence less real.", "work": "Compare the actual value of an achievement with the effort spent maintaining its appearance.", "advice": "Choose a measure of wellbeing that is meaningful even when no one else sees it.", "answer": "Maybe"}
+    },
+    {
+      "slug": "eight-of-pentacles",
+      "upright": {"theme": "LEARNING", "general": "Craft improves through repeated attention to a specific detail and a willingness to learn from feedback.", "connection": "A connection can benefit from practising a small communication skill rather than waiting for effort to feel effortless.", "work": "Focus on the part of the craft that makes the result more dependable, not merely more polished.", "advice": "Practise one skill with a clear standard and review the result honestly.", "answer": "Yes"},
+      "reversed": {"theme": "BALANCE", "general": "Repetition loses value when perfectionism or disengagement prevents you from noticing whether the effort is useful.", "connection": "More effort is not always better if it repeats a response the other person has said is unhelpful.", "work": "Check whether further polishing addresses a real requirement or delays finishing an adequate result.", "advice": "Define what good enough means for this task before doing another round of work.", "answer": "Maybe"}
+    },
+    {
+      "slug": "seven-of-pentacles",
+      "upright": {"theme": "PATIENCE", "general": "A considered review can distinguish slow development from effort that needs a different direction.", "connection": "Look at how the connection is developing over time rather than demanding a milestone to settle uncertainty.", "work": "Compare progress, remaining cost and purpose before deciding whether continued effort is worthwhile.", "advice": "Set a realistic review point and use evidence rather than impatience to assess progress.", "answer": "Maybe"},
+      "reversed": {"theme": "CLARITY", "general": "Past effort does not by itself prove that continuing in the same way is the most useful choice.", "connection": "Time already invested cannot replace a present willingness to communicate and care for each other.", "work": "Review a stalled commitment without treating its previous cost as a reason it must continue unchanged.", "advice": "Decide what would justify the next stage of effort instead of defending the last one.", "answer": "Maybe"}
+    },
+    {
+      "slug": "six-of-pentacles",
+      "upright": {"theme": "BALANCE", "general": "A healthy exchange considers capacity, need and choice instead of expecting every contribution to look identical.", "connection": "Offer and receive support in ways that preserve dignity and room to say no.", "work": "Clarify the terms of assistance, recognition or shared resources so that expectations are understood.", "advice": "Ask what a fair exchange would look like for the people actually involved.", "answer": "Yes"},
+      "reversed": {"theme": "BOUNDARY", "general": "An uneven exchange can become uncomfortable when help carries unspoken conditions or one person's limits are ignored.", "connection": "Support should not be used to create guilt, obligation or control over another person's choices.", "work": "Check whether responsibility and recognition are being distributed as clearly as the benefits.", "advice": "Make the conditions explicit before offering or accepting more than feels workable.", "answer": "Maybe"}
+    },
+    {
+      "slug": "five-of-pentacles",
+      "upright": {"theme": "RECOVERY", "general": "A sense of scarcity or exclusion calls for practical support, not a judgement about your value or future.", "connection": "Share a need with someone trustworthy rather than assuming you must hide every difficulty to be accepted.", "work": "Identify the immediate resource gap and look for reliable information or appropriate assistance.", "advice": "Choose one concrete source of support; a card cannot determine your actual financial security.", "answer": "Maybe"},
+      "reversed": {"theme": "BEGINNING", "general": "A gradual improvement may begin through accepting help, finding a resource or making a difficulty easier to name.", "connection": "Let a supportive response challenge the belief that you have to manage everything alone.", "work": "A small practical improvement can be useful without proving that every concern is now resolved.", "advice": "Build on the support available and give the recovery a realistic pace.", "answer": "Maybe"}
+    },
+    {
+      "slug": "four-of-pentacles",
+      "upright": {"theme": "STABILITY", "general": "Protecting what you have can support security, though excessive control may leave too little room to adapt.", "connection": "A wish for reassurance does not make it reasonable to restrict the other person's freedom.", "work": "Review whether a reserve, routine or boundary is serving a clear practical purpose.", "advice": "Name what you need to protect and where a little flexibility is safe.", "answer": "Maybe"},
+      "reversed": {"theme": "RELEASE", "general": "Loosening a restrictive grip can create room for change, provided release remains deliberate rather than impulsive.", "connection": "Giving someone space can coexist with clear agreements about what you both need.", "work": "Reconsider a rule that protects resources at the expense of a genuinely useful improvement.", "advice": "Make one measured adjustment instead of responding to restriction by abandoning every limit.", "answer": "Maybe"}
+    },
+    {
+      "slug": "three-of-pentacles",
+      "upright": {"theme": "CONNECTION", "general": "Useful collaboration grows when different skills are respected and a shared standard makes the work easier to coordinate.", "connection": "A shared task can become a chance to understand how each person prefers to contribute.", "work": "Make roles and feedback clear so that expertise can combine rather than compete.", "advice": "Ask for a specific contribution and show how it connects to the common goal.", "answer": "Yes"},
+      "reversed": {"theme": "CLARITY", "general": "A shared effort can stall when roles, standards or respect for different contributions remain unclear.", "connection": "An uneven practical arrangement needs a conversation about actual work, not a guess about willingness.", "work": "Clarify ownership and the definition of completion before interpreting a coordination problem as personal failure.", "advice": "Agree on who does what and how the result will be reviewed.", "answer": "Maybe"}
+    },
+    {
+      "slug": "two-of-pentacles",
+      "upright": {"theme": "BALANCE", "general": "Flexibility can help you manage changing demands when you remain aware of your actual capacity.", "connection": "Discuss time and attention openly instead of expecting care to fit invisibly around every other obligation.", "work": "A workable schedule needs room for adjustments rather than assuming every task will take its best-case time.", "advice": "Choose the priority for today and leave some room for a change in circumstances.", "answer": "Maybe"},
+      "reversed": {"theme": "BOUNDARY", "general": "Too many competing demands may need fewer commitments rather than a more elaborate way to juggle them.", "connection": "An overloaded schedule is worth acknowledging before repeated cancellations become an unspoken pattern.", "work": "Make trade-offs visible and renegotiate a commitment that no longer fits the available time.", "advice": "Remove, defer or share one demand instead of promising to handle everything better.", "answer": "Maybe"}
+    },
+    {
+      "slug": "ace-of-pentacles",
+      "upright": {"theme": "BEGINNING", "general": "A tangible opportunity becomes meaningful through attention, practical preparation and the effort needed to sustain it.", "connection": "A small dependable gesture can provide a better foundation than an ambitious promise.", "work": "Examine the real requirements of a new task or opportunity before deciding how it fits your resources.", "advice": "Take one concrete step that lets you learn about the opportunity without overcommitting.", "answer": "Yes"},
+      "reversed": {"theme": "CAUTION", "general": "A promising opening may need more preparation or a clearer view of its costs before it becomes workable.", "connection": "Good intentions need realistic time and effort if another person is being asked to rely on them.", "work": "Check the details of an appealing opportunity rather than treating its appearance as proof of value.", "advice": "Clarify a practical condition before committing resources you cannot easily replace.", "answer": "Maybe"}
+    }
+  ]
+}

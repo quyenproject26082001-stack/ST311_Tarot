@@ -11,15 +11,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.core.widget.doAfterTextChanged
 import com.aaa.bbb.ccc.R
+import com.aaa.bbb.ccc.core.extensions.hideNavigation
 import com.aaa.bbb.ccc.core.helper.SharePreferenceHelper
 import com.aaa.bbb.ccc.core.utils.key.IntentKey
-import com.aaa.bbb.ccc.databinding.FragmentTarotSettingsBinding
+import com.aaa.bbb.ccc.databinding.ActivityTarotSettingsBinding
 import com.aaa.bbb.ccc.databinding.ItemTarotSettingBinding
 import com.aaa.bbb.ccc.databinding.TarotFieldNameBinding
 import com.aaa.bbb.ccc.ui.language.LanguageActivity
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
-/** All Settings geometry is in fragment_tarot_settings.xml and item_tarot_setting.xml. */
+/** All Settings geometry is in activity_tarot_settings.xml and item_tarot_setting.xml. */
 class TarotSettingsScreen(
     private val activity: AppCompatActivity,
     private val vm: TarotViewModel,
@@ -30,7 +31,7 @@ class TarotSettingsScreen(
 ) {
     fun render(parent: LinearLayout) {
         val profile = vm.preferences.profile ?: return
-        val form = FragmentTarotSettingsBinding.inflate(activity.layoutInflater, parent, true)
+        val form = ActivityTarotSettingsBinding.inflate(activity.layoutInflater, parent, true)
         settingRow(form.personalGroup, "name", ui.s(R.string.tarot_name), profile.name) { editName() }
         divider(form.personalGroup)
         settingRow(form.personalGroup, "birthday", ui.s(R.string.tarot_birthday), displayBirthday(profile.birthday)) { editBirthday() }
@@ -67,7 +68,7 @@ class TarotSettingsScreen(
         }
         settingRow(form.additionalGroup, "privacy", ui.s(R.string.tarot_privacy)) {
             AlertDialog.Builder(activity).setTitle(R.string.tarot_privacy).setMessage(R.string.tarot_privacy_content)
-                .setPositiveButton(R.string.tarot_close, null).show()
+                .setPositiveButton(R.string.tarot_close, null).show().also { it.hideNavigation(!ui.dark) }
         }
         divider(form.additionalGroup)
         settingRow(form.additionalGroup, "share", ui.s(R.string.tarot_share)) {
@@ -87,6 +88,8 @@ class TarotSettingsScreen(
         row.settingTitle.text = title
         row.settingValue.isVisible = value.isNotEmpty()
         row.settingValue.text = value
+        row.settingZodiacIcon.isVisible = icon == "moon" && value.isNotEmpty()
+        if (row.settingZodiacIcon.isVisible) row.settingZodiacIcon.setImageResource(ui.zodiacResource(value))
         row.settingTrailing.text = trailing
         if (value.isEmpty()) {
             row.settingTitle.textSize = 14f

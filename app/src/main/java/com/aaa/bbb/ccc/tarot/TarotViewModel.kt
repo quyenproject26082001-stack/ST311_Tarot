@@ -1,6 +1,7 @@
 package com.aaa.bbb.ccc.tarot
 
 import android.app.Application
+import android.os.Bundle
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
@@ -69,6 +70,19 @@ class TarotViewModel(app: Application, private val saved: SavedStateHandle) : An
         }
     }
 
+    fun restoreScreen(screen: String) {
+        saved["screen"] = screen
+    }
+
+    fun navigationState(): Bundle = Bundle().apply {
+        listOf("screen", "category", "spread", "deck", "selected", "reading", "detail_slug", "result_origin").forEach { key ->
+            saved.get<String>(key)?.let { putString(key, it) }
+        }
+        listOf("card_grid", "classic").forEach { key ->
+            saved.get<Boolean>(key)?.let { putBoolean(key, it) }
+        }
+    }
+
     fun refresh() { changed.value += 1 }
 
     fun request(spread: Spread, guidance: () -> Unit, locked: (Long) -> Unit) {
@@ -78,11 +92,12 @@ class TarotViewModel(app: Application, private val saved: SavedStateHandle) : An
             try {
                 val latest = repository.dao.latest(spread.name)
                 val now = System.currentTimeMillis()
+                val remaining = TarotTestConfig.remaining(spread, latest?.createdAt, now)
                 activeSpread = spread
                 resultOrigin = screen.takeIf { it == "home" || it == "spreads" } ?: "home"
                 when {
-                    spread.rule == ReadingRule.DAILY && latest != null && TarotRules.sameDay(latest.createdAt, now) -> open(latest)
-                    spread.rule == ReadingRule.COOLDOWN && TarotRules.remaining(latest?.createdAt, now) > 0 -> locked(TarotRules.remaining(latest?.createdAt, now))
+                    latest != null && TarotTestConfig.reuseDailyReading(spread, latest.createdAt, now) -> open(latest)
+                    remaining > 0 -> locked(remaining)
                     else -> {
                         activeSpread = spread
                         resultOrigin = screen.takeIf { it == "home" || it == "spreads" } ?: "home"
@@ -116,14 +131,21 @@ class TarotViewModel(app: Application, private val saved: SavedStateHandle) : An
         refresh()
         viewModelScope.launch {
             try {
-                // Recheck at commit time: a second in-progress session cannot create a second daily reading.
+                // Recheck the daily rule at commit time, except in explicit tester mode.
                 val latest = repository.dao.latest(activeSpread.name)
                 val now = System.currentTimeMillis()
-                if (activeSpread.rule == ReadingRule.DAILY && latest != null && TarotRules.sameDay(latest.createdAt, now)) {
+                if (latest != null && TarotTestConfig.reuseDailyReading(activeSpread, latest.createdAt, now)) {
                     open(latest)
                 } else {
-                    val snapshot = ReadingSnapshot(UUID.randomUUID().toString(), activeSpread.name, now,
-                        selected.mapIndexed { index, draw -> TarotRules.interpret(cards.first { it.slug == draw.slug }, activeSpread, index, draw.reversed) })
+                    val interpreted = selected.mapIndexed { index, draw ->
+                        TarotRules.interpret(cards.first { it.slug == draw.slug }, activeSpread, index, draw.reversed)
+                    }
+                    val combined = if (activeSpread == Spread.UNIVERSE) {
+                        TarotInterpretations.universeMessage(
+                            first = cards.first { it.slug == selected[0].slug }, firstReversed = selected[0].reversed,
+                            second = cards.first { it.slug == selected[1].slug }, secondReversed = selected[1].reversed)
+                    } else null
+                    val snapshot = ReadingSnapshot(UUID.randomUUID().toString(), activeSpread.name, now, interpreted, combined)
                     repository.save(snapshot)
                     reading = snapshot
                     screen = "result"

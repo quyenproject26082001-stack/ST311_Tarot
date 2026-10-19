@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Same white-free crop as the picker, scaled from 26dp to the 66dp illustration. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="5.076923dp"
+    android:insetTop="3.807692dp"
+    android:insetRight="5.076923dp"
+    android:insetBottom="6.346154dp">
+    <shape android:shape="rectangle">
+        <solid android:color="?attr/tarotPaper" />
+        <corners android:radius="100dp" />
+    </shape>
+</inset>

@@ -12,7 +12,9 @@ import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
+import androidx.core.view.ViewCompat
 import com.aaa.bbb.ccc.R
+import com.aaa.bbb.ccc.core.extensions.hideNavigation
 import com.aaa.bbb.ccc.databinding.ItemTarotZodiacBinding
 import com.aaa.bbb.ccc.databinding.SheetTarotBinding
 import com.bumptech.glide.Glide
@@ -118,10 +120,25 @@ class TarotUi(val context: Context, val dark: Boolean = false) {
         dialog.window?.setSoftInputMode(android.view.WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
         dialog.setOnShowListener {
             (scroll.parent as? View)?.setBackgroundColor(Color.TRANSPARENT)
-            dialog.window?.setLayout(minOf(context.resources.displayMetrics.widthPixels, dp(520)), -2)
+            // A bottom sheet needs a full-height window, not a centered WRAP_CONTENT dialog.
+            dialog.window?.setLayout(minOf(context.resources.displayMetrics.widthPixels, dp(520)), -1)
+            dialog.behavior.isGestureInsetBottomIgnored = true
+            fitSheetToHiddenNavigation(dialog)
             dialog.behavior.state = com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_EXPANDED
+            dialog.hideNavigation(!dark)
         }
         dialog.show()
         return dialog
+    }
+
+    fun fitSheetToHiddenNavigation(dialog: BottomSheetDialog) {
+        val surface = dialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet) ?: return
+        // Material otherwise retains a navigation-bar padding even after immersive mode hides it.
+        ViewCompat.setOnApplyWindowInsetsListener(surface) { view, insets ->
+            view.setPadding(view.paddingLeft, view.paddingTop, view.paddingRight, 0)
+            insets
+        }
+        surface.setPadding(surface.paddingLeft, surface.paddingTop, surface.paddingRight, 0)
+        ViewCompat.requestApplyInsets(surface)
     }
 }

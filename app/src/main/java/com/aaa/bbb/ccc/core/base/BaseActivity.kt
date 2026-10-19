@@ -28,6 +28,12 @@ abstract class BaseActivity<T : ViewBinding> : AppCompatActivity() {
 
     protected abstract fun setViewBinding(): T
 
+    protected fun replaceViewBinding(viewBinding: T, initialize: () -> Unit) {
+        _binding = viewBinding
+        initialize()
+        setContentView(viewBinding.root)
+    }
+
     protected abstract fun initView()
 
     protected abstract fun viewListener()
@@ -42,6 +48,9 @@ abstract class BaseActivity<T : ViewBinding> : AppCompatActivity() {
 
     // Override this to disable background music for specific activities (splash, intro, language, permission)
     protected open fun shouldPlayBackgroundMusic(): Boolean = false
+
+    // Light screens use dark status icons; dark screens can override this.
+    protected open fun useDarkStatusBarIcons(): Boolean = true
 
     protected val loadingDialog: WaitingDialog by lazy {
         WaitingDialog(this)
@@ -86,11 +95,17 @@ abstract class BaseActivity<T : ViewBinding> : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        hideNavigation()
+        hideNavigation(useDarkStatusBarIcons())
         // Resume music if enabled and activity should play it
         if (shouldPlayBackgroundMusic() && sharePreference.isMusicEnabled()) {
             MusicHelper.play()
         }
+    }
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+        // Dialogs, permission windows and returning from another app can reveal navigation.
+        if (hasFocus) hideNavigation(useDarkStatusBarIcons())
     }
 
     override fun onPause() {
@@ -120,7 +135,7 @@ abstract class BaseActivity<T : ViewBinding> : AppCompatActivity() {
         withContext(Dispatchers.Main) {
             if (loadingDialog.isShowing) {
                 loadingDialog.dismiss()
-                hideNavigation()
+                hideNavigation(useDarkStatusBarIcons())
             }
         }
     }

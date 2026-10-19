@@ -1,0 +1,1679 @@
+{
+  "id": "settings",
+  "state": {
+    "screen": "settings",
+    "page": 1,
+    "scrollY": 0,
+    "maxScrollY": 0,
+    "pageLimit": 1,
+    "hasMoreContent": false,
+    "truncatedAtPageLimit": false
+  },
+  "activity": "com.aaa.bbb.ccc.ui.home.HomeActivity",
+  "sdk": 37,
+  "density": 2,
+  "densityDpi": 320,
+  "fontScale": 1,
+  "locale": "en-US",
+  "timezone": "Asia\/Bangkok",
+  "rootLocationOnScreen": [
+    0,
+    0
+  ],
+  "views": [
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStub",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "action_bar_root",
+      "class": "FitWindowsLinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStubCompat",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "ContentFrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "pageBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "page",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionBar",
+      "class": "ConstraintLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        720,
+        184
+      ],
+      "visibleBounds": [
+        0,
+        104,
+        720,
+        184
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        12,
+        101,
+        100,
+        189
+      ],
+      "visibleBounds": [
+        12,
+        104,
+        100,
+        184
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeftText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvLeftText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "BACK",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "btnReset",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        32,
+        85,
+        112,
+        165
+      ],
+      "visibleBounds": [
+        32,
+        104,
+        112,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "cvLogo",
+      "class": "CardView",
+      "window": "capture",
+      "bounds": [
+        40,
+        85,
+        120,
+        165
+      ],
+      "visibleBounds": [
+        40,
+        104,
+        120,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "tvStart",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": " Language ",
+      "textSizePx": 56,
+      "gravity": 8388659,
+      "lineHeightPx": 88,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "tvCenter",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        64,
+        111,
+        656,
+        165
+      ],
+      "visibleBounds": [
+        64,
+        111,
+        656,
+        165
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Settings",
+      "textSizePx": 40,
+      "gravity": 17,
+      "lineHeightPx": 54,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "imgCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        320,
+        104,
+        400,
+        184
+      ],
+      "visibleBounds": [
+        320,
+        104,
+        400,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        217,
+        104,
+        297,
+        184
+      ],
+      "visibleBounds": [
+        217,
+        104,
+        297,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight1",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        504,
+        77,
+        592,
+        165
+      ],
+      "visibleBounds": [
+        504,
+        104,
+        592,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        85,
+        696,
+        165
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        600,
+        104,
+        680,
+        184
+      ],
+      "visibleBounds": [
+        600,
+        104,
+        680,
+        184
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightLang",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        85,
+        696,
+        165
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnShare",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvRightText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Next",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "brand",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        35,
+        118,
+        455,
+        170
+      ],
+      "visibleBounds": [
+        35,
+        118,
+        455,
+        170
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "libraryToggle",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        568,
+        112,
+        688,
+        176
+      ],
+      "visibleBounds": [
+        568,
+        112,
+        688,
+        176
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "listMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        574,
+        118,
+        628,
+        170
+      ],
+      "visibleBounds": [
+        574,
+        118,
+        628,
+        170
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "gridMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        628,
+        118,
+        682,
+        170
+      ],
+      "visibleBounds": [
+        628,
+        118,
+        682,
+        170
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "guideline",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        360,
+        104,
+        360,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "screenHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        184,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        184,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        184,
+        720,
+        1448
+      ],
+      "visibleBounds": [
+        0,
+        184,
+        720,
+        1448
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "personalGroup",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        40,
+        242,
+        680,
+        580
+      ],
+      "visibleBounds": [
+        40,
+        242,
+        680,
+        580
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        72,
+        266,
+        136,
+        330
+      ],
+      "visibleBounds": [
+        72,
+        266,
+        136,
+        330
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        261,
+        584,
+        291
+      ],
+      "visibleBounds": [
+        160,
+        261,
+        584,
+        291
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Name",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingValue",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        297,
+        322,
+        335
+      ],
+      "visibleBounds": [
+        160,
+        297,
+        322,
+        335
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Alex Morgan",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingZodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        160,
+        297,
+        160,
+        297
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "settingTrailing",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        584,
+        279,
+        584,
+        317
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        72,
+        379,
+        136,
+        443
+      ],
+      "visibleBounds": [
+        72,
+        379,
+        136,
+        443
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        374,
+        584,
+        404
+      ],
+      "visibleBounds": [
+        160,
+        374,
+        584,
+        404
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Birthday",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingValue",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        410,
+        312,
+        448
+      ],
+      "visibleBounds": [
+        160,
+        410,
+        312,
+        448
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "14\/11\/1994",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingZodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        160,
+        410,
+        160,
+        410
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "settingTrailing",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        584,
+        392,
+        584,
+        430
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        72,
+        492,
+        136,
+        556
+      ],
+      "visibleBounds": [
+        72,
+        492,
+        136,
+        556
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        487,
+        584,
+        517
+      ],
+      "visibleBounds": [
+        160,
+        487,
+        584,
+        517
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Star sign",
+      "textSizePx": 22,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingValue",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        523,
+        255,
+        561
+      ],
+      "visibleBounds": [
+        160,
+        523,
+        255,
+        561
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Scorpio",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingZodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        259,
+        525,
+        293,
+        559
+      ],
+      "visibleBounds": [
+        259,
+        525,
+        293,
+        559
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingTrailing",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        584,
+        505,
+        584,
+        543
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "lightTheme",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        368,
+        642,
+        504,
+        694
+      ],
+      "visibleBounds": [
+        368,
+        642,
+        504,
+        694
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Light",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "darkTheme",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        504,
+        642,
+        640,
+        694
+      ],
+      "visibleBounds": [
+        504,
+        642,
+        640,
+        694
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Dark",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "guidanceToggle",
+      "class": "SwitchCompat",
+      "window": "capture",
+      "bounds": [
+        544,
+        764,
+        640,
+        860
+      ],
+      "visibleBounds": [
+        544,
+        764,
+        640,
+        860
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388627,
+      "lineHeightPx": 38,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "reverseInfo",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        404,
+        924,
+        452,
+        972
+      ],
+      "visibleBounds": [
+        404,
+        924,
+        452,
+        972
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "reversePercent",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        452,
+        932,
+        640,
+        964
+      ],
+      "visibleBounds": [
+        452,
+        932,
+        640,
+        964
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "0%",
+      "textSizePx": 24,
+      "gravity": 8388661,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "reverseChance",
+      "class": "AppCompatSeekBar",
+      "window": "capture",
+      "bounds": [
+        80,
+        972,
+        640,
+        1036
+      ],
+      "visibleBounds": [
+        80,
+        972,
+        640,
+        1036
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "additionalGroup",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        40,
+        1126,
+        680,
+        1416
+      ],
+      "visibleBounds": [
+        40,
+        1126,
+        680,
+        1416
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        72,
+        1142,
+        136,
+        1206
+      ],
+      "visibleBounds": [
+        72,
+        1142,
+        136,
+        1206
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1152,
+        584,
+        1190
+      ],
+      "visibleBounds": [
+        160,
+        1152,
+        584,
+        1190
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Privacy & Policy",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingValue",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1196,
+        160,
+        1196
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingZodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1196,
+        160,
+        1196
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "settingTrailing",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        584,
+        1155,
+        584,
+        1193
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        72,
+        1239,
+        136,
+        1303
+      ],
+      "visibleBounds": [
+        72,
+        1239,
+        136,
+        1303
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1249,
+        584,
+        1287
+      ],
+      "visibleBounds": [
+        160,
+        1249,
+        584,
+        1287
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Share app",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingValue",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1293,
+        160,
+        1293
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingZodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1293,
+        160,
+        1293
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "settingTrailing",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        584,
+        1252,
+        584,
+        1290
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        72,
+        1336,
+        136,
+        1400
+      ],
+      "visibleBounds": [
+        72,
+        1336,
+        136,
+        1400
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "settingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1346,
+        584,
+        1384
+      ],
+      "visibleBounds": [
+        160,
+        1346,
+        584,
+        1384
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Language",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingValue",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1390,
+        160,
+        1390
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "settingZodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        160,
+        1390,
+        160,
+        1390
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "settingTrailing",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        584,
+        1349,
+        584,
+        1387
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "",
+      "textSizePx": 28,
+      "gravity": 8388659,
+      "lineHeightPx": 42,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "bottomTabs",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibility": 8,
+      "selected": false
+    }
+  ],
+  "images": [
+    {
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        12,
+        101,
+        100,
+        189
+      ],
+      "description": "BACK",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        72,
+        266,
+        136,
+        330
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        600,
+        274,
+        648,
+        322
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        72,
+        379,
+        136,
+        443
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        600,
+        387,
+        648,
+        435
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        72,
+        492,
+        136,
+        556
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        259,
+        525,
+        293,
+        559
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        600,
+        500,
+        648,
+        548
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        404,
+        924,
+        452,
+        972
+      ],
+      "description": "Chance for reversed cards",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        72,
+        1142,
+        136,
+        1206
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        600,
+        1150,
+        648,
+        1198
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        72,
+        1239,
+        136,
+        1303
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        600,
+        1247,
+        648,
+        1295
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        72,
+        1336,
+        136,
+        1400
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        600,
+        1344,
+        648,
+        1392
+      ],
+      "description": "",
+      "status": "local_drawable"
+    }
+  ],
+  "comparisonBounds": [
+    0,
+    104,
+    720,
+    1600
+  ],
+  "artValidated": false,
+  "glideWaitLimitMs": 1000,
+  "widthPx": 720,
+  "heightPx": 1600,
+  "regression": {
+    "status": "capture_only"
+  }
+}

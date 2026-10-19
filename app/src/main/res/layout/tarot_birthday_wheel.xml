@@ -3,14 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/tarot_bg_input"
+    android:background="@drawable/tarot_settings_wheel_background"
     android:paddingHorizontal="8dp"
-    android:paddingTop="10dp"
-    android:paddingBottom="4dp"
+    android:paddingTop="8dp"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="23dp"
         android:orientation="horizontal">
         <TextView
             style="@style/TarotTextBody"
@@ -18,6 +17,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
+            android:background="@drawable/tarot_settings_wheel_heading"
+            android:layout_marginEnd="6dp"
             android:textSize="10sp"
             android:text="MONTH" />
         <TextView
@@ -26,6 +27,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
+            android:background="@drawable/tarot_settings_wheel_heading"
+            android:layout_marginEnd="6dp"
             android:textSize="10sp"
             android:text="DAY" />
         <TextView
@@ -34,12 +37,38 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
+            android:background="@drawable/tarot_settings_wheel_heading"
             android:textSize="10sp"
             android:text="YEAR" />
     </LinearLayout>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="112dp">
+        <!-- White cells sit behind the pickers; the shared gold outline sits above. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="noHideDescendants"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/tarot_settings_wheel_cell" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/tarot_settings_wheel_cell" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tarot_settings_wheel_cell" />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -49,12 +78,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginEnd="6dp"
                 android:descendantFocusability="blocksDescendants" />
             <NumberPicker
                 android:id="@+id/day"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginEnd="6dp"
                 android:descendantFocusability="blocksDescendants" />
             <NumberPicker
                 android:id="@+id/year"

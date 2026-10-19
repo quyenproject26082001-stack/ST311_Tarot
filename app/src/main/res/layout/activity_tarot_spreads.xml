@@ -3,22 +3,24 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingTop="3dp"
     android:orientation="vertical">
     <TextView
         style="@style/TarotText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:text="@string/tarot_choose_spread"
         android:textSize="16sp"
+        android:lineHeight="20sp"
         android:textStyle="italic" />
     <TextView
         style="@style/TarotText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="14dp"
+        android:layout_marginBottom="17dp"
         android:text="@string/tarot_spread_description"
         android:textSize="11sp"
+        android:lineHeight="14sp"
         android:textStyle="italic" />
     <LinearLayout
         android:id="@+id/spreadItems"

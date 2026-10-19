@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "test": "DesignScreenshotsTest.captureAllTarotDesignScreens",
+  "capture": "UiAutomation.takeScreenshot; native display pixels",
+  "fixtureTimestamp": 1704888000000,
+  "deckSeed": 311,
+  "fixturePersistence": "readings in memory; optional emulator-only launch profile preference restored in finally",
+  "hardware": "ranchu",
+  "allowEmulatorProfile": true,
+  "maxPagesPerState": 6,
+  "glideWaitMs": 1000,
+  "constraints": [
+    "Home requires a valid profile; an invalid launch profile may be temporarily replaced only with explicit emulator opt-in",
+    "The real dark preference and any opted-in launch profile override are restored exactly in finally",
+    "Remote art is not validated; pending requests are labeled pending and frozen as placeholders",
+    "Locale, current horoscope week and system bars remain device-dependent",
+    "No reading completion, favorite, profile Submit, ad request, or DB deletion is invoked",
+    "Reflection is confined to app-owned ViewModel\/preferences\/render\/sheet fields"
+  ],
+  "launchProfileTemporarilyOverridden": false,
+  "directory": "\/data\/user\/0\/com.aaa.bbb.ccc\/cache\/design_review\/run_1792143922212",
+  "captures": [
+    {
+      "id": "profile_step_1_unselected",
+      "status": "captured",
+      "png": "profile_step_1_unselected.png",
+      "metadata": "profile_step_1_unselected.json"
+    },
+    {
+      "id": "profile_step_1_scorpio",
+      "status": "captured",
+      "png": "profile_step_1_scorpio.png",
+      "metadata": "profile_step_1_scorpio.json"
+    },
+    {
+      "id": "profile_step_2",
+      "status": "captured",
+      "png": "profile_step_2.png",
+      "metadata": "profile_step_2.json"
+    },
+    {
+      "id": "home_empty",
+      "status": "captured",
+      "png": "home_empty.png",
+      "metadata": "home_empty.json"
+    },
+    {
+      "id": "home_recent",
+      "status": "captured",
+      "png": "home_recent.png",
+      "metadata": "home_recent.json"
+    },
+    {
+      "id": "spreads",
+      "status": "captured",
+      "png": "spreads.png",
+      "metadata": "spreads.json"
+    },
+    {
+      "id": "spreads_page_2",
+      "status": "captured",
+      "png": "spreads_page_2.png",
+      "metadata": "spreads_page_2.json"
+    },
+    {
+      "id": "history_empty",
+      "status": "captured",
+      "png": "history_empty.png",
+      "metadata": "history_empty.json"
+    },
+    {
+      "id": "history_data",
+      "status": "captured",
+      "png": "history_data.png",
+      "metadata": "history_data.json"
+    },
+    {
+      "id": "cards_list",
+      "status": "captured",
+      "png": "cards_list.png",
+      "metadata": "cards_list.json"
+    },
+    {
+      "id": "cards_grid",
+      "status": "captured",
+      "png": "cards_grid.png",
+      "metadata": "cards_grid.json"
+    },
+    {
+      "id": "cards_detail",
+      "status": "captured",
+      "png": "cards_detail.png",
+      "metadata": "cards_detail.json"
+    },
+    {
+      "id": "horoscope_unavailable",
+      "status": "captured",
+      "png": "horoscope_unavailable.png",
+      "metadata": "horoscope_unavailable.json"
+    },
+    {
+      "id": "selection_scroll",
+      "status": "captured",
+      "png": "selection_scroll.png",
+      "metadata": "selection_scroll.json"
+    },
+    {
+      "id": "selection_classic",
+      "status": "captured",
+      "png": "selection_classic.png",
+      "metadata": "selection_classic.json"
+    },
+    {
+      "id": "result_daily",
+      "status": "captured",
+      "png": "result_daily.png",
+      "metadata": "result_daily.json"
+    },
+    {
+      "id": "result_weekly",
+      "status": "captured",
+      "png": "result_weekly.png",
+      "metadata": "result_weekly.json"
+    },
+    {
+      "id": "result_quick",
+      "status": "captured",
+      "png": "result_quick.png",
+      "metadata": "result_quick.json"
+    },
+    {
+      "id": "result_yes_no",
+      "status": "captured",
+      "png": "result_yes_no.png",
+      "metadata": "result_yes_no.json"
+    },
+    {
+      "id": "result_universe",
+      "status": "captured",
+      "png": "result_universe.png",
+      "metadata": "result_universe.json"
+    },
+    {
+      "id": "result_celtic",
+      "status": "captured",
+      "png": "result_celtic.png",
+      "metadata": "result_celtic.json"
+    },
+    {
+      "id": "result_celtic_page_2",
+      "status": "captured",
+      "png": "result_celtic_page_2.png",
+      "metadata": "result_celtic_page_2.json"
+    },
+    {
+      "id": "settings",
+      "status": "captured",
+      "png": "settings.png",
+      "metadata": "settings.json"
+    },
+    {
+      "id": "settings_edit_name",
+      "status": "captured",
+      "png": "settings_edit_name.png",
+      "metadata": "settings_edit_name.json"
+    },
+    {
+      "id": "settings_edit_birthday",
+      "status": "captured",
+      "png": "settings_edit_birthday.png",
+      "metadata": "settings_edit_birthday.json"
+    },
+    {
+      "id": "settings_edit_sign",
+      "status": "captured",
+      "png": "settings_edit_sign.png",
+      "metadata": "settings_edit_sign.json"
+    },
+    {
+      "id": "guidance",
+      "status": "captured",
+      "png": "guidance.png",
+      "metadata": "guidance.json"
+    }
+  ],
+  "failures": [],
+  "updatedAt": 1792143946265,
+  "readingDatabaseUnchanged": true,
+  "realPreferencesRestored": true,
+  "status": "complete"
+}

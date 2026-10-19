@@ -18,7 +18,8 @@ data class TarotCard(
     @SerializedName("yes_no") val yesNo: YesNo,
     val astrology: String,
     @SerializedName("image_url") val imageUrl: String,
-    @SerializedName("source_url") val sourceUrl: String
+    @SerializedName("source_url") val sourceUrl: String,
+    @Transient val original: OriginalCardMeaning? = null
 )
 
 @Keep
@@ -30,12 +31,12 @@ enum class Spread(
     val title: String,
     val description: String,
     val positions: List<String>,
-    val rule: ReadingRule = ReadingRule.UNLIMITED,
+    val rule: ReadingRule = ReadingRule.COOLDOWN,
     val symbol: String = "✦"
 ) {
     DAILY("Daily Reading", "Your guidance for today", listOf("Today's Message"), ReadingRule.DAILY, "☀"),
     WEEKLY("Weekly Reading", "Your challenges and opportunities", listOf("This Week's Challenges", "This Week's Opportunities"), ReadingRule.DAILY, "☾"),
-    CELTIC("Celtic Cross", "Explore your situation in depth", listOf("Current Situation", "Immediate Challenge", "Aspiration & Goal", "Root Cause & Foundation", "Recent Past", "Immediate Future", "Internal Influences", "External Influences", "Hopes & Fears", "Final Outcome"), symbol = "✚"),
+    CELTIC("Celtic Cross", "Explore your situation in depth", listOf("Current Situation", "Immediate Challenge", "Aspiration & Goal", "Root Cause & Foundation", "Recent Past", "Immediate Future", "Internal Influences", "External Influences", "Hopes & Fears", "Final Outcome"), rule = ReadingRule.UNLIMITED, symbol = "✚"),
     UNIVERSE("Message from the Universe", "A message from two cards", listOf("First Card", "Second Card"), ReadingRule.COOLDOWN, "✉"),
     QUICK("Quick Reading", "A quick message for you", listOf("Past", "Present", "Future"), symbol = "⚡"),
     YES_NO("Yes / No", "Find clarity on your question", listOf("Your Answer"), symbol = "?"),
@@ -68,11 +69,15 @@ data class ReadingCard(
     val reversed: Boolean,
     val interpretation: String,
     val generalMeaning: Boolean,
-    val answer: String? = null
+    val answer: String? = null,
+    val contentId: String? = null
 )
 
 @Keep
-data class ReadingSnapshot(val id: String, val spread: String, val createdAt: Long, val cards: List<ReadingCard>)
+data class ReadingSnapshot(
+    val id: String, val spread: String, val createdAt: Long, val cards: List<ReadingCard>,
+    val combinedInterpretation: String? = null
+)
 
 object TarotRules {
     const val COOLDOWN_MS = 23 * 60 * 60 * 1000L
@@ -86,9 +91,13 @@ object TarotRules {
     fun remaining(lastDraw: Long?, now: Long): Long =
         if (lastDraw == null) 0 else (lastDraw + COOLDOWN_MS - now).coerceIn(0, COOLDOWN_MS)
 
+    /** The merged rule in the user's sheet covers spreads 4–16, independently. */
+    fun remaining(spread: Spread, lastDraw: Long?, now: Long): Long =
+        if (spread.rule == ReadingRule.COOLDOWN) remaining(lastDraw, now) else 0
+
     fun deck(cards: List<TarotCard>, reverseChance: Int, random: Random = Random.Default): List<DrawnCard> {
         require(cards.map { it.slug }.distinct().size == cards.size)
-        return cards.shuffled(random).map { DrawnCard(it.slug, random.nextInt(100) < reverseChance.coerceIn(0, 100)) }
+        return cards.map { DrawnCard(it.slug, random.nextInt(100) < reverseChance.coerceIn(0, 100)) }
     }
 
     // The supplied file contains incorrect parsed answers. Resolve only explicit conclusions;
@@ -103,6 +112,8 @@ object TarotRules {
     }
 
     fun interpret(card: TarotCard, spread: Spread, index: Int, reversed: Boolean): ReadingCard {
+        if (card.original != null) return TarotInterpretations.interpret(card, spread, index, reversed)
+        // Compatibility for legacy/imported data. Production loads the complete original catalog.
         val position = spread.positions[index]
         val positional = if (spread in listOf(Spread.QUICK, Spread.PAST_PRESENT_FUTURE)) card.positions[position.lowercase()] else null
         val isGeneral = reversed || (spread != Spread.DAILY && spread != Spread.YES_NO && spread != Spread.CALLING && positional == null)

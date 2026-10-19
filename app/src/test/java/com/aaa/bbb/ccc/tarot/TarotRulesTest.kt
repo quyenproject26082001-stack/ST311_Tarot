@@ -43,7 +43,29 @@ class TarotRulesTest {
     }
     @Test fun all16SpreadsMatchTheProvidedCardCounts() {
         assertEquals(listOf(1, 2, 10, 2, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3), Spread.entries.map { it.cardCount })
-        assertTrue(Spread.entries.filter { it !in listOf(Spread.DAILY, Spread.WEEKLY, Spread.UNIVERSE) }.all { it.rule == ReadingRule.UNLIMITED })
+        assertTrue(Spread.entries.drop(3).all { it.rule == ReadingRule.COOLDOWN })
+        assertEquals(ReadingRule.UNLIMITED, Spread.CELTIC.rule)
+    }
+    @Test fun merged23HourRuleCoversExactlyTheThirteenSpreadsFromUniverseToCalling() {
+        assertEquals(13, Spread.entries.count { it.rule == ReadingRule.COOLDOWN })
+        assertEquals(listOf(Spread.DAILY, Spread.WEEKLY), Spread.entries.filter { it.rule == ReadingRule.DAILY })
+        assertEquals(listOf(Spread.CELTIC), Spread.entries.filter { it.rule == ReadingRule.UNLIMITED })
+        assertEquals(Spread.entries.drop(3), Spread.entries.filter { it.rule == ReadingRule.COOLDOWN })
+    }
+    @Test fun everyCooldownSpreadUnlocksAt23HoursNotAtMidnight() {
+        val start = time(9, 23)
+        Spread.entries.drop(3).forEach { spread ->
+            assertEquals(spread.name, 22 * 60 * 60 * 1000L, TarotRules.remaining(spread, start, time(10, 0)))
+            assertEquals(1L, TarotRules.remaining(spread, start, start + TarotRules.COOLDOWN_MS - 1))
+            assertEquals(0L, TarotRules.remaining(spread, start, start + TarotRules.COOLDOWN_MS))
+            assertEquals(0L, TarotRules.remaining(spread, null, start))
+        }
+    }
+    @Test fun cooldownLookupDoesNotApplyThe23HourRuleToDailyWeeklyOrCeltic() {
+        val now = time(9, 12)
+        listOf(Spread.DAILY, Spread.WEEKLY, Spread.CELTIC).forEach {
+            assertEquals(0L, TarotRules.remaining(it, now, now))
+        }
     }
     @Test fun incorrectYesNoLabelsAreResolvedFromExplicitConclusions() {
         assertEquals("Yes", TarotRules.answer(cards.first { it.slug == "the-emperor" }.yesNo))

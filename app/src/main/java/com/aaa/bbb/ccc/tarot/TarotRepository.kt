@@ -86,7 +86,8 @@ class TarotRepository(context: Context) {
         val type = object : TypeToken<List<TarotCard>>() {}.type
         val cards = appContext.assets.open("tarot/tarot_data.json").bufferedReader().use { gson.fromJson<List<TarotCard>>(it, type) }
         require(cards.size == 78 && cards.map { it.slug }.distinct().size == 78) { "Invalid 78-card deck" }
-        cards
+        val originalJson = appContext.assets.open(TarotInterpretations.ASSET_PATH).bufferedReader().use { it.readText() }
+        TarotInterpretations.attach(cards, originalJson)
     }
     fun snapshot(entity: ReadingEntity): ReadingSnapshot = gson.fromJson(entity.snapshot, ReadingSnapshot::class.java)
     suspend fun save(reading: ReadingSnapshot) = dao.insert(ReadingEntity(reading.id, reading.spread, reading.createdAt, gson.toJson(reading)))

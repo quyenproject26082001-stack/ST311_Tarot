@@ -23,7 +23,12 @@
             style="@style/TarotText"
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:background="@drawable/tarot_bg_input"
+            android:background="@drawable/tarot_settings_name_background"
+            android:fontFamily="@font/nunito_regular"
+            android:includeFontPadding="false"
+            android:gravity="center_vertical"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
             android:paddingHorizontal="12dp"
             android:inputType="textPersonName|textCapWords"
             android:singleLine="true"
@@ -34,9 +39,12 @@
             android:id="@+id/nameCounter"
             style="@style/TarotTextBody"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="12dp"
             android:layout_marginTop="2dp"
+            android:translationY="-2dp"
             android:gravity="end"
+            android:lineHeight="10sp"
+            android:maxLines="1"
             android:textSize="8sp" />
     </LinearLayout>
 </LinearLayout>

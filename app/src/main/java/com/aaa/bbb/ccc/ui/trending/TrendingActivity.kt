@@ -125,7 +125,7 @@ class TrendingActivity : BaseActivity<ActivityTrendingBinding>() {
                 tvCenter.setText(R.string.random)
                 tvCenter.updateLayoutParams<ConstraintLayout.LayoutParams> {
                     width = 0
-                    height = WRAP_CONTENT
+                    height = 0 // Match the shared title bounds, just like every ActionBar button.
                     marginStart = 0
                     marginEnd = 0
                 }

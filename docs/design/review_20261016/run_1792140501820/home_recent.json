@@ -1,0 +1,2125 @@
+{
+  "id": "home_recent",
+  "state": {
+    "screen": "home",
+    "page": 1,
+    "scrollY": 0,
+    "maxScrollY": 432,
+    "pageLimit": 1,
+    "hasMoreContent": true,
+    "truncatedAtPageLimit": true
+  },
+  "activity": "com.aaa.bbb.ccc.ui.home.HomeActivity",
+  "sdk": 37,
+  "density": 2,
+  "densityDpi": 320,
+  "fontScale": 1,
+  "locale": "en-US",
+  "timezone": "Asia\/Bangkok",
+  "rootLocationOnScreen": [
+    0,
+    0
+  ],
+  "views": [
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStub",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "action_bar_root",
+      "class": "FitWindowsLinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStubCompat",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "ContentFrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "pageBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "page",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionBar",
+      "class": "ConstraintLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        720,
+        204
+      ],
+      "visibleBounds": [
+        0,
+        104,
+        720,
+        204
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeftText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvLeftText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "BACK",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "btnReset",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        32,
+        104,
+        112,
+        184
+      ],
+      "visibleBounds": [
+        32,
+        104,
+        112,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "cvLogo",
+      "class": "CardView",
+      "window": "capture",
+      "bounds": [
+        40,
+        104,
+        120,
+        184
+      ],
+      "visibleBounds": [
+        40,
+        104,
+        120,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "tvStart",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": " Language ",
+      "textSizePx": 56,
+      "gravity": 8388659,
+      "lineHeightPx": 88,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "tvCenter",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": true,
+      "text": "Daily Tarot Reading",
+      "textSizePx": 40,
+      "gravity": 17,
+      "lineHeightPx": 54,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "imgCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        320,
+        114,
+        400,
+        194
+      ],
+      "visibleBounds": [
+        320,
+        114,
+        400,
+        194
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        182,
+        114,
+        262,
+        194
+      ],
+      "visibleBounds": [
+        182,
+        114,
+        262,
+        194
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight1",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        384,
+        97,
+        472,
+        185
+      ],
+      "visibleBounds": [
+        384,
+        104,
+        472,
+        185
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        496,
+        104,
+        576,
+        184
+      ],
+      "visibleBounds": [
+        496,
+        104,
+        576,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        600,
+        110,
+        688,
+        198
+      ],
+      "visibleBounds": [
+        600,
+        110,
+        688,
+        198
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightLang",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        104,
+        696,
+        184
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnShare",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvRightText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Next",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "brand",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        128,
+        460,
+        180
+      ],
+      "visibleBounds": [
+        40,
+        128,
+        460,
+        180
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "libraryToggle",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "listMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "gridMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "guideline",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        360,
+        104,
+        360,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "screenHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        204,
+        720,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        204,
+        720,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        204,
+        720,
+        1916
+      ],
+      "visibleBounds": [
+        0,
+        204,
+        720,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "greeting",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        206,
+        680,
+        255
+      ],
+      "visibleBounds": [
+        40,
+        212,
+        680,
+        255
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Have a wonderful day, Alex Morgan!",
+      "textSizePx": 36,
+      "gravity": 8388659,
+      "lineHeightPx": 44,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "horoscope",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        40,
+        326,
+        680,
+        726
+      ],
+      "visibleBounds": [
+        40,
+        326,
+        680,
+        726
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacIcon",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        76,
+        357,
+        108,
+        389
+      ],
+      "visibleBounds": [
+        76,
+        357,
+        108,
+        389
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "zodiacName",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        118,
+        357,
+        199,
+        389
+      ],
+      "visibleBounds": [
+        118,
+        357,
+        199,
+        389
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Scorpio",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "quickActions",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        40,
+        815,
+        680,
+        1059
+      ],
+      "visibleBounds": [
+        40,
+        815,
+        680,
+        1059
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionArt",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        40,
+        815,
+        237,
+        999
+      ],
+      "visibleBounds": [
+        40,
+        815,
+        237,
+        999
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        40,
+        999,
+        237,
+        1059
+      ],
+      "visibleBounds": [
+        40,
+        999,
+        237,
+        1059
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Daily Reading",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "actionArt",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        261,
+        815,
+        458,
+        999
+      ],
+      "visibleBounds": [
+        261,
+        815,
+        458,
+        999
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        261,
+        999,
+        458,
+        1059
+      ],
+      "visibleBounds": [
+        261,
+        999,
+        458,
+        1059
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Weekly Reading",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "actionArt",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        482,
+        815,
+        680,
+        999
+      ],
+      "visibleBounds": [
+        482,
+        815,
+        680,
+        999
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        482,
+        999,
+        680,
+        1059
+      ],
+      "visibleBounds": [
+        482,
+        999,
+        680,
+        1059
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Celtic Cross",
+      "textSizePx": 24,
+      "gravity": 17,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "recentReadings",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        40,
+        1164,
+        680,
+        1884
+      ],
+      "visibleBounds": [
+        40,
+        1164,
+        680,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "thumbnailHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        64,
+        1174,
+        262,
+        1370
+      ],
+      "visibleBounds": [
+        64,
+        1174,
+        262,
+        1370
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "readingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1208,
+        656,
+        1252
+      ],
+      "visibleBounds": [
+        272,
+        1208,
+        656,
+        1252
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Daily Reading",
+      "textSizePx": 32,
+      "gravity": 8388627,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "readingDate",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1256,
+        656,
+        1284
+      ],
+      "visibleBounds": [
+        272,
+        1256,
+        656,
+        1284
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Jan 10, 2024 · 7:00 PM",
+      "textSizePx": 20,
+      "gravity": 8388627,
+      "lineHeightPx": 28,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "readingSummary",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1300,
+        656,
+        1336
+      ],
+      "visibleBounds": [
+        272,
+        1300,
+        656,
+        1336
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Fool is a very powerful card in the Tarot deck, usually representing a new beginning -- and, consequently, an end to something in your old life. The Fool's position in your spread reveals which aspects of your life may be subject to change. The Fool portends important decisions ahead which may not be easy to make, and involve an element of risk for you. Approach the changes with optimism and care to gain the most positive outcome.",
+      "textSizePx": 24,
+      "gravity": 8388627,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "favorite",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        40,
+        1164,
+        40,
+        1164
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "thumbnailHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        64,
+        1414,
+        262,
+        1610
+      ],
+      "visibleBounds": [
+        64,
+        1414,
+        262,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "readingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1448,
+        656,
+        1492
+      ],
+      "visibleBounds": [
+        272,
+        1448,
+        656,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Quick Reading",
+      "textSizePx": 32,
+      "gravity": 8388627,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "readingDate",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1496,
+        656,
+        1524
+      ],
+      "visibleBounds": [
+        272,
+        1292,
+        656,
+        1320
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Jan 10, 2024 · 7:00 PM",
+      "textSizePx": 20,
+      "gravity": 8388627,
+      "lineHeightPx": 28,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "readingSummary",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1540,
+        656,
+        1576
+      ],
+      "visibleBounds": [
+        272,
+        1336,
+        656,
+        1372
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The risks you have taken and your original thinking have brought you success. By doing things in a new way, you have allowed for great potential.",
+      "textSizePx": 24,
+      "gravity": 8388627,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "favorite",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        40,
+        1404,
+        40,
+        1404
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": true
+    },
+    {
+      "id": "thumbnailHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        64,
+        1654,
+        262,
+        1850
+      ],
+      "visibleBounds": [
+        64,
+        1450,
+        262,
+        1646
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "diagram",
+      "class": "ConstraintLayout",
+      "window": "capture",
+      "bounds": [
+        103,
+        1671,
+        223,
+        1833
+      ],
+      "visibleBounds": [
+        103,
+        1467,
+        223,
+        1629
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "columnPast",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        117,
+        1671,
+        117,
+        1671
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "columnCenter",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        147,
+        1671,
+        147,
+        1671
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "columnFuture",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        177,
+        1671,
+        177,
+        1671
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "columnStaff",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        209,
+        1671,
+        209,
+        1671
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowTop",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        103,
+        1671,
+        103,
+        1671
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowAspiration",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        103,
+        1691,
+        103,
+        1691
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowExternal",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        103,
+        1712,
+        103,
+        1712
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowCenter",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        103,
+        1732,
+        103,
+        1732
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowHopes",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        103,
+        1752,
+        103,
+        1752
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowFoundation",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        103,
+        1772,
+        103,
+        1772
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "rowOutcome",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        103,
+        1793,
+        103,
+        1793
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "situation",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        136,
+        1732,
+        158,
+        1771
+      ],
+      "visibleBounds": [
+        136,
+        1528,
+        158,
+        1567
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "challenge",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        167,
+        1741,
+        189,
+        1780
+      ],
+      "visibleBounds": [
+        127,
+        1536,
+        167,
+        1559
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "aspiration",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        136,
+        1691,
+        158,
+        1730
+      ],
+      "visibleBounds": [
+        136,
+        1487,
+        158,
+        1526
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "foundation",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        136,
+        1772,
+        158,
+        1811
+      ],
+      "visibleBounds": [
+        136,
+        1568,
+        158,
+        1607
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "past",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        106,
+        1732,
+        128,
+        1771
+      ],
+      "visibleBounds": [
+        106,
+        1528,
+        128,
+        1567
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "future",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        166,
+        1732,
+        188,
+        1771
+      ],
+      "visibleBounds": [
+        166,
+        1528,
+        188,
+        1567
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "internal",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        198,
+        1671,
+        220,
+        1710
+      ],
+      "visibleBounds": [
+        198,
+        1467,
+        220,
+        1506
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "external",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        198,
+        1712,
+        220,
+        1751
+      ],
+      "visibleBounds": [
+        198,
+        1508,
+        220,
+        1547
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "hopes",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        198,
+        1752,
+        220,
+        1791
+      ],
+      "visibleBounds": [
+        198,
+        1548,
+        220,
+        1587
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "outcome",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        198,
+        1793,
+        220,
+        1832
+      ],
+      "visibleBounds": [
+        198,
+        1589,
+        220,
+        1628
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "readingTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1688,
+        656,
+        1732
+      ],
+      "visibleBounds": [
+        272,
+        1484,
+        656,
+        1528
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Celtic Cross",
+      "textSizePx": 32,
+      "gravity": 8388627,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "readingDate",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1736,
+        656,
+        1764
+      ],
+      "visibleBounds": [
+        272,
+        1532,
+        656,
+        1560
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Jan 10, 2024 · 7:00 PM",
+      "textSizePx": 20,
+      "gravity": 8388627,
+      "lineHeightPx": 28,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "readingSummary",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        272,
+        1780,
+        656,
+        1816
+      ],
+      "visibleBounds": [
+        272,
+        1576,
+        656,
+        1612
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Fool is a very powerful card in the Tarot deck, usually representing a new beginning -- and, consequently, an end to something in your old life. The Fool's position in your spread reveals which aspects of your life may be subject to change. The Fool portends important decisions ahead which may not be easy to make, and involve an element of risk for you. Approach the changes with optimism and care to gain the most positive outcome.",
+      "textSizePx": 24,
+      "gravity": 8388627,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "favorite",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        40,
+        1644,
+        40,
+        1644
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "emptyRecent",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        40,
+        206,
+        40,
+        206
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "bottomTabs",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        43,
+        1484,
+        185,
+        1516
+      ],
+      "visibleBounds": [
+        43,
+        1484,
+        185,
+        1516
+      ],
+      "visibility": 0,
+      "selected": true
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "visibleBounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "visibility": 0,
+      "selected": true
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        81,
+        1560,
+        146,
+        1592
+      ],
+      "visibleBounds": [
+        81,
+        1560,
+        146,
+        1592
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Home",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        196,
+        1484,
+        196,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "visibleBounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        233,
+        1560,
+        323,
+        1592
+      ],
+      "visibleBounds": [
+        233,
+        1560,
+        323,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Spreads",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        360,
+        1484,
+        360,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "visibleBounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        410,
+        1560,
+        474,
+        1592
+      ],
+      "visibleBounds": [
+        410,
+        1560,
+        474,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Cards",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        524,
+        1484,
+        524,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "visibleBounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        566,
+        1560,
+        645,
+        1592
+      ],
+      "visibleBounds": [
+        566,
+        1560,
+        645,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "History",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    }
+  ],
+  "images": [
+    {
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        600,
+        110,
+        688,
+        198
+      ],
+      "description": "Settings",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        40,
+        128,
+        460,
+        180
+      ],
+      "description": "Daily Tarot Reading",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        40,
+        602,
+        244,
+        726
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        594,
+        334,
+        672,
+        410
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        76,
+        357,
+        108,
+        389
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        40,
+        815,
+        237,
+        999
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        261,
+        815,
+        458,
+        999
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        482,
+        815,
+        680,
+        999
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        107,
+        1174,
+        219,
+        1370
+      ],
+      "description": "the fool",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        71,
+        1414,
+        183,
+        1610
+      ],
+      "description": "the fool",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        107,
+        1414,
+        219,
+        1610
+      ],
+      "description": "the magician",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        143,
+        1414,
+        255,
+        1610
+      ],
+      "description": "the high priestess",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    }
+  ],
+  "comparisonBounds": [
+    0,
+    104,
+    720,
+    1600
+  ],
+  "artValidated": false,
+  "glideWaitLimitMs": 1000,
+  "widthPx": 720,
+  "heightPx": 1600,
+  "regression": {
+    "status": "capture_only"
+  }
+}

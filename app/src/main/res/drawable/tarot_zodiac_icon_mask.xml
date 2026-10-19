@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The source disc includes pixels blended with its white background.
+     Clip 2 source pixels inside that disc: (4,3)-(48,47) at the 2x scale.
+     Inset only the outline; keep the artwork and glyph at their original scale.
+     A fully rounded rectangle remains clip-compatible on API 24 at odd pixel densities. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="2dp"
+    android:insetTop="1.5dp"
+    android:insetRight="2dp"
+    android:insetBottom="2.5dp">
+    <shape android:shape="rectangle">
+        <solid android:color="?attr/tarotPaper" />
+        <corners android:radius="100dp" />
+    </shape>
+</inset>

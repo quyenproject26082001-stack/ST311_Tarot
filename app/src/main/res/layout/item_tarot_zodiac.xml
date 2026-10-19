@@ -5,7 +5,10 @@
     android:layout_height="80dp"
     android:layout_columnWeight="1"
     android:layout_margin="4dp"
-    android:padding="5dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingTop="4.5dp"
+    android:paddingBottom="5.5dp"
     android:gravity="center"
     android:background="@drawable/tarot_bg_zodiac"
     android:orientation="vertical"
@@ -13,6 +16,7 @@
     android:focusable="true">
     <ImageView
         android:id="@+id/zodiacIcon"
+        style="@style/TarotZodiacIcon"
         android:layout_width="26dp"
         android:layout_height="26dp"
         android:importantForAccessibility="no" />
@@ -21,13 +25,15 @@
         style="@style/TarotTextBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2.5dp"
+        android:lineHeight="16sp"
         android:textSize="12sp" />
     <TextView
         android:id="@+id/zodiacDates"
         style="@style/TarotTextBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="1dp"
+        android:lineHeight="16sp"
         android:textSize="10sp" />
 </LinearLayout>

@@ -1,0 +1,1476 @@
+{
+  "id": "cards_list",
+  "state": {
+    "screen": "cards",
+    "page": 1,
+    "scrollY": 0,
+    "maxScrollY": 0,
+    "pageLimit": 1,
+    "hasMoreContent": false,
+    "truncatedAtPageLimit": false
+  },
+  "activity": "com.aaa.bbb.ccc.ui.home.HomeActivity",
+  "sdk": 37,
+  "density": 2,
+  "densityDpi": 320,
+  "fontScale": 1,
+  "locale": "en-US",
+  "timezone": "Asia\/Bangkok",
+  "rootLocationOnScreen": [
+    0,
+    0
+  ],
+  "views": [
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStub",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "action_bar_root",
+      "class": "FitWindowsLinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "action_mode_bar_stub",
+      "class": "ViewStubCompat",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "content",
+      "class": "ContentFrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "pageBackground",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "page",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "actionBar",
+      "class": "ConstraintLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        720,
+        184
+      ],
+      "visibleBounds": [
+        0,
+        104,
+        720,
+        184
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarLeftText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvLeftText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "BACK",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "btnReset",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        32,
+        85,
+        112,
+        165
+      ],
+      "visibleBounds": [
+        32,
+        104,
+        112,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "cvLogo",
+      "class": "CardView",
+      "window": "capture",
+      "bounds": [
+        40,
+        85,
+        120,
+        165
+      ],
+      "visibleBounds": [
+        40,
+        104,
+        120,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "tvStart",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false,
+      "text": " Language ",
+      "textSizePx": 56,
+      "gravity": 8388659,
+      "lineHeightPx": 88,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "tvCenter",
+      "class": "DoubleStrokeTextView",
+      "window": "capture",
+      "bounds": [
+        152,
+        111,
+        568,
+        165
+      ],
+      "visibleBounds": [
+        152,
+        111,
+        568,
+        165
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Cards",
+      "textSizePx": 40,
+      "gravity": 17,
+      "lineHeightPx": 54,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "imgCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenter",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        320,
+        104,
+        400,
+        184
+      ],
+      "visibleBounds": [
+        320,
+        104,
+        400,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterLeft",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        182,
+        104,
+        262,
+        184
+      ],
+      "visibleBounds": [
+        182,
+        104,
+        262,
+        184
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarCenterRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight1",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        504,
+        77,
+        592,
+        165
+      ],
+      "visibleBounds": [
+        504,
+        104,
+        592,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarNextRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        85,
+        696,
+        165
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRight",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        600,
+        104,
+        680,
+        184
+      ],
+      "visibleBounds": [
+        600,
+        104,
+        680,
+        184
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightLang",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        616,
+        85,
+        696,
+        165
+      ],
+      "visibleBounds": [
+        616,
+        104,
+        696,
+        165
+      ],
+      "visibility": 4,
+      "selected": false
+    },
+    {
+      "id": "btnShare",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "btnActionBarRightText",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tvRightText",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        0,
+        104,
+        0,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Next",
+      "textSizePx": 32,
+      "gravity": 17,
+      "lineHeightPx": 51,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "brand",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        35,
+        118,
+        455,
+        170
+      ],
+      "visibleBounds": [
+        35,
+        118,
+        455,
+        170
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "libraryToggle",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        568,
+        112,
+        688,
+        176
+      ],
+      "visibleBounds": [
+        568,
+        112,
+        688,
+        176
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "listMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        574,
+        118,
+        628,
+        170
+      ],
+      "visibleBounds": [
+        574,
+        118,
+        628,
+        170
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "gridMode",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        628,
+        118,
+        682,
+        170
+      ],
+      "visibleBounds": [
+        628,
+        118,
+        682,
+        170
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "guideline",
+      "class": "Guideline",
+      "window": "capture",
+      "bounds": [
+        360,
+        104,
+        360,
+        104
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "screenHost",
+      "class": "FrameLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        184,
+        720,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        184,
+        720,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "categories",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        32,
+        184,
+        982,
+        310
+      ],
+      "visibleBounds": [
+        32,
+        184,
+        688,
+        310
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cards",
+      "class": "RecyclerView",
+      "window": "capture",
+      "bounds": [
+        0,
+        310,
+        720,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        310,
+        720,
+        1484
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        76,
+        326,
+        188,
+        526
+      ],
+      "visibleBounds": [
+        76,
+        326,
+        188,
+        526
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        337,
+        656,
+        386
+      ],
+      "visibleBounds": [
+        212,
+        337,
+        656,
+        386
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Fool",
+      "textSizePx": 36,
+      "gravity": 8388659,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardMeaning",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        402,
+        656,
+        514
+      ],
+      "visibleBounds": [
+        212,
+        402,
+        656,
+        514
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Fool is a very powerful card in the Tarot deck, usually representing a new beginning -- and, consequently, an end to something in your old life. The Fool's position in your spread reveals which aspects of your life may be subject to change. The Fool portends important decisions ahead which may not be easy to make, and involve an element of risk for you. Approach the changes with optimism and care to gain the most positive outcome.",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        76,
+        558,
+        188,
+        758
+      ],
+      "visibleBounds": [
+        76,
+        558,
+        188,
+        758
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        569,
+        656,
+        618
+      ],
+      "visibleBounds": [
+        212,
+        569,
+        656,
+        618
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Magician",
+      "textSizePx": 36,
+      "gravity": 8388659,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardMeaning",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        634,
+        656,
+        746
+      ],
+      "visibleBounds": [
+        212,
+        634,
+        656,
+        746
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Magician generally associates with intelligent and skillful communicators. His presence in your spread indicates a level of self-confidence and drive which allows you to translate ideas into action. A practical card, the revelations it brings are best applied to the pragmatic and physical aspects of your life, rather then the ephemeral or theoretical. Your success in upcoming ventures in politics or business will likely hinge upon your own strength of will and determination.",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        76,
+        790,
+        188,
+        990
+      ],
+      "visibleBounds": [
+        76,
+        790,
+        188,
+        990
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        801,
+        656,
+        850
+      ],
+      "visibleBounds": [
+        212,
+        801,
+        656,
+        850
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The High Priestess",
+      "textSizePx": 36,
+      "gravity": 8388659,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardMeaning",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        866,
+        656,
+        978
+      ],
+      "visibleBounds": [
+        212,
+        866,
+        656,
+        978
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Your identification with the High Priestess suggests you possess inherent good judgment, in the form of strong intuition. She may indicate that reason should take second place to instinct. Your head must trust in the wisdom of your heart for a change. Yet, she is also an aide by nature, and her presence in certain parts of your spread could be indicative of someone close to you coming to your rescue with their own intuition. Intuition is most effective at seeing what is hidden to the senses, so the High Priestess may also come as a warning of concealed facts or influences that are, or will be, important to you.",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        76,
+        1022,
+        188,
+        1222
+      ],
+      "visibleBounds": [
+        76,
+        1022,
+        188,
+        1222
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        1033,
+        656,
+        1082
+      ],
+      "visibleBounds": [
+        212,
+        1033,
+        656,
+        1082
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Empress",
+      "textSizePx": 36,
+      "gravity": 8388659,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardMeaning",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        1098,
+        656,
+        1210
+      ],
+      "visibleBounds": [
+        212,
+        1098,
+        656,
+        1210
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Traditionally associated with strong maternal influence, the presence of the Empress is excellent news if you are looking for harmony in your marriage or hoping to start a family. Any artistic endeavours you are currently associated with are also likely to be more successful, as this card often finds those exposed to strong bursts of creative or artistic energy. That creative energy may not be in the form of a painting or art project, however: This card also suggests a very strong possibility of pregnancy -- not necessarily yours, but you might be seeing a new addition to your extended family or the family of a close friend in the near future! This card is a good portent for you and those around you.",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        76,
+        1254,
+        188,
+        1454
+      ],
+      "visibleBounds": [
+        76,
+        1254,
+        188,
+        1454
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        1265,
+        656,
+        1314
+      ],
+      "visibleBounds": [
+        212,
+        1265,
+        656,
+        1314
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Emperor",
+      "textSizePx": 36,
+      "gravity": 8388659,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardMeaning",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        1330,
+        656,
+        1442
+      ],
+      "visibleBounds": [
+        212,
+        1330,
+        656,
+        1442
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Counterpart to the Empress, the Emperor is signifies a powerful influence, generally male in nature. This can also include concepts in your life historically considered masculine, such as leadership and authority, self-discipline, and stability through the power of action. Its positive influences suggest you may be on a path to advancement or promotion, but it can also be neutral. Often a companion to those destined to take on greater responsibility, it may presage change or loss that necessitates you stepping forward to shoulder a greater burden than you have in the past. Whatever the impetus for the change, it indicates you may possess an uncommon inner strength that will compel you act and to lead.",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "cardImage",
+      "class": "AppCompatImageView",
+      "window": "capture",
+      "bounds": [
+        76,
+        1486,
+        188,
+        1686
+      ],
+      "visibleBounds": [
+        76,
+        1176,
+        188,
+        1376
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "cardTitle",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        1497,
+        656,
+        1546
+      ],
+      "visibleBounds": [
+        212,
+        1187,
+        656,
+        1236
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "The Hierophant (Pope)",
+      "textSizePx": 36,
+      "gravity": 8388659,
+      "lineHeightPx": 44,
+      "typefaceStyle": 1
+    },
+    {
+      "id": "cardMeaning",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        212,
+        1562,
+        656,
+        1674
+      ],
+      "visibleBounds": [
+        212,
+        1252,
+        656,
+        1364
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Depending on your own nature, the Hierophant can mean very different things. At its root, it represents doctrine, but doctrine can come in the form of teaching and guidance or rigid authority. Where it appears in your spread is also important, as it is most often indicative of your own approach to the moral, religious, and social conventions of the world. Considered wisely, it helps show the path towards fulfillment.",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 40,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "bottomTabs",
+      "class": "LinearLayout",
+      "window": "capture",
+      "bounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibleBounds": [
+        0,
+        1484,
+        720,
+        1600
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        32,
+        1484,
+        32,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "visibleBounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        81,
+        1560,
+        146,
+        1592
+      ],
+      "visibleBounds": [
+        81,
+        1560,
+        146,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Home",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        196,
+        1484,
+        196,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "visibleBounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        233,
+        1560,
+        323,
+        1592
+      ],
+      "visibleBounds": [
+        233,
+        1560,
+        323,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "Spreads",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        371,
+        1484,
+        513,
+        1516
+      ],
+      "visibleBounds": [
+        371,
+        1484,
+        513,
+        1516
+      ],
+      "visibility": 0,
+      "selected": true
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "visibleBounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "visibility": 0,
+      "selected": true
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        410,
+        1560,
+        474,
+        1592
+      ],
+      "visibleBounds": [
+        410,
+        1560,
+        474,
+        1592
+      ],
+      "visibility": 0,
+      "selected": true,
+      "text": "Cards",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    },
+    {
+      "id": "selectionGlow",
+      "class": "View",
+      "window": "capture",
+      "bounds": [
+        524,
+        1484,
+        524,
+        1484
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibility": 8,
+      "selected": false
+    },
+    {
+      "id": "tabIcon",
+      "class": "TarotIcon",
+      "window": "capture",
+      "bounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "visibleBounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "visibility": 0,
+      "selected": false
+    },
+    {
+      "id": "tabLabel",
+      "class": "MaterialTextView",
+      "window": "capture",
+      "bounds": [
+        566,
+        1560,
+        645,
+        1592
+      ],
+      "visibleBounds": [
+        566,
+        1560,
+        645,
+        1592
+      ],
+      "visibility": 0,
+      "selected": false,
+      "text": "History",
+      "textSizePx": 24,
+      "gravity": 8388659,
+      "lineHeightPx": 32,
+      "typefaceStyle": 0
+    }
+  ],
+  "images": [
+    {
+      "bounds": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        574,
+        118,
+        628,
+        170
+      ],
+      "description": "List view",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        628,
+        118,
+        682,
+        170
+      ],
+      "description": "Grid view",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        76,
+        326,
+        188,
+        526
+      ],
+      "description": "The Fool",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        76,
+        558,
+        188,
+        758
+      ],
+      "description": "The Magician",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        76,
+        790,
+        188,
+        990
+      ],
+      "description": "The High Priestess",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        76,
+        1022,
+        188,
+        1222
+      ],
+      "description": "The Empress",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        76,
+        1254,
+        188,
+        1454
+      ],
+      "description": "The Emperor",
+      "status": "complete"
+    },
+    {
+      "bounds": [
+        88,
+        1502,
+        140,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        252,
+        1502,
+        304,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        416,
+        1502,
+        468,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    },
+    {
+      "bounds": [
+        580,
+        1502,
+        632,
+        1550
+      ],
+      "description": "",
+      "status": "local_drawable"
+    }
+  ],
+  "comparisonBounds": [
+    0,
+    104,
+    720,
+    1600
+  ],
+  "artValidated": false,
+  "glideWaitLimitMs": 1000,
+  "widthPx": 720,
+  "heightPx": 1600,
+  "regression": {
+    "status": "capture_only"
+  }
+}

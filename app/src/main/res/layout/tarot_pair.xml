@@ -6,8 +6,8 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:padding="6dp"
+        android:layout_height="274dp"
+        android:padding="10dp"
         android:background="@drawable/tarot_bg_pair"
         android:orientation="horizontal">
         <ImageView
@@ -15,6 +15,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginEnd="4dp"
             android:scaleType="fitCenter" />
         <ImageView
             android:id="@+id/secondCard"
@@ -30,12 +31,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
     <TextView
+        android:id="@+id/pairMeaning"
         style="@style/TarotTextBody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="12dp"
-        android:textSize="11sp"
+        android:textSize="14sp"
+        android:lineHeight="21sp"
+        android:justificationMode="inter_word"
         android:text="@string/tarot_pair_missing" />
 </LinearLayout>

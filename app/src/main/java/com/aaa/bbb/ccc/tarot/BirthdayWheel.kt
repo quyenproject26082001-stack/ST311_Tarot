@@ -2,7 +2,11 @@ package com.aaa.bbb.ccc.tarot
 
 import android.view.LayoutInflater
 import android.widget.LinearLayout
+import android.widget.EditText
 import android.widget.NumberPicker
+import androidx.core.content.res.ResourcesCompat
+import androidx.core.graphics.ColorUtils
+import com.aaa.bbb.ccc.R
 import com.aaa.bbb.ccc.databinding.TarotBirthdayWheelBinding
 import java.text.DateFormatSymbols
 import java.util.Locale
@@ -28,9 +32,18 @@ class BirthdayWheel(private val ui: TarotUi, initial: String, private val zodiac
         listOf(month, day, year).forEach {
             it.wrapSelectorWheel = false
             if (android.os.Build.VERSION.SDK_INT >= 29) {
-                it.textColor = ui.ink
-                it.textSize = ui.dp(14).toFloat()
+                it.textColor = ColorUtils.blendARGB(ui.muted, ui.surface, .4f)
+                it.textSize = ui.dp(12).toFloat()
                 it.selectionDividerHeight = 0
+            }
+            for (index in 0 until it.childCount) {
+                (it.getChildAt(index) as? EditText)?.apply {
+                    typeface = ResourcesCompat.getFont(context, R.font.tarot_nunito_semibold)
+                    textSize = 14f
+                    setTextColor(ui.ink)
+                    includeFontPadding = false
+                    setPadding(0, 0, 0, 0)
+                }
             }
         }
         month.setOnValueChangedListener { _, _, _ -> updateDays(day.value) }

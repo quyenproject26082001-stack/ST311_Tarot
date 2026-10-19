@@ -1,0 +1,147 @@
+package com.aaa.bbb.ccc.tarot
+
+import android.graphics.Outline
+import android.graphics.Rect
+import android.graphics.Bitmap
+import android.graphics.Color
+import android.os.SystemClock
+import android.view.LayoutInflater
+import android.widget.GridLayout
+import android.widget.ImageView
+import android.widget.LinearLayout
+import androidx.appcompat.view.ContextThemeWrapper
+import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.filters.SdkSuppress
+import com.aaa.bbb.ccc.R
+import com.aaa.bbb.ccc.databinding.ActivityTarotHomeBinding
+import com.aaa.bbb.ccc.databinding.ItemTarotZodiacBinding
+import org.junit.Assert.*
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.json.JSONObject
+import org.json.JSONArray
+import java.io.File
+
+/** Inspects native clipping/outline geometry; does not modify the source PNGs. */
+@RunWith(AndroidJUnit4::class)
+class ZodiacIconClippingTest {
+    private fun checkCircle(icon: ImageView, sizeDp: Int) {
+        val size = (sizeDp * icon.resources.displayMetrics.density + .5f).toInt()
+        assertEquals(size, icon.layoutParams.width)
+        assertEquals(size, icon.layoutParams.height)
+        icon.layout(0, 0, size, size)
+        // These views are inflated off-window; emulate the bounds assigned before draw.
+        icon.background.setBounds(0, 0, size, size)
+        assertTrue(icon.clipToOutline)
+        assertEquals(0, icon.paddingLeft + icon.paddingTop + icon.paddingRight + icon.paddingBottom)
+        assertEquals(ImageView.ScaleType.CENTER_CROP, icon.scaleType)
+        val outline = Outline()
+        icon.outlineProvider.getOutline(icon, outline)
+        assertTrue(outline.canClip())
+        val rect = Rect()
+        assertTrue(outline.getRect(rect))
+        assertTrue("The mask must remove padding inside the PNG", rect.left > 0 && rect.top >= 0 && rect.right < size && rect.bottom < size)
+        assertEquals(minOf(rect.width(), rect.height()) / 2f, outline.radius, .1f)
+        if (sizeDp == 26 && size == 52) {
+            assertEquals("Crop inside the source disc to discard white-blended edge pixels", Rect(4, 3, 48, 47), rect)
+        }
+    }
+
+    @Test fun allTwelveSelectedAndUnselectedIconsKeepCircularClippingInBothThemes() {
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        instrumentation.runOnMainSync {
+            listOf(R.style.TarotThemeLight, R.style.TarotThemeDark).forEach { theme ->
+                val context = ContextThemeWrapper(instrumentation.targetContext, theme)
+                val inflater = LayoutInflater.from(context)
+                val parent = android.widget.GridLayout(context)
+                zodiacSigns.forEach { sign ->
+                    val item = ItemTarotZodiacBinding.inflate(inflater, parent, false)
+                    item.zodiacIcon.setImageResource(sign.image)
+                    listOf(false, true).forEach { selected ->
+                        item.root.isSelected = selected
+                        item.root.refreshDrawableState()
+                        checkCircle(item.zodiacIcon, 26)
+                    }
+                }
+                // The common grid still dispatches the original sign on tap.
+                var chosen = ""
+                val grid = TarotUi(context, theme == R.style.TarotThemeDark).zodiacGrid("Aries") { chosen = it }
+                assertEquals(12, grid.childCount)
+                grid.getChildAt(1).performClick()
+                assertEquals("Taurus", chosen)
+            }
+        }
+    }
+
+    @Test fun homeBadgeUsesTheSameCircleWithoutChangingItsSize() {
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        instrumentation.runOnMainSync {
+            listOf(R.style.TarotThemeLight, R.style.TarotThemeDark).forEach { theme ->
+                val context = ContextThemeWrapper(instrumentation.targetContext, theme)
+                val parent = LinearLayout(context)
+                val home = ActivityTarotHomeBinding.inflate(LayoutInflater.from(context), parent, false)
+                checkCircle(home.zodiacIcon, 16)
+            }
+        }
+    }
+
+    /** Capture real hardware-composited pixels, not a software Canvas simulation. */
+    @Test
+    @SdkSuppress(minSdkVersion = 29)
+    fun selectedPiscesHasNoWhiteRimInTheActualProfileWindow() {
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        val directory = File(instrumentation.targetContext.cacheDir, "zodiac_design_check").apply { mkdirs() }
+        ImmersiveNavigationTest.LiveActivity(TarotProfileActivity::class.java).use { scenario ->
+            listOf(false, true).forEach { selected ->
+                scenario.onActivity { activity ->
+                    val grid = activity.binding.zodiacGrid.getChildAt(0) as GridLayout
+                    if (selected) grid.getChildAt(11).performClick()
+                    val current = (activity.binding.zodiacGrid.getChildAt(0) as GridLayout).getChildAt(11)
+                    current.requestRectangleOnScreen(Rect(0, 0, current.width, current.height), true)
+                }
+                SystemClock.sleep(250) // Allow a frame after selection/layout, without waiting for global idle.
+                val metadata = JSONObject()
+                var iconRect = Rect()
+                scenario.onActivity { activity ->
+                    val tile = (activity.binding.zodiacGrid.getChildAt(0) as GridLayout).getChildAt(11)
+                    val icon = tile.findViewById<ImageView>(R.id.zodiacIcon)
+                    assertEquals(selected, tile.isSelected)
+                    val location = IntArray(2)
+                    icon.getLocationOnScreen(location)
+                    iconRect = Rect(location[0], location[1], location[0] + icon.width, location[1] + icon.height)
+                    val tileLocation = IntArray(2)
+                    tile.getLocationOnScreen(tileLocation)
+                    if (selected && icon.width == 52 && tile.width == 208) {
+                        assertEquals("Reference icon horizontal position inside the tile", 78, iconRect.left - tileLocation[0])
+                        assertEquals("Reference icon vertical position inside the tile", 20, iconRect.top - tileLocation[1])
+                    }
+                    metadata.put("icon", JSONArray(listOf(iconRect.left, iconRect.top, iconRect.right, iconRect.bottom)))
+                    metadata.put("tile", JSONArray(listOf(tileLocation[0], tileLocation[1], tileLocation[0] + tile.width, tileLocation[1] + tile.height)))
+                    metadata.put("density", activity.resources.displayMetrics.density.toDouble())
+                }
+                val screenshot = requireNotNull(instrumentation.uiAutomation.takeScreenshot())
+                try {
+                    if (selected) {
+                        val gold = Color.rgb(246, 233, 182)
+                        // These positions were white inside the old full-image circular mask.
+                        listOf(iconRect.centerX() to iconRect.top,
+                            iconRect.left to iconRect.centerY(),
+                            iconRect.centerX() to iconRect.bottom - 1,
+                            // The original disc's edge must now be background, not a pale rim.
+                            iconRect.left + 26 to iconRect.top + 1,
+                            iconRect.left + 26 to iconRect.top + 2,
+                            iconRect.left + 2 to iconRect.top + 25,
+                            iconRect.left + 49 to iconRect.top + 25,
+                            iconRect.left + 26 to iconRect.top + 48).forEach { (x, y) ->
+                            assertEquals("Selected icon edge must reveal the design's gold background", gold, screenshot.getPixel(x, y))
+                        }
+                    }
+                    val name = if (selected) "selected" else "unselected"
+                    File(directory, "$name.png").outputStream().use { screenshot.compress(Bitmap.CompressFormat.PNG, 100, it) }
+                    File(directory, "$name.json").writeText(metadata.toString())
+                } finally { screenshot.recycle() }
+            }
+        }
+    }
+}
