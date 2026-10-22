@@ -20,7 +20,8 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.myapplication.model.api.** { *; }
+-keep class com.tarot.card.meaning.data.model.** { *; }
+-keep @androidx.annotation.Keep class com.tarot.card.meaning.tarot.** { *; }
 -keep class *.R
 
 -keepclasseswithmembers class **.R$* {
@@ -82,5 +83,4 @@
 -keep interface com.yalantis.ucrop** { *; }
 
 -keep class com.tarot.card.meaning.ui.splash.SplashActivity.** {*; }
--keep class com.tarot.card.meaning.data.** {*; }
 -keep public class com.google.android.gms.** { public protected *; }

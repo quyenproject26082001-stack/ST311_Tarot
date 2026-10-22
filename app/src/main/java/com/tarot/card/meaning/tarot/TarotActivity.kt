@@ -138,7 +138,9 @@ abstract class TarotActivity : BaseActivity<ActivityTarotBinding>() {
         appliedDark = vm.preferences.dark
         appliedLanguage = language
         LanguageHelper.setLocale(this)
-        setTheme(if (appliedDark) R.style.TarotThemeDark else R.style.TarotThemeLight)
+        val themeStyle = if (appliedDark) R.style.TarotThemeDark else R.style.TarotThemeLight
+        theme.setTo(resources.newTheme().apply { applyStyle(themeStyle, true) })
+        setTheme(themeStyle)
         replaceViewBinding(setViewBinding()) {
             bindWindowInsets()
             render()

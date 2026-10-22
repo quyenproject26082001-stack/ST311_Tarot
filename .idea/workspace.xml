@@ -517,557 +517,228 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31619e55-3aba-4269-9734-fe301ba45adc" name="Changes" comment="make it for home">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/guide_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_aquarius.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_aries.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_cancer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_capricorn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_darkmode_tarot1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_gemini.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_leo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_libra.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_on_shuffle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_pisces.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_sagittarius.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_scorpio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_tarot_name1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_taurus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/img_intro_1_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/img_intro_2_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/img_intro_3_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/img_splash_bg_dark_mode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/aries.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_setting_normal_v2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bottom_sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/home_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_setting_darkmode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_virgo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/select_card.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/BirthdayWheelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/BirthdayWheelTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/CardMeaningLayoutTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/CardMeaningLayoutTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/DesignScreenshotsTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/DesignScreenshotsTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/ImmersiveNavigationTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/ImmersiveNavigationTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/OriginalTarotContentTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/OriginalTarotContentTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/ProfilePreferencesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/ProfilePreferencesTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/ReverseChanceSeekBarTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/ReverseChanceSeekBarTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/SharedActionBarTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/SharedActionBarTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/SpreadLockUiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/SpreadLockUiTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/TarotActivityNavigationTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/TarotActivityNavigationTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/ZodiacIconClippingTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/aaa/bbb/ccc/tarot/ZodiacIconClippingTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/base/BaseActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/base/BaseAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/base/BaseDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/base/BaseFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/background/SmoothCornerTreatment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/blur/BlurKit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/blur/BlurLayout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/drawview/CropView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/drawview/DrawView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/drawview/PreviewView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/imageview/CustomImageView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/imageview/ShapeClipImageView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/imageview/StrokeImageView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/layout/EventRatioFrame.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/layout/InstagramGradientLayout.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/layout/LayoutPresets.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/layout/RatioFrameLayout.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/text/CustomTypefaceSpan.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/text/DoubleStrokeTextView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/text/OuterStrokeTextView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/custom/text/StrokeTextView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/ActivityExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/AdsExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/AnimationExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/AssetExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/BackgroundExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/FilterExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/GlideExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/GradientExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/IntentExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/InternetExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/KeyboardExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/LogExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/MediaExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/PermissionExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/ShareExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/SoundExtendsion.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/UnitHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/extensions/ViewExtensions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/AnimationHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/AssetHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/BitmapHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/DateHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/InternetHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/LanguageHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/MediaHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/MusicHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/PermissionHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/RateHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/RemoteAssetHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/SharePreferenceHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/SoundHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/StringHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/helper/UnitHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/service/ApiService.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/service/MyFirebaseMessagingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/service/RetrofitClient.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/service/RetrofitPreventive.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/App.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/DataLocal.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/key/AssetsKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/key/DomainKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/key/DrawKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/key/IntentKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/key/PermissionKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/key/RequestKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/key/SharePreferenceKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/key/ValueKey.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/telegram/TelegramSharing.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/IdGenerator.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/ImageManipulation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/LocalStorageUtils.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/Sticker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/StickerBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/StickerContentProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/StickerPack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/WhatsappSharingActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/share/whatsapp/WhitelistCheck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/state/HandleState.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/state/RateState.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/core/utils/state/SaveState.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/AppDatabase.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/CharacterRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/DatabaseProvider.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/PersistenceRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/dao/AppSettingDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/dao/CharacterDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/dao/JsonCacheDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/dao/MediaItemDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/dao/SavedAvatarDao.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/entity/AppSettingEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/entity/CharacterColorEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/entity/CharacterEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/entity/CharacterLayerEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/entity/CharacterLayerGroupEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/entity/JsonCacheEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/entity/MediaItemEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/entity/SavedAvatarEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/local/relation/CharacterWithLayers.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/AddCharacterCategoryModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/IntroModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/LanguageModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/MyAlbumModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/PartAPI.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/SelectedModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/BackgroundModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/ColorModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/CustomizeModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/ItemColorImageModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/ItemColorModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/ItemNavCustomModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/LayerListModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/LayerModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/LayerTransformModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/NavigationModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/custom/SuggestionModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/draw/Draw.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/draw/DrawDraw.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/draw/DrawableDraw.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/draw/TextDraw.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/pride/CustomFlagModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/pride/LayoutStyle.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/pride/PrideFlagData.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/data/model/pride/PrideFlagModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/dialog/ChooseColorDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/dialog/CosplayResultDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/dialog/CreateNameDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/dialog/DialogSpeech.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/dialog/RateDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/dialog/WaitingDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/dialog/YesNoDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/KeyboardListener.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/OnFrameTouchListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/BitmapDrawIcon.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/DeleteEvent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/DrawEvent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/EditEvent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/FlipEvent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/OnDrawListener.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/OnValueListener.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/VideoEncoder.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/listener/listenerdraw/ZoomEvent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/BirthdayWheel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/ProfileValidationUi.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/ProfileValidator.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotCardDetailActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotCardsActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotHistoryActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotHomeActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotHoroscopeActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotIcon.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotInterpretations.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotModels.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotProfileActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotResultActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotSelectionActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotSettingsActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotSettingsScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotSpreadsActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotTestConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotUi.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/TarotViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/tarot/ZodiacDates.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/SettingsActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/AddCharacterActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/AddCharacterViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/adapter/AddCharacterCategoryAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/adapter/BackgroundColorAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/adapter/BackgroundImageAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/adapter/SpeechAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/adapter/StickerAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/adapter/TextColorAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/add_character/adapter/TextFontAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/choose_character/ChooseCharacterActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/choose_character/ChooseCharacterAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/choose_character/ChooseCharacterViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/cosplay/CosplayCustomizeActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/cosplay/CosplayRandomActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/cosplay/CosplaySuccessfulActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/customize/BottomNavigationCustomizeAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/customize/ColorLayerCustomizeAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/customize/CustomizeCharacterActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/customize/CustomizeCharacterViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/customize/LayerCustomizeAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/home/DataViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/home/HomeActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/intro/IntroActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/intro/IntroAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/language/LanguageActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/language/LanguageAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/language/LanguageViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/MyCreationActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/MyCreationPreviewConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/adapter/MyAvatarAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/adapter/MyDesignAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/adapter/TypeAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/fragment/MyAvatarFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/fragment/MyDesignFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/view_model/MyAvatarViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/view_model/MyCreationViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/view_model/MyDesignViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/my_creation/view_model/MyOverlayViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/permission/PermissionActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/permission/PermissionViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/random_character/RandomCharacterActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/random_character/RandomCharacterAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/random_character/RandomCharacterViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/splash/SplashActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/success/SuccessActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/success/SuccessViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/trending/TrendingActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/view/ViewActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aaa/bbb/ccc/ui/view/ViewViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_action_celtic.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_action_celtic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_action_daily.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_action_daily.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_action_weekly.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_action_weekly.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_empty_history.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_empty_history.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_aquarius.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_aquarius.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_aries.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_aries.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_cancer.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_cancer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_capricorn.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_capricorn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_gemini.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_gemini.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_leo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_leo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_libra.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_libra.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_pisces.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_pisces.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_sagittarius.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_sagittarius.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_scorpio.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_scorpio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_taurus.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_taurus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_virgo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_virgo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/arrow_next.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/arrow_next.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tarot/card/meaning/tarot/TarotActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tarot/card/meaning/tarot/TarotActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/guide_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/ic_on_shuffle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_empty_reading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_aquarius.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_aries.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_cancer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_capricorn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_gemini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_leo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_libra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_pisces.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_sagittarius.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_scorpio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_taurus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/tarot_zodiac_virgo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/aries.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_16_solid_white_stroke_brownn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_app.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_app.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_avatar_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_avatar_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_btn_layout_bottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_btn_layout_bottom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_btn_move.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_btn_move.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_btn_telegram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_btn_whatsapp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_card_figma.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_count_down2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_count_down2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_design_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_design_slt.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_dialog_delete_exit.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_dialog_delete_exit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_language_normal_v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_language_normal_v2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_language_selected_v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_language_selected_v2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/frame_inst_gradient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/frame_inst_gradient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_dialog_rate.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_dialog_rate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_frame_per.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_frame_setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_frame_ss_layout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_img_character_sample.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_item_font_selected.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_item_font_selected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_language_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_language_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_language_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_permission_switch_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_permission_switch_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_permission_switch_on.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_permission_switch_on.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_1_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_container2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_container2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_container2_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_empty_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_empty_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_full_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_progress_full_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_random_btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_select_navi_shape.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_select_navi_shape.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_stroke_gradient_circle_color_text.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_stroke_gradient_circle_color_text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_uslt_navi_shape.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_uslt_navi_shape.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_view_btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bottom_sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/five_star_ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/five_star_ss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/four_star_ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/four_star_ss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/frame_inst.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/frame_inst.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/frame_inst_gradient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/frame_it.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/frame_it_random.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/frame_sample.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/guide_random.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/guide_random.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/guide_spread1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/home_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_move.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_move.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_settings.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_settings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_background_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bg_next.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bg_next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bg_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bg_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close_view.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close_view.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_color.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_color.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete_item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete_item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dot_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dot_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dot_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dot_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dot_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dot_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_download_actionbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_download_actionbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit_view.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_fb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flag_french.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flag_french.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flag_germani.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flag_germani.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flag_portugeese.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flag_portugeese.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flag_spanish.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flag_spanish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flip.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flip_view.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_flip_view.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_guide.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_guide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_inst.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_inst.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_lang_set.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_lang_set.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_loading.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_loading.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_loading_dialog.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_loading_dialog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_move.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_move.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_move_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_move_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_move_uslt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_move_uslt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_next.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_next.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_no_dialog.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_no_dialog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_none.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_none.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_not_select.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_not_select.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_not_select_all.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_not_select_all.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_not_tick_lang.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_not_tick_lang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_policy_set.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_policy_set.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_random.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_random.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_random_layer.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_random_layer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_five.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_five.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_four.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_four.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_not.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_not.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_one.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_one.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_set.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_set.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_three.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_three.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_two.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_two.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_zero.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rate_zero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_reset.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_reset.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rotate_to_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rotate_to_right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rotation_view.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_rotation_view.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_scale_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_scale_down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_scale_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_scale_up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_select_all.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_select_all.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_selected.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_selected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_setting.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_setting.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_setting_darkmode.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_setting_darkmode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share_actionbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share_actionbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share_set.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share_set.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share_ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share_ss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_show.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_show.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speech.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speech.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speech_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speech_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speech_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sticker.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sticker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sticker_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sticker_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sticker_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sw_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sw_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sw_on.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sw_on.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_text.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_text_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_text_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_text_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_tick_lang.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_tick_lang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_virgo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_virgo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_whatsapp.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_whatsapp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_woman_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_woman_slt.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_yes_dialog.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_yes_dialog.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_action.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_action.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_badge.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_badge.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_button.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_favorite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_guidance_continue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_guidance_continue.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_horoscope.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_horoscope.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_input.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_input.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_library_toggle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_library_toggle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_outline.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_pair.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_pair.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_panel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_panel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_segment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_segment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_sheet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_sheet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_spread.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_spread.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_spread_lock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_spread_lock.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_step_active.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_step_active.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_step_inactive.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_step_inactive.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_wheel_selection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_wheel_selection.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_white_circle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_white_circle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_zodiac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_zodiac.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_zodiac_label.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_zodiac_label.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_card_back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_card_back.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_back.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_birthday.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_birthday.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_cards.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_cards.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_chevron.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_chevron.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_close.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_close.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_dark_small.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_dark_small.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_grid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_grid.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_heart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_heart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_heart_filled.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_heart_filled.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_language.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_language.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_light_small.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_light_small.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_lock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_lock.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_moon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_moon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_name.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_name.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_privacy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_privacy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_share.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_share.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_spread_lock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_spread_lock.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_spreads.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_spreads.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_sun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_sun.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_list_selection_segment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_list_selection_segment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_outline_action.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_outline_action.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_seek_thumb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_seek_thumb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_seek_track.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_seek_track.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_name_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_name_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_panel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_panel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_theme_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_theme_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_wheel_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_wheel_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_wheel_cell.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_wheel_cell.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_wheel_heading.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_settings_wheel_heading.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_spread_locked_overlay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_spread_locked_overlay.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_switch_thumb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_switch_thumb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_switch_track.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_switch_track.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_badge_mask.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_badge_mask.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_horoscope_mask.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_horoscope_mask.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_icon_mask.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_icon_mask.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_character.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_character.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_album.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_album.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_character.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_character.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cosplay_customize.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cosplay_customize.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cosplay_random.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cosplay_random.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cosplay_successful.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cosplay_successful.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_customize.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_customize.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_language.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_language.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_permission.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_permission.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_random_character.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_random_character.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_success.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_success.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_horoscope.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_horoscope.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_library.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_selection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_selection.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_spreads.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarot_spreads.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trending.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trending.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_banner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_banner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_bottom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_bottom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_bottom_media_full.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_bottom_media_full.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_bottom_media_full_shimmer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_bottom_media_full_shimmer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_bottom_shimmer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_bottom_shimmer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_top.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_top_shimmer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_top_shimmer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_top_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_big_btn_top_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_collap_banner_shimmer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_collap_banner_shimmer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom_2_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom_2_dialog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom_2_shimmer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom_2_shimmer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom_shimmer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_medium_btn_bottom_shimmer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_small_btn_bottom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_small_btn_bottom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_small_btn_bottom_shimmer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_small_btn_bottom_shimmer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_small_btn_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_small_btn_top.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_small_is_banner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ads_native_small_is_banner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_color_picker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_color_picker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_confirm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_confirm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_create_name.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_create_name.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_loading.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_loading.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_rate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_rate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_result.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_speech.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_speech.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_tarot_guidance.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_tarot_guidance.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_avatar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_avatar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_design.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_design.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_background_color.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_background_color.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_background_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_background_image.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_bottom_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_bottom_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_category.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_choose_avatar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_choose_avatar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_color.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_color.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_customize.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_customize.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_font.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_font.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_intro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_language.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_language.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_my_album.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_my_album.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_my_design.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_my_design.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_random_character.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_random_character.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_speech.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_speech.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_sticker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_sticker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_action.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_action.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_category.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_deck.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_deck.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_library.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_library_grid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_library_grid.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_result_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_result_card.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_setting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_spread.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_spread.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_tab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_tab.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_zodiac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tarot_zodiac.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_text_color.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_text_color.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_actionbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_actionbar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_character_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_character_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_character_speech.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_character_speech.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_character_sticker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_character_sticker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_character_text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_character_text.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_cosplay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_cosplay.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_creation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_creation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_ss.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_ss.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_custom_input.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_custom_input.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sheet_tarot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sheet_tarot.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_birthday_wheel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_birthday_wheel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_celtic_diagram.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_celtic_diagram.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_empty_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_empty_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_field_name.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_field_name.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_pair.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_pair.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_scroll_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_scroll_content.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_setting_divider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_setting_divider.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_view_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_view_button.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarot_view_text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarot_view_text.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-hi/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-hi/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-sw600dp/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-sw600dp/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/actionbar_styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/actionbar_styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/tarot_design.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/tarot_design.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/tarot_strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/tarot_strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/OriginalTarotInterpretationsTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/OriginalTarotInterpretationsTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/ProfileValidatorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/ProfileValidatorTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/TarotRulesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/TarotRulesTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/TarotTestConfigTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/TarotTestConfigTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/ZodiacDatesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/aaa/bbb/ccc/tarot/ZodiacDatesTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/TAROT_IMPLEMENTATION.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TAROT_IMPLEMENTATION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/TAROT_TEST_MODE.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TAROT_TEST_MODE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/actionbar_70dp/cards_grid.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/actionbar_70dp/cards_grid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/actionbar_70dp/home_empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/actionbar_70dp/home_empty.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/actionbar_70dp/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/actionbar_70dp/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/actionbar_70dp/profile_step_1_scorpio.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/actionbar_70dp/profile_step_1_scorpio.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/actionbar_70dp/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/actionbar_70dp/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/cards_detail.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/cards_detail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/cards_grid.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/cards_grid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/cards_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/cards_list.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/guidance.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/guidance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/history_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/history_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/history_empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/history_empty.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/home_empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/home_empty.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/home_recent.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/home_recent.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/horoscope_unavailable.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/horoscope_unavailable.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/profile_step_1_scorpio.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/profile_step_1_scorpio.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/profile_step_1_unselected.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/profile_step_1_unselected.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/profile_step_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/profile_step_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/result_celtic.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/result_celtic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/result_celtic_page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/result_celtic_page_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/result_daily.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/result_daily.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/result_quick.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/result_quick.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/result_universe.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/result_universe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/result_weekly.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/result_weekly.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/result_yes_no.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/result_yes_no.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/selection_classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/selection_classic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/selection_scroll.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/selection_scroll.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/settings_edit_birthday.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/settings_edit_birthday.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/settings_edit_name.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/settings_edit_name.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/settings_edit_sign.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/settings_edit_sign.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/spreads.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/spreads.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/current/spreads_page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/current/spreads_page_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/cards_detail.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/cards_detail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/cards_grid.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/cards_grid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/cards_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/cards_list.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/guidance.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/guidance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/history_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/history_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/history_empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/history_empty.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/home_empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/home_empty.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/home_recent.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/home_recent.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/horoscope_unavailable.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/horoscope_unavailable.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/profile_step_1_scorpio.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/profile_step_1_scorpio.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/profile_step_1_unselected.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/profile_step_1_unselected.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/profile_step_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/profile_step_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_celtic.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_celtic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_celtic_page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_celtic_page_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_daily.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_daily.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_quick.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_quick.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_universe.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_universe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_weekly.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_weekly.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_yes_no.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/result_yes_no.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/selection_classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/selection_classic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/selection_scroll.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/selection_scroll.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/settings_edit_birthday.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/settings_edit_birthday.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/settings_edit_name.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/settings_edit_name.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/settings_edit_sign.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/settings_edit_sign.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/spreads.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/spreads.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/spreads_page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/review_20261016/run_1792140501820/spreads_page_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img0text_color.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img0text_color.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_app_name.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_bg_1_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_bg_1_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_bg_2_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_bg_2_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_bg_3_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_bg_3_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_bg_4_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_bg_4_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_char_1_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_char_1_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_char_2_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_char_2_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_char_3_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_char_3_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_char_4_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_char_4_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_logo_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_home_logo_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_intro_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_intro_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_intro_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_intro_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_intro_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_intro_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_no_item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_no_item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_permission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_permission_figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_permission_figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_splash_avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_splash_avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_splash_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_splash_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_splash_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_splash_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/layer_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/layer_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/layer_uslt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/layer_uslt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/light.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/lock_spread1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/one_star_ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/one_star_ss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/select_card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/selected_tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/slt_category.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/slt_tab_category.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/slt_tab_category.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/spread_guide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tab_bg_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tab_bg_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tab_color_slt.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tab_color_slt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_action.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_badge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_input.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_bg_segment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_card_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_empty_history_glow_dark.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_empty_reading_glow_dark.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_ic_chevron.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_outline_action.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_switch_thumb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_switch_track.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_badge_mask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_horoscope_mask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tarot_zodiac_icon_mask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/three_star_ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/three_star_ss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/two_star_ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/two_star_ss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/un_selected_tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/un_selected_tab_sub.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/uslt_category.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/uslt_tab_cate.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uslt_tab_cate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/vs_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/zero_star_ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/zero_star_ss.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1165,9 +836,10 @@
     "Android App.androidTest.executor": "Run",
     "Android App.app.executor": "Run",
     "Android App.main.executor": "Debug",
-    "ApkExportedModule": "ST300_Therian_OC_Maker.app",
+    "ApkExportedModule": "ST311_Daily_Tarot_Reading.app",
     "ExportApk.ApkPathForST243_Avatar_Maker_Celebrities.app": "C:\\APPS\\st243\\ST225_CoupleMaker-KissCreator\\app",
     "ExportApk.ApkPathForST300_Therian_OC_Maker.app": "/home/lequyen/LVT/ST300_Therian_OC_Maker/app",
+    "ExportApk.ApkPathForST311_Daily_Tarot_Reading.app": "/home/lequyen/LVT/311/ST311_Daily_Tarot_Reading/app",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
