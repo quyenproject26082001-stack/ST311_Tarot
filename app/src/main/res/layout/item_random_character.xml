@@ -7,7 +7,8 @@
     android:layout_margin="@dimen/dp_0"
     tools:background="@color/red_BA"
     android:clipChildren="false"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    tools:visibility="visible">
 
     <FrameLayout
         android:layout_width="@dimen/dp_0"
@@ -19,7 +20,8 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -28,27 +30,31 @@
             app:cardCornerRadius="@dimen/dp_16"
             app:cardElevation="@dimen/dp_2"
             app:cardBackgroundColor="@color/transparent"
-            app:strokeColor="@color/transparent">
+            app:strokeColor="@color/transparent"
+            tools:visibility="visible">
 
             <!--            imvImage-->
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:foreground="@drawable/bg_app_character_item">
+                android:foreground="@drawable/bg_app_character_item"
+                tools:visibility="visible">
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_margin="@dimen/dp_2"
                     app:cardCornerRadius="@dimen/dp_13"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    tools:visibility="visible">
                     <!--        sflShimmer-->
                     <ImageView
                         android:id="@+id/imvImage"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
-                        tools:src="@color/dark" />
+                        tools:src="@color/dark"
+                        tools:visibility="visible" />
                 </com.google.android.material.card.MaterialCardView>
 
             </FrameLayout>
@@ -63,12 +69,13 @@
                 app:shimmer_duration="1800"
                 app:shimmer_highlight_alpha="0.6"
                 app:shimmer_shape="linear"
-                tools:visibility="gone">
+                tools:visibility="visible">
                 <!-- View nền để shimmer quét qua -->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#818181" />
+                    android:background="#818181"
+                    tools:visibility="visible" />
             </com.facebook.shimmer.ShimmerFrameLayout>
 
         </com.google.android.material.card.MaterialCardView>

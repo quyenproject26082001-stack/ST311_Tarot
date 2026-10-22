@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:theme="@style/TarotThemeLight"
+    tools:visibility="visible">
+    <TextView
+        android:id="@+id/privacyDescription"
+        style="@style/TarotText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_18"
+        android:text="@string/tarot_privacy_content"
+        android:textColor="?attr/tarotMuted"
+        android:textSize="@dimen/sp_14"
+        tools:text="@string/tarot_privacy_content"
+        tools:visibility="visible" />
+    <TextView
+        android:id="@+id/closeButton"
+        style="@style/TarotButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_46"
+        android:background="@drawable/tarot_bg_outline"
+        android:text="@string/tarot_close"
+        android:textColor="@color/tarot_gold"
+        tools:text="@string/tarot_close"
+        tools:visibility="visible" />
+</LinearLayout>

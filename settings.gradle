@@ -42,5 +42,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ST311_Daily_Tarot_Readin"
+rootProject.name = "ST311_Daily_Tarot_Reading"
 include ':app'

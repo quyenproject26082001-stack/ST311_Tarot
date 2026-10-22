@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center">
+        android:gravity="center"
+        tools:visibility="visible">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/dp_40"
-            android:background="@drawable/bg_dialog_rate">
+            android:background="@drawable/bg_dialog_rate"
+            tools:visibility="visible">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imvAvtRate"
@@ -21,7 +24,9 @@
                 android:src="@drawable/ic_rate_zero"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_rate_zero" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv1"
@@ -36,7 +41,9 @@
                 android:textSize="@dimen/sp_18"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imvAvtRate" />
+                app:layout_constraintTop_toBottomOf="@id/imvAvtRate"
+                tools:visibility="visible"
+                tools:text="@string/zero_star_title" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv2"
@@ -50,7 +57,9 @@
                 android:textSize="@dimen/sp_14"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv1" />
+                app:layout_constraintTop_toBottomOf="@id/tv1"
+                tools:visibility="visible"
+                tools:text="@string/zero_star" />
 
             <com.willy.ratingbar.ScaleRatingBar
                 android:id="@+id/ll1"
@@ -72,7 +81,8 @@
                 app:srb_starHeight="@dimen/dp_30"
                 app:srb_starPadding="@dimen/dp_4"
                 app:srb_starWidth="@dimen/dp_30"
-                app:srb_stepSize="1" />
+                app:srb_stepSize="1"
+                tools:visibility="visible" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -84,7 +94,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ll1">
+                app:layout_constraintTop_toBottomOf="@id/ll1"
+                tools:visibility="visible">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btnVote"
@@ -93,7 +104,8 @@
                     android:layout_marginTop="@dimen/dp_20"
                     app:cardCornerRadius="@dimen/dp_30"
                     app:cardBackgroundColor="#38306B"
-                    app:cardElevation="@dimen/dp_0">
+                    app:cardElevation="@dimen/dp_0"
+                    tools:visibility="visible">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -104,7 +116,9 @@
                         android:text="@string/rate"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/sp_16" />
+                        android:textSize="@dimen/sp_16"
+                        tools:visibility="visible"
+                        tools:text="@string/rate" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -118,7 +132,9 @@
                     android:layout_marginTop="@dimen/dp_0"
                     android:textAllCaps="false"
                     android:textColor="@color/figma_primary"
-                    android:textSize="@dimen/sp_16" />
+                    android:textSize="@dimen/sp_16"
+                    tools:visibility="visible"
+                    tools:text="@string/exit" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,4 +1,4 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import android.app.Activity
 import android.content.Context
@@ -6,13 +6,15 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.SystemClock
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
 import androidx.test.runner.lifecycle.Stage
-import com.aaa.bbb.ccc.R
-import com.aaa.bbb.ccc.ui.home.HomeActivity
+import com.tarot.card.meaning.R
+import com.tarot.card.meaning.ui.home.HomeActivity
 import com.google.gson.Gson
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -90,6 +92,41 @@ class TarotActivityNavigationTest {
             }
             assertSame(home, returnedHome)
             assertTrue(TarotPreferences(instrumentation.targetContext).dark)
+        }
+    }
+
+    @Test fun selectionDeckLaysOutCardsInScrollAndClassic() {
+        ActivityScenario.launch(HomeActivity::class.java).use { scenario ->
+            awaitActivity(HomeActivity::class.java) { model(it).cards.isNotEmpty() }
+            scenario.onActivity { model(it).begin(Spread.DAILY) }
+            val selection = awaitActivity(TarotSelectionActivity::class.java) { activity ->
+                val deck = activity.findViewById<RecyclerView>(R.id.deck)
+                deck != null && deck.adapter?.itemCount == 78 && deck.childCount > 0 &&
+                    (deck.layoutManager as? GridLayoutManager)?.spanCount == 6
+            }
+            var selectedSlug = ""
+            instrumentation.runOnMainSync {
+                val deck = selection.findViewById<RecyclerView>(R.id.deck)
+                val position = deck.getChildAdapterPosition(deck.getChildAt(0))
+                selectedSlug = model(selection).deck[position].slug
+                deck.getChildAt(0).performClick()
+                assertEquals(selectedSlug, model(selection).selected.single().slug)
+            }
+            for (classic in listOf(true, false)) {
+                instrumentation.runOnMainSync {
+                    selection.findViewById<android.view.View>(
+                        if (classic) R.id.classicMode else R.id.scrollMode
+                    ).performClick()
+                }
+                awaitActivity(TarotSelectionActivity::class.java) { activity ->
+                    val deck = activity.findViewById<RecyclerView>(R.id.deck)
+                    deck != null && deck.adapter?.itemCount == 78 && deck.childCount > 0 &&
+                        (deck.layoutManager as? GridLayoutManager)?.spanCount == (if (classic) 13 else 6)
+                }
+                instrumentation.runOnMainSync {
+                    assertEquals(selectedSlug, model(selection).selected.single().slug)
+                }
+            }
         }
     }
 

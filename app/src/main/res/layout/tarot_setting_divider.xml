@@ -2,5 +2,8 @@
 <View
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="0.5dp"
-    android:background="@color/tarot_border" />
+    android:layout_height="@dimen/dp_0_5"
+    android:background="?attr/tarotSettingsDivider"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight" />

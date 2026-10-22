@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="?attr/tarotDialogPanel" />
+            <corners android:radius="@dimen/dp_24" />
+        </shape>
+    </item>
+    <item
+        android:left="@dimen/dp_24"
+        android:right="@dimen/dp_24"
+        android:height="@dimen/dp_0_5"
+        android:gravity="top">
+        <shape>
+            <solid android:color="?attr/tarotReverseInfoBorder" />
+        </shape>
+    </item>
+    <item
+        android:width="@dimen/dp_24"
+        android:height="@dimen/dp_24"
+        android:drawable="@drawable/tarot_dialog_top_left"
+        android:gravity="top|left" />
+    <item
+        android:width="@dimen/dp_24"
+        android:height="@dimen/dp_24"
+        android:drawable="@drawable/tarot_dialog_top_right"
+        android:gravity="top|right" />
+</layer-list>

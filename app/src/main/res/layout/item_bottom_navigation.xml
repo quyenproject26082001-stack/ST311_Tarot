@@ -8,7 +8,8 @@
     android:layout_marginHorizontal="@dimen/dp_4"
     android:clipChildren="false"
     android:layout_gravity="center_vertical"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    tools:visibility="visible">
 
     <!--    cvContent-->
     <FrameLayout
@@ -22,7 +23,8 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
 
         <!--            imvImage-->
@@ -32,7 +34,8 @@
             app:cardBackgroundColor="@color/transparent"
             app:cardCornerRadius="@dimen/dp_4"
             android:layout_margin="@dimen/dp_2"
-            app:strokeColor="@color/transparent">
+            app:strokeColor="@color/transparent"
+            tools:visibility="visible">
 
             <ImageView
                 android:id="@+id/imvImage"
@@ -41,15 +44,18 @@
                 android:layout_margin="@dimen/dp_0"
                 tools:src="@color/dark"
                 android:clipToOutline="true"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                tools:visibility="visible" />
 
-            <com.aaa.bbb.ccc.core.custom.imageview.ShapeClipImageView
+            <com.tarot.card.meaning.core.custom.imageview.ShapeClipImageView
                 android:id="@+id/imvImageBG"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/dp_0"
                 android:clipToOutline="true"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                tools:visibility="visible"
+                tools:src="@drawable/tarot_bg_panel" />
             <!--            imvImage-->
         </com.google.android.material.card.MaterialCardView>
 

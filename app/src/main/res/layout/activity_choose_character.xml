@@ -5,24 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.choose_character.ChooseCharacterActivity">
+    tools:context=".ui.choose_character.ChooseCharacterActivity"
+    tools:visibility="visible">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:background="@drawable/bg_app" />
+        android:background="@drawable/bg_app"
+        tools:visibility="visible"
+        tools:src="@drawable/img_intro_1" />
 
     <!--    layoutActionBar-->
     <FrameLayout
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
 <!--    &lt;!&ndash;    native_ads&ndash;&gt;-->
@@ -31,9 +36,10 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/layoutActionBar">
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+        tools:visibility="visible">
 
-        <include layout="@layout/ads_native_collap_banner_shimmer" />
+        <include layout="@layout/ads_native_collap_banner_shimmer" tools:visibility="visible" />
     </FrameLayout>
 
     <!-- rcvMyAlbum -->
@@ -51,7 +57,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/native_ads"
         app:spanCount="2"
-        tools:listitem="@layout/item_choose_avatar" />
+        tools:listitem="@layout/item_choose_avatar"
+        tools:visibility="visible"
+        tools:itemCount="6"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
 
 
 <!--    &lt;!&ndash;    flNativeCollab&ndash;&gt;-->
@@ -60,7 +69,8 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

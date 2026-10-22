@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:visibility="visible">
 
     <FrameLayout
         android:layout_width="@dimen/dp_0"
@@ -13,7 +14,8 @@
         app:layout_constraintDimensionRatio="6:6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
 
         <com.google.android.material.card.MaterialCardView
@@ -26,6 +28,7 @@
             app:cardElevation="@dimen/dp_0"
             app:strokeColor="@color/figma_primary"
             app:strokeWidth="@dimen/dp_3"
+            tools:visibility="visible"
 
             >
 
@@ -34,7 +37,9 @@
                 android:id="@+id/imvImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                tools:visibility="visible"
+                tools:src="@drawable/img_intro_1" />
 
             <!--            imvImage-->
             <com.google.android.material.card.MaterialCardView
@@ -52,7 +57,9 @@
                     android:padding="@dimen/dp_15"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_none"
-                    app:tint="@color/figma_primary" />
+                    app:tint="@color/figma_primary"
+                    tools:visibility="visible"
+                    tools:src="@drawable/ic_none" />
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -64,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
-                tools:visibility="gone"
+                tools:visibility="visible"
                 android:visibility="visible">
 
                 <ImageView
@@ -75,7 +82,9 @@
                     android:layout_marginTop="@dimen/dp_minus_8"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ic_add_image"
-                    android:tint="@color/figma_primary" />
+                    android:tint="@color/figma_primary"
+                    tools:visibility="visible"
+                    tools:src="@drawable/ic_add_image" />
 
 
                 <TextView
@@ -93,7 +102,9 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias=".98" />
+                    app:layout_constraintVertical_bias=".98"
+                    tools:visibility="visible"
+                    tools:text="@string/add_image" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

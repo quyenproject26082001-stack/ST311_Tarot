@@ -5,18 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_app"
-    tools:context=".ui.trending.TrendingActivity">
+    tools:context=".ui.trending.TrendingActivity"
+    tools:visibility="visible">
 
     <!-- layoutActionBar -->
     <FrameLayout
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
 
@@ -33,7 +36,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
-        app:layout_constraintVertical_bias=".15">
+        app:layout_constraintVertical_bias=".15"
+        tools:visibility="visible">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -41,7 +45,8 @@
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="@dimen/dp_12"
             app:layout_constraintDimensionRatio="1:1"
-            app:strokeColor="@color/figma_primary">
+            app:strokeColor="@color/figma_primary"
+            tools:visibility="visible">
 
 
                     <ImageView
@@ -49,7 +54,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/dp_0"
-                        android:scaleType="fitCenter" />
+                        android:scaleType="fitCenter"
+                        tools:visibility="visible"
+                        tools:src="@drawable/img_intro_1" />
 
 
 
@@ -58,7 +65,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="@dimen/dp_0"
                             android:id="@+id/guidRandom"
-                            android:background="@drawable/guide_random" />
+                            android:background="@drawable/guide_random"
+                            tools:visibility="visible" />
                 </com.google.android.material.card.MaterialCardView>
 
 
@@ -75,7 +83,8 @@
         android:background="@drawable/bg_12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnEdit"
-        app:layout_constraintTop_toBottomOf="@id/cvImage">
+        app:layout_constraintTop_toBottomOf="@id/cvImage"
+        tools:visibility="visible">
 
         <TextView
             android:id="@+id/tvGenerate"
@@ -90,7 +99,9 @@
             android:text="@string/generate"
             android:textColor="@color/figma_primary"
             android:textSize="@dimen/sp_16"
-            android:visibility="visible" />
+            android:visibility="visible"
+            tools:visibility="visible"
+            tools:text="@string/generate" />
 
     </FrameLayout>
 
@@ -105,7 +116,8 @@
         android:background="@drawable/bg_12dp"
         app:layout_constraintEnd_toStartOf="@id/btnGenerate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cvImage">
+        app:layout_constraintTop_toBottomOf="@id/cvImage"
+        tools:visibility="visible">
 
         <TextView
             android:id="@+id/tvEdit"
@@ -122,7 +134,9 @@
             android:textSize="@dimen/sp_16"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"
+            tools:text="@string/edit" />
     </FrameLayout>
 
 
@@ -131,7 +145,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
 
     </FrameLayout>
 

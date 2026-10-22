@@ -4,52 +4,87 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:background="@drawable/tarot_bg_sheet"
-    android:orientation="vertical">
-    <com.aaa.bbb.ccc.tarot.TarotIcon
+    android:padding="@dimen/dp_16"
+    android:background="?attr/tarotGuidancePanelBackground"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
+    <com.tarot.card.meaning.tarot.TarotIcon
         android:id="@+id/close"
         style="@style/TarotIconButton"
-        android:padding="12dp"
-        android:translationX="10dp"
+        android:padding="@dimen/dp_12"
+        android:translationX="@dimen/dp_10"
         android:layout_gravity="end"
         app:tarotIconName="close"
         app:tarotIconColor="?attr/tarotInk"
-        android:contentDescription="@string/tarot_close" />
+        android:contentDescription="@string/tarot_close"
+        tools:visibility="visible"
+        tools:src="@drawable/tarot_ic_close" />
     <ImageView
         android:id="@+id/shuffleArt"
-        android:layout_width="183dp"
-        android:layout_height="146dp"
-        android:translationX="-1.5dp"
+        android:layout_width="@dimen/dp_183"
+        android:layout_height="@dimen/dp_146"
+        android:translationX="@dimen/dp_minus_1_5"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="47dp"
-        android:src="@drawable/tarot_guidance_art"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_47"
+        android:src="?attr/tarotGuidanceArt"
         android:scaleType="fitCenter"
-        android:contentDescription="Shuffle cards" />
+        android:scaleX="?attr/tarotGuidanceArtScale"
+        android:scaleY="?attr/tarotGuidanceArtScale"
+        android:contentDescription="Shuffle cards"
+        tools:visibility="visible"
+        tools:src="@drawable/tarot_guidance_art" />
     <TextView
         style="@style/TarotTextBody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:justificationMode="inter_word"
-        android:lineHeight="16sp"
-        android:text="@string/tarot_guidance_design" />
+        android:lineHeight="@dimen/sp_16"
+        android:text="@string/tarot_guidance_design"
+        tools:visibility="visible"
+        tools:text="@string/tarot_guidance_design" />
     <TextView
         android:id="@+id/continueReading"
         style="@style/TarotButton"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/dp_20"
         android:background="@drawable/tarot_bg_guidance_continue"
-        android:text="@string/tarot_continue" />
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/showGuidance"
-        style="@style/TarotText"
+        android:text="@string/tarot_continue"
+        tools:visibility="visible"
+        tools:text="@string/tarot_continue" />
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/tarot_show_guidance"
-        android:thumb="@drawable/tarot_switch_thumb"
-        app:track="@drawable/tarot_switch_track"
-        app:switchMinWidth="32dp"
-        app:thumbTint="#FFFFFF"
-        app:trackTint="@color/tarot_switch_track" />
+        android:layout_height="@dimen/dp_42"
+        android:layout_marginTop="@dimen/dp_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:visibility="visible">
+        <TextView
+            style="@style/TarotText"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tarot_show_guidance"
+            tools:visibility="visible"
+            tools:text="@string/tarot_show_guidance" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/showGuidance"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_20"
+            android:minWidth="@dimen/dp_0"
+            android:minHeight="@dimen/dp_0"
+            android:padding="@dimen/dp_0"
+            android:background="@drawable/tarot_guidance_switch"
+            android:thumb="@null"
+            app:track="@null"
+            app:switchMinWidth="@dimen/dp_0"
+            app:showText="false"
+            app:thumbTint="@null"
+            app:trackTint="@null"
+            android:contentDescription="@string/tarot_show_guidance"
+            tools:visibility="visible"
+            tools:text="Show guidance"
+            tools:checked="true" />
+    </LinearLayout>
 </LinearLayout>

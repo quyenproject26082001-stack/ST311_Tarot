@@ -4,34 +4,38 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/shared_actionbar_height"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/transparent">
+    android:background="@color/transparent"
+    tools:visibility="visible">
 
     <!-- Shared title band: buttons and every title variant use its top/bottom.
          INVISIBLE (not GONE) keeps geometry stable when Home shows a logo or a
          screen switches between tvStart/tvCenter. -->
     <View
         android:id="@+id/actionBarTitleBounds"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/dp_0"
         android:layout_height="@dimen/dp_40"
         android:layout_marginBottom="@dimen/shared_actionbar_title_bottom_margin"
         android:visibility="invisible"
         android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible" />
 
     <!--    btnActionBarLeft-->
     <ImageView
         android:id="@+id/btnActionBarLeft"
         style="?attr/sharedActionBarLeftStyle"
         android:contentDescription="@string/back"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_back" />
 
     <!--            btnActionBarRightText-->
     <FrameLayout
         android:id="@+id/btnActionBarLeftText"
         android:layout_width="@dimen/dp_80"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
                 android:layout_marginStart="@dimen/dp_20"
 
         android:background="@drawable/ic_next"
@@ -40,6 +44,7 @@
         app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
         app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"
         >
 
         <TextView
@@ -54,7 +59,9 @@
             android:text="@string/back"
             android:visibility="visible"
             android:textColor="@color/white"
-            android:textSize="@dimen/sp_16" />
+            android:textSize="@dimen/sp_16"
+            tools:visibility="visible"
+            tools:text="@string/back" />
     </FrameLayout>
 
 
@@ -63,19 +70,21 @@
     <ImageView
         android:id="@+id/btnReset"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_marginStart="@dimen/dp_16"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:visibility="invisible"
         app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_back" />
 
     <!--    cvLogo-->
     <androidx.cardview.widget.CardView
         android:id="@+id/cvLogo"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
                 android:layout_marginStart="@dimen/dp_20"
 
         android:background="?attr/selectableItemBackgroundBorderless"
@@ -84,49 +93,65 @@
         app:cardElevation="@dimen/dp_0"
         app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
 
         <!--        imvLogo-->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_action_daily"
              />
     </androidx.cardview.widget.CardView>
 
     <!--    tvStart-->
-    <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+    <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
         android:id="@+id/tvStart"
-        android:layout_width="@dimen/dp_200"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_0"
         android:layout_marginStart="@dimen/dp_20"
-        android:fontFamily="@font/baloo_2_bold"
-        android:gravity="start"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="start|center_vertical"
         android:includeFontPadding="false"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:text="@string/language"
-        android:textColor="@color/figma_primary"
-        android:textSize="@dimen/sp_28"
+        android:textColor="@color/app1"
+        android:textSize="@dimen/sp_20"
+        app:autoSizeMaxTextSize="@dimen/sp_20"
+        app:autoSizeMinTextSize="@dimen/sp_12"
+        app:autoSizeStepGranularity="@dimen/sp_1"
+        app:autoSizeTextType="uniform"
         tools:visibility="visible"
-        app:outerStrokeColor="@color/white"
-        app:outerStrokeWidth="@dimen/dp_2"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds" />
+        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
+        tools:text="@string/language" />
 
     <!--    tvCenter-->
-    <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+    <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
         android:id="@+id/tvCenter"
         style="?attr/sharedActionBarTitleStyle"
         android:text="@string/language"
         android:visibility="gone"
-        tools:visibility="visible" />
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/app1"
+        android:fontFamily="@font/nunito_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
+        tools:visibility="visible"
+        tools:text="@string/language" />
 
     <!--    tvCenter-->
     <ImageView
         android:id="@+id/imgCenter"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_marginHorizontal="@dimen/dp_16"
         android:gravity="center"
         android:textSize="@dimen/sp_24"
@@ -135,26 +160,29 @@
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
         app:layout_constraintEnd_toStartOf="@+id/btnActionBarNextRight"
         app:layout_constraintStart_toEndOf="@+id/btnActionBarLeft"
-        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds" />
+        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
+        tools:visibility="visible"
+        tools:src="@drawable/tarot_brand" />
 
     <!--    btnActionBarCenter-->
     <ImageView
         android:id="@+id/btnActionBarCenter"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:background="@drawable/ic_reset"
         android:visibility="invisible"
         tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
         app:layout_constraintEnd_toEndOf="@id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds" />
+        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
+        tools:src="@drawable/tarot_action_daily" />
 
     <!--    btnActionBarCenter-->
     <ImageView
         android:id="@+id/btnActionBarCenterLeft"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:visibility="invisible"
         tools:visibility="visible"
@@ -163,13 +191,14 @@
         app:layout_constraintStart_toEndOf="@id/btnActionBarLeft"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
         app:layout_constraintEnd_toEndOf="@id/guideline"
-        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds" />
+        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
+        tools:src="@drawable/ic_flip" />
 
     <!--    btnActionBarCenterRight-->
     <ImageView
         android:id="@+id/btnActionBarCenterRight"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:visibility="gone"
         tools:visibility="visible"
@@ -178,13 +207,14 @@
         app:layout_constraintEnd_toStartOf="@id/btnActionBarRight"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
         app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds" />
+        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
+        tools:src="@drawable/ic_reset" />
 
     <!--    btnActionBarNextRight-->
     <ImageView
         android:id="@+id/btnActionBarNextRight1"
         android:layout_width="@dimen/dp_44"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_marginEnd="@dimen/dp_12"
         tools:visibility="visible"
         tools:src="@drawable/ic_share_actionbar"
@@ -198,7 +228,7 @@
     <ImageView
         android:id="@+id/btnActionBarNextRight"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_marginEnd="@dimen/dp_12"
         tools:visibility="visible"
         tools:src="@drawable/ic_download_actionbar"
@@ -213,13 +243,14 @@
         android:id="@+id/btnActionBarRight"
         style="?attr/sharedActionBarRightStyle"
         android:visibility="invisible"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        tools:src="@drawable/ic_close" />
 
     <!--    btnActionBarRight-->
     <ImageView
         android:id="@+id/btnActionBarRightLang"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_marginEnd="@dimen/dp_12"
         android:layout_marginBottom="@dimen/dp_0"
         android:background="?attr/selectableItemBackgroundBorderless"
@@ -235,26 +266,29 @@
     <ImageView
         android:id="@+id/btnShare"
         android:layout_width="@dimen/dp_40"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_marginEnd="@dimen/dp_16"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:src="@drawable/ic_share_ss"
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_share_ss" />
 
     <!--            btnActionBarRightText-->
     <FrameLayout
         android:id="@+id/btnActionBarRightText"
         android:layout_width="@dimen/dp_58"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_marginEnd="@dimen/dp_20"
         android:background="@drawable/ic_bg_next"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds">
+        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
+        tools:visibility="visible">
 
         <TextView
             android:id="@+id/tvRightText"
@@ -268,51 +302,85 @@
             android:text="@string/next"
             android:visibility="visible"
             android:textColor="@color/app"
-            android:textSize="@dimen/sp_16" />
+            android:textSize="@dimen/sp_16"
+            tools:visibility="visible"
+            tools:text="@string/next" />
     </FrameLayout>
 
     <!-- Tarot-specific actions share the same bar, navigation and title views above. -->
     <ImageView
         android:id="@+id/brand"
-        android:layout_width="210dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="17.5dp"
+        android:layout_width="@dimen/dp_210"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginStart="@dimen/dp_17_5"
         android:src="@drawable/tarot_brand"
         android:scaleType="fitCenter"
         android:visibility="gone"
         android:contentDescription="@string/tarot_app_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
-        app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds" />
+        app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
+        tools:visibility="visible"
+        tools:src="@drawable/tarot_brand" />
+
+    <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
+        android:id="@+id/brandDark"
+        android:layout_width="@dimen/dp_210"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginStart="@dimen/dp_17_5"
+        android:fontFamily="@font/kranky_regular"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="false"
+        android:letterSpacing="0"
+        android:shadowColor="#D5B65A"
+        android:shadowDx="0"
+        android:shadowDy="0.6"
+        android:shadowRadius="0.01"
+        android:text="@string/tarot_app_title"
+        android:textColor="@color/tarot_green"
+        android:textSize="@dimen/sp_22"
+        android:visibility="gone"
+        app:outerStrokeColor="@color/tarot_gold"
+        app:outerStrokeWidth="@dimen/dp_0_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
+        app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
+        tools:visibility="visible"
+        tools:text="@string/tarot_app_title" />
 
     <LinearLayout
         android:id="@+id/libraryToggle"
-        android:layout_width="60dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:padding="3dp"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:padding="@dimen/dp_3"
         android:background="@drawable/tarot_bg_library_toggle"
         android:orientation="horizontal"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/actionBarTitleBounds"
-        app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds">
-        <com.aaa.bbb.ccc.tarot.TarotIcon
+        app:layout_constraintBottom_toBottomOf="@id/actionBarTitleBounds"
+        tools:visibility="visible">
+        <com.tarot.card.meaning.tarot.TarotIcon
             android:id="@+id/listMode"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_weight="1"
             android:layout_height="match_parent"
             app:tarotIconName="list"
             app:tarotIconColor="?attr/tarotInk"
-            android:contentDescription="@string/tarot_list_view" />
-        <com.aaa.bbb.ccc.tarot.TarotIcon
+            android:contentDescription="@string/tarot_list_view"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_ic_list" />
+        <com.tarot.card.meaning.tarot.TarotIcon
             android:id="@+id/gridMode"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_weight="1"
             android:layout_height="match_parent"
             app:tarotIconName="grid"
             app:tarotIconColor="?attr/tarotInk"
-            android:contentDescription="@string/tarot_grid_view" />
+            android:contentDescription="@string/tarot_grid_view"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_ic_grid" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
@@ -320,5 +388,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5"
         android:id="@+id/guideline"
+        tools:visibility="visible"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_app"
-    tools:context=".ui.success.SuccessActivity">
+    tools:context=".ui.success.SuccessActivity"
+    tools:visibility="visible">
 
 
     <!-- layoutActionBar -->
@@ -14,11 +15,13 @@
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <!--    cvImage-->
@@ -39,6 +42,7 @@
         app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
         app:strokeColor="#861629"
         app:cardCornerRadius="@dimen/dp_4"
+        tools:visibility="visible"
         >
 
         <!--        imvImage-->
@@ -47,7 +51,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="@dimen/dp_2"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            tools:visibility="visible"
+            tools:src="@drawable/img_intro_1" />
     </FrameLayout>
 
 
@@ -64,7 +70,9 @@
         app:layout_constraintVertical_bias="0"
         android:layout_marginBottom="@dimen/dp_10"
         android:fontFamily="@font/baloo_2_bold"
-        android:text="@string/image_has_been_saved_successful"/>
+        android:text="@string/image_has_been_saved_successful"
+        tools:visibility="visible"
+        tools:text="@string/image_has_been_saved_successful"/>
 
 
 
@@ -78,11 +86,13 @@
         android:layout_marginBottom="@dimen/dp_minus_10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvSuccess"
+        tools:visibility="visible"
         >
 
         <include
             android:id="@+id/includeLayoutBottom"
-            layout="@layout/layout_bottom_ss" />
+            layout="@layout/layout_bottom_ss"
+            tools:visibility="visible" />
 
     </FrameLayout>
 
@@ -93,9 +103,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
 
-        <include layout="@layout/ads_native_big_btn_bottom_shimmer" />
+        <include layout="@layout/ads_native_big_btn_bottom_shimmer" tools:visibility="visible" />
 
     </FrameLayout>
 

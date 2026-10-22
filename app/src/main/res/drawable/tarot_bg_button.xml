@@ -2,14 +2,14 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false">
         <shape>
-            <solid android:color="@color/tarot_disabled" />
-            <corners android:radius="28dp" />
+            <solid android:color="?attr/tarotDisabledButton" />
+            <corners android:radius="@dimen/dp_28" />
         </shape>
     </item>
     <item>
         <shape>
             <solid android:color="@color/tarot_gold" />
-            <corners android:radius="28dp" />
+            <corners android:radius="@dimen/dp_28" />
         </shape>
     </item>
 </selector>

@@ -1,4 +1,4 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

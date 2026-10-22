@@ -3,37 +3,46 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:visibility="gone">
+    android:visibility="gone"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:background="#F6E9B6">
     <RelativeLayout
         android:background="@drawable/bg_native_hide"
         android:id="@+id/ad_unit_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:visibility="visible">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:visibility="visible">
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dip">
+                android:padding="8dip"
+                tools:visibility="visible">
 
                 <ImageView
                     android:id="@+id/ad_app_icon"
                     android:layout_width="40dip"
                     android:layout_height="40dip"
                     android:adjustViewBounds="true"
-                    android:src="@color/colorPrimary" />
+                    android:src="@color/colorPrimary"
+                    tools:visibility="visible"
+                    tools:src="@color/colorPrimary" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/dp_0"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_8"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:visibility="visible">
 
                     <TextView
                         android:id="@+id/ad_headline"
@@ -43,39 +52,48 @@
                         android:maxLines="1"
                         android:text=""
                         android:textColor="@color/black"
-                        android:textSize="12dp" />
+                        android:textSize="@dimen/dp_12"
+                        tools:visibility="visible"
+                        tools:text="Discover your daily inspiration" />
 
                     <LinearLayout
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="@dimen/dp_4"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        tools:visibility="visible">
                         <TextView
                             style="@style/AppTheme.Ads"
-                            android:background="@color/native_bg_btn" />
+                            android:background="@color/native_bg_btn"
+                            tools:visibility="visible"
+                            tools:text="Ad" />
                         <TextView
-                            android:layout_marginLeft="5dp"
+                            android:layout_marginLeft="@dimen/dp_5"
                             android:id="@+id/ad_body"
                             android:lines="2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:maxLines="1"
                             android:text=""
-                            android:textSize="10dp" />
+                            android:textSize="@dimen/dp_10"
+                            tools:visibility="visible"
+                            tools:text="Explore fresh ideas and find something that inspires you." />
 
                     </LinearLayout>
                 </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/ad_call_to_action"
-                    android:layout_width="110dp"
-                    android:layout_height="35dp"
+                    android:layout_width="@dimen/dp_110"
+                    android:layout_height="@dimen/dp_35"
                     android:layout_gravity="center_vertical"
                     android:background="@drawable/bg_btn_ads_native"
                     android:gravity="center"
                     android:text="Cài Đặt"
                     android:textColor="@color/colorWhite"
-                    android:textSize="8dp" />
+                    android:textSize="@dimen/dp_8"
+                    tools:visibility="visible"
+                    tools:text="Install" />
 
             </LinearLayout>
 

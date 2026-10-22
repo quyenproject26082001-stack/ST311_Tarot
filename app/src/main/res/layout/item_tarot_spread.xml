@@ -3,72 +3,85 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:layout_marginBottom="12dp"
+    android:layout_height="@dimen/dp_64"
+    android:layout_marginBottom="@dimen/dp_12"
     android:background="@drawable/tarot_bg_spread"
     android:clipToOutline="true"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
     <ImageView
         android:id="@+id/spreadBackground"
-        android:layout_width="90dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_0"
         android:scaleType="fitXY"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/tarot_spread_decor_0" />
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:paddingHorizontal="12dp"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:paddingHorizontal="@dimen/dp_12"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/spreadLockBadge"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
         <ImageView
             android:id="@+id/spreadIcon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
             android:scaleType="fitCenter"
-            android:importantForAccessibility="no" />
+            android:importantForAccessibility="no"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_spread_icon_0" />
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginStart="12dp"
-            android:orientation="vertical">
+            android:layout_marginStart="@dimen/dp_12"
+            android:orientation="vertical"
+            tools:visibility="visible">
             <TextView
                 android:id="@+id/spreadTitle"
                 style="@style/TarotTextHeading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito_bold"
-                android:textSize="15sp"
-                android:lineHeight="20sp"
+                android:textSize="@dimen/sp_15"
+                android:lineHeight="@dimen/sp_20"
                 android:maxLines="1"
                 android:ellipsize="end"
-                android:textColor="@color/tarot_green" />
+                android:textColor="@color/tarot_green"
+                tools:visibility="visible"
+                tools:text="Daily Reading" />
             <TextView
                 android:id="@+id/spreadDescription"
                 style="@style/TarotTextBody"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:textSize="12sp"
-                android:lineHeight="16sp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:textSize="@dimen/sp_12"
+                android:lineHeight="@dimen/sp_16"
                 android:maxLines="1"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                tools:visibility="visible"
+                tools:text="Your daily guidance from the cards" />
         </LinearLayout>
     </LinearLayout>
     <!-- Dim the artwork and text together, but preserve the outer 1dp border. -->
     <View
         android:id="@+id/spreadLockOverlay"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="1dp"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        android:layout_margin="@dimen/dp_1"
         android:background="@drawable/tarot_spread_locked_overlay"
         android:clickable="false"
         android:focusable="false"
@@ -77,39 +90,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible" />
     <!-- Draw after the overlay so the lock and countdown remain fully legible. -->
     <LinearLayout
         android:id="@+id/spreadLockBadge"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_marginEnd="12dp"
-        android:paddingHorizontal="4dp"
-        android:background="@drawable/tarot_bg_spread_lock"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:paddingHorizontal="@dimen/dp_4"
+        android:background="?attr/tarotSpreadLockBadgeBackground"
         android:gravity="center"
         android:orientation="horizontal"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
         <ImageView
             android:id="@+id/spreadLockIcon"
-            android:layout_width="12dp"
-            android:layout_height="14dp"
-            android:src="@drawable/tarot_ic_spread_lock"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_14"
+            android:src="?attr/tarotSpreadLockIcon"
             android:scaleType="fitCenter"
-            android:importantForAccessibility="no" />
+            android:importantForAccessibility="no"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_ic_spread_lock" />
         <TextView
             android:id="@+id/spreadLock"
             style="@style/TarotTextHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="@dimen/dp_4"
             android:fontFamily="@font/nunito_bold"
             android:gravity="center"
-            android:textColor="@color/tarot_green"
-            android:textSize="12sp"
-            android:lineHeight="16sp"
-            android:maxLines="1" />
+            android:textColor="?attr/tarotSpreadLockTextColor"
+            android:textSize="@dimen/sp_12"
+            android:lineHeight="@dimen/sp_16"
+            android:maxLines="1"
+            tools:visibility="visible"
+            tools:text="12h 30m" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

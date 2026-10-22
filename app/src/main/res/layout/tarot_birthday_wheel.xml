@@ -4,101 +4,121 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/tarot_settings_wheel_background"
-    android:paddingHorizontal="8dp"
-    android:paddingTop="8dp"
-    android:orientation="vertical">
+    android:paddingHorizontal="@dimen/dp_8"
+    android:paddingTop="@dimen/dp_8"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="23dp"
-        android:orientation="horizontal">
+        android:layout_height="@dimen/dp_23"
+        android:orientation="horizontal"
+        tools:visibility="visible">
         <TextView
             style="@style/TarotTextBody"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:background="@drawable/tarot_settings_wheel_heading"
-            android:layout_marginEnd="6dp"
-            android:textSize="10sp"
-            android:text="MONTH" />
+            android:layout_marginEnd="@dimen/dp_6"
+            android:textSize="@dimen/sp_10"
+            android:text="@string/tarot_month"
+            tools:visibility="visible"
+            tools:text="@string/tarot_month" />
         <TextView
             style="@style/TarotTextBody"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:background="@drawable/tarot_settings_wheel_heading"
-            android:layout_marginEnd="6dp"
-            android:textSize="10sp"
-            android:text="DAY" />
+            android:layout_marginEnd="@dimen/dp_6"
+            android:textSize="@dimen/sp_10"
+            android:text="@string/tarot_day"
+            tools:visibility="visible"
+            tools:text="@string/tarot_day" />
         <TextView
             style="@style/TarotTextBody"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:background="@drawable/tarot_settings_wheel_heading"
-            android:textSize="10sp"
-            android:text="YEAR" />
+            android:textSize="@dimen/sp_10"
+            android:text="@string/tarot_year"
+            tools:visibility="visible"
+            tools:text="@string/tarot_year" />
     </LinearLayout>
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="112dp">
+        android:layout_height="@dimen/dp_112"
+        tools:visibility="visible">
         <!-- White cells sit behind the pickers; the shared gold outline sits above. -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/dp_40"
             android:layout_gravity="center"
             android:importantForAccessibility="noHideDescendants"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:visibility="visible">
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_marginEnd="6dp"
-                android:background="@drawable/tarot_settings_wheel_cell" />
+                android:layout_marginEnd="@dimen/dp_6"
+                android:background="@drawable/tarot_settings_wheel_cell"
+                tools:visibility="visible" />
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_marginEnd="6dp"
-                android:background="@drawable/tarot_settings_wheel_cell" />
+                android:layout_marginEnd="@dimen/dp_6"
+                android:background="@drawable/tarot_settings_wheel_cell"
+                tools:visibility="visible" />
             <View
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/tarot_settings_wheel_cell" />
+                android:background="@drawable/tarot_settings_wheel_cell"
+                tools:visibility="visible" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <NumberPicker
+            android:orientation="horizontal"
+            tools:visibility="visible">
+            <com.tarot.card.meaning.tarot.BirthdayNumberPicker
                 android:id="@+id/month"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_marginEnd="6dp"
-                android:descendantFocusability="blocksDescendants" />
-            <NumberPicker
+                android:layout_marginEnd="@dimen/dp_6"
+                android:descendantFocusability="blocksDescendants"
+                tools:visibility="visible" />
+            <com.tarot.card.meaning.tarot.BirthdayNumberPicker
                 android:id="@+id/day"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_marginEnd="6dp"
-                android:descendantFocusability="blocksDescendants" />
-            <NumberPicker
+                android:layout_marginEnd="@dimen/dp_6"
+                android:descendantFocusability="blocksDescendants"
+                tools:visibility="visible" />
+            <com.tarot.card.meaning.tarot.BirthdayNumberPicker
                 android:id="@+id/year"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:descendantFocusability="blocksDescendants" />
+                android:descendantFocusability="blocksDescendants"
+                tools:visibility="visible" />
         </LinearLayout>
         <View
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/dp_40"
             android:layout_gravity="center"
             android:background="@drawable/tarot_bg_wheel_selection"
-            android:importantForAccessibility="no" />
+            android:importantForAccessibility="no"
+            tools:visibility="visible" />
     </FrameLayout>
 </LinearLayout>

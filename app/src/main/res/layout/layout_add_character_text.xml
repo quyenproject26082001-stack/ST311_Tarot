@@ -21,13 +21,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clipChildren="false"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:visibility="visible">
 
         <!-- Title: Text with Done Button -->
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_8">
+            android:layout_marginTop="@dimen/dp_8"
+            tools:visibility="visible">
 
             <!-- Title: Text -->
             <TextView
@@ -39,7 +41,9 @@
                 android:visibility="gone"
                 android:text="@string/text"
                 android:textColor="#C13F74"
-                android:textSize="@dimen/sp_20" />
+                android:textSize="@dimen/sp_20"
+                tools:visibility="visible"
+                tools:text="@string/text" />
 
             <TextView
                 android:id="@+id/tvText"
@@ -51,7 +55,9 @@
                 android:gravity="start"
                 android:text="@string/text"
                 android:textColor="@color/figma_primary"
-                android:textSize="@dimen/sp_18" />
+                android:textSize="@dimen/sp_18"
+                tools:visibility="visible"
+                tools:text="@string/text" />
             <!--                    btnDoneText-->
             <ImageView
                 android:id="@+id/btnDoneText"
@@ -61,7 +67,9 @@
                 android:layout_marginTop="@dimen/dp_minus_3"
                 android:layout_marginEnd="@dimen/dp_16"
                 android:tint="@color/figma_primary"
-                android:src="@drawable/ic_done_background" />
+                android:src="@drawable/ic_done_background"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_done_background" />
         </FrameLayout>
 
 
@@ -84,7 +92,9 @@
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="#80868686"
-            android:textSize="@dimen/sp_12" />
+            android:textSize="@dimen/sp_12"
+            tools:visibility="visible"
+            tools:text="@string/hello_world_hint" />
 
 
         <TextView
@@ -97,7 +107,9 @@
             android:gravity="start"
             android:text="@string/font"
             android:textColor="@color/figma_primary"
-            android:textSize="@dimen/sp_18" />
+            android:textSize="@dimen/sp_18"
+            tools:visibility="visible"
+            tools:text="Aa" />
 
         <!--            rcvFont-->
         <androidx.recyclerview.widget.RecyclerView
@@ -112,7 +124,10 @@
             android:paddingHorizontal="@dimen/dp_0_5"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@+id/titleFont"
-            tools:listitem="@layout/item_font" />
+            tools:listitem="@layout/item_font"
+            tools:visibility="visible"
+            tools:itemCount="6"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         <TextView
             android:id="@+id/tvColor"
@@ -124,7 +139,9 @@
             android:gravity="start"
             android:text="@string/color_text"
             android:textColor="@color/figma_primary"
-            android:textSize="@dimen/sp_18" />
+            android:textSize="@dimen/sp_18"
+            tools:visibility="visible"
+            tools:text="@string/color_text" />
 
         <!--            rcvTextColor-->
         <androidx.recyclerview.widget.RecyclerView
@@ -137,11 +154,15 @@
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@+id/titleColor"
-            tools:listitem="@layout/item_text_color" />
+            tools:listitem="@layout/item_text_color"
+            tools:visibility="visible"
+            tools:itemCount="6"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_16" />
+            android:layout_height="@dimen/dp_16"
+            tools:visibility="visible" />
 
     </LinearLayout>
 </ScrollView>

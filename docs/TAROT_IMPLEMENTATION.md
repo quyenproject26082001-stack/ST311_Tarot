@@ -37,6 +37,13 @@ This revision does not change reading rules or add the missing content below.
 
 ## Navigation
 
+Settings popups (name, birthday, zodiac, reverse-chance information and privacy)
+use `overlay_tarot_settings.xml` inside the Activity's `settingsOverlayHost`.
+They do not create a Dialog or BottomSheetDialog window. The overlay blocks
+outside taps without dismissing, retains Close/Submit actions, handles Back and
+keyboard insets, and hides the underlying page from accessibility while open.
+Other Tarot bottom sheets are unchanged.
+
 Each Tarot destination now has its own Activity: HomeActivity (via
 TarotHomeActivity), TarotSpreadsActivity, TarotCardsActivity, TarotHistoryActivity,
 TarotSettingsActivity, TarotHoroscopeActivity, TarotSelectionActivity,
@@ -70,6 +77,11 @@ the same XML additionally hosts Home branding and Cards list/grid actions.
 theme overlay, without changing the retained onboarding styling or header heights.
 Profile navigation/title stay above its scrolling form. Splash and Intro remain
 full-screen, without adding a title bar or changing their navigation.
+
+Language (both entry modes) and Permission use the centered title variant in the
+same 70dp action bar/title band as Tarot. Their action-bar hosts account for the
+status-bar/cutout top inset without accumulating it across repeated dispatches;
+their existing fonts, colors and Back/Done behavior remain scoped to onboarding.
 
 The original Splash, initial Language, Intro and Permission screens are retained.
 Permission continues to TarotProfileActivity if there is no saved profile; otherwise

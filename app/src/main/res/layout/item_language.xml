@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/dp_16">
+    android:layout_marginBottom="@dimen/dp_16"
+    tools:visibility="visible">
 
     <FrameLayout
         android:id="@+id/flMain"
@@ -14,11 +15,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:visibility="visible">
 
             <ImageView
                 android:id="@+id/imvFlag"
@@ -31,7 +34,9 @@
                 android:src="@drawable/ic_flag_english"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_flag_english" />
 
             <TextView
                 android:id="@+id/tvLang"
@@ -46,7 +51,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/imvFlag"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="English" />
+                tools:text="English (US)"
+                tools:visibility="visible" />
 
             <ImageView
                 android:id="@+id/btnRadio"
@@ -58,7 +64,9 @@
                 android:src="@drawable/ic_not_tick_lang"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_not_tick_lang" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>

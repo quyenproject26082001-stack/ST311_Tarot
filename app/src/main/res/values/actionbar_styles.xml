@@ -7,7 +7,7 @@
 
     <!-- Stable title bounds keep all buttons aligned when a screen hides one title variant. -->
     <style name="SharedActionBarAligned" parent="">
-        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_height">@dimen/dp_0</item>
         <item name="layout_constraintTop_toTopOf">@id/actionBarTitleBounds</item>
         <item name="layout_constraintBottom_toBottomOf">@id/actionBarTitleBounds</item>
     </style>
@@ -30,7 +30,7 @@
 
     <style name="SharedActionBarTitle" parent="single_marquee">
         <item name="android:layout_width">@dimen/dp_200</item>
-        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_height">@dimen/dp_0</item>
         <item name="android:layout_marginStart">@dimen/dp_102</item>
         <item name="android:layout_marginEnd">@dimen/dp_102</item>
         <item name="android:fontFamily">@font/baloo_2_bold</item>
@@ -46,6 +46,16 @@
         <item name="layout_constraintEnd_toEndOf">parent</item>
     </style>
 
+    <style name="OnboardingActionBarOverlay" parent="">
+        <item name="sharedActionBarTitleStyle">@style/OnboardingActionBarTitle</item>
+    </style>
+
+    <style name="OnboardingActionBarTitle" parent="SharedActionBarTitle">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_marginStart">@dimen/dp_76</item>
+        <item name="android:layout_marginEnd">@dimen/dp_76</item>
+    </style>
+
     <!-- Typography/colors remain scoped; every screen shares the same vertical geometry. -->
     <style name="TarotActionBarOverlay" parent="">
         <item name="sharedActionBarLeftStyle">@style/TarotActionBarLeft</item>
@@ -58,41 +68,41 @@
     </style>
 
     <style name="TarotProfileActionBarTitle" parent="TarotActionBarTitle">
-        <item name="android:layout_marginStart">20dp</item>
-        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">@dimen/dp_20</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
         <item name="android:gravity">start|center_vertical</item>
         <item name="android:fontFamily">@font/nunito_bold</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">@dimen/sp_24</item>
     </style>
 
     <style name="TarotActionBarLeft" parent="SharedActionBarLeft">
-        <item name="android:layout_width">44dp</item>
-        <item name="android:layout_marginStart">6dp</item>
-        <item name="android:layout_marginBottom">0dp</item>
-        <item name="android:padding">12dp</item>
+        <item name="android:layout_width">@dimen/dp_44</item>
+        <item name="android:layout_marginStart">@dimen/dp_6</item>
+        <item name="android:layout_marginBottom">@dimen/dp_0</item>
+        <item name="android:padding">@dimen/dp_12</item>
         <item name="android:src">@drawable/tarot_ic_back</item>
         <item name="android:tint">?attr/tarotInk</item>
     </style>
 
     <style name="TarotActionBarRight" parent="SharedActionBarRight">
-        <item name="android:layout_width">40dp</item>
-        <item name="android:layout_marginEnd">20dp</item>
-        <item name="android:layout_marginBottom">0dp</item>
-        <item name="android:padding">9dp</item>
-        <item name="android:src">@drawable/tarot_ic_settings</item>
-        <item name="android:tint">@color/tarot_gold</item>
-        <item name="android:background">@drawable/tarot_bg_outline</item>
+        <item name="android:layout_width">@dimen/dp_40</item>
+        <item name="android:layout_marginEnd">@dimen/dp_20</item>
+        <item name="android:layout_marginBottom">@dimen/dp_0</item>
+        <item name="android:padding">?attr/tarotSettingsIconPadding</item>
+        <item name="android:src">?attr/tarotSettingsIcon</item>
+        <item name="android:tint">?attr/tarotSettingsIconTint</item>
+        <item name="android:background">?attr/tarotSettingsIconBackground</item>
     </style>
 
     <style name="TarotActionBarTitle" parent="SharedActionBarTitle">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_marginStart">76dp</item>
-        <item name="android:layout_marginEnd">76dp</item>
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_marginStart">@dimen/dp_76</item>
+        <item name="android:layout_marginEnd">@dimen/dp_76</item>
         <item name="android:fontFamily">@font/tarot_nunito_semibold</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">@dimen/sp_20</item>
         <item name="android:textColor">?attr/tarotInk</item>
         <item name="android:ellipsize">end</item>
-        <item name="outerStrokeWidth">0dp</item>
+        <item name="outerStrokeWidth">@dimen/dp_0</item>
         <item name="outerStrokeColor">@android:color/transparent</item>
     </style>
 </resources>

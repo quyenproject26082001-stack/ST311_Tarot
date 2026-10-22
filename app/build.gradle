@@ -89,11 +89,11 @@ def realAds = [
 ]
 
 android {
-    namespace 'com.aaa.bbb.ccc'
+    namespace 'com.tarot.card.meaning'
     compileSdk 36
 
     defaultConfig {
-        applicationId "com.aaa.bbb.ccc"
+        applicationId "com.tarot.card.meaning"
         minSdk 24
         targetSdk 36
         versionCode 1

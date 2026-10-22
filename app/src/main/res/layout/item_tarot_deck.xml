@@ -2,11 +2,16 @@
 <ImageView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="88dp"
-    android:paddingStart="0dp"
-    android:paddingTop="0dp"
-    android:paddingEnd="2dp"
-    android:paddingBottom="2dp"
+    android:layout_height="@dimen/dp_88"
+    android:paddingStart="@dimen/dp_0"
+    android:paddingTop="@dimen/dp_0"
+    android:paddingEnd="@dimen/dp_2"
+    android:paddingBottom="@dimen/dp_2"
     android:scaleType="fitXY"
     android:focusable="true"
-    android:src="@drawable/tarot_deck_back" />
+    android:src="@drawable/tarot_deck_back"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:src="@drawable/tarot_deck_back"
+    tools:layout_width="@dimen/dp_52"
+    tools:theme="@style/TarotThemeLight" />

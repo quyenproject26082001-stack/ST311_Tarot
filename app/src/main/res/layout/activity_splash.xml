@@ -5,15 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.splash.SplashActivity">
+    tools:context=".ui.splash.SplashActivity"
+    tools:visibility="visible">
 
     <ImageView
+        android:id="@+id/imgSplashBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@null"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/img_splash_bg" />
+        android:src="@drawable/img_splash_bg"
+        tools:visibility="visible"
+        tools:src="@drawable/img_splash_bg" />
 
     <ImageView
         android:id="@+id/imgSplashLogo"
@@ -26,7 +30,9 @@
         app:layout_constraintDimensionRatio="360:150"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/img_splash_logo" />
 
     <ImageView
         android:id="@+id/imgSplashAvatar"
@@ -42,7 +48,9 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgSplashLogo" />
+        app:layout_constraintTop_toBottomOf="@id/imgSplashLogo"
+        tools:visibility="visible"
+        tools:src="@drawable/img_splash_avatar" />
 
     <ImageView
         android:id="@+id/ivLoading"
@@ -55,7 +63,9 @@
         android:tint="#0B292C"
         app:layout_constraintBottom_toTopOf="@id/tvDes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_loading_spinner" />
 
     <TextView
         android:id="@+id/tvDes"
@@ -70,6 +80,8 @@
         android:textSize="@dimen/sp_16"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"
+        tools:text="@string/this_action_can_contain_ads" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

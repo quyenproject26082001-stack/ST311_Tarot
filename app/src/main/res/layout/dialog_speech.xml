@@ -11,7 +11,8 @@
         android:id="@+id/layoutRoot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#00FFFFFF">
+        android:background="#00FFFFFF"
+        tools:visibility="visible">
 
         <FrameLayout
             android:id="@+id/layoutBubble"
@@ -21,14 +22,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
 
             <!--            imvBubble-->
             <ImageView
                 android:id="@+id/imvBubble"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                tools:visibility="visible"
+                tools:src="@drawable/tarot_bg_panel" />
 
             <!--            edtSpeech-->
             <EditText
@@ -47,7 +51,9 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/sp_20"
                 android:translationY="@dimen/dp_minus_10"
-                android:visibility="visible" />
+                android:visibility="visible"
+                tools:visibility="visible"
+                tools:text="Speech" />
 
             <!--            tvGetText-->
             <TextView
@@ -63,7 +69,9 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/sp_20"
                 android:translationY="@dimen/dp_minus_10"
-                android:visibility="invisible" />
+                android:visibility="invisible"
+                tools:visibility="visible"
+                tools:text="Add text" />
         </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

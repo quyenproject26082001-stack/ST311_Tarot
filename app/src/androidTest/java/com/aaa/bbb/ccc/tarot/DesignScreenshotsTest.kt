@@ -1,4 +1,4 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import android.app.Activity
 import android.content.Context
@@ -26,8 +26,8 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SdkSuppress
 import androidx.test.platform.app.InstrumentationRegistry
-import com.aaa.bbb.ccc.R
-import com.aaa.bbb.ccc.ui.home.HomeActivity
+import com.tarot.card.meaning.R
+import com.tarot.card.meaning.ui.home.HomeActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.Request
 import com.google.android.material.bottomsheet.BottomSheetDialog

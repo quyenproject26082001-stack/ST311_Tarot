@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name" translatable="false">ST311_Daily_Tarot_Reading</string>
+    <string name="app_name" translatable="false">Tarot Reading: Card Meaning</string>
 
     <string name="go_to_setting_message">L\'application a besoin de cette autorisation</string>
     <string name="settings">Paramètres</string>
@@ -58,7 +58,7 @@
     <string name="ok">Ok</string>
     <string name="wait_a_minute">Veuillez patienter...</string>
     <string name="reset">Réinitialiser</string>
-    <string name="download_success">Téléchargement réussi dans l\'album ST311_Daily_Tarot_Reading</string>
+    <string name="download_success">Téléchargement réussi dans l\'album Tarot Reading: Card Meaning</string>
     <string name="please_check_your_internet">Veuillez vérifier votre connexion Internet</string>
     <string name="please_select_an_image">Veuillez sélectionner une image</string>
     <string name="error">Erreur</string>

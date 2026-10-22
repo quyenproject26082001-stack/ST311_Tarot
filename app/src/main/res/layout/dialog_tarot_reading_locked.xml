@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_24"
+    android:paddingBottom="@dimen/dp_24"
+    tools:background="@drawable/tarot_reading_locked_panel"
+    tools:theme="@style/TarotThemeLight"
+    tools:visibility="visible">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:visibility="visible">
+        <TextView
+            android:id="@+id/lockedTitle"
+            style="@style/TarotTextHeading"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tarot_reading_locked"
+            android:textSize="@dimen/sp_16"
+            tools:text="@string/tarot_reading_locked"
+            tools:visibility="visible" />
+        <com.tarot.card.meaning.tarot.TarotIcon
+            android:id="@+id/close"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:padding="@dimen/dp_8"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/tarot_close"
+            app:tarotIconName="close"
+            app:tarotIconColor="?attr/tarotInk"
+            tools:src="@drawable/tarot_ic_close"
+            tools:visibility="visible" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lockedDescription"
+        style="@style/TarotTextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:textSize="@dimen/sp_12"
+        android:lineHeight="@dimen/sp_16"
+        tools:text="This reading is currently locked. Watch a short ad to unlock it now, or wait 23 hours to try again."
+        tools:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/watchAd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginHorizontal="@dimen/dp_9"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/tarot_unlock_button_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/tarot_watch_ad"
+        tools:visibility="visible">
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:src="@drawable/tarot_ic_watch_ad"
+            android:importantForAccessibility="no"
+            tools:src="@drawable/tarot_ic_watch_ad"
+            tools:visibility="visible" />
+        <TextView
+            android:id="@+id/watchAdLabel"
+            style="@style/TarotText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:gravity="center"
+            android:text="@string/tarot_watch_ad"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_16"
+            tools:text="@string/tarot_watch_ad"
+            tools:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:visibility="visible">
+        <ImageView
+            android:layout_width="@dimen/dp_22"
+            android:layout_height="@dimen/dp_22"
+            android:src="@drawable/tarot_ic_wait_alarm"
+            android:importantForAccessibility="no"
+            tools:src="@drawable/tarot_ic_wait_alarm"
+            tools:visibility="visible" />
+        <TextView
+            android:id="@+id/remainingTime"
+            style="@style/TarotText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:textColor="@color/tarot_gold"
+            android:textSize="@dimen/sp_12"
+            tools:text="Wait 22:41"
+            tools:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

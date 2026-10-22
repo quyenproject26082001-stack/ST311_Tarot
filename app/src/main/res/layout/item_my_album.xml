@@ -7,7 +7,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/dp_4"
     android:clipChildren="false"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    tools:visibility="visible">
 
     <FrameLayout
         android:id="@+id/root"
@@ -18,7 +19,8 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -26,7 +28,8 @@
             android:layout_margin="@dimen/dp_2"
             app:cardCornerRadius="@dimen/dp_12"
             app:strokeColor="@color/figma_primary"
-            app:strokeWidth="@dimen/dp_2">
+            app:strokeWidth="@dimen/dp_2"
+            tools:visibility="visible">
 
 
 
@@ -35,13 +38,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
-                        tools:src="@color/red_BA" />
+                        tools:src="@color/red_BA"
+                        tools:visibility="visible" />
 
                     <FrameLayout
                         android:id="@+id/frameCover"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#80000000" />
+                        android:background="#80000000"
+                        tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/btnDelete"
@@ -49,7 +54,9 @@
                         android:layout_height="@dimen/dp_32"
                         android:layout_gravity="end|top"
                         android:layout_margin="@dimen/dp_4"
-                        android:src="@drawable/ic_delete_item" />
+                        android:src="@drawable/ic_delete_item"
+                        tools:visibility="visible"
+                        tools:src="@drawable/ic_delete_item" />
 
                     <!--btnEdit-->
                     <ImageView
@@ -59,7 +66,9 @@
                         android:layout_gravity="start|top"
                         android:layout_margin="@dimen/dp_4"
                         android:src="@drawable/ic_edit"
-                        android:visibility="visible" />
+                        android:visibility="visible"
+                        tools:visibility="visible"
+                        tools:src="@drawable/ic_edit" />
 
                     <!--btnSelect-->
                     <ImageView
@@ -69,7 +78,9 @@
                         android:layout_gravity="end|top"
                         android:layout_margin="@dimen/dp_4"
                         android:src="@drawable/ic_not_select"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        tools:src="@drawable/ic_not_select" />
                 </com.google.android.material.card.MaterialCardView>
         <!--btnDelete-->
 

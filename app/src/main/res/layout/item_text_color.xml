@@ -4,7 +4,8 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginEnd="@dimen/dp_12">
+    android:layout_marginEnd="@dimen/dp_12"
+    tools:visibility="visible">
 
     <FrameLayout
         android:layout_width="@dimen/dp_0"
@@ -13,7 +14,8 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <!--        vFocus (stroke - renders BEHIND)-->
         <View
@@ -22,13 +24,15 @@
             android:layout_height="match_parent"
             android:visibility="gone"
             android:elevation="@dimen/dp_2"
-            android:background="@drawable/bg_stroke_gradient_circle_color_text" />
+            android:background="@drawable/bg_stroke_gradient_circle_color_text"
+            tools:visibility="visible" />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:background="@color/red_BA"
             android:layout_margin="@dimen/dp_0"
+            tools:visibility="visible"
             >
 
             <!--            imvColor-->
@@ -36,7 +40,9 @@
                 android:id="@+id/imvColor"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/dp_0" />
+                android:layout_margin="@dimen/dp_0"
+                tools:visibility="visible"
+                tools:src="@drawable/tarot_bg_button" />
 
             <!--            btnAddColor-->
             <ImageView
@@ -46,7 +52,9 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/img0text_color"
                 android:layout_gravity="center"
-                android:visibility="visible" />
+                android:visibility="visible"
+                tools:visibility="visible"
+                tools:src="@drawable/img0text_color" />
 
         </FrameLayout>
     </FrameLayout>

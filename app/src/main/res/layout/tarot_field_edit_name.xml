@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56"
+    android:gravity="top"
+    android:orientation="horizontal"
+    tools:theme="@style/TarotThemeDark"
+    tools:visibility="visible">
+    <ImageView
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="?attr/tarotEditNameIcon"
+        tools:src="?attr/tarotEditNameIcon"
+        tools:visibility="visible" />
+    <LinearLayout
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:visibility="visible">
+        <EditText
+            android:id="@+id/nameInput"
+            style="@style/TarotText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"
+            android:background="@drawable/tarot_settings_name_background"
+            android:fontFamily="@font/nunito_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/tarot_name"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="24"
+            android:paddingHorizontal="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_0"
+            android:paddingBottom="@dimen/dp_0"
+            android:singleLine="true"
+            android:textColorHint="?attr/tarotMuted"
+            tools:text="Seraphina"
+            tools:visibility="visible" />
+        <TextView
+            android:id="@+id/nameCounter"
+            style="@style/TarotTextBody"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_2"
+            android:gravity="end"
+            android:lineHeight="@dimen/sp_10"
+            android:maxLines="1"
+            android:textSize="@dimen/sp_8"
+            android:translationY="@dimen/dp_minus_2"
+            tools:text="9/24"
+            tools:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

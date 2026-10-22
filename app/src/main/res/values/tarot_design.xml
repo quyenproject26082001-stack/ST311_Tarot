@@ -21,6 +21,83 @@
     <attr
         name="tarotInput"
         format="color" />
+    <attr
+        name="tarotBottomBar"
+        format="color" />
+    <attr
+        name="tarotDialogSurface"
+        format="color" />
+    <attr
+        name="tarotDialogPanel"
+        format="color" />
+    <attr name="tarotConfirmBackground" format="reference" />
+    <attr name="tarotConfirmNoBackground" format="reference" />
+    <attr name="tarotConfirmYesBackground" format="reference" />
+    <attr name="tarotConfirmTitleColor" format="color" />
+    <attr name="tarotConfirmDescriptionColor" format="color" />
+    <attr name="tarotConfirmNoTextColor" format="color" />
+    <attr
+        name="tarotReverseInfoBorder"
+        format="color" />
+    <attr
+        name="tarotSettingsOverlayBackground"
+        format="reference" />
+    <attr
+        name="tarotEmptyHistoryGlow"
+        format="reference" />
+    <attr
+        name="tarotEmptyHistoryArt"
+        format="reference" />
+    <attr
+        name="tarotEmptyReadingGlow"
+        format="reference" />
+    <attr
+        name="tarotEmptyReadingArt"
+        format="reference" />
+    <attr
+        name="tarotEditNameIcon"
+        format="reference" />
+    <attr
+        name="tarotGuidancePanelBackground"
+        format="reference" />
+    <attr
+        name="tarotGuidanceArtScale"
+        format="float" />
+    <attr
+        name="tarotReadingLockedPanelBackground"
+        format="reference" />
+    <attr
+        name="tarotSpreadLockBadgeBackground"
+        format="reference" />
+    <attr
+        name="tarotSpreadLockIcon"
+        format="reference" />
+    <attr
+        name="tarotSpreadLockTextColor"
+        format="color" />
+    <attr
+        name="tarotSettingsAccent"
+        format="color" />
+    <attr
+        name="tarotSettingsDivider"
+        format="color" />
+    <attr name="tarotZodiacTile" format="color" />
+    <attr name="tarotZodiacSelected" format="color" />
+    <attr name="tarotZodiacBorder" format="color" />
+    <attr name="tarotControlSurface" format="color" />
+    <attr name="tarotPanelBorder" format="color" />
+    <attr name="tarotProfileButton" format="color" />
+    <attr name="tarotDisabledButton" format="color" />
+    <attr name="tarotProfilePrevious" format="color" />
+    <attr name="tarotProfilePreviousText" format="color" />
+    <attr name="tarotPairSurface" format="color" />
+    <attr name="tarotStepActive" format="color" />
+    <attr name="tarotSegmentSurface" format="color" />
+    <attr name="tarotSettingsIcon" format="reference" />
+    <attr name="tarotSettingsIconTint" format="color|reference" />
+    <attr name="tarotSettingsIconBackground" format="reference" />
+    <attr name="tarotSettingsIconPadding" format="dimension" />
+    <attr name="tarotGuidanceArt" format="reference" />
     <declare-styleable name="TarotIcon">
         <attr
             name="tarotIconName"
@@ -37,6 +114,41 @@
         <item name="tarotPaper">#FFFFFF</item>
         <item name="tarotSurface">#FCFBF7</item>
         <item name="tarotInput">#FBF9F2</item>
+        <item name="tarotBottomBar">#FFFFFF</item>
+        <item name="tarotDialogSurface">#FFFFFF</item>
+        <item name="tarotDialogPanel">#FCFBF7</item>
+        <item name="tarotReverseInfoBorder">@android:color/transparent</item>
+        <item name="tarotSettingsOverlayBackground">@drawable/tarot_settings_overlay_panel</item>
+        <item name="tarotEmptyHistoryGlow">@null</item>
+        <item name="tarotEmptyHistoryArt">@drawable/tarot_empty_history</item>
+        <item name="tarotEmptyReadingGlow">@null</item>
+        <item name="tarotEmptyReadingArt">@drawable/tarot_empty_history</item>
+        <item name="tarotEditNameIcon">@drawable/tarot_ic_edit_name_light</item>
+        <item name="tarotGuidancePanelBackground">@drawable/tarot_bg_sheet</item>
+        <item name="tarotGuidanceArtScale">1.0</item>
+        <item name="tarotReadingLockedPanelBackground">@drawable/tarot_reading_locked_panel</item>
+        <item name="tarotSpreadLockBadgeBackground">@drawable/tarot_bg_spread_lock</item>
+        <item name="tarotSpreadLockIcon">@drawable/tarot_ic_spread_lock</item>
+        <item name="tarotSpreadLockTextColor">@color/tarot_green</item>
+        <item name="tarotSettingsAccent">@color/tarot_green</item>
+        <item name="tarotSettingsDivider">@color/tarot_border</item>
+        <item name="tarotZodiacTile">#FFFFFF</item>
+        <item name="tarotZodiacSelected">@color/tarot_pale_gold</item>
+        <item name="tarotZodiacBorder">#FFF3D7</item>
+        <item name="tarotControlSurface">@color/tarot_pale_gold</item>
+        <item name="tarotPanelBorder">@color/tarot_border</item>
+        <item name="tarotProfileButton">@color/tarot_gold</item>
+        <item name="tarotDisabledButton">@color/tarot_disabled</item>
+        <item name="tarotProfilePrevious">#FFFFFF</item>
+        <item name="tarotProfilePreviousText">@color/tarot_gold</item>
+        <item name="tarotPairSurface">@color/tarot_pale_gold</item>
+        <item name="tarotStepActive">@color/tarot_green</item>
+        <item name="tarotSegmentSurface">#26172A2A</item>
+        <item name="tarotSettingsIcon">@drawable/tarot_ic_settings</item>
+        <item name="tarotSettingsIconTint">@color/tarot_gold</item>
+        <item name="tarotSettingsIconBackground">@drawable/tarot_bg_outline</item>
+        <item name="tarotSettingsIconPadding">@dimen/dp_9</item>
+        <item name="tarotGuidanceArt">@drawable/tarot_guidance_art</item>
         <item name="android:fontFamily">@font/nunito_regular</item>
         <item name="colorControlActivated">@color/tarot_green</item>
         <item name="android:windowLightStatusBar">true</item>
@@ -46,69 +158,125 @@
     <style
         name="TarotThemeDark"
         parent="TarotThemeLight">
-        <item name="tarotInk">#EFF5F3</item>
-        <item name="tarotMuted">#B1BEBD</item>
-        <item name="tarotPaper">#172829</item>
-        <item name="tarotSurface">#223A3B</item>
-        <item name="tarotInput">#223A3B</item>
+        <item name="tarotConfirmBackground">@drawable/tarot_confirm_dark_background</item>
+        <item name="tarotConfirmNoBackground">@drawable/tarot_confirm_dark_keep</item>
+        <item name="tarotConfirmYesBackground">@drawable/tarot_confirm_dark_leave</item>
+        <item name="tarotConfirmTitleColor">#E3E2CE</item>
+        <item name="tarotConfirmDescriptionColor">#CDDEDA</item>
+        <item name="tarotConfirmNoTextColor">#FFFFFF</item>
+        <item name="tarotInk">#E3E2CE</item>
+        <item name="tarotMuted">#CDDEDA</item>
+        <item name="tarotPaper">#071D20</item>
+        <item name="tarotSurface">#1E4748</item>
+        <item name="tarotInput">#363636</item>
+        <item name="tarotBottomBar">#111212</item>
+        <item name="tarotDialogSurface">#111212</item>
+        <item name="tarotDialogPanel">#111212</item>
+        <item name="tarotReverseInfoBorder">@color/tarot_gold</item>
+        <item name="tarotSettingsOverlayBackground">@drawable/tarot_settings_overlay_panel_dark</item>
+        <item name="tarotEmptyHistoryGlow">@null</item>
+        <item name="tarotEmptyHistoryArt">@drawable/tarot_empty_history_dark</item>
+        <item name="tarotEmptyReadingGlow">@null</item>
+        <item name="tarotEmptyReadingArt">@drawable/tarot_empty_history_dark</item>
+        <item name="tarotEditNameIcon">@drawable/tarot_ic_edit_name</item>
+        <item name="tarotGuidancePanelBackground">@drawable/tarot_guidance_panel_dark</item>
+        <item name="tarotGuidanceArtScale">1.55</item>
+        <item name="tarotReadingLockedPanelBackground">@drawable/tarot_reading_locked_panel_dark</item>
+        <item name="tarotSpreadLockBadgeBackground">@drawable/tarot_bg_spread_lock_dark</item>
+        <item name="tarotSpreadLockIcon">@drawable/tarot_ic_spread_lock_dark</item>
+        <item name="tarotSpreadLockTextColor">@color/tarot_gold</item>
+        <item name="tarotSettingsAccent">@color/tarot_gold</item>
+        <item name="tarotSettingsDivider">#667450</item>
+        <item name="tarotZodiacTile">#111212</item>
+        <item name="tarotZodiacSelected">#16676B</item>
+        <item name="tarotZodiacBorder">#1E4748</item>
+        <item name="tarotControlSurface">#16676B</item>
+        <item name="tarotPanelBorder">#667450</item>
+        <item name="tarotProfileButton">@color/tarot_green</item>
+        <item name="tarotDisabledButton">#363636</item>
+        <item name="tarotProfilePrevious">#FFFFFF</item>
+        <item name="tarotProfilePreviousText">@color/tarot_green</item>
+        <item name="tarotPairSurface">#16676B</item>
+        <item name="tarotStepActive">@color/tarot_gold</item>
+        <item name="tarotSegmentSurface">#41413F</item>
+        <item name="tarotSettingsIcon">@drawable/ic_setting_darkmode</item>
+        <item name="tarotSettingsIconTint">@null</item>
+        <item name="tarotSettingsIconBackground">@null</item>
+        <item name="tarotSettingsIconPadding">@dimen/dp_0</item>
+        <item name="tarotGuidanceArt">@drawable/ic_darkmode_tarot1</item>
         <item name="android:windowLightStatusBar">false</item>
-        <item name="android:navigationBarColor">#172829</item>
+        <item name="android:navigationBarColor">#071D20</item>
     </style>
-    <!-- Match the colored disc inside the screenshot crop, not the 52px PNG bounds. -->
     <style name="TarotZodiacIcon" parent="">
-        <item name="android:background">@drawable/tarot_zodiac_icon_mask</item>
-        <item name="android:outlineProvider">background</item>
-        <item name="android:clipToOutline">true</item>
-        <!-- InsetDrawable must define only the mask, not shrink the image content. -->
-        <item name="android:padding">0dp</item>
-        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@null</item>
+        <item name="android:clipToOutline">false</item>
+        <item name="android:padding">@dimen/dp_0</item>
+        <item name="android:scaleType">fitCenter</item>
     </style>
-    <style name="TarotZodiacBadgeIcon" parent="TarotZodiacIcon">
-        <item name="android:background">@drawable/tarot_zodiac_badge_mask</item>
-    </style>
-    <style name="TarotHoroscopeZodiacIcon" parent="TarotZodiacIcon">
-        <item name="android:background">@drawable/tarot_zodiac_horoscope_mask</item>
-    </style>
+    <style name="TarotZodiacBadgeIcon" parent="TarotZodiacIcon" />
+    <style name="TarotHoroscopeZodiacIcon" parent="TarotZodiacIcon" />
     <style
         name="TarotText"
         parent="">
         <item name="android:fontFamily">@font/nunito_regular</item>
         <item name="android:textColor">?attr/tarotInk</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/sp_14</item>
         <item name="android:includeFontPadding">false</item>
         <item name="android:lineSpacingMultiplier">1</item>
-        <item name="android:lineHeight">16sp</item>
+        <item name="android:lineHeight">@dimen/sp_16</item>
+    </style>
+
+    <style
+        name="TarotText2"
+        parent="">
+        <item name="android:fontFamily">@font/tarot_nunito_semibold</item>
+        <item name="android:textColor">?attr/tarotInk</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:lineHeight">@dimen/sp_16</item>
+    </style>
+
+    <style
+        name="TarotText1"
+        parent="">
+        <item name="android:fontFamily">@font/tarot_nunito_semibold</item>
+        <item name="android:textColor">?attr/tarotInk</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:lineHeight">@dimen/sp_16</item>
     </style>
     <style
         name="TarotTextHeading"
         parent="TarotText">
         <item name="android:fontFamily">@font/tarot_nunito_semibold</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:lineHeight">22sp</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:lineHeight">@dimen/sp_22</item>
     </style>
     <style
         name="TarotTextBody"
         parent="TarotText">
         <item name="android:textColor">?attr/tarotMuted</item>
-        <item name="android:lineHeight">21sp</item>
+        <item name="android:lineHeight">@dimen/sp_21</item>
     </style>
     <style
         name="TarotButton"
         parent="TarotText">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_height">@dimen/dp_46</item>
         <item name="android:background">@drawable/tarot_bg_button</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/sp_16</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
     <style
         name="TarotIconButton"
         parent="">
-        <item name="android:layout_width">44dp</item>
-        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">@dimen/dp_44</item>
+        <item name="android:layout_height">@dimen/dp_44</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:background">?attr/selectableItemBackgroundBorderless</item>

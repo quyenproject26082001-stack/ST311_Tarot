@@ -2,37 +2,48 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/dp_0"
     android:layout_weight="1"
     android:layout_height="match_parent"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:layout_width="@dimen/dp_112"
+    tools:theme="@style/TarotThemeLight"
+    tools:layout_height="@dimen/dp_58">
     <View
         android:id="@+id/selectionGlow"
-        android:layout_width="71dp"
-        android:layout_height="16dp"
+        android:layout_width="@dimen/dp_71"
+        android:layout_height="@dimen/dp_16"
         android:layout_gravity="top|center_horizontal"
         android:background="@drawable/tarot_bg_nav_selected"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:visibility="visible" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="9dp"
+        android:paddingTop="@dimen/dp_9"
         android:gravity="top|center_horizontal"
-        android:orientation="vertical">
-        <com.aaa.bbb.ccc.tarot.TarotIcon
+        android:orientation="vertical"
+        tools:visibility="visible">
+        <com.tarot.card.meaning.tarot.TarotIcon
             android:id="@+id/tabIcon"
-            android:padding="1dp"
-            android:layout_width="26dp"
-            android:layout_height="24dp"
-            app:tarotIconColor="?attr/tarotMuted" />
+            android:padding="@dimen/dp_1"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_24"
+            app:tarotIconColor="?attr/tarotMuted"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_ic_home" />
         <TextView
             android:id="@+id/tabLabel"
             style="@style/TarotTextBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textSize="12sp"
-            android:lineHeight="16sp" />
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="@dimen/sp_12"
+            android:lineHeight="@dimen/sp_16"
+            tools:visibility="visible"
+            tools:text="Home" />
     </LinearLayout>
 </FrameLayout>

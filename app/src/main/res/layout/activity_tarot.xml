@@ -4,37 +4,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/tarotPaper">
+    android:background="?attr/tarotPaper"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
     <ImageView
         android:id="@+id/pageBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/bg_app"
         android:scaleType="fitXY"
-        android:importantForAccessibility="no" />
+        android:importantForAccessibility="no"
+        tools:visibility="visible"
+        tools:src="@drawable/bg_app" />
     <LinearLayout
         android:id="@+id/page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:visibility="visible">
         <include
             android:id="@+id/actionBar"
             layout="@layout/layout_actionbar"
             android:theme="@style/TarotActionBarOverlay"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/shared_actionbar_height" />
+            android:layout_height="@dimen/shared_actionbar_height"
+            tools:visibility="visible" />
         <FrameLayout
             android:id="@+id/screenHost"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1"
+            tools:visibility="visible" />
         <LinearLayout
             android:id="@+id/bottomTabs"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:paddingHorizontal="16dp"
-            android:background="?attr/tarotPaper"
-            android:elevation="4dp"
-            android:orientation="horizontal" />
+            android:layout_height="@dimen/dp_58"
+            android:paddingHorizontal="@dimen/dp_16"
+            android:background="?attr/tarotBottomBar"
+            android:orientation="horizontal"
+            tools:visibility="visible" />
     </LinearLayout>
+    <View
+        android:id="@+id/bottomTabShadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp_58"
+        android:background="@drawable/tarot_bottom_tab_shadow"
+        android:importantForAccessibility="no"
+        tools:visibility="visible" />
+    <FrameLayout
+        android:id="@+id/settingsOverlayHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/dp_8"
+        tools:visibility="visible" />
 </FrameLayout>

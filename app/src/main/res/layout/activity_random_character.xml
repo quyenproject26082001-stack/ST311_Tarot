@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_app"
-    tools:context=".ui.random_character.RandomCharacterActivity">
+    tools:context=".ui.random_character.RandomCharacterActivity"
+    tools:visibility="visible">
 
 
 
@@ -15,11 +16,13 @@
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <!-- rcvRandomCharacter -->
@@ -36,7 +39,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
         app:spanCount="2"
-        tools:listitem="@layout/item_random_character" />
+        tools:listitem="@layout/item_random_character"
+        tools:visibility="visible"
+        tools:itemCount="6"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
 
     <!--    flNativeCollab-->
     <FrameLayout
@@ -44,7 +50,8 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
 
     </FrameLayout>
 

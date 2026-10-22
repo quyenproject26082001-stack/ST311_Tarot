@@ -13,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/dp_22"
-        android:background="@drawable/bg_bg" />
+        android:background="@drawable/bg_bg"
+        tools:visibility="visible"
+        tools:src="@drawable/img_intro_1" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvCategory"
@@ -25,7 +27,9 @@
         android:visibility="gone"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_category"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        tools:itemCount="6"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
     <!--            rcvSticker-->
     <androidx.recyclerview.widget.RecyclerView
@@ -39,5 +43,8 @@
         android:clipToPadding="false"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="5"
-        tools:listitem="@layout/item_speech" />
+        tools:listitem="@layout/item_speech"
+        tools:visibility="visible"
+        tools:itemCount="6"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
 </FrameLayout>

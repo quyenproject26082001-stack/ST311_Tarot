@@ -3,19 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:visibility="gone">
+    android:visibility="gone"
+    tools:visibility="visible">
 
     <RelativeLayout
         android:id="@+id/ad_unit_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_native"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:visibility="visible">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:visibility="visible">
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -23,23 +26,29 @@
                 android:paddingStart="25dip"
                 android:paddingTop="8dip"
                 android:paddingEnd="8dip"
-                android:paddingBottom="8dip">
+                android:paddingBottom="8dip"
+                tools:visibility="visible">
 
                 <ImageView
                     android:id="@+id/ad_app_icon"
                     android:layout_width="35dip"
                     android:layout_height="35dip"
-                    android:adjustViewBounds="true"/>
+                    android:adjustViewBounds="true"
+                    tools:visibility="visible"
+                    tools:src="@drawable/ic_aries"/>
                 <TextView
                     style="@style/AppTheme.Ads"
                     android:layout_marginStart="5dip"
-                    android:backgroundTint="@color/native_bg_btn" />
+                    android:backgroundTint="@color/native_bg_btn"
+                    tools:visibility="visible"
+                    tools:text="Ad" />
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dip"
 
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:visibility="visible">
 
                     <TextView
                         android:id="@+id/ad_headline"
@@ -49,19 +58,23 @@
                         android:maxLines="2"
                         android:text=""
                         android:textColor="@color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        tools:visibility="visible"
+                        tools:text="Discover your daily inspiration" />
 
 
                     <TextView
                         android:id="@+id/ad_advertiser"
                         android:layout_width="wrap_content"
-                        android:layout_height="0dp"
+                        android:layout_height="@dimen/dp_0"
                         android:layout_weight="1"
                         android:gravity="bottom"
                         android:lines="1"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_10sdp" />
+                        android:textSize="@dimen/sp_10"
+                        tools:visibility="visible"
+                        tools:text="Sponsored content" />
 
 
                 </LinearLayout>
@@ -70,34 +83,41 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:visibility="visible">
                 <TextView
-                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginHorizontal="@dimen/dp_20"
                     android:id="@+id/ad_body"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/sp_12"
+                    tools:visibility="visible"
+                    tools:text="Explore fresh ideas and find something that inspires you." />
 
             </LinearLayout>
             <com.google.android.gms.ads.nativead.MediaView
                 android:id="@+id/ad_media"
                 android:layout_width="fill_parent"
-                android:layout_height="120dp"
+                android:layout_height="@dimen/dp_120"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/dp_5"
                 android:layout_weight="1"
-                tools:ignore="InefficientWeight" />
+                tools:ignore="InefficientWeight"
+                tools:visibility="visible"
+                tools:background="#F6E9B6" />
             <ImageView
                 android:id="@+id/ad_call_to_action"
                 android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginVertical="@dimen/dp_10"
                 android:gravity="center"
                 android:textColor="@color/native_text_color_btn"
-                android:textSize="@dimen/_12sdp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_sw_on" />
         </LinearLayout>
 
 

@@ -4,19 +4,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingHorizontal="8dp"
-    android:paddingBottom="14dp"
-    android:translationY="-4dp"
+    android:paddingHorizontal="@dimen/dp_8"
+    android:paddingBottom="@dimen/dp_14"
+    android:translationY="@dimen/dp_minus_4"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:layout_width="@dimen/dp_112"
+    tools:theme="@style/TarotThemeLight">
     <ImageView
         android:id="@+id/cardImage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
         android:scaleType="fitCenter"
         app:layout_constraintDimensionRatio="H,4:7"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/tarot_deck_back" />
 </androidx.constraintlayout.widget.ConstraintLayout>

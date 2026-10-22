@@ -5,36 +5,47 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.permission.PermissionActivity">
+    tools:context=".ui.permission.PermissionActivity"
+    tools:visibility="visible">
 
     <ImageView
+        android:id="@+id/pageBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@null"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_app" />
+        android:src="@drawable/bg_app"
+        tools:visibility="visible"
+        tools:src="@drawable/bg_app" />
 
     <FrameLayout
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
-        <include android:id="@+id/actionBar" layout="@layout/layout_actionbar" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/layout_actionbar"
+            android:theme="@style/OnboardingActionBarOverlay"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <ImageView
         android:id="@+id/imgPermission"
         android:layout_width="@dimen/dp_216"
         android:layout_height="@dimen/dp_216"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="@dimen/dp_0"
         android:contentDescription="@null"
         android:importantForAccessibility="no"
         android:scaleType="fitCenter"
         android:src="@drawable/img_permission_figma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"/>
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+        tools:visibility="visible"
+        tools:src="@drawable/img_permission_figma"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/txtPermission"
@@ -44,9 +55,10 @@
         android:layout_marginTop="@dimen/dp_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgPermission">
+        app:layout_constraintTop_toBottomOf="@id/imgPermission"
+        tools:visibility="visible">
 
-        <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+        <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
             android:id="@+id/txtPer"
             android:layout_width="@dimen/dp_0"
             android:layout_height="match_parent"
@@ -55,37 +67,42 @@
             android:includeFontPadding="false"
             android:maxLines="2"
             android:textColor="#172A2A"
-            android:textSize="@dimen/sp_15"
+            android:textSize="@dimen/sp_16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:outerStrokeColor="@color/transparent"
             app:outerStrokeWidth="@dimen/dp_0"
-            tools:text="Allow Therian OC Maker to access photos, media and files on your device" />
+            tools:text="Allow Therian OC Maker to access photos, media and files on your device"
+            tools:visibility="visible" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RelativeLayout
         android:id="@+id/btnStorage"
         android:layout_width="@dimen/dp_0"
-        android:layout_height="@dimen/dp_56"
+        android:layout_height="@dimen/dp_48"
         android:layout_marginHorizontal="@dimen/dp_20"
         android:layout_marginTop="@dimen/dp_8"
-        android:background="@drawable/bg_language_selected_v2"
+        android:background="@drawable/bg_setting_normal_v2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtPermission">
+        app:layout_constraintTop_toBottomOf="@id/txtPermission"
+        tools:visibility="visible">
 
         <TextView
+            android:id="@+id/storageLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/dp_20"
-            android:fontFamily="@font/baloo_2_bold"
+            android:fontFamily="@font/nunito_regular"
             android:gravity="center_vertical"
             android:includeFontPadding="false"
             android:text="Media"
             android:textColor="@color/figma_primary"
-            android:textSize="@dimen/sp_18" />
+            android:textSize="@dimen/sp_16"
+            tools:visibility="visible"
+            tools:text="Media" />
 
         <ImageView
             android:id="@+id/swPermission"
@@ -95,31 +112,37 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/dp_20"
             android:contentDescription="@string/storage"
-            android:src="@drawable/bg_permission_switch_off" />
+            android:src="@drawable/bg_permission_switch_off"
+            tools:visibility="visible"
+            tools:src="@drawable/bg_permission_switch_off" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/btnNotification"
         android:layout_width="@dimen/dp_0"
-        android:layout_height="@dimen/dp_56"
+        android:layout_height="@dimen/dp_48"
         android:layout_marginHorizontal="@dimen/dp_20"
         android:layout_marginTop="@dimen/dp_8"
-        android:background="@drawable/bg_language_normal_v2"
+        android:background="@drawable/bg_setting_normal_v2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtPermission">
+        app:layout_constraintTop_toBottomOf="@id/txtPermission"
+        tools:visibility="visible">
 
         <TextView
+            android:id="@+id/notificationLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/dp_20"
-            android:fontFamily="@font/baloo_2_bold"
+            android:fontFamily="@font/nunito_regular"
             android:gravity="center_vertical"
             android:includeFontPadding="false"
             android:text="Media"
             android:textColor="#172A2A"
-            android:textSize="@dimen/sp_16" />
+            android:textSize="@dimen/sp_16"
+            tools:visibility="visible"
+            tools:text="Notifications" />
 
         <ImageView
             android:id="@+id/swNotification"
@@ -129,7 +152,9 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/dp_20"
             android:contentDescription="@string/notification"
-            android:src="@drawable/bg_permission_switch_off" />
+            android:src="@drawable/bg_permission_switch_off"
+            tools:visibility="visible"
+            tools:src="@drawable/bg_permission_switch_off" />
     </RelativeLayout>
 
 
@@ -149,22 +174,26 @@
         android:textSize="@dimen/sp_16"
         app:layout_constraintEnd_toEndOf="parent"
         android:drawableEnd="@drawable/arrow_next"
-        app:layout_constraintTop_toBottomOf="@id/permissionButtonsBottom" />
+        app:layout_constraintTop_toBottomOf="@id/permissionButtonsBottom"
+        tools:visibility="visible"
+        tools:text="@string/continue_per" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/permissionButtonsBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="btnStorage,btnNotification" />
+        app:constraint_referenced_ids="btnStorage,btnNotification"
+        tools:visibility="visible" />
 
     <FrameLayout
         android:id="@+id/native_ads"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent">
-        <include layout="@layout/ads_native_big_btn_bottom_shimmer" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
+        <include layout="@layout/ads_native_big_btn_bottom_shimmer" tools:visibility="visible" />
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

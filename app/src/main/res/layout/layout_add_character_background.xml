@@ -3,14 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:visibility="visible">
 
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/dp_22"
-        android:background="@drawable/bg_bg" />
+        android:background="@drawable/bg_bg"
+        tools:visibility="visible"
+        tools:src="@drawable/img_intro_1" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/sectionTab"
@@ -33,11 +36,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/btnBackgroundColor"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            tools:visibility="visible">
 
 
             <!--                tvBackgroundImage-->
-            <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+            <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
                 android:id="@+id/tvBackgroundImage"
                 style="@style/single_marquee"
                 android:layout_width="match_parent"
@@ -48,7 +52,9 @@
                 android:text="@string/image"
 
                 android:textColor="@color/figma_primary"
-                android:textSize="@dimen/sp_18" />
+                android:textSize="@dimen/sp_18"
+                tools:visibility="visible"
+                tools:text="@string/image" />
 
         </FrameLayout>
 
@@ -61,11 +67,12 @@
             android:layout_marginStart="@dimen/dp_8"
             app:layout_constraintStart_toEndOf="@id/btnBackgroundImage"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            tools:visibility="visible">
 
 
             <!--                tvBackgroundColor-->
-            <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+            <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
                 android:id="@+id/tvBackgroundColor"
                 style="@style/single_marquee"
                 android:layout_width="match_parent"
@@ -75,7 +82,9 @@
                 android:letterSpacing="0.05"
                 android:text="@string/color"
                 android:textColor="@color/figma_primary"
-                android:textSize="@dimen/sp_18" />
+                android:textSize="@dimen/sp_18"
+                tools:visibility="visible"
+                tools:text="@string/color" />
 
         </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -101,7 +110,9 @@
             android:visibility="gone"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_category"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            tools:itemCount="6"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
         <!--            rcvBackgroundImage-->
@@ -119,7 +130,8 @@
 
             tools:itemCount="10"
             tools:listitem="@layout/item_background_image"
-            tools:visibility="gone" />
+            tools:visibility="visible"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
 
         <!--            rcvBackgroundColor-->
         <androidx.recyclerview.widget.RecyclerView
@@ -137,6 +149,7 @@
             app:spanCount="5"
             tools:itemCount="10"
             tools:listitem="@layout/item_background_color"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

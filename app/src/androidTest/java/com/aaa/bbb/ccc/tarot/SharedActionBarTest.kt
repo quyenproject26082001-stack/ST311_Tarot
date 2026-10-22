@@ -1,19 +1,25 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import android.content.Context
 import android.graphics.Color
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.graphics.Insets
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.aaa.bbb.ccc.R
-import com.aaa.bbb.ccc.databinding.ActivityLanguageBinding
-import com.aaa.bbb.ccc.databinding.ActivityPermissionBinding
-import com.aaa.bbb.ccc.databinding.ActivityTarotBinding
-import com.aaa.bbb.ccc.databinding.ActivityTarotProfileBinding
-import com.aaa.bbb.ccc.databinding.LayoutActionbarBinding
+import com.tarot.card.meaning.R
+import com.tarot.card.meaning.core.extensions.applyActionBarTopInset
+import com.tarot.card.meaning.databinding.ActivityLanguageBinding
+import com.tarot.card.meaning.databinding.ActivityPermissionBinding
+import com.tarot.card.meaning.databinding.ActivityTarotBinding
+import com.tarot.card.meaning.databinding.ActivityTarotProfileBinding
+import com.tarot.card.meaning.databinding.LayoutActionbarBinding
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -71,12 +77,55 @@ class SharedActionBarTest {
         val permission = ActivityPermissionBinding.inflate(inflater)
         listOf(language.actionBar, permission.actionBar).forEach { bar ->
             assertEquals(context.resources.getDimensionPixelSize(R.dimen.shared_actionbar_height), bar.root.layoutParams.height)
-            assertEquals(context.resources.getDimensionPixelSize(R.dimen.dp_200), bar.tvCenter.layoutParams.width)
+            assertEquals(0, bar.tvCenter.layoutParams.width)
             assertEquals(context.resources.getDimension(R.dimen.sp_28), bar.tvCenter.textSize, .1f)
+            assertEquals(Gravity.CENTER, bar.tvCenter.gravity)
             assertEquals(View.GONE, bar.brand.visibility)
             assertEquals(View.GONE, bar.libraryToggle.visibility)
         }
     }
+
+    @Test fun onboardingTitlesMatchTarotTitlePositionAndDoNotAccumulateInsets() =
+        checkOnMain(R.style.Theme_BaseProject) { context, inflater ->
+            val language = ActivityLanguageBinding.inflate(inflater)
+            val permission = ActivityPermissionBinding.inflate(inflater)
+            val tarotContext = ContextThemeWrapper(context, R.style.TarotThemeLight)
+            val tarot = ActivityTarotBinding.inflate(LayoutInflater.from(tarotContext))
+            val density = context.resources.displayMetrics.density
+            listOf(language.root to language.layoutActionBar, permission.root to permission.layoutActionBar).forEach { (root, host) ->
+                root.applyActionBarTopInset(host)
+                val bar = if (root === language.root) language.actionBar else permission.actionBar
+                bar.tvStart.visibility = View.GONE
+                bar.tvCenter.visibility = View.VISIBLE
+                for (insetDp in listOf(24, 48, 24)) {
+                    val topInset = (insetDp * density).toInt()
+                    val insets = WindowInsetsCompat.Builder()
+                        .setInsets(WindowInsetsCompat.Type.statusBars(), Insets.of(0, topInset, 0, 0))
+                        .build()
+                    ViewCompat.dispatchApplyWindowInsets(root, insets)
+                    assertEquals(topInset, (host.layoutParams as ViewGroup.MarginLayoutParams).topMargin)
+                    tarot.page.setPadding(0, topInset, 0, 0)
+                    tarot.actionBar.tvCenter.visibility = View.VISIBLE
+                    for (widthDp in listOf(320, 360, 800)) {
+                        val width = (widthDp * density).toInt()
+                        val height = (900 * density).toInt()
+                        listOf(root, tarot.root).forEach { page ->
+                            page.measure(View.MeasureSpec.makeMeasureSpec(width, View.MeasureSpec.EXACTLY),
+                                View.MeasureSpec.makeMeasureSpec(height, View.MeasureSpec.EXACTLY))
+                            page.layout(0, 0, width, height)
+                        }
+                        val onboardingTitle = bar.tvCenter
+                        val tarotTitle = tarot.actionBar.tvCenter
+                        assertEquals(tarotTitle.top + tarot.actionBar.root.top + tarot.page.top,
+                            onboardingTitle.top + bar.root.top + host.top)
+                        assertEquals(tarotTitle.bottom + tarot.actionBar.root.top + tarot.page.top,
+                            onboardingTitle.bottom + bar.root.top + host.top)
+                        assertEquals(width / 2f,
+                            host.left + bar.root.left + (onboardingTitle.left + onboardingTitle.right) / 2f, 1f)
+                    }
+                }
+            }
+        }
 
     @Test fun everyButtonAndTitleSharesTheSameTopAndBottomInAllThemes() {
         listOf(R.style.Theme_BaseProject, R.style.TarotThemeLight, R.style.TarotThemeDark).forEach { theme ->
@@ -118,6 +167,20 @@ class SharedActionBarTest {
             assertEquals(shown.top, bar.btnActionBarRight.top)
             assertEquals(shown.bottom, bar.btnActionBarRight.bottom)
         }
+    }
+
+    @Test fun startTitleWrapsItsContent() = checkOnMain(R.style.TarotThemeLight) { _, inflater ->
+        val bar = LayoutActionbarBinding.inflate(inflater)
+        bar.tvStart.visibility = View.VISIBLE
+        bar.tvStart.text = "Language"
+        measureBar(bar, 320)
+        val shortWidth = bar.tvStart.width
+        assertEquals(ViewGroup.LayoutParams.WRAP_CONTENT, bar.tvStart.layoutParams.width)
+
+        bar.tvStart.text = "Select Star Sign"
+        measureBar(bar, 320)
+        assertEquals(1, bar.tvStart.lineCount)
+        assertTrue(bar.tvStart.width > shortWidth)
     }
 
     private fun measureBar(bar: LayoutActionbarBinding, widthDp: Int) {

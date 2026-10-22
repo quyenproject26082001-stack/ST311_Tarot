@@ -1,0 +1,245 @@
+package com.tarot.card.meaning.ui.permission
+
+import android.content.pm.PackageManager
+import android.content.res.ColorStateList
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
+import android.os.Build
+import android.os.Bundle
+import android.view.LayoutInflater
+import androidx.activity.viewModels
+import androidx.core.view.WindowCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.lvt.ads.callback.InterCallback
+import com.lvt.ads.util.Admob
+import com.tarot.card.meaning.R
+import com.tarot.card.meaning.core.base.BaseActivity
+import com.tarot.card.meaning.core.extensions.applyActionBarTopInset
+import com.tarot.card.meaning.core.extensions.checkPermissions
+import com.tarot.card.meaning.core.extensions.goToSettings
+import com.tarot.card.meaning.core.extensions.gone
+import com.tarot.card.meaning.core.extensions.requestPermission
+import com.tarot.card.meaning.core.extensions.select
+
+import com.tarot.card.meaning.core.extensions.startIntentRightToLeft
+import com.tarot.card.meaning.core.extensions.visible
+import com.tarot.card.meaning.core.utils.key.RequestKey
+import com.tarot.card.meaning.databinding.ActivityPermissionBinding
+import com.tarot.card.meaning.ui.home.HomeActivity
+import com.tarot.card.meaning.tarot.TarotPreferences
+import com.tarot.card.meaning.tarot.TarotProfileActivity
+import com.tarot.card.meaning.tarot.TarotUi
+import com.tarot.card.meaning.tarot.applyTarotPageBackground
+import com.tarot.card.meaning.core.extensions.tap
+import kotlinx.coroutines.launch
+import kotlin.compareTo
+
+class PermissionActivity : BaseActivity<ActivityPermissionBinding>() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        if (TarotPreferences(this).dark) setTheme(R.style.TarotThemeDark)
+        super.onCreate(savedInstanceState)
+    }
+
+    override fun useDarkStatusBarIcons(): Boolean = !TarotPreferences(this).dark
+
+    private val viewModel: PermissionViewModel by viewModels()
+
+    private var inter: InterstitialAd? = null
+
+
+    override fun setViewBinding() = ActivityPermissionBinding.inflate(LayoutInflater.from(this))
+
+    override fun initView() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        binding.root.applyActionBarTopInset(binding.layoutActionBar)
+        if (TarotPreferences(this).dark) {
+            val ui = TarotUi(this, true)
+            binding.pageBackground.applyTarotPageBackground(true)
+            (binding.btnStorage.background.mutate() as GradientDrawable).setColor(ui.surface)
+            (binding.btnNotification.background.mutate() as GradientDrawable).setColor(ui.surface)
+            binding.storageLabel.setTextColor(ui.muted)
+            binding.notificationLabel.setTextColor(ui.muted)
+            binding.tvContinue.setTextColor(ui.ink)
+            androidx.core.widget.TextViewCompat.setCompoundDrawableTintList(binding.tvContinue, ColorStateList.valueOf(ui.ink))
+        }
+        // Reset permission counters when activity starts (so it asks again after app restart)
+        android.util.Log.d("PermissionActivity", "initView: Resetting counters to 0")
+        sharePreference.setStoragePermission(0)
+        sharePreference.setNotificationPermission(0)
+        android.util.Log.d("PermissionActivity", "initView: Storage counter = ${sharePreference.getStoragePermission()}, Notification counter = ${sharePreference.getNotificationPermission()}")
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+            binding.btnStorage.visible()
+            binding.btnNotification.gone()
+        } else {
+            binding.btnNotification.visible()
+            binding.btnStorage.gone()
+        }
+    }
+
+
+    override fun initText() {
+        binding.actionBar.tvCenter.select()
+        val textRes = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) R.string.to_access_13 else R.string.to_access
+
+        binding.txtPer.text = "${getString(R.string.allow)} ${getString(R.string.app_name)} ${getString(textRes)}"
+        if (TarotPreferences(this).dark) {
+            binding.txtPer.setTextColor(TarotUi(this, true).muted)
+        }
+    }
+
+    override fun viewListener() {
+        binding.swPermission.tap { handlePermissionRequest(isStorage = true) }
+        binding.swNotification.tap { handlePermissionRequest(isStorage = false) }
+        binding.tvContinue.tap(1500) { handleContinue() }
+    }
+
+    override fun dataObservable() {
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                launch {
+                    viewModel.storageGranted.collect { granted ->
+                        updatePermissionUI(granted, true)
+                    }
+                }
+
+                launch {
+                    viewModel.notificationGranted.collect { granted ->
+                        updatePermissionUI(granted, false)
+                    }
+                }
+            }
+        }
+    }
+
+    private fun handlePermissionRequest(isStorage: Boolean) {
+        val permType = if (isStorage) "Storage" else "Notification"
+        val counter = if (isStorage) sharePreference.getStoragePermission() else sharePreference.getNotificationPermission()
+        android.util.Log.d("PermissionActivity", "handlePermissionRequest: $permType clicked, counter = $counter")
+
+        val perms = if (isStorage) viewModel.getStoragePermissions() else viewModel.getNotificationPermissions()
+
+        // Check shouldShowRequestPermissionRationale for each permission
+        val shouldShowRationale = perms.any { shouldShowRequestPermissionRationale(it) }
+        perms.forEach { permission ->
+            val shouldShow = shouldShowRequestPermissionRationale(permission)
+            android.util.Log.d("PermissionActivity", "handlePermissionRequest: shouldShowRationale for $permission = $shouldShow")
+        }
+
+        if (checkPermissions(perms)) {
+            android.util.Log.d("PermissionActivity", "handlePermissionRequest: $permType already granted")
+            showToast(if (isStorage) R.string.granted_storage else R.string.granted_notification)
+        } else if (viewModel.needGoToSettings(sharePreference, isStorage)) {
+            android.util.Log.d("PermissionActivity", "handlePermissionRequest: $permType needs settings (counter > 2)")
+            goToSettings()
+        } else if (counter > 0 && !shouldShowRationale) {
+            // User selected "Don't ask again" - shouldShowRationale is false after denying
+            android.util.Log.d("PermissionActivity", "handlePermissionRequest: $permType permanently denied (Don't ask again), going to settings")
+            goToSettings()
+        } else {
+            android.util.Log.d("PermissionActivity", "handlePermissionRequest: $permType requesting permission from system")
+            android.util.Log.d("PermissionActivity", "handlePermissionRequest: Permissions to request = ${perms.joinToString()}")
+            val requestCode = if (isStorage) RequestKey.STORAGE_PERMISSION_CODE else RequestKey.NOTIFICATION_PERMISSION_CODE
+            requestPermission(perms, requestCode)
+            android.util.Log.d("PermissionActivity", "handlePermissionRequest: requestPermission() called")
+        }
+    }
+
+
+
+    private fun updatePermissionUI(granted: Boolean, isStorage: Boolean) {
+        val imageView = if (isStorage) binding.swPermission else binding.swNotification
+        imageView.setImageResource(
+            if (granted) R.drawable.bg_permission_switch_on
+            else R.drawable.bg_permission_switch_off
+        )
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int, permissions: Array<String>, grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        val granted = grantResults.isNotEmpty() && grantResults.all { it == PackageManager.PERMISSION_GRANTED }
+        val permType = if (requestCode == RequestKey.STORAGE_PERMISSION_CODE) "Storage" else "Notification"
+
+        android.util.Log.d("PermissionActivity", "onRequestPermissionsResult: $permType result = $granted")
+        android.util.Log.d("PermissionActivity", "onRequestPermissionsResult: Before update - Storage counter = ${sharePreference.getStoragePermission()}, Notification counter = ${sharePreference.getNotificationPermission()}")
+
+        when (requestCode) {
+            RequestKey.STORAGE_PERMISSION_CODE -> viewModel.updateStorageGranted(sharePreference, granted)
+            RequestKey.NOTIFICATION_PERMISSION_CODE -> viewModel.updateNotificationGranted(sharePreference, granted)
+        }
+
+        android.util.Log.d("PermissionActivity", "onRequestPermissionsResult: After update - Storage counter = ${sharePreference.getStoragePermission()}, Notification counter = ${sharePreference.getNotificationPermission()}")
+
+        if (granted) {
+            showToast(if (requestCode == RequestKey.STORAGE_PERMISSION_CODE) R.string.granted_storage else R.string.granted_notification)
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        android.util.Log.d("PermissionActivity", "onStart: Before check - Storage counter = ${sharePreference.getStoragePermission()}, Notification counter = ${sharePreference.getNotificationPermission()}")
+
+        // Just update UI state without incrementing counter
+        val storageGranted = checkPermissions(viewModel.getStoragePermissions())
+        val notificationGranted = checkPermissions(viewModel.getNotificationPermissions())
+        android.util.Log.d("PermissionActivity", "onStart: Storage granted = $storageGranted, Notification granted = $notificationGranted")
+
+        viewModel.checkAndUpdatePermissionState(storageGranted, isStorage = true)
+        viewModel.checkAndUpdatePermissionState(notificationGranted, isStorage = false)
+
+        android.util.Log.d("PermissionActivity", "onStart: After check - Storage counter = ${sharePreference.getStoragePermission()}, Notification counter = ${sharePreference.getNotificationPermission()}")
+    }
+
+
+    override fun initActionBar() {
+        binding.actionBar.apply {
+            tvStart.text = getString(R.string.permission)
+            tvStart.visible()
+            tvStart.visible()
+            tvCenter.gone()
+            if (TarotPreferences(this@PermissionActivity).dark) {
+                tvStart.apply {
+                    setTextColor(TarotUi(this@PermissionActivity, true).ink)
+                    setDoubleStroke(Color.TRANSPARENT, 0f, Color.TRANSPARENT, 0f)
+                }
+            }
+        }
+    }
+
+    private fun handleContinue() {
+//        Admob.getInstance().showInterAds(this@PermissionActivity, inter, object : InterCallback() {
+//            override fun onNextAction() {
+//                super.onNextAction()
+//            }
+//        })
+        sharePreference.setIsFirstPermission(false)
+        startIntentRightToLeft(if (TarotPreferences(this).profile == null) TarotProfileActivity::class.java else HomeActivity::class.java)
+        finishAffinity()
+    }
+
+    override fun shouldPlayBackgroundMusic(): Boolean = false
+
+
+    override fun initAds() {
+//        Admob.getInstance().loadInterAds(
+//            this@PermissionActivity, getString(R.string.inter_per), object : InterCallback() {
+//                override fun onAdLoadSuccess(interstitialAd: InterstitialAd?) {
+//                    super.onAdLoadSuccess(interstitialAd)
+//                    inter = interstitialAd
+//                }
+//            })
+
+//        Admob.getInstance().loadNativeAd(
+//            this@PermissionActivity,
+//            getString(R.string.native_per),
+//            binding.nativeAds,
+//            R.layout.ads_native_big_btn_top
+//        )
+    }
+}

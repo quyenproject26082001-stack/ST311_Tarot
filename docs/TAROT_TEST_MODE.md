@@ -3,8 +3,8 @@
 In `app/src/main/java/com/aaa/bbb/ccc/tarot/TarotTestConfig.kt`:
 
 ```kotlin
-const val REVEAL_ALL_CARDS = true
-const val BYPASS_READING_LIMITS = true
+const val REVEAL_ALL_CARDS = false
+const val BYPASS_READING_LIMITS = false
 ```
 
 - `true`: all 78 faces are visible in the Scroll and Classic selection decks.
@@ -13,6 +13,20 @@ const val BYPASS_READING_LIMITS = true
 
 Rebuild and reinstall after changing the constant. This is a code switch, not a
 Settings button, and applies to every build type. Set both flags to `false` before release.
+
+The current defaults restore normal play: shuffle each new deck, keep unpicked
+cards face down, and enforce the existing reading limits. Daily and Weekly reuse
+the current day's saved result, Celtic Cross stays unlimited, and spreads 4–16
+lock individually for 23 hours after a completed reading.
+
+Locked readings show the in-Activity XML overlay
+`overlay_tarot_reading_locked.xml`, with content in `dialog_tarot_reading_locked.xml`.
+It mirrors the supplied unlock popup without using a BottomSheet window. The
+countdown closes the popup and refreshes the lock state on expiry. Closing the
+popup does not unlock a reading. For now, tapping Watch Ad to Unlock only shows
+the English toast "Ads are not available yet." It does not check the network,
+load an ad, dismiss the popup or bypass the lock. The existing rewarded-ad helper
+is not called from this button and remains available for later integration.
 
 `BYPASS_READING_LIMITS` is independent of card visibility:
 

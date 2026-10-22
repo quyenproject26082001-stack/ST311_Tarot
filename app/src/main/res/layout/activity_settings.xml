@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.aaa.bbb.ccc.ui.SettingsActivity">
+    tools:context="com.tarot.card.meaning.ui.SettingsActivity"
+    tools:visibility="visible">
 
     <ImageView
         android:id="@+id/imgBackground"
@@ -14,17 +15,21 @@
         android:contentDescription="@null"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_app" />
+        android:src="@drawable/bg_app"
+        tools:visibility="visible"
+        tools:src="@drawable/bg_app" />
 
     <FrameLayout
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <LinearLayout
@@ -35,7 +40,8 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutActionBar">
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+        tools:visibility="visible">
 
         <LinearLayout
             android:id="@+id/btnLang"
@@ -44,14 +50,17 @@
             android:background="@drawable/bg_setting_item_v2"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingHorizontal="@dimen/dp_16">
+            android:paddingHorizontal="@dimen/dp_16"
+            tools:visibility="visible">
 
             <ImageView
                 android:layout_width="@dimen/dp_24"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_lang_set"
-                android:tint="@color/figma_primary" />
+                android:tint="@color/figma_primary"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_lang_set" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -62,7 +71,9 @@
                 android:includeFontPadding="false"
                 android:text="@string/language"
                 android:textColor="@color/figma_primary"
-                android:textSize="@dimen/sp_18" />
+                android:textSize="@dimen/sp_18"
+                tools:visibility="visible"
+                tools:text="@string/language" />
         </LinearLayout>
 
         <LinearLayout
@@ -73,14 +84,17 @@
             android:background="@drawable/bg_setting_item_v2"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingHorizontal="@dimen/dp_16">
+            android:paddingHorizontal="@dimen/dp_16"
+            tools:visibility="visible">
 
             <ImageView
                 android:layout_width="@dimen/dp_24"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_rate_set"
-                android:tint="@color/figma_primary" />
+                android:tint="@color/figma_primary"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_rate_set" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -91,7 +105,9 @@
                 android:includeFontPadding="false"
                 android:text="@string/rate_us"
                 android:textColor="@color/figma_primary"
-                android:textSize="@dimen/sp_18" />
+                android:textSize="@dimen/sp_18"
+                tools:visibility="visible"
+                tools:text="@string/rate_us" />
         </LinearLayout>
 
         <LinearLayout
@@ -102,14 +118,17 @@
             android:background="@drawable/bg_setting_item_v2"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingHorizontal="@dimen/dp_16">
+            android:paddingHorizontal="@dimen/dp_16"
+            tools:visibility="visible">
 
             <ImageView
                 android:layout_width="@dimen/dp_24"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_share_set"
-                android:tint="@color/figma_primary" />
+                android:tint="@color/figma_primary"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_share_set" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -120,7 +139,9 @@
                 android:includeFontPadding="false"
                 android:text="@string/share_app"
                 android:textColor="@color/figma_primary"
-                android:textSize="@dimen/sp_18" />
+                android:textSize="@dimen/sp_18"
+                tools:visibility="visible"
+                tools:text="@string/share_app" />
         </LinearLayout>
 
         <LinearLayout
@@ -131,14 +152,17 @@
             android:background="@drawable/bg_setting_item_v2"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingHorizontal="@dimen/dp_16">
+            android:paddingHorizontal="@dimen/dp_16"
+            tools:visibility="visible">
 
             <ImageView
                 android:layout_width="@dimen/dp_24"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_policy_set"
-                android:tint="@color/figma_primary" />
+                android:tint="@color/figma_primary"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_policy_set" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -149,7 +173,9 @@
                 android:includeFontPadding="false"
                 android:text="@string/privacy_policy"
                 android:textColor="@color/figma_primary"
-                android:textSize="@dimen/sp_18" />
+                android:textSize="@dimen/sp_18"
+                tools:visibility="visible"
+                tools:text="@string/privacy_policy" />
         </LinearLayout>
 
     </LinearLayout>

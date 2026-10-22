@@ -3,4 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/TarotButton"
     android:layout_width="match_parent"
-    android:layout_height="46dp" />
+    android:layout_height="@dimen/dp_46"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:text="Submit"
+    tools:theme="@style/TarotThemeLight" />

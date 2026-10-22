@@ -1,8 +1,9 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import android.app.Activity
 import android.content.Intent
 import android.os.SystemClock
+import android.view.MotionEvent
 import android.view.View
 import android.view.inspector.WindowInspector
 import android.widget.TextView
@@ -16,10 +17,10 @@ import androidx.test.filters.SdkSuppress
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
 import androidx.test.runner.lifecycle.Stage
-import com.aaa.bbb.ccc.R
-import com.aaa.bbb.ccc.core.base.BaseActivity
-import com.aaa.bbb.ccc.core.extensions.hideNavigation
-import com.aaa.bbb.ccc.ui.home.HomeActivity
+import com.tarot.card.meaning.R
+import com.tarot.card.meaning.core.base.BaseActivity
+import com.tarot.card.meaning.core.extensions.hideNavigation
+import com.tarot.card.meaning.ui.home.HomeActivity
 import com.google.gson.Gson
 import org.junit.Assert.*
 import org.junit.Assume.assumeTrue
@@ -108,6 +109,62 @@ class ImmersiveNavigationTest {
         assumeTrue("Home needs an existing profile; this test never creates or overwrites one",
             TarotPreferences(context).profile != null)
         return LiveActivity(TarotActivity::class.java, HomeActivity::class.java)
+    }
+
+    @Test fun touchingOutsideProfileNameHidesKeyboardWithoutChangingText() {
+        LiveActivity(TarotProfileActivity::class.java).use { scenario ->
+            scenario.onActivity { activity ->
+                val grid = activity.binding.zodiacGrid.getChildAt(0) as android.widget.GridLayout
+                grid.getChildAt(0).performClick()
+                activity.binding.next.performClick()
+                activity.binding.nameField.nameInput.setText("Keyboard test")
+            }
+            await(scenario, "Profile form must be laid out") { it.binding.nameField.nameInput.isShown }
+            scenario.onActivity { activity ->
+                val input = activity.binding.nameField.nameInput
+                input.requestFocus()
+                androidx.core.view.WindowCompat.getInsetsController(activity.window, input)
+                    .show(WindowInsetsCompat.Type.ime())
+            }
+            await(scenario, "Keyboard must open") {
+                ViewCompat.getRootWindowInsets(it.binding.root)?.isVisible(WindowInsetsCompat.Type.ime()) == true
+            }
+            scenario.onActivity { activity ->
+                val input = activity.binding.nameField.nameInput
+                val location = IntArray(2)
+                input.getLocationOnScreen(location)
+                sendTap(activity, location[0] + input.width / 2f, location[1] + input.height / 2f)
+                assertTrue(input.hasFocus())
+            }
+            scenario.onActivity { activity ->
+                val title = activity.binding.actionBar.tvCenter
+                val location = IntArray(2)
+                title.getLocationOnScreen(location)
+                sendTap(activity, location[0] + title.width / 2f, location[1] + title.height / 2f)
+                assertFalse(activity.binding.nameField.nameInput.hasFocus())
+            }
+            await(scenario, "Outside touch must hide the keyboard") {
+                ViewCompat.getRootWindowInsets(it.binding.root)?.isVisible(WindowInsetsCompat.Type.ime()) == false
+            }
+            scenario.onActivity { activity ->
+                assertEquals("Keyboard test", activity.binding.nameField.nameInput.text.toString())
+            }
+        }
+    }
+
+    private fun sendTap(activity: Activity, screenX: Float, screenY: Float) {
+        val origin = IntArray(2)
+        activity.window.decorView.getLocationOnScreen(origin)
+        val time = SystemClock.uptimeMillis()
+        for (action in listOf(MotionEvent.ACTION_DOWN, MotionEvent.ACTION_UP)) {
+            val event = MotionEvent.obtain(time, time + if (action == MotionEvent.ACTION_UP) 20 else 0,
+                action, screenX - origin[0], screenY - origin[1], 0)
+            try {
+                activity.dispatchTouchEvent(event)
+            } finally {
+                event.recycle()
+            }
+        }
     }
 
     @Test fun profileInheritsBaseAndPreservesFormBackAndRecreationState() {
@@ -226,14 +283,17 @@ class ImmersiveNavigationTest {
             }
             await(scenario, "Discard dialog must be immersive") { activity ->
                 WindowInspector.getGlobalWindowViews().any { decor ->
-                    decor.findViewById<TextView>(android.R.id.message)?.text == activity.getString(R.string.tarot_discard_message) && hidden(decor)
+                    decor.findViewById<TextView>(R.id.tvDescription)?.text == activity.getString(R.string.tarot_discard_message) && hidden(decor)
                 }
             }
             scenario.onActivity { activity ->
                 val decor = WindowInspector.getGlobalWindowViews().first {
-                    it.findViewById<TextView>(android.R.id.message)?.text == activity.getString(R.string.tarot_discard_message)
+                    it.findViewById<TextView>(R.id.tvDescription)?.text == activity.getString(R.string.tarot_discard_message)
                 }
-                decor.findViewById<View>(android.R.id.button2).performClick() // Keep selecting.
+                assertEquals(activity.getString(R.string.tarot_discard_title), decor.findViewById<TextView>(R.id.tvTitle).text)
+                assertEquals(activity.getString(R.string.tarot_keep_selecting), decor.findViewById<TextView>(R.id.btnNo).text)
+                assertEquals(activity.getString(R.string.tarot_leave), decor.findViewById<TextView>(R.id.btnYes).text)
+                decor.findViewById<View>(R.id.btnNo).performClick()
                 assertFalse(activity.isFinishing)
                 val vm = ViewModelProvider(activity)[TarotViewModel::class.java]
                 assertEquals("select", vm.screen)

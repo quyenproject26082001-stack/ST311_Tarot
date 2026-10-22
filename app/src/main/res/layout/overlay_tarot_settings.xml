@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/dp_20"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
+    <ScrollView
+        android:id="@+id/dialogScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?attr/tarotSettingsOverlayBackground"
+        android:clipToOutline="true"
+        android:fillViewport="false"
+        android:scrollbars="none"
+        tools:visibility="visible">
+        <include
+            android:id="@+id/dialogForm"
+            layout="@layout/sheet_tarot"
+            tools:visibility="visible" />
+    </ScrollView>
+</FrameLayout>

@@ -6,7 +6,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/flOutSide"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:visibility="visible">
 
 
         <!--        layoutMain-->
@@ -22,13 +23,15 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="@dimen/dp_16"
             app:cardCornerRadius="@dimen/dp_8"
-            app:cardElevation="@dimen/dp_0">
+            app:cardElevation="@dimen/dp_0"
+            tools:visibility="visible">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/containerDialog"
                 android:layout_width="@dimen/dp_328"
                 android:layout_height="@dimen/dp_180"
-                android:background="@drawable/bg_dialog_delete_exit">
+                android:background="@drawable/bg_dialog_delete_exit"
+                tools:visibility="visible">
 
                 <!--  tvTitle (Top) -->
                 <TextView
@@ -42,7 +45,7 @@
                     android:gravity="center"
                     android:paddingVertical="@dimen/dp_5"
                     android:paddingHorizontal="@dimen/dp_30"
-                    tools:text="aaaaaaaaaaaaaaaaaaaaaaaaa"
+                    tools:text="@string/loading"
                     android:text="@string/loading"
                     android:layout_marginBottom="@dimen/dp_minus_25"
                     android:elevation="@dimen/dp_1"
@@ -51,6 +54,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    tools:visibility="visible"
 
                     />
 
@@ -65,7 +69,9 @@
                     app:layout_constraintBottom_toTopOf="@id/tvDescription"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                    tools:visibility="visible"
+                    tools:src="@drawable/ic_loading_dialog" />
 
                 <!--  tvDescription (Bottom) -->
                 <TextView
@@ -81,7 +87,9 @@
                     android:textSize="@dimen/sp_16"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible"
+                    tools:text="@string/wait_a_minute" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

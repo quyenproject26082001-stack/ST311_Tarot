@@ -1,0 +1,178 @@
+{
+  "tarot_spread_icon_8": {
+    "source": "spread_guide.png",
+    "box_px": [
+      28,
+      1240,
+      108,
+      1320
+    ]
+  },
+  "tarot_spread_decor_8": {
+    "source": "guide_spread.png",
+    "box_px": [
+      464,
+      1216,
+      644,
+      1344
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_icon_9": {
+    "source": "spread_guide.png",
+    "box_px": [
+      28,
+      1392,
+      108,
+      1472
+    ]
+  },
+  "tarot_spread_decor_9": {
+    "source": "guide_spread.png",
+    "box_px": [
+      464,
+      1368,
+      644,
+      1496
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_icon_10": {
+    "source": "spread_guide.png",
+    "box_px": [
+      28,
+      1544,
+      108,
+      1624
+    ]
+  },
+  "tarot_spread_decor_10": {
+    "source": "guide_spread.png",
+    "box_px": [
+      464,
+      1520,
+      644,
+      1648
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_icon_11": {
+    "source": "spread_guide.png",
+    "box_px": [
+      28,
+      1696,
+      108,
+      1776
+    ]
+  },
+  "tarot_spread_decor_11": {
+    "source": "guide_spread.png",
+    "box_px": [
+      464,
+      1672,
+      644,
+      1800
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_icon_12": {
+    "source": "spread_guide.png",
+    "box_px": [
+      28,
+      1848,
+      108,
+      1928
+    ]
+  },
+  "tarot_spread_decor_12": {
+    "source": "guide_spread.png",
+    "box_px": [
+      464,
+      1824,
+      644,
+      1952
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_icon_13": {
+    "source": "spread_guide.png",
+    "box_px": [
+      28,
+      2000,
+      108,
+      2080
+    ]
+  },
+  "tarot_spread_decor_13": {
+    "source": "guide_spread.png",
+    "box_px": [
+      464,
+      1976,
+      644,
+      2104
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_icon_14": {
+    "source": "spread_guide.png",
+    "box_px": [
+      28,
+      2152,
+      108,
+      2232
+    ]
+  },
+  "tarot_spread_decor_14": {
+    "source": "guide_spread.png",
+    "box_px": [
+      464,
+      2128,
+      644,
+      2256
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  },
+  "tarot_spread_icon_15": {
+    "source": "spread_guide.png",
+    "box_px": [
+      28,
+      2304,
+      108,
+      2384
+    ]
+  },
+  "tarot_spread_decor_15": {
+    "source": "guide_spread.png",
+    "box_px": [
+      464,
+      2280,
+      644,
+      2408
+    ],
+    "slot_px": [
+      180,
+      128
+    ]
+  }
+}

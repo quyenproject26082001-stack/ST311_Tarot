@@ -9,7 +9,8 @@
         android:layout_height="match_parent"
         android:clipChildren="false"
         android:clipToOutline="false"
-        android:clipToPadding="false">
+        android:clipToPadding="false"
+        tools:visibility="visible">
 
 
 
@@ -29,18 +30,20 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/containerDialog"
                 android:layout_width="@dimen/dp_328"
-                android:layout_height="@dimen/dp_200"
+                android:layout_height="@dimen/dp_216"
                 android:layout_gravity="center"
-                android:background="@drawable/bg_dialog_delete_exit"
+                android:background="?attr/tarotConfirmBackground"
                 android:clipChildren="false"
                 android:clipToOutline="false"
-                android:clipToPadding="false">
+                android:clipToPadding="false"
+                tools:visibility="visible">
 
 
 
@@ -53,82 +56,99 @@ app:layout_constraintTop_toTopOf="parent"
                     android:includeFontPadding="false"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginTop="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_28"
                     android:layout_marginHorizontal="@dimen/dp_50"
                     android:layout_marginBottom="@dimen/dp_minus_26"
                     android:clipChildren="false"
                     android:clipToOutline="false"
                     android:clipToPadding="false"
                     android:elevation="@dimen/dp_1"
-                    android:fontFamily="@font/baloo_2_bold"
+                    android:fontFamily="@font/tarot_nunito_semibold"
                     android:gravity="center"
                     android:paddingVertical="@dimen/dp_5"
                     android:text="@string/delete"
-                    tools:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                    android:textColor="@color/figma_primary"
-                    android:textSize="@dimen/sp_24"
+                    tools:text="@string/delete"
+                    android:textColor="?attr/tarotConfirmTitleColor"
+                    android:textSize="@dimen/sp_16"
+                    tools:visibility="visible"
 
                     />
 
                 <!--            tvDescription-->
-                <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+                <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
                     android:id="@+id/tvDescription"
                     android:layout_width="@dimen/dp_0"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/baloo2_semibold"
+                    android:fontFamily="@font/nunito_regular"
                     android:gravity="center"
                     app:layout_constraintVertical_bias=".27"
-                    android:paddingHorizontal="@dimen/dp_24"
+                    android:paddingHorizontal="@dimen/dp_10"
                     android:text="@string/do_you_want_to_exit"
-                    android:textColor="#999999"
-                    tools:text="asdassssssssssaaaaaaaaaaaaaaasssss"
+                    android:textColor="?attr/tarotConfirmDescriptionColor"
+                    tools:text="@string/do_you_want_to_exit"
                     android:textSize="@dimen/sp_16"
                     app:layout_constraintBottom_toTopOf="@id/llButtons"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                    tools:visibility="visible"
                 />
 
                 <LinearLayout
                     android:id="@+id/llButtons"
                     android:layout_width="@dimen/dp_0"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/dp_20"
-                    android:layout_marginBottom="@dimen/dp_20"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_marginBottom="@dimen/dp_28"
                     android:gravity="center"
                     android:orientation="horizontal"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="visible">
 
 
-                    <!--                    btnNo-->
-                    <TextView
-                        android:id="@+id/btnYes"
-                        android:layout_width="@dimen/dp_88"
-                        android:layout_height="@dimen/dp_44"
-                        android:layout_weight="1"
-                        android:background="@drawable/ic_yes_dialog"
-                        android:fontFamily="@font/baloo_2_bold"
-                        android:gravity="center"
-                        android:paddingVertical="@dimen/dp_6"
-                        android:text="@string/yes"
-                        android:textColor="@color/app"
-                        android:textSize="@dimen/sp_18" />
-                    <!--                    btnYes-->
                     <TextView
                         android:id="@+id/btnNo"
                         android:layout_width="@dimen/dp_88"
                         android:layout_height="@dimen/dp_44"
-                        android:layout_marginStart="@dimen/dp_8"
                         android:layout_weight="1"
-                        android:background="@drawable/ic_no_dialog"
-                        android:fontFamily="@font/baloo_2_bold"
+                        android:background="?attr/tarotConfirmNoBackground"
+                        android:fontFamily="@font/tarot_nunito_semibold"
                         android:gravity="center"
+                        android:maxLines="1"
+                        android:ellipsize="end"
                         android:paddingVertical="@dimen/dp_9"
                         android:text="@string/no"
+                        android:textColor="?attr/tarotConfirmNoTextColor"
+                        android:textSize="@dimen/sp_16"
+                        app:autoSizeMaxTextSize="@dimen/sp_16"
+                        app:autoSizeMinTextSize="@dimen/sp_10"
+                        app:autoSizeStepGranularity="@dimen/sp_1"
+                        app:autoSizeTextType="uniform"
+                        tools:visibility="visible"
+                        tools:text="@string/no" />
+                    <TextView
+                        android:id="@+id/btnYes"
+                        android:layout_width="@dimen/dp_88"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_weight="1"
+                        android:background="?attr/tarotConfirmYesBackground"
+                        android:fontFamily="@font/tarot_nunito_semibold"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:paddingVertical="@dimen/dp_9"
+                        android:text="@string/yes"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/sp_18" />
+                        android:textSize="@dimen/sp_16"
+                        app:autoSizeMaxTextSize="@dimen/sp_16"
+                        app:autoSizeMinTextSize="@dimen/sp_10"
+                        app:autoSizeStepGranularity="@dimen/sp_1"
+                        app:autoSizeTextType="uniform"
+                        tools:visibility="visible"
+                        tools:text="@string/yes" />
                 </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -139,7 +159,9 @@ app:layout_constraintTop_toTopOf="parent"
                 android:layout_height="@dimen/dp_42"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_loading"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:src="@drawable/ic_loading" />
 
         </androidx.cardview.widget.CardView>
 

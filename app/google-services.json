@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "749442487628",
-    "project_id": "st308-therian-oc-maker-2",
-    "storage_bucket": "st308-therian-oc-maker-2.firebasestorage.app"
+    "project_number": "381904348146",
+    "project_id": "st311-daily-tarot-readin",
+    "storage_bucket": "st311-daily-tarot-readin.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:749442487628:android:1b2ef7bd6b1cf76fee6be9",
+        "mobilesdk_app_id": "1:381904348146:android:f00fd9bb8dfff14ead416b",
         "android_client_info": {
-          "package_name": "com.aaa.bbb.ccc"
+          "package_name": "com.tarot.card.meaning"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBJs6mEBP2HcoRztE5XEPXmry7L4cnpH6w"
+          "current_key": "AIzaSyDia_WmkCFkaoyrwvlh7oeZIAndJ0A2FlQ"
         }
       ],
       "services": {

@@ -3,48 +3,58 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="56dp"
+    android:layout_height="@dimen/dp_56"
     android:orientation="horizontal"
-    android:gravity="top">
-    <com.aaa.bbb.ccc.tarot.TarotIcon
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:background="@drawable/tarot_bg_badge"
-        app:tarotIconName="name"
-        app:tarotIconColor="?attr/tarotInk" />
+    android:gravity="top"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
+    <ImageView
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        android:src="@drawable/ic_tarot_name1"
+        android:scaleType="fitCenter"
+        android:importantForAccessibility="no"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_tarot_name1" />
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/dp_0"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:layout_marginStart="12dp"
-        android:orientation="vertical">
+        android:layout_marginStart="@dimen/dp_12"
+        android:orientation="vertical"
+        tools:visibility="visible">
         <EditText
             android:id="@+id/nameInput"
             style="@style/TarotText"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="@dimen/dp_36"
             android:background="@drawable/tarot_settings_name_background"
             android:fontFamily="@font/nunito_regular"
             android:includeFontPadding="false"
             android:gravity="center_vertical"
-            android:paddingTop="0dp"
-            android:paddingBottom="0dp"
-            android:paddingHorizontal="12dp"
+            android:paddingTop="@dimen/dp_0"
+            android:paddingBottom="@dimen/dp_0"
+            android:paddingHorizontal="@dimen/dp_12"
             android:inputType="textPersonName|textCapWords"
             android:singleLine="true"
             android:maxLength="24"
             android:hint="@string/tarot_name"
-            android:textColorHint="?attr/tarotMuted" />
+            android:textColorHint="?attr/tarotMuted"
+            tools:visibility="visible"
+            tools:text="Seraphina" />
         <TextView
             android:id="@+id/nameCounter"
             style="@style/TarotTextBody"
             android:layout_width="match_parent"
-            android:layout_height="12dp"
-            android:layout_marginTop="2dp"
-            android:translationY="-2dp"
+            android:layout_height="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_2"
+            android:translationY="@dimen/dp_minus_2"
             android:gravity="end"
-            android:lineHeight="10sp"
+            android:lineHeight="@dimen/sp_10"
             android:maxLines="1"
-            android:textSize="8sp" />
+            android:textSize="@dimen/sp_8"
+            tools:visibility="visible"
+            tools:text="9/24" />
     </LinearLayout>
 </LinearLayout>

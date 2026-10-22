@@ -7,7 +7,7 @@
     </item>
     <item>
         <shape android:shape="oval">
-            <solid android:color="?attr/tarotPaper" />
+            <solid android:color="?attr/tarotDialogSurface" />
         </shape>
     </item>
 </selector>

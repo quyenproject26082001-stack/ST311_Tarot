@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="0dp"
-    android:layout_weight="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_0"
     android:layout_height="match_parent"
-    android:background="@drawable/tarot_bg_action"
-    android:foreground="@drawable/tarot_outline_action"
-    android:clipToOutline="true"
-    android:orientation="vertical"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:layout_width="@dimen/dp_112"
+    tools:layout_height="@dimen/dp_122"
+    tools:theme="@style/TarotThemeLight">
     <ImageView
         android:id="@+id/actionArt"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="@dimen/dp_0"
         android:scaleType="fitXY"
-        android:importantForAccessibility="no" />
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/tarot_action_daily" />
     <TextView
         android:id="@+id/actionTitle"
-        style="@style/TarotText"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
+        style="@style/TarotText1"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_30"
+        android:background="@android:color/transparent"
         android:gravity="center"
-        android:textSize="12sp" />
-</LinearLayout>
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        tools:visibility="visible"
+        tools:text="Daily Reading" />
+</androidx.constraintlayout.widget.ConstraintLayout>

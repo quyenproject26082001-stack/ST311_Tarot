@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_app"
-    tools:context=".ui.cosplay.CosplaySuccessfulActivity">
+    tools:context=".ui.cosplay.CosplaySuccessfulActivity"
+    tools:visibility="visible">
 
 
     <!-- layoutActionBar -->
@@ -14,11 +15,13 @@
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <ImageView
@@ -31,7 +34,9 @@
         app:layout_constraintDimensionRatio="284:60"
         app:layout_constraintEnd_toEndOf="@id/containerVS"
         app:layout_constraintStart_toStartOf="@id/containerVS"
-        app:layout_constraintTop_toBottomOf="@id/layoutActionBar" />
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+        tools:visibility="visible"
+        tools:src="@drawable/four_star_ss" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -43,35 +48,40 @@
         android:layout_marginBottom="@dimen/dp_20"
 
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintTop_toBottomOf="@id/starSS">
+        app:layout_constraintTop_toBottomOf="@id/starSS"
+        tools:visibility="visible">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineHalf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.6" />
+            app:layout_constraintGuide_percent="0.6"
+            tools:visibility="visible" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineHalf1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.4" />
+            app:layout_constraintGuide_percent="0.4"
+            tools:visibility="visible" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineHalfV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.6" />
+            app:layout_constraintGuide_percent="0.6"
+            tools:visibility="visible" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineHalfV1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.4" />
+            app:layout_constraintGuide_percent="0.4"
+            tools:visibility="visible" />
 
         <!--    cvImage-->
         <FrameLayout
@@ -86,7 +96,8 @@
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1">
+            app:layout_constraintVertical_bias="1"
+            tools:visibility="visible">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
@@ -95,7 +106,8 @@
                 app:cardCornerRadius="@dimen/dp_12"
                 app:strokeWidth="@dimen/dp_2"
                 app:layout_constraintDimensionRatio="156:152"
-                app:strokeColor="@color/figma_primary">
+                app:strokeColor="@color/figma_primary"
+                tools:visibility="visible">
 
 
                 <ImageView
@@ -104,7 +116,8 @@
                     android:layout_height="match_parent"
                     android:padding="@dimen/dp_0"
                     android:scaleType="fitCenter"
-                    tools:src="@color/black" />
+                    tools:src="@color/black"
+                    tools:visibility="visible" />
             </com.google.android.material.card.MaterialCardView>
         </FrameLayout>
 
@@ -127,7 +140,9 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/containerVS" />
+        app:layout_constraintTop_toBottomOf="@id/containerVS"
+        tools:visibility="visible"
+        tools:text="10/100" />
 
     <!--    lnlBottom-->
     <FrameLayout
@@ -139,11 +154,13 @@
         android:layout_marginBottom="@dimen/dp_60"
         android:paddingHorizontal="@dimen/dp_15"
         android:visibility="visible"
-        app:layout_constraintTop_toBottomOf="@id/tvProgress">
+        app:layout_constraintTop_toBottomOf="@id/tvProgress"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/includeLayoutBottom"
-            layout="@layout/layout_bottom_cosplay" />
+            layout="@layout/layout_bottom_cosplay"
+            tools:visibility="visible" />
 
     </FrameLayout>
 
@@ -154,9 +171,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
 
-        <include layout="@layout/ads_shimmer_collap_native" />
+        <include layout="@layout/ads_shimmer_collap_native" tools:visibility="visible" />
     </FrameLayout>
 
 

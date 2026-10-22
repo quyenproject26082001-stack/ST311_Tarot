@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="?attr/tarotPaper" />
+    <solid android:color="?attr/tarotDialogSurface" />
     <corners
-        android:topLeftRadius="24dp"
-        android:topRightRadius="24dp" />
+        android:topLeftRadius="@dimen/dp_24"
+        android:topRightRadius="@dimen/dp_24" />
 </shape>

@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_app"
-    tools:context=".ui.view.ViewActivity">
+    tools:context=".ui.view.ViewActivity"
+    tools:visibility="visible">
 
 
     <!-- layoutActionBar -->
@@ -14,11 +15,13 @@
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <!--    cvImage-->
@@ -39,6 +42,7 @@
         app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
         app:strokeColor="#861629"
         app:cardCornerRadius="@dimen/dp_4"
+        tools:visibility="visible"
         >
 
         <!--        imvImage-->
@@ -47,7 +51,9 @@
             android:padding="@dimen/dp_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="center" />
+            android:scaleType="center"
+            tools:visibility="visible"
+            tools:src="@drawable/img_intro_1" />
     </FrameLayout>
 
 
@@ -62,11 +68,13 @@
         android:layout_marginTop="@dimen/dp_16"
         android:layout_marginBottom="@dimen/dp_0"
         app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible"
         >
 
         <include
             android:id="@+id/includeLayoutBottom"
-            layout="@layout/layout_bottom_view" />
+            layout="@layout/layout_bottom_view"
+            tools:visibility="visible" />
 
     </FrameLayout>
 
@@ -98,9 +106,10 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
 
-        <include layout="@layout/ads_shimmer_collap_native" />
+        <include layout="@layout/ads_shimmer_collap_native" tools:visibility="visible" />
     </FrameLayout>
 
 

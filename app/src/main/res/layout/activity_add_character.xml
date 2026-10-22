@@ -11,7 +11,8 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:rotationY="0"
-    tools:context=".ui.add_character.AddCharacterActivity">
+    tools:context=".ui.add_character.AddCharacterActivity"
+    tools:visibility="visible">
 
     <!--    flGetText-->
     <FrameLayout
@@ -25,7 +26,8 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <!--        tvGetText-->
         <TextView
@@ -40,7 +42,9 @@
             android:maxLength="30"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="@dimen/sp_40" />
+            android:textSize="@dimen/sp_40"
+            tools:visibility="visible"
+            tools:text="Add text" />
     </FrameLayout>
 
 
@@ -49,11 +53,13 @@
         android:id="@+id/flActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
 
@@ -69,27 +75,32 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/flActionBar">
+        app:layout_constraintTop_toBottomOf="@id/flActionBar"
+        tools:visibility="visible">
 
         <!--    flSave-->
         <FrameLayout
             android:id="@+id/flSave"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/dp_0">
+            android:padding="@dimen/dp_0"
+            tools:visibility="visible">
 
             <!--        imvBackground-->
             <ImageView
                 android:id="@+id/imvBackground"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                tools:visibility="visible"
+                tools:src="@drawable/bg_app" />
 
             <!--        drawView-->
-            <com.aaa.bbb.ccc.core.custom.drawview.DrawView
+            <com.tarot.card.meaning.core.custom.drawview.DrawView
                 android:id="@+id/drawView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                tools:visibility="visible"
                 />
         </FrameLayout>
 
@@ -103,7 +114,8 @@
         android:layout_marginTop="@dimen/dp_20"
         android:clipChildren="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/gl">
+        app:layout_constraintTop_toBottomOf="@id/gl"
+        tools:visibility="visible">
 
         <ImageView
             android:id="@+id/bg_bg"
@@ -111,6 +123,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dp_0"
             android:layout_marginBottom="@dimen/dp_0"
+            tools:visibility="visible"
+            tools:src="@drawable/bg_app"
           />
 
         <ImageView
@@ -119,25 +133,30 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dp_0"
             android:layout_marginBottom="@dimen/dp_0"
-            android:visibility="gone" />
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:src="@drawable/bg_app" />
 
         <include
             android:id="@+id/backgroundTab"
             layout="@layout/layout_add_character_background"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            tools:visibility="visible" />
 
         <include
             android:id="@+id/stickerTab"
             layout="@layout/layout_add_character_sticker"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            tools:visibility="visible" />
 
         <include
             android:id="@+id/speechTab"
             layout="@layout/layout_add_character_speech"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            tools:visibility="visible" />
 
         <include
             android:id="@+id/textTab"
@@ -164,7 +183,8 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
 
         <!--        btnBackground-->
         <ImageView
@@ -177,7 +197,9 @@
             app:layout_constraintEnd_toStartOf="@id/btnSticker"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"
+            tools:src="@drawable/ic_bg_slt" />
 
         <!--        btnSticker-->
         <ImageView
@@ -190,7 +212,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/btnSpeech"
             app:layout_constraintStart_toEndOf="@id/btnBackground"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"
+            tools:src="@drawable/ic_sticker" />
 
         <!--        btnSpeech-->
         <ImageView
@@ -203,7 +227,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/btnText"
             app:layout_constraintStart_toEndOf="@id/btnSticker"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"
+            tools:src="@drawable/ic_speech" />
 
         <!--        btnText-->
         <ImageView
@@ -216,7 +242,9 @@
             android:src="@drawable/ic_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"
+            tools:src="@drawable/ic_text" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -227,6 +255,7 @@
         android:orientation="horizontal"
         android:rotationY="-83"
         app:layout_constraintGuide_percent="@dimen/customize_horizontal_guide_percent"
+        tools:visibility="visible"
         />
 
     <!--    &lt;!&ndash;    flNativeCollab&ndash;&gt;-->
@@ -235,7 +264,8 @@
         android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:visibility="visible">
 
         </FrameLayout>
 

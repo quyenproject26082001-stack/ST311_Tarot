@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeActivity">
+    tools:context=".ui.home.HomeActivity"
+    tools:visibility="visible">
 
     <ImageView
         android:layout_width="match_parent"
@@ -13,7 +14,9 @@
         android:contentDescription="@null"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_app" />
+        android:src="@drawable/bg_app"
+        tools:visibility="visible"
+        tools:src="@drawable/bg_app" />
 
     <ImageView
         android:id="@+id/btnSettings"
@@ -25,7 +28,9 @@
         android:scaleType="fitXY"
         android:src="@drawable/ic_setting"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_setting" />
 
     <ImageView
         android:id="@+id/imgAppName"
@@ -38,7 +43,9 @@
         android:src="@drawable/img_home_logo_figma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/img_home_logo_figma" />
 
     <ScrollView
         android:id="@+id/scvMain"
@@ -48,12 +55,14 @@
         android:fillViewport="true"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/dp_68">
+            android:paddingBottom="@dimen/dp_68"
+            tools:visibility="visible">
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btnPlay"
@@ -67,30 +76,36 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:strokeColor="@color/figma_primary"
-                app:strokeWidth="@dimen/dp_2">
+                app:strokeWidth="@dimen/dp_2"
+                tools:visibility="visible">
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    tools:visibility="visible">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/img_home_bg_1_figma" />
+                        android:src="@drawable/img_home_bg_1_figma"
+                        tools:visibility="visible"
+                        tools:src="@drawable/img_home_bg_1_figma" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp_46"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/bg_home_text_left" />
+                        android:background="@drawable/bg_home_text_left"
+                        tools:visibility="visible" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        tools:visibility="visible">
 
-                        <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+                        <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
                             android:id="@+id/tv1"
                             android:layout_width="@dimen/dp_0"
                             android:layout_height="@dimen/dp_46"
@@ -104,14 +119,16 @@
                             android:textSize="@dimen/sp_28"
                             app:autoSizeMaxTextSize="@dimen/sp_28"
                             app:autoSizeMinTextSize="@dimen/sp_18"
-                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeStepGranularity="@dimen/sp_1"
                             app:autoSizeTextType="uniform"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/imvHomeChar1"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:outerStrokeColor="@color/white"
-                            app:outerStrokeWidth="@dimen/dp_2" />
+                            app:outerStrokeWidth="@dimen/dp_2"
+                            tools:visibility="visible"
+                            tools:text="@string/play" />
 
                         <ImageView
                             android:id="@+id/imvHomeChar1"
@@ -122,7 +139,9 @@
                             android:src="@drawable/img_home_char_1_figma"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="visible"
+                            tools:src="@drawable/img_home_char_1_figma" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -139,28 +158,34 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btnPlay"
                 app:strokeColor="@color/figma_primary"
-                app:strokeWidth="@dimen/dp_2">
+                app:strokeWidth="@dimen/dp_2"
+                tools:visibility="visible">
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    tools:visibility="visible">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/img_home_bg_2_figma" />
+                        android:src="@drawable/img_home_bg_2_figma"
+                        tools:visibility="visible"
+                        tools:src="@drawable/img_home_bg_2_figma" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp_46"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/bg_home_text_right" />
+                        android:background="@drawable/bg_home_text_right"
+                        tools:visibility="visible" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        tools:visibility="visible">
 
                         <ImageView
                             android:id="@+id/imvHomeChar2"
@@ -171,9 +196,11 @@
                             android:src="@drawable/img_home_char_2_figma"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="visible"
+                            tools:src="@drawable/img_home_char_2_figma" />
 
-                        <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+                        <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
                             android:id="@+id/tv2"
                             android:layout_width="@dimen/dp_0"
                             android:layout_height="@dimen/dp_46"
@@ -187,14 +214,16 @@
                             android:textSize="@dimen/sp_28"
                             app:autoSizeMaxTextSize="@dimen/sp_28"
                             app:autoSizeMinTextSize="@dimen/sp_18"
-                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeStepGranularity="@dimen/sp_1"
                             app:autoSizeTextType="uniform"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@id/imvHomeChar2"
                             app:layout_constraintTop_toTopOf="parent"
                             app:outerStrokeColor="@color/white"
-                            app:outerStrokeWidth="@dimen/dp_2" />
+                            app:outerStrokeWidth="@dimen/dp_2"
+                            tools:visibility="visible"
+                            tools:text="@string/cosplay_therian" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -211,30 +240,36 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btnCosPlay"
                 app:strokeColor="@color/figma_primary"
-                app:strokeWidth="@dimen/dp_2">
+                app:strokeWidth="@dimen/dp_2"
+                tools:visibility="visible">
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    tools:visibility="visible">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/img_home_bg_3_figma" />
+                        android:src="@drawable/img_home_bg_3_figma"
+                        tools:visibility="visible"
+                        tools:src="@drawable/img_home_bg_3_figma" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp_46"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/bg_home_text_left" />
+                        android:background="@drawable/bg_home_text_left"
+                        tools:visibility="visible" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        tools:visibility="visible">
 
-                        <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+                        <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
                             android:id="@+id/tv3"
                             android:layout_width="@dimen/dp_0"
                             android:layout_height="@dimen/dp_46"
@@ -248,14 +283,16 @@
                             android:textSize="@dimen/sp_28"
                             app:autoSizeMaxTextSize="@dimen/sp_28"
                             app:autoSizeMinTextSize="@dimen/sp_18"
-                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeStepGranularity="@dimen/sp_1"
                             app:autoSizeTextType="uniform"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/imvHomeChar3"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:outerStrokeColor="@color/white"
-                            app:outerStrokeWidth="@dimen/dp_2" />
+                            app:outerStrokeWidth="@dimen/dp_2"
+                            tools:visibility="visible"
+                            tools:text="@string/therian_random" />
 
                         <ImageView
                             android:id="@+id/imvHomeChar3"
@@ -266,7 +303,9 @@
                             android:src="@drawable/img_home_char_3_figma"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="visible"
+                            tools:src="@drawable/img_home_char_3_figma" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -283,28 +322,34 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btnRandom"
                 app:strokeColor="@color/figma_primary"
-                app:strokeWidth="@dimen/dp_2">
+                app:strokeWidth="@dimen/dp_2"
+                tools:visibility="visible">
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    tools:visibility="visible">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/img_home_bg_4_figma" />
+                        android:src="@drawable/img_home_bg_4_figma"
+                        tools:visibility="visible"
+                        tools:src="@drawable/img_home_bg_4_figma" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp_46"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/bg_home_text_right" />
+                        android:background="@drawable/bg_home_text_right"
+                        tools:visibility="visible" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        tools:visibility="visible">
 
                         <ImageView
                             android:id="@+id/imvHomeChar4"
@@ -315,9 +360,11 @@
                             android:src="@drawable/img_home_char_4_figma"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="visible"
+                            tools:src="@drawable/img_home_char_4_figma" />
 
-                        <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+                        <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
                             android:id="@+id/tv4"
                             android:layout_width="@dimen/dp_0"
                             android:layout_height="@dimen/dp_46"
@@ -331,14 +378,16 @@
                             android:textSize="@dimen/sp_28"
                             app:autoSizeMaxTextSize="@dimen/sp_28"
                             app:autoSizeMinTextSize="@dimen/sp_18"
-                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeStepGranularity="@dimen/sp_1"
                             app:autoSizeTextType="uniform"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@id/imvHomeChar4"
                             app:layout_constraintTop_toTopOf="parent"
                             app:outerStrokeColor="@color/white"
-                            app:outerStrokeWidth="@dimen/dp_2" />
+                            app:outerStrokeWidth="@dimen/dp_2"
+                            tools:visibility="visible"
+                            tools:text="@string/creation" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -351,6 +400,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

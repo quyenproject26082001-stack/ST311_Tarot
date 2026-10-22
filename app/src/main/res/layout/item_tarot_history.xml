@@ -3,70 +3,83 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="108dp"
-    android:layout_marginBottom="12dp"
+    android:layout_height="@dimen/dp_108"
+    android:layout_marginBottom="@dimen/dp_12"
     android:background="@drawable/tarot_bg_panel"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
     <!-- Reference thumbnail envelope: (64,218)-(262,414) at 720px. -->
     <FrameLayout
         android:id="@+id/thumbnailHost"
-        android:layout_width="99dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="5dp" />
+        android:layout_width="@dimen/dp_99"
+        android:layout_height="@dimen/dp_98"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_5"
+        tools:visibility="visible" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginStart="@dimen/dp_116"
+        android:layout_marginEnd="@dimen/dp_12"
         android:layout_gravity="center_vertical"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:visibility="visible">
         <TextView
             android:id="@+id/readingTitle"
             style="@style/TarotText"
             android:layout_width="match_parent"
-            android:layout_height="22dp"
-            android:paddingEnd="48dp"
+            android:layout_height="@dimen/dp_22"
+            android:paddingEnd="@dimen/dp_48"
             android:gravity="center_vertical"
             android:fontFamily="@font/tarot_nunito_medium"
-            android:textSize="16sp"
-            android:lineHeight="20sp"
+            android:textSize="@dimen/sp_16"
+            android:lineHeight="@dimen/sp_20"
             android:maxLines="1"
-            android:ellipsize="end" />
+            android:ellipsize="end"
+            tools:visibility="visible"
+            tools:text="Daily Reading" />
         <TextView
             android:id="@+id/readingDate"
             style="@style/TarotTextBody"
             android:layout_width="match_parent"
-            android:layout_height="14dp"
-            android:layout_marginTop="2dp"
+            android:layout_height="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_2"
             android:gravity="center_vertical"
-            android:textSize="10sp"
-            android:lineHeight="14sp"
+            android:textSize="@dimen/sp_10"
+            android:lineHeight="@dimen/sp_14"
             android:maxLines="1"
-            android:ellipsize="end" />
+            android:ellipsize="end"
+            tools:visibility="visible"
+            tools:text="21 Oct 2026" />
         <TextView
             android:id="@+id/readingSummary"
             style="@style/TarotText"
             android:layout_width="match_parent"
-            android:layout_height="18dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_8"
             android:gravity="center_vertical"
             android:maxLines="1"
             android:ellipsize="end"
-            android:textSize="12sp"
-            android:lineHeight="16sp" />
+            android:textSize="@dimen/sp_12"
+            android:lineHeight="@dimen/sp_16"
+            tools:visibility="visible"
+            tools:text="Page of Wands · Upright" />
     </LinearLayout>
-    <com.aaa.bbb.ccc.tarot.TarotIcon
+    <com.tarot.card.meaning.tarot.TarotIcon
         android:id="@+id/favorite"
-        android:padding="11dp"
+        android:padding="@dimen/dp_11"
         android:background="@drawable/tarot_bg_favorite"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_12"
         android:layout_gravity="top|end"
         app:tarotIconName="heart"
         app:tarotIconColor="?attr/tarotMuted"
-        android:contentDescription="@string/tarot_favorite" />
+        android:contentDescription="@string/tarot_favorite"
+        tools:visibility="visible"
+        tools:src="@drawable/tarot_ic_heart" />
 </FrameLayout>

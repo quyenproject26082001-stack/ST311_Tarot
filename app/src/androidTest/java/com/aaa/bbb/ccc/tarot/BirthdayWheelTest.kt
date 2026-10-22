@@ -1,10 +1,10 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import android.widget.NumberPicker
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.aaa.bbb.ccc.R
+import com.tarot.card.meaning.R
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith

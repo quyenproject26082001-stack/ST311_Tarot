@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="?attr/tarotControlSurface" />
+            <stroke android:width="@dimen/dp_1" android:color="@color/tarot_gold" />
+            <corners android:radius="@dimen/dp_100" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="?attr/tarotSurface" />
+            <stroke android:width="@dimen/dp_1" android:color="@color/tarot_gold" />
+            <corners android:radius="@dimen/dp_100" />
+        </shape>
+    </item>
+</selector>

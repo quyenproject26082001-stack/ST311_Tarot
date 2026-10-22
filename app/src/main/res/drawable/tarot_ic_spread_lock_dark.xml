@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/dp_12"
+    android:height="@dimen/dp_14"
+    android:viewportWidth="24"
+    android:viewportHeight="28">
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tarot_gold"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M6,12 L6,8 A6,6 0,0 1,18 8 L18,12" />
+    <path
+        android:fillColor="@color/tarot_gold"
+        android:pathData="M4,11 L20,11 Q21,11 21,12 L21,26 Q21,27 20,27 L4,27 Q3,27 3,26 L3,12 Q3,11 4,11 Z" />
+    <path
+        android:fillColor="@color/tarot_green"
+        android:pathData="M12,16 A2,2 0,1 0,12 20 A2,2 0,1 0,12 16 Z M11,19 L13,19 L13,23 L11,23 Z" />
+</vector>

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:visibility="visible">
 
     <ImageView
         android:id="@+id/imvImage"
@@ -17,9 +18,11 @@
         android:layout_marginBottom="@dimen/dp_50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        tools:src="@drawable/img_intro_1" />
 
-    <com.aaa.bbb.ccc.core.custom.text.DoubleStrokeTextView
+    <com.tarot.card.meaning.core.custom.text.DoubleStrokeTextView
         android:id="@+id/tvContent"
         android:layout_width="@dimen/dp_0"
         android:layout_height="wrap_content"
@@ -33,6 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:text="Create your own avatar however you like" />
+        tools:text="Create your own avatar however you like"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

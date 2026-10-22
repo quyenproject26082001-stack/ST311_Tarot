@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/dp_22">
+    android:paddingBottom="@dimen/dp_22"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/lnlShareButtons"
@@ -15,6 +17,7 @@
         android:layout_marginTop="@dimen/dp_0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
         >
 
         <!--            btnWhatsapp-->
@@ -25,6 +28,7 @@
             android:layout_marginStart="@dimen/dp_20"
             android:layout_marginEnd="@dimen/dp_4"
             android:layout_weight="1"
+            tools:visibility="visible"
             >
 
             <com.google.android.material.card.MaterialCardView
@@ -38,14 +42,17 @@
                 app:layout_constraintEnd_toEndOf="@+id/lnlInLeft"
                 app:layout_constraintStart_toStartOf="@+id/lnlInLeft"
                 app:layout_constraintTop_toTopOf="@+id/lnlInLeft"
-                app:strokeColor="@color/transparent">
+                app:strokeColor="@color/transparent"
+                tools:visibility="visible">
 
                 <ImageView
                     android:id="@+id/imgBgBtnWhatsapp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bg_12dp" />
+                    android:src="@drawable/bg_12dp"
+                    tools:visibility="visible"
+                    tools:src="@drawable/bg_12dp" />
             </com.google.android.material.card.MaterialCardView>
 
             <!--                        lnlInLeft-->
@@ -57,7 +64,8 @@
                 android:orientation="horizontal"
                 android:paddingHorizontal="@dimen/dp_10"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
 
 
                 <!--                        tvDelete-->
@@ -71,7 +79,9 @@
                     android:fontFamily="@font/baloo_2_bold"
                     android:text="@string/share"
                     android:textColor="@color/figma_primary"
-                    android:textSize="@dimen/sp_16" />
+                    android:textSize="@dimen/sp_16"
+                    tools:visibility="visible"
+                    tools:text="@string/share" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -84,6 +94,7 @@
             android:layout_marginEnd="@dimen/dp_20"
             android:layout_marginStart="@dimen/dp_4"
             android:layout_weight="1"
+            tools:visibility="visible"
             >
 
             <com.google.android.material.card.MaterialCardView
@@ -98,13 +109,16 @@
                 app:layout_constraintEnd_toEndOf="@+id/lnlInRight"
                 app:layout_constraintStart_toStartOf="@+id/lnlInRight"
                 app:layout_constraintTop_toTopOf="@+id/lnlInRight"
-                app:strokeColor="@color/transparent">
+                app:strokeColor="@color/transparent"
+                tools:visibility="visible">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bg_12dp" />
+                    android:src="@drawable/bg_12dp"
+                    tools:visibility="visible"
+                    tools:src="@drawable/bg_12dp" />
             </com.google.android.material.card.MaterialCardView>
 
             <!--                        lnlInRight-->
@@ -116,7 +130,8 @@
                 android:orientation="horizontal"
                 android:paddingHorizontal="@dimen/dp_10"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
 
 
                 <!--                        tvDownload-->
@@ -131,6 +146,8 @@
                     android:text="@string/download"
                     android:textColor="@color/figma_primary"
                     android:textSize="@dimen/sp_16"
+                    tools:visibility="visible"
+                    tools:text="@string/download"
                     />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -146,6 +163,7 @@
         android:layout_height="match_parent"
         android:id="@+id/GLCenter"
         app:layout_constraintGuide_percent="0.5"
-        android:orientation="vertical"/>
+        android:orientation="vertical"
+        tools:visibility="visible"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

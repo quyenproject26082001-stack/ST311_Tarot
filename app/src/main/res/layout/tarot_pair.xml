@@ -3,43 +3,55 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="274dp"
-        android:padding="10dp"
+        android:layout_height="@dimen/dp_274"
+        android:padding="@dimen/dp_10"
         android:background="@drawable/tarot_bg_pair"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:visibility="visible">
         <ImageView
             android:id="@+id/firstCard"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginEnd="4dp"
-            android:scaleType="fitCenter" />
+            android:layout_marginEnd="@dimen/dp_4"
+            android:scaleType="fitCenter"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_deck_back" />
         <ImageView
             android:id="@+id/secondCard"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_deck_back" />
     </LinearLayout>
     <TextView
         android:id="@+id/pairTitle"
         style="@style/TarotText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/dp_10"
         android:gravity="center"
-        android:textSize="14sp" />
+        android:textSize="@dimen/sp_14"
+        tools:visibility="visible"
+        tools:text="The Sun &amp; The Star" />
     <TextView
         android:id="@+id/pairMeaning"
         style="@style/TarotTextBody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="12dp"
-        android:textSize="14sp"
-        android:lineHeight="21sp"
+        android:layout_marginVertical="@dimen/dp_12"
+        android:textSize="@dimen/sp_14"
+        android:lineHeight="@dimen/sp_21"
         android:justificationMode="inter_word"
-        android:text="@string/tarot_pair_missing" />
+        android:text="@string/tarot_pair_missing"
+        tools:visibility="visible"
+        tools:text="Hope and clarity support your next steps. Focus on what you can do today and allow yourself time to grow." />
 </LinearLayout>

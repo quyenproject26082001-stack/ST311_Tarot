@@ -8,7 +8,7 @@
     "hasMoreContent": false,
     "truncatedAtPageLimit": false
   },
-  "activity": "com.aaa.bbb.ccc.tarot.TarotProfileActivity",
+  "activity": "com.tarot.card.meaning.tarot.TarotProfileActivity",
   "sdk": 37,
   "density": 2,
   "densityDpi": 320,

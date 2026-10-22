@@ -7,7 +7,8 @@
     android:background="@drawable/bg_down"
     android:paddingTop="@dimen/dp_0"
     android:clipToPadding="true"
-    tools:context=".ui.my_creation.fragment.MyAvatarFragment">
+    tools:context=".ui.my_creation.fragment.MyAvatarFragment"
+    tools:visibility="visible">
 
     <!--    rcvMyAvatar-->
     <androidx.recyclerview.widget.RecyclerView
@@ -22,7 +23,10 @@
         android:layout_marginTop="@dimen/dp_12"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
-        tools:listitem="@layout/item_my_album" />
+        tools:listitem="@layout/item_my_album"
+        tools:visibility="visible"
+        tools:itemCount="6"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
 
     <!-- No Item-->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,14 +41,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutActionBar">
+        app:layout_constraintTop_toBottomOf="@+id/layoutActionBar"
+        tools:visibility="visible">
 
         <ImageView
             android:layout_width="match_parent"
             android:visibility="visible"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
-            android:src="@drawable/img_no_item" />
+            android:src="@drawable/img_no_item"
+            tools:visibility="visible"
+            tools:src="@drawable/img_no_item" />
 
         <TextView
             android:id="@+id/tvNoitem"
@@ -62,7 +69,9 @@
             app:layout_constraintVertical_bias=".95"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:translationY="@dimen/dp_0" />
+            android:translationY="@dimen/dp_0"
+            tools:visibility="visible"
+            tools:text="@string/no_item_here" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name" translatable="false">ST311_Daily_Tarot_Reading</string>
+    <string name="app_name" translatable="false">Tarot Reading: Card Meaning</string>
 
 
     <string name="go_to_setting_message">The app needs this permission</string>
@@ -23,7 +23,7 @@
     <string name="granted_storage">Storage permission granted</string>
     <string name="allow">Allow</string>
     <string name="to_access">to access photos, media and files on your device</string>
-    <string name="to_access_13">to access photos, media and files on your device</string>
+    <string name="to_access_13">to receive your daily tarot reading and reminders.</string>
 
     <string name="rate_us">\u00A0\u00A0Rate us\u00A0\u00A0</string>
     <string name="share_app">\u00A0\u00A0Share app\u00A0\u00A0</string>
@@ -59,7 +59,7 @@
     <string name="ok">Ok</string>
     <string name="wait_a_minute">Please wait...</string>
     <string name="reset">Reset</string>
-    <string name="download_success">Download successful to the ST311_Daily_Tarot_Reading album</string>
+    <string name="download_success">Download successful to the Tarot Reading: Card Meaning album</string>
     <string name="please_check_your_internet">Please check your internet</string>
     <string name="please_select_an_image">Please select an image</string>
     <string name="error">Error</string>

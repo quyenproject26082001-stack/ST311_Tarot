@@ -9,12 +9,19 @@
     </style>
     <!-- Base application theme. -->
     <style name="Base.Theme.BaseProject" parent="Theme.Material3.Light.NoActionBar">
+        <item name="tarotConfirmBackground">@drawable/bg_dialog_delete_exit</item>
+        <item name="tarotConfirmNoBackground">@drawable/ic_yes_dialog</item>
+        <item name="tarotConfirmYesBackground">@drawable/ic_no_dialog</item>
+        <item name="tarotConfirmTitleColor">#172A2A</item>
+        <item name="tarotConfirmDescriptionColor">#60706D</item>
+        <item name="tarotConfirmNoTextColor">#172A2A</item>
         <item name="sharedActionBarLeftStyle">@style/SharedActionBarLeft</item>
         <item name="sharedActionBarRightStyle">@style/SharedActionBarRight</item>
         <item name="sharedActionBarTitleStyle">@style/SharedActionBarTitle</item>
         <!-- Safe defaults for the hidden Tarot actions in the shared bar. -->
         <item name="tarotInk">#172A2A</item>
         <item name="tarotInput">#FBF9F2</item>
+        <item name="tarotControlSurface">@color/tarot_pale_gold</item>
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowSoftInputMode">adjustResize</item>

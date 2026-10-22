@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DEDAFF"
-    tools:context=".ui.cosplay.CosplayCustomizeActivity">
+    tools:context=".ui.cosplay.CosplayCustomizeActivity"
+    tools:visibility="visible">
 
     <!-- Blue background for upper area -->
     <ImageView
@@ -14,18 +15,22 @@
         android:layout_height="@dimen/dp_0"
         android:background="#A1CCEF"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@id/glHorizontal" />
+        app:layout_constraintBottom_toBottomOf="@id/glHorizontal"
+        tools:visibility="visible"
+        tools:src="@drawable/img_intro_1" />
 
     <!-- layoutActionBar -->
     <FrameLayout
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <!-- tvCountDown -->
@@ -44,7 +49,9 @@
         android:textSize="@dimen/sp_18"
         app:layout_constraintBottom_toBottomOf="@id/layoutActionBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"
+        tools:text="10:00" />
 
     <ImageView
         android:layout_width="@dimen/dp_81"
@@ -53,7 +60,9 @@
         android:src="@drawable/ic_timing_shadow"
         app:layout_constraintEnd_toEndOf="@id/tvCountDown"
         app:layout_constraintStart_toStartOf="@id/tvCountDown"
-        app:layout_constraintTop_toBottomOf="@id/tvCountDown" />
+        app:layout_constraintTop_toBottomOf="@id/tvCountDown"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_timing_shadow" />
     <!-- layoutCustomLayer (render area) -->
     <FrameLayout
         android:id="@+id/layoutCustomLayerBackground"
@@ -71,12 +80,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
         app:layout_constraintVertical_bias="0"
-        tools:background="@color/app">
+        tools:background="@color/app"
+        tools:visibility="visible">
 
         <FrameLayout
             android:id="@+id/layoutCustomLayer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <!-- glHorizontal -->
@@ -85,7 +96,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="@dimen/customize_horizontal_guide_percent" />
+        app:layout_constraintGuide_percent="@dimen/customize_horizontal_guide_percent"
+        tools:visibility="visible" />
 
     <!-- btnFlip -->
     <ImageView
@@ -98,7 +110,9 @@
         android:src="@drawable/ic_flip"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutActionBar" />
+        app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_flip" />
 
     <!-- btnHide -->
     <ImageView
@@ -111,7 +125,9 @@
         android:src="@drawable/ic_show"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFlip" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFlip"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_show" />
 
     <!-- containerBtnSamplePhoto (small reference image, top-left) -->
     <com.google.android.material.card.MaterialCardView
@@ -125,7 +141,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/tvCountDown"
         app:strokeColor="#38306B"
-        app:strokeWidth="@dimen/dp_2">
+        app:strokeWidth="@dimen/dp_2"
+        tools:visibility="visible">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/btnSamplePhoto"
@@ -134,7 +151,8 @@
             android:layout_gravity="center"
             android:scaleType="fitCenter"
             app:shapeAppearanceOverlay="@style/border_image_6"
-            tools:src="@color/dark" />
+            tools:src="@color/dark"
+            tools:visibility="visible" />
     </com.google.android.material.card.MaterialCardView>
 
     <!-- btnMan (gone) -->
@@ -148,7 +166,9 @@
         android:elevation="@dimen/dp_1"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/color" />
+        app:layout_constraintTop_toBottomOf="@id/color"
+        tools:visibility="visible"
+        tools:text="Man" />
 
     <!-- btnWooman (gone) -->
     <TextView
@@ -160,7 +180,9 @@
         android:elevation="@dimen/dp_1"
         android:visibility="gone"
         app:layout_constraintStart_toEndOf="@id/btnMan"
-        app:layout_constraintTop_toTopOf="@id/btnMan" />
+        app:layout_constraintTop_toTopOf="@id/btnMan"
+        tools:visibility="visible"
+        tools:text="Woman" />
 
     <!-- progressContainer -->
     <FrameLayout
@@ -174,14 +196,17 @@
         android:visibility="visible"
         android:layout_marginBottom="@dimen/dp_54"
         app:layout_constraintBottom_toTopOf="@id/bg_cus"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible">
 
         <ImageView
             android:id="@+id/progressBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bg_progress_1"
-            android:layerType="software" />
+            android:layerType="software"
+            tools:visibility="visible"
+            tools:src="@drawable/img_intro_1" />
     </FrameLayout>
 
     <!-- tvThumbProgress -->
@@ -196,7 +221,9 @@
         app:layout_constraintBottom_toBottomOf="@id/progressContainer"
         app:layout_constraintEnd_toEndOf="@id/progressContainer"
         app:layout_constraintStart_toStartOf="@id/progressContainer"
-        app:layout_constraintTop_toTopOf="@id/progressContainer" />
+        app:layout_constraintTop_toTopOf="@id/progressContainer"
+        tools:visibility="visible"
+        tools:text="100%" />
 
     <TextView
         android:id="@+id/tvThumbProgress"
@@ -210,7 +237,8 @@
         app:layout_constraintEnd_toEndOf="@id/progressContainer"
         app:layout_constraintStart_toStartOf="@id/progressContainer"
         app:layout_constraintTop_toBottomOf="@id/progressContainer"
-        tools:text="100%" />
+        tools:text="100%"
+        tools:visibility="visible" />
 
 
     <!-- gl_btn -->
@@ -219,7 +247,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.5"
+        tools:visibility="visible" />
 
     <!-- color section (rcvColor) -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -247,7 +276,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            tools:src="@drawable/ic_color" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/flColor"
@@ -261,7 +291,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/btnColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnColor"
-            app:layout_constraintTop_toTopOf="@+id/btnColor">
+            app:layout_constraintTop_toTopOf="@+id/btnColor"
+            tools:visibility="visible">
 
             <FrameLayout
                 android:id="@+id/relativeLayout"
@@ -272,13 +303,15 @@
                 app:cardCornerRadius="@dimen/dp_30"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
 
 
                 <RelativeLayout
                     android:id="@+id/relative"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    tools:visibility="visible">
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rcvColor"
@@ -291,7 +324,9 @@
                         android:orientation="horizontal"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         tools:itemCount="10"
-                        tools:listitem="@layout/item_color" />
+                        tools:listitem="@layout/item_color"
+                        tools:visibility="visible"
+                        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
                 </RelativeLayout>
 
@@ -316,7 +351,9 @@
         android:src="@drawable/ic_random"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/glHorizontal" />
+        app:layout_constraintTop_toBottomOf="@id/glHorizontal"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_random" />
 
     <!-- bg_cus -->
     <TextView
@@ -326,7 +363,9 @@
         android:layout_marginTop="@dimen/dp_12"
         android:background="#A7A6E2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/color" />
+        app:layout_constraintTop_toBottomOf="@id/color"
+        tools:visibility="visible"
+        tools:text="Customize" />
 
     <!-- rcvLayer -->
 
@@ -348,7 +387,9 @@
         app:spanCount="5"
         tools:itemCount="50"
         tools:layout_editor_absoluteX="@dimen/dp_0"
-        tools:listitem="@layout/item_customize" />
+        tools:listitem="@layout/item_customize"
+        tools:visibility="visible"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
 
     <FrameLayout
         android:id="@+id/flBottomNav"
@@ -358,7 +399,8 @@
         android:clipChildren="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcvNavigation"
@@ -371,7 +413,10 @@
             android:layerType="hardware"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_bottom_navigation" />
+            tools:listitem="@layout/item_bottom_navigation"
+            tools:visibility="visible"
+            tools:itemCount="6"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </FrameLayout>
 
     <!-- btnOverLay (full-screen overlay to show sample photo) -->
@@ -383,7 +428,8 @@
         android:clickable="true"
         android:elevation="@dimen/dp_2"
         android:focusable="true"
-        android:visibility="gone">
+        android:visibility="gone"
+        tools:visibility="visible">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/containerBtnSamplePhotoShow"
@@ -399,7 +445,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:strokeColor="@color/figma_primary"
-            app:strokeWidth="@dimen/dp_2">
+            app:strokeWidth="@dimen/dp_2"
+            tools:visibility="visible">
 
 
             <ImageView
@@ -408,7 +455,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/dp_0"
                 android:scaleType="fitCenter"
-                tools:src="@color/white" />
+                tools:src="@color/white"
+                tools:visibility="visible" />
         </com.google.android.material.card.MaterialCardView>
 
 
@@ -420,7 +468,9 @@
             android:background="@drawable/ic_close"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/containerBtnSamplePhotoShow" />
+            app:layout_constraintTop_toBottomOf="@id/containerBtnSamplePhotoShow"
+            tools:visibility="visible"
+            tools:text="Close" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
@@ -429,7 +479,8 @@
         android:layout_height="wrap_content"
         android:elevation="@dimen/dp_5"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
 
     </FrameLayout>
 

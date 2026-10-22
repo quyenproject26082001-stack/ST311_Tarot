@@ -1,6 +1,5 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
-import android.graphics.Outline
 import android.graphics.Rect
 import android.graphics.Bitmap
 import android.graphics.Color
@@ -13,9 +12,9 @@ import androidx.appcompat.view.ContextThemeWrapper
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.filters.SdkSuppress
-import com.aaa.bbb.ccc.R
-import com.aaa.bbb.ccc.databinding.ActivityTarotHomeBinding
-import com.aaa.bbb.ccc.databinding.ItemTarotZodiacBinding
+import com.tarot.card.meaning.R
+import com.tarot.card.meaning.databinding.ActivityTarotHomeBinding
+import com.tarot.card.meaning.databinding.ItemTarotZodiacBinding
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -31,24 +30,13 @@ class ZodiacIconClippingTest {
         assertEquals(size, icon.layoutParams.width)
         assertEquals(size, icon.layoutParams.height)
         icon.layout(0, 0, size, size)
-        // These views are inflated off-window; emulate the bounds assigned before draw.
-        icon.background.setBounds(0, 0, size, size)
-        assertTrue(icon.clipToOutline)
+        assertFalse(icon.clipToOutline)
+        assertNull(icon.background)
         assertEquals(0, icon.paddingLeft + icon.paddingTop + icon.paddingRight + icon.paddingBottom)
-        assertEquals(ImageView.ScaleType.CENTER_CROP, icon.scaleType)
-        val outline = Outline()
-        icon.outlineProvider.getOutline(icon, outline)
-        assertTrue(outline.canClip())
-        val rect = Rect()
-        assertTrue(outline.getRect(rect))
-        assertTrue("The mask must remove padding inside the PNG", rect.left > 0 && rect.top >= 0 && rect.right < size && rect.bottom < size)
-        assertEquals(minOf(rect.width(), rect.height()) / 2f, outline.radius, .1f)
-        if (sizeDp == 26 && size == 52) {
-            assertEquals("Crop inside the source disc to discard white-blended edge pixels", Rect(4, 3, 48, 47), rect)
-        }
+        assertEquals(ImageView.ScaleType.FIT_CENTER, icon.scaleType)
     }
 
-    @Test fun allTwelveSelectedAndUnselectedIconsKeepCircularClippingInBothThemes() {
+    @Test fun allTwelveSelectedAndUnselectedIconsKeepFullArtworkInBothThemes() {
         val instrumentation = InstrumentationRegistry.getInstrumentation()
         instrumentation.runOnMainSync {
             listOf(R.style.TarotThemeLight, R.style.TarotThemeDark).forEach { theme ->
@@ -74,7 +62,7 @@ class ZodiacIconClippingTest {
         }
     }
 
-    @Test fun homeBadgeUsesTheSameCircleWithoutChangingItsSize() {
+    @Test fun homeBadgeUsesFullArtworkWithoutChangingItsSize() {
         val instrumentation = InstrumentationRegistry.getInstrumentation()
         instrumentation.runOnMainSync {
             listOf(R.style.TarotThemeLight, R.style.TarotThemeDark).forEach { theme ->
@@ -124,16 +112,10 @@ class ZodiacIconClippingTest {
                 try {
                     if (selected) {
                         val gold = Color.rgb(246, 233, 182)
-                        // These positions were white inside the old full-image circular mask.
-                        listOf(iconRect.centerX() to iconRect.top,
-                            iconRect.left to iconRect.centerY(),
-                            iconRect.centerX() to iconRect.bottom - 1,
-                            // The original disc's edge must now be background, not a pale rim.
-                            iconRect.left + 26 to iconRect.top + 1,
-                            iconRect.left + 26 to iconRect.top + 2,
-                            iconRect.left + 2 to iconRect.top + 25,
-                            iconRect.left + 49 to iconRect.top + 25,
-                            iconRect.left + 26 to iconRect.top + 48).forEach { (x, y) ->
+                        listOf(iconRect.left to iconRect.top,
+                            iconRect.right - 1 to iconRect.top,
+                            iconRect.left to iconRect.bottom - 1,
+                            iconRect.right - 1 to iconRect.bottom - 1).forEach { (x, y) ->
                             assertEquals("Selected icon edge must reveal the design's gold background", gold, screenshot.getPixel(x, y))
                         }
                     }

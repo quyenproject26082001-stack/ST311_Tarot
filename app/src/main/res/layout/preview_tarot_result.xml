@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:visibility="visible"
+    tools:ignore="UnusedResources">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_16"
+        tools:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_16"
+            tools:visibility="visible"
+            tools:theme="@style/TarotThemeLight">
+            <TextView
+                android:id="@+id/positionTitle"
+                style="@style/TarotTextHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="Past" />
+            <ImageView
+                android:id="@+id/cardImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                tools:visibility="visible"
+                tools:src="@drawable/tarot_deck_back" />
+            <TextView
+                android:id="@+id/cardTitle"
+                style="@style/TarotText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                tools:visibility="visible"
+                tools:text="Page of Wands" />
+            <TextView
+                android:id="@+id/answerLabel"
+                style="@style/TarotTextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/tarot_answer_label"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="@string/tarot_answer_label" />
+            <TextView
+                android:id="@+id/meaningNotice"
+                style="@style/TarotTextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:textSize="@dimen/sp_11"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="Original card interpretation" />
+            <TextView
+                android:id="@+id/answer"
+                style="@style/TarotTextHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:textSize="@dimen/sp_14"
+                android:justificationMode="inter_word"
+                android:lineHeight="@dimen/sp_21"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="Yes" />
+            <TextView
+                android:id="@+id/interpretation"
+                style="@style/TarotTextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="start|top"
+                android:justificationMode="none"
+                android:lineHeight="@dimen/sp_21"
+                android:textSize="@dimen/sp_14"
+                tools:visibility="visible"
+                tools:text="Trust your instincts and stay open to new opportunities. A small, thoughtful step can help you see the way forward." />
+        </LinearLayout>
+        <TextView
+            style="@style/TarotButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_46"
+            tools:visibility="visible"
+            tools:text="@string/tarot_finish"
+            tools:theme="@style/TarotThemeLight" />
+    </LinearLayout>
+</ScrollView>

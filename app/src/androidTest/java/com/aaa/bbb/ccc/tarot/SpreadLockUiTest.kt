@@ -1,4 +1,4 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -10,8 +10,8 @@ import android.view.View
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.aaa.bbb.ccc.R
-import com.aaa.bbb.ccc.databinding.ItemTarotSpreadBinding
+import com.tarot.card.meaning.R
+import com.tarot.card.meaning.databinding.ItemTarotSpreadBinding
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith

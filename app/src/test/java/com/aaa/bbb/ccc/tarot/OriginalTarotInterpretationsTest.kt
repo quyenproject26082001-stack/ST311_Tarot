@@ -1,4 +1,4 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import com.google.gson.Gson
 import com.google.gson.JsonNull

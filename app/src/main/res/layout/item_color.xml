@@ -4,7 +4,9 @@
     android:layout_width="@dimen/dp_28"
     android:layout_height="@dimen/dp_28"
     android:layout_gravity="center"
-    android:layout_marginHorizontal="@dimen/dp_2">
+    android:layout_marginHorizontal="@dimen/dp_2"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible">
 
     <ImageView
         android:id="@+id/imvFocus"
@@ -12,12 +14,16 @@
         android:layout_height="match_parent"
         android:elevation="@dimen/dp_2"
         android:padding="@dimen/dp_0"
-        android:src="@drawable/bg_focus_color" />
+        android:src="@drawable/bg_focus_color"
+        tools:visibility="visible"
+        tools:src="@drawable/bg_focus_color" />
 
     <ImageView
         android:id="@+id/imvImage"
         android:layout_width="@dimen/dp_24"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        tools:visibility="visible"
+        tools:src="@drawable/img_intro_1" />
 
 </FrameLayout>

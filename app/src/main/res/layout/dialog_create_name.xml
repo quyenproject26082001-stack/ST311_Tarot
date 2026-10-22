@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <!--    flOutSide-->
     <FrameLayout
         android:id="@+id/flOutSide"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:visibility="visible">
         <!--        layoutMain-->
         <LinearLayout
             android:id="@+id/layoutMain"
@@ -14,7 +15,8 @@
             android:layout_marginHorizontal="@dimen/dp_16"
             android:background="@drawable/bg_16_solid_white"
             android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:visibility="visible">
             <!--            tvTitle-->
             <TextView
                 android:id="@+id/tvTitle"
@@ -25,7 +27,9 @@
                 android:gravity="center"
                 android:text="@string/create_package_name"
                 android:textColor="#52525B"
-                android:textSize="@dimen/sp_16" />
+                android:textSize="@dimen/sp_16"
+                tools:visibility="visible"
+                tools:text="@string/create_package_name" />
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/edtName"
@@ -42,7 +46,9 @@
                 android:paddingVertical="@dimen/dp_12"
                 android:textColor="#52525B"
                 android:textColorHint="#99868686"
-                android:textSize="@dimen/sp_14" />
+                android:textSize="@dimen/sp_14"
+                tools:visibility="visible"
+                tools:text="@string/enter_your_package_name" />
 
 
             <LinearLayout
@@ -51,7 +57,8 @@
                 android:layout_marginHorizontal="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_18"
                 android:layout_marginBottom="@dimen/dp_23"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:visibility="visible">
 
                 <!--                tvNo-->
                 <TextView
@@ -65,7 +72,9 @@
                     android:gravity="center"
                     android:paddingVertical="@dimen/dp_8"
                     android:text="@string/no"
-                    android:textColor="#34D399" />
+                    android:textColor="#34D399"
+                    tools:visibility="visible"
+                    tools:text="@string/no" />
 
                 <!--                tvYes-->
                 <TextView
@@ -78,7 +87,9 @@
                     android:gravity="center"
                     android:paddingVertical="@dimen/dp_8"
                     android:text="@string/yes"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    tools:visibility="visible"
+                    tools:text="@string/yes" />
             </LinearLayout>
 
 

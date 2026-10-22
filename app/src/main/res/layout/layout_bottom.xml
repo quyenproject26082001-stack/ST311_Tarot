@@ -7,7 +7,8 @@
     xmlns:tool="http://schemas.android.com/tools"
     android:paddingBottom="@dimen/dp_22"
     tool:background="@color/dark"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:visibility="visible">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/lnlShareButtons"
@@ -16,7 +17,8 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible">
 
 
 
@@ -30,6 +32,7 @@
             android:layout_marginEnd="@dimen/dp_4"
             android:layout_marginStart="@dimen/dp_20"
             android:layout_weight="1"
+            tools:visibility="visible"
             >
 
             <com.google.android.material.card.MaterialCardView
@@ -43,14 +46,17 @@
                 app:layout_constraintBottom_toBottomOf="@+id/lnlInLeft"
                 app:layout_constraintEnd_toEndOf="@+id/lnlInLeft"
                 app:layout_constraintStart_toStartOf="@+id/lnlInLeft"
-                app:layout_constraintTop_toTopOf="@+id/lnlInLeft">
+                app:layout_constraintTop_toTopOf="@+id/lnlInLeft"
+                tools:visibility="visible">
 
                 <ImageView
                     android:id="@+id/imgBgBtnRight"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bg_btn_whatsapp_shape" />
+                    android:src="@drawable/bg_btn_whatsapp_shape"
+                    tools:visibility="visible"
+                    tools:src="@drawable/bg_btn_whatsapp_shape" />
             </com.google.android.material.card.MaterialCardView>
 
             <!--                        lnlInLeft-->
@@ -63,13 +69,16 @@
                 android:paddingHorizontal="@dimen/dp_10"
                 android:paddingVertical="@dimen/dp_8"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
 
                 <ImageView
                     android:layout_width="@dimen/dp_20"
                     android:layout_height="@dimen/dp_20"
                     android:visibility="visible"
-                    android:src="@drawable/ic_whatsapp" />
+                    android:src="@drawable/ic_whatsapp"
+                    tools:visibility="visible"
+                    tools:src="@drawable/ic_whatsapp" />
 
                 <!--                        tvWhatsapp-->
                 <TextView
@@ -81,7 +90,9 @@
                     android:fontFamily="@font/baloo_2_bold"
                     android:text="@string/add_to_whatsapp"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/sp_16" />
+                    android:textSize="@dimen/sp_16"
+                    tools:visibility="visible"
+                    tools:text="@string/add_to_whatsapp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -94,7 +105,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/dp_20"
             android:layout_marginStart="@dimen/dp_4"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            tools:visibility="visible">
 
             <FrameLayout
                 android:layout_width="@dimen/dp_0"
@@ -106,14 +118,17 @@
                 app:layout_constraintBottom_toBottomOf="@+id/lnlInRight"
                 app:layout_constraintEnd_toEndOf="@+id/lnlInRight"
                 app:layout_constraintStart_toStartOf="@+id/lnlInRight"
-                app:layout_constraintTop_toTopOf="@+id/lnlInRight">
+                app:layout_constraintTop_toTopOf="@+id/lnlInRight"
+                tools:visibility="visible">
 
                 <ImageView
                     android:id="@+id/imgBgBtnLeft"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bg_btn_telegram_shape" />
+                    android:src="@drawable/bg_btn_telegram_shape"
+                    tools:visibility="visible"
+                    tools:src="@drawable/bg_btn_telegram_shape" />
             </FrameLayout>
 
             <!--                        lnlInRight-->
@@ -126,13 +141,16 @@
                 android:paddingHorizontal="@dimen/dp_10"
                 android:paddingVertical="@dimen/dp_8"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
 
                 <ImageView
                     android:layout_width="@dimen/dp_20"
                     android:layout_height="@dimen/dp_20"
                     android:visibility="visible"
-                    android:src="@drawable/ic_telegram" />
+                    android:src="@drawable/ic_telegram"
+                    tools:visibility="visible"
+                    tools:src="@drawable/ic_telegram" />
 
                 <!--                        tvTelegram-->
                 <TextView
@@ -144,7 +162,9 @@
                     android:fontFamily="@font/baloo_2_bold"
                     android:text="@string/add_to_telegram"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/sp_16" />
+                    android:textSize="@dimen/sp_16"
+                    tools:visibility="visible"
+                    tools:text="@string/add_to_telegram" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 

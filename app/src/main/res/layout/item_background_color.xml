@@ -2,7 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible">
 
     <FrameLayout
         android:layout_width="@dimen/dp_0"
@@ -12,7 +14,8 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <!--        vFocus-->
         <View
@@ -20,7 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/dp_4"
-            android:visibility="visible" />
+            android:visibility="visible"
+            tools:visibility="visible" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -30,13 +34,16 @@
             app:strokeColor="@color/figma_primary"
             app:strokeWidth="@dimen/dp_3"
             android:id="@+id/cardCtn"
+            tools:visibility="visible"
             >
 
             <ImageView
                 android:id="@+id/imvColor"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                tools:visibility="visible"
+                tools:src="@drawable/tarot_bg_button" />
         </com.google.android.material.card.MaterialCardView>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

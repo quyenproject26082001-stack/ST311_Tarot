@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_24"
+    android:paddingBottom="@dimen/dp_28"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/tarot_reverse_info_panel"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        tools:visibility="visible">
+        <ImageView
+            android:id="@+id/infoIcon"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:padding="@dimen/dp_0"
+            android:layout_gravity="start|center_vertical"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tarot_ic_info"
+            android:tint="?attr/tarotMuted"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_ic_info" />
+        <com.tarot.card.meaning.tarot.TarotIcon
+            android:id="@+id/closeIcon"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:layout_gravity="end|center_vertical"
+            android:padding="@dimen/dp_6"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/tarot_close"
+            app:tarotIconName="close"
+            app:tarotIconColor="?attr/tarotInk"
+            tools:visibility="visible"
+            tools:src="@drawable/tarot_ic_close" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/reverseInfoTitle"
+        style="@style/TarotTextHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:text="@string/tarot_reverse_chance"
+        android:textSize="@dimen/sp_16"
+        android:lineHeight="@dimen/sp_22"
+        tools:visibility="visible"
+        tools:text="@string/tarot_reverse_chance" />
+    <TextView
+        android:id="@+id/reverseInfoDescription"
+        style="@style/TarotTextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/tarot_reverse_description"
+        android:textSize="@dimen/sp_12"
+        android:lineHeight="@dimen/sp_16"
+        tools:visibility="visible"
+        tools:text="@string/tarot_reverse_description" />
+    <TextView
+        android:id="@+id/closeButton"
+        style="@style/TarotText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/tarot_reverse_info_close_background"
+        android:gravity="center"
+        android:text="@string/tarot_close"
+        android:textSize="@dimen/sp_16"
+        android:clickable="true"
+        android:focusable="true"
+        tools:visibility="visible"
+        tools:text="@string/tarot_close" />
+</LinearLayout>

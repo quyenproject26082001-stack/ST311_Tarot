@@ -4,13 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:tag="content_scroll"
-    android:scrollbars="none">
+    android:scrollbars="none"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    tools:theme="@style/TarotThemeLight">
     <LinearLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="20dp"
-        android:paddingTop="4dp"
-        android:paddingBottom="16dp"
-        android:orientation="vertical" />
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_16"
+        android:orientation="vertical"
+        tools:visibility="visible" />
 </ScrollView>

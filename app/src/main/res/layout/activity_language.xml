@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.language.LanguageActivity">
+    tools:context=".ui.language.LanguageActivity"
+    tools:visibility="visible">
 
     <!-- Background -->
     <ImageView
@@ -13,18 +14,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_app"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        tools:visibility="visible"
+        tools:src="@drawable/img_intro_1" />
 
 
     <FrameLayout
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            android:theme="@style/OnboardingActionBarOverlay"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <!-- rcv -->
@@ -32,7 +38,6 @@
         android:id="@+id/rcv"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_0"
-        android:layout_marginTop="@dimen/dp_18"
         android:orientation="vertical"
         android:overScrollMode="never"
         android:paddingHorizontal="@dimen/dp_20"
@@ -41,7 +46,10 @@
         app:layout_constraintBottom_toTopOf="@id/native_ads"
         app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_language" />
+        tools:listitem="@layout/item_language"
+        tools:visibility="visible"
+        tools:itemCount="6"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
     <FrameLayout
@@ -52,9 +60,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible"
         >
 
-        <include layout="@layout/ads_native_big_btn_bottom_shimmer" />
+        <include layout="@layout/ads_native_big_btn_bottom_shimmer" tools:visibility="visible" />
 
     </FrameLayout>
 

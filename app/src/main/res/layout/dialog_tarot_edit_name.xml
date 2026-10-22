@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:theme="@style/TarotThemeLight"
+    tools:visibility="visible">
+    <include
+        android:id="@+id/nameField"
+        layout="@layout/tarot_field_edit_name"
+        tools:visibility="visible" />
+    <TextView
+        android:id="@+id/submit"
+        style="@style/TarotButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_46"
+        android:text="@string/tarot_submit"
+        tools:text="@string/tarot_submit"
+        tools:visibility="visible" />
+</LinearLayout>

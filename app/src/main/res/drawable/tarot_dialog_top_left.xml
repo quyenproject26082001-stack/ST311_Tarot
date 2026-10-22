@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="@dimen/dp_24"
+    android:height="@dimen/dp_24"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M0.5,24 C0.5,11 11,0.5 24,0.5"
+        android:strokeWidth="0.5">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:endX="24"
+                android:endY="0"
+                android:startX="0"
+                android:startY="24"
+                android:type="linear">
+                <item
+                    android:color="@android:color/transparent"
+                    android:offset="0" />
+                <item
+                    android:color="?attr/tarotReverseInfoBorder"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

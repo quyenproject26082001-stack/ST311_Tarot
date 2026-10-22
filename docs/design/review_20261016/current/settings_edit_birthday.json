@@ -3,7 +3,7 @@
   "state": {
     "surface": "BottomSheetDialog"
   },
-  "activity": "com.aaa.bbb.ccc.ui.home.HomeActivity",
+  "activity": "com.tarot.card.meaning.ui.home.HomeActivity",
   "sdk": 37,
   "density": 2,
   "densityDpi": 320,

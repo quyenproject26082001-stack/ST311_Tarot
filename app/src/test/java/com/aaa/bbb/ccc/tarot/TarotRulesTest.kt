@@ -1,4 +1,4 @@
-package com.aaa.bbb.ccc.tarot
+package com.tarot.card.meaning.tarot
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -45,6 +45,15 @@ class TarotRulesTest {
         assertEquals(listOf(1, 2, 10, 2, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3), Spread.entries.map { it.cardCount })
         assertTrue(Spread.entries.drop(3).all { it.rule == ReadingRule.COOLDOWN })
         assertEquals(ReadingRule.UNLIMITED, Spread.CELTIC.rule)
+    }
+    @Test fun everyNewDeckUsesItsRandomSourceToShuffleAllCards() {
+        val first = TarotRules.deck(cards, 50, Random(21))
+        val repeated = TarotRules.deck(cards, 50, Random(21))
+        val second = TarotRules.deck(cards, 50, Random(22))
+        assertEquals(first, repeated)
+        assertEquals(cards.map { it.slug }.toSet(), first.map { it.slug }.toSet())
+        assertNotEquals(cards.map { it.slug }, first.map { it.slug })
+        assertNotEquals(first.map { it.slug }, second.map { it.slug })
     }
     @Test fun merged23HourRuleCoversExactlyTheThirteenSpreadsFromUniverseToCalling() {
         assertEquals(13, Spread.entries.count { it.rule == ReadingRule.COOLDOWN })

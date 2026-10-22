@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.my_creation.MyCreationActivity">
+    tools:context=".ui.my_creation.MyCreationActivity"
+    tools:visibility="visible">
 
 
 
@@ -15,18 +16,22 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/frmList"
-        android:src="@drawable/bg_up"/>
+        android:src="@drawable/bg_up"
+        tools:visibility="visible"
+        tools:src="@drawable/bg_up"/>
 
     <!-- layoutActionBar -->
     <FrameLayout
         android:id="@+id/layoutActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/actionBar"
-            layout="@layout/layout_actionbar" />
+            layout="@layout/layout_actionbar"
+            tools:visibility="visible" />
     </FrameLayout>
 
     <!--    &lt;!&ndash;    native_ads&ndash;&gt;-->
@@ -35,9 +40,10 @@
         android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/layoutActionBar">
+            app:layout_constraintTop_toBottomOf="@id/layoutActionBar"
+            tools:visibility="visible">
 
-            <include layout="@layout/ads_native_collap_banner_shimmer" />
+            <include layout="@layout/ads_native_collap_banner_shimmer" tools:visibility="visible" />
         </FrameLayout>
 
 
@@ -52,7 +58,8 @@
         tools:background="@drawable/bg_down"
         android:layout_marginTop="@dimen/dp_0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cvType" />
+        app:layout_constraintTop_toBottomOf="@id/cvType"
+        tools:visibility="visible" />
     <!--    cvType-->
     <FrameLayout
         android:id="@+id/cvType"
@@ -69,7 +76,8 @@
         app:layout_constraintTop_toBottomOf="@id/native_ads"
         app:strokeColor="@color/transparent"
         app:strokeWidth="@dimen/dp_0"
-        app:cardElevation="@dimen/dp_0">
+        app:cardElevation="@dimen/dp_0"
+        tools:visibility="visible">
 
         <!-- background tab full-width, đổi src theo tab được chọn -->
         <ImageView
@@ -78,12 +86,15 @@
             tools:background="@drawable/bg_avatar_slt"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
+            tools:visibility="visible"
+            tools:src="@drawable/bg_app"
             />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:visibility="visible">
 
             <!--            btnMyPixel-->
             <FrameLayout
@@ -94,9 +105,10 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/space"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                tools:visibility="visible">
 
-                <com.aaa.bbb.ccc.core.custom.text.OuterStrokeTextView
+                <com.tarot.card.meaning.core.custom.text.OuterStrokeTextView
                     android:id="@+id/tvMyPride"
                     style="@style/single_marquee"
                     android:layout_width="match_parent"
@@ -105,19 +117,22 @@
                     android:gravity="center"
                     android:text="@string/character"
                     android:textColor="@color/app"
-                    android:textSize="@dimen/sp_18" />
+                    android:textSize="@dimen/sp_18"
+                    tools:visibility="visible"
+                    tools:text="@string/character" />
 
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/space"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="match_parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/btnMyDesign"
                 app:layout_constraintStart_toEndOf="@id/btnMyPixel"
                 app:layout_constraintWidth_percent="0.04615384615"
+                tools:visibility="visible"
                 />
             <!--            btnMyDesign-->
             <FrameLayout
@@ -126,9 +141,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/space"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                tools:visibility="visible">
 
-                <com.aaa.bbb.ccc.core.custom.text.OuterStrokeTextView
+                <com.tarot.card.meaning.core.custom.text.OuterStrokeTextView
                     android:id="@+id/tvMyDesign"
                     style="@style/single_marquee"
                     android:layout_width="match_parent"
@@ -137,7 +153,9 @@
                     android:gravity="center"
                     android:text="@string/my_design"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/sp_18" />
+                    android:textSize="@dimen/sp_18"
+                    tools:visibility="visible"
+                    tools:text="@string/my_design" />
 
             </FrameLayout>
 
@@ -153,11 +171,13 @@
         android:paddingHorizontal="@dimen/dp_0"
         android:elevation="@dimen/dp_2"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible">
 
         <include
             android:id="@+id/bottomView"
-            layout="@layout/layout_bottom_creation" />
+            layout="@layout/layout_bottom_creation"
+            tools:visibility="visible" />
 
     </FrameLayout>
 
@@ -171,9 +191,10 @@
         android:elevation="@dimen/dp_1"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@id/flBottomView"
-        app:layout_goneMarginBottom="@dimen/dp_0">
+        app:layout_goneMarginBottom="@dimen/dp_0"
+        tools:visibility="visible">
 
-        <include layout="@layout/layout_bottom" />
+        <include layout="@layout/layout_bottom" tools:visibility="visible" />
 
     </FrameLayout>
 
@@ -185,7 +206,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="@dimen/dp_10"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:visibility="visible">
 
         </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

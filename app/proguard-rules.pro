@@ -81,6 +81,6 @@
 -keep class com.yalantis.ucrop** { *; }
 -keep interface com.yalantis.ucrop** { *; }
 
--keep class com.aaa.bbb.ccc.ui.splash.SplashActivity.** {*; }
--keep class com.aaa.bbb.ccc.data.** {*; }
+-keep class com.tarot.card.meaning.ui.splash.SplashActivity.** {*; }
+-keep class com.tarot.card.meaning.data.** {*; }
 -keep public class com.google.android.gms.** { public protected *; }
